@@ -94,16 +94,16 @@ window.HOTEL_DATA = {
       reason: "Free hot breakfast, 2 queens + sofa bed studio rooms confirmed, reliable chain, free parking. 10 minutes to State Street and Santa Barbara beach."
     },
     optionB: {
-      name: "Hilton Santa Barbara Beachfront Resort",
+      name: "The Presidio — Santa Barbara",
       stars: 4,
-      bookingUrl: "https://www.hilton.com/en/hotels/sbafphh-hilton-santa-barbara-beachfront-resort/",
-      pricePerNight: "$380",
-      priceNote: "Estimated based on 2025 rates (from $289 on KAYAK + $40 resort fee); verify for May 2026",
-      roomConfig: "Two-bedroom suite or connecting Double Queen rooms — 335 rooms, 25 suites. Kids stay free using existing bedding.",
+      bookingUrl: "https://www.booking.com/hotel/us/the-presidio.html?checkin=2026-05-25&checkout=2026-05-26&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$328",
+      priceNote: "Booking.com verified for May 25 2026 (2 adults + 3 kids)",
+      roomConfig: "Boutique rooms and suites with separate sleeping areas. Request suite or connecting rooms for family of 5.",
       freeBreakfast: false,
       separateRoom: true,
       pool: true,
-      reason: "Beachfront resort on the Santa Barbara waterfront. Two-bedroom suite configurations give separate sleeping areas with a closing door. Pool, spa, and restaurant on site."
+      reason: "Upscale boutique hotel in downtown Santa Barbara with pool. Walking distance to State Street and the waterfront. A character-filled step up from the Hampton Inn at a reasonable premium."
     },
     optionC: {
       name: "Spanish-Style Casita with Courtyard — Near State Street",
@@ -121,28 +121,28 @@ window.HOTEL_DATA = {
   // ============================================================
   4: {
     optionA: {
-      name: "Holiday Inn Express Monterey — Cannery Row",
+      name: "Pacific Inn Monterey",
       stars: 3,
-      bookingUrl: "https://www.ihg.com/holidayinnexpress/hotels/us/en/monterey/mryex/hoteldetail",
-      pricePerNight: "$250",
-      priceNote: "Estimated based on 2025 rates (from $179 reported); verify for May 2026. Late May is peak season in Monterey.",
-      roomConfig: "2 Doubles + Sofa Sleeper suite (sleeps 5–6); free breakfast buffet",
+      bookingUrl: "https://www.booking.com/hotel/us/best-western-ramona-inn.html?checkin=2026-05-26&checkout=2026-05-27&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$191",
+      priceNote: "Booking.com verified for May 26 2026 (2 adults + 3 kids). Rated 8.5/10.",
+      roomConfig: "Family rooms with 2 Queen beds (sleeps 5). Free parking included.",
       freeBreakfast: true,
       separateRoom: false,
       pool: false,
-      reason: "Four blocks from Monterey Bay Aquarium, free breakfast buffet, free parking, sofa sleeper rooms confirmed for sleeping 5. Excellent value for Cannery Row location."
+      reason: "Well-rated (8.5/10) budget hotel in Monterey with free breakfast and free parking. Near Cannery Row and Monterey Bay Aquarium. Best value-for-rating option in Monterey for a family of 5."
     },
     optionB: {
-      name: "Portola Hotel & Spa at Monterey Bay",
-      stars: 4,
-      bookingUrl: "https://www.portolahotel.com/accommodations/",
-      pricePerNight: "$420",
-      priceNote: "Estimated based on 2025 rates ($222–$639 range reported); verify for May 2026",
-      roomConfig: "One-bedroom suite: separate King bedroom + living area with Queen Sofa Sleeper (sleeps 5). Two-bedroom suite upgrade also available.",
+      name: "Padre Oaks — Monterey",
+      stars: 3,
+      bookingUrl: "https://www.booking.com/hotel/us/padre-oaks.html?checkin=2026-05-26&checkout=2026-05-27&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$229",
+      priceNote: "Booking.com verified for May 26 2026 (2 adults + 3 kids). Rated 8.5/10.",
+      roomConfig: "Spacious rooms with 2 Queen beds or King + sofa bed. Family-friendly layout (sleeps 5). Free parking.",
       freeBreakfast: false,
-      separateRoom: true,
+      separateRoom: false,
       pool: true,
-      reason: "Downtown Monterey waterfront location, one-bedroom suite with separate King bedroom and closing door gives adults evening privacy. Two-bedroom upgrade available for more space."
+      reason: "Highly rated (8.5/10) Monterey hotel with pool. A step up from the Pacific Inn at a modest premium. Close to Cannery Row, Aquarium, and 17-Mile Drive."
     },
     optionC: {
       name: "Coastal Cottage Two Blocks from Cannery Row",
@@ -160,28 +160,28 @@ window.HOTEL_DATA = {
   // ============================================================
   5: {
     optionA: {
-      name: "Holiday Inn Express Monterey — Cannery Row",
+      name: "Pacific Inn Monterey",
       stars: 3,
-      bookingUrl: "https://www.ihg.com/holidayinnexpress/hotels/us/en/monterey/mryex/hoteldetail",
-      pricePerNight: "$250",
-      priceNote: "Estimated based on 2025 rates; verify for May 2026. Book nights 4–5 together.",
-      roomConfig: "2 Doubles + Sofa Sleeper suite (sleeps 5–6); free breakfast buffet",
+      bookingUrl: "https://www.booking.com/hotel/us/best-western-ramona-inn.html?checkin=2026-05-27&checkout=2026-05-28&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$191",
+      priceNote: "Booking.com verified for May 26 2026 (2 adults + 3 kids); price approximate for May 27. Rated 8.5/10.",
+      roomConfig: "Family rooms with 2 Queen beds (sleeps 5). Free parking included.",
       freeBreakfast: true,
       separateRoom: false,
       pool: false,
-      reason: "Stay in place for night 2 in Monterey. Free breakfast, walkable to Cannery Row and the Aquarium. Free parking saves money in an expensive destination."
+      reason: "Stay in place for night 2 in Monterey. Free breakfast and free parking keep costs down. Walkable to Cannery Row and the Aquarium. Same reliable 8.5-rated hotel."
     },
     optionB: {
-      name: "Portola Hotel & Spa at Monterey Bay",
-      stars: 4,
-      bookingUrl: "https://www.portolahotel.com/accommodations/",
-      pricePerNight: "$420",
-      priceNote: "Estimated based on 2025 rates; verify for May 2026. Book nights 4–5 together.",
-      roomConfig: "One-bedroom suite: separate King bedroom + living area with Queen Sofa Sleeper (sleeps 5). Two-bedroom suite upgrade available.",
+      name: "Padre Oaks — Monterey",
+      stars: 3,
+      bookingUrl: "https://www.booking.com/hotel/us/padre-oaks.html?checkin=2026-05-27&checkout=2026-05-28&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$229",
+      priceNote: "Booking.com verified for May 26 2026 (2 adults + 3 kids); price approximate for May 27. Rated 8.5/10.",
+      roomConfig: "Spacious rooms with 2 Queen beds or King + sofa bed. Family-friendly layout (sleeps 5). Free parking.",
       freeBreakfast: false,
-      separateRoom: true,
+      separateRoom: false,
       pool: true,
-      reason: "Best location in downtown Monterey for a two-night stay. Adults get a quiet bedroom with a closing door. Walking distance to Fisherman's Wharf and waterfront."
+      reason: "Stay in place for night 2 in Monterey. Pool on site for afternoon decompression. Close to Cannery Row, Aquarium, and 17-Mile Drive."
     },
     optionC: {
       name: "Pacific Grove Victorian Cottage — Steps from Lover's Point",
@@ -199,28 +199,28 @@ window.HOTEL_DATA = {
   // ============================================================
   6: {
     optionA: {
-      name: "Holiday Inn Express & Suites San Francisco — Fisherman's Wharf",
-      stars: 3,
-      bookingUrl: "https://www.ihg.com/holidayinnexpress/hotels/us/en/san-francisco/sfonp/hoteldetail",
-      pricePerNight: "$320",
-      priceNote: "Estimated based on 2025 rates; verify for May 2026. SF hotels are expensive — this is one of the most affordable near Fisherman's Wharf.",
-      roomConfig: "Suite rooms available; free breakfast buffet confirmed. Request suite or 2 queens for family of 5.",
-      freeBreakfast: true,
+      name: "Hilton San Francisco Financial District",
+      stars: 4,
+      bookingUrl: "https://www.booking.com/hotel/us/hilton-san-francisco-financial-district.html?checkin=2026-05-28&checkout=2026-05-29&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$223",
+      priceNote: "Booking.com verified for May 28 2026 (2 adults + 3 kids)",
+      roomConfig: "Rooms with 2 Double beds or King + sofa bed (sleeps 5). Close to Embarcadero, Chinatown, and cable cars.",
+      freeBreakfast: false,
       separateRoom: false,
       pool: false,
-      reason: "Best value option in Fisherman's Wharf. Free breakfast a huge bonus in expensive SF. Walking distance to Pier 39, Ghirardelli Square, and cable cars. Reviewer specifically mentioned 'family of five' saved money with included breakfast."
+      reason: "Major Hilton property at a surprisingly good price for SF. Walking distance to Chinatown, North Beach, and Embarcadero BART. 15-min walk or cable car to Fisherman's Wharf. Saves $100/night vs Fisherman's Wharf hotels."
     },
     optionB: {
-      name: "Argonaut Hotel — A Noble House Hotel",
+      name: "BEI San Francisco, Trademark Collection by Wyndham",
       stars: 4,
-      bookingUrl: "https://www.argonauthotel.com/san-francisco-hotel-suites/",
-      pricePerNight: "$480",
-      priceNote: "Suite rates ~$596–$648 reported; verify for May 2026. Add $36/night destination fee.",
-      roomConfig: "One-bedroom suite connecting to adjacent 2-Queen room (request at booking) — two separate sleeping areas with closing door",
+      bookingUrl: "https://www.booking.com/hotel/us/bei-san-francisco-trademark-collection-by-wyndham.html?checkin=2026-05-28&checkout=2026-05-29&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$275",
+      priceNote: "Booking.com verified for May 28 2026 (2 adults + 3 kids)",
+      roomConfig: "Boutique rooms; request connecting rooms or suite with sofa bed for family of 5.",
       freeBreakfast: false,
-      separateRoom: true,
+      separateRoom: false,
       pool: false,
-      reason: "Boutique hotel in historic Cannery building on the waterfront. Connecting suite + adjacent room gives family separate sleeping zones. Kids' amenities: treasure chests, scavenger hunts, board games. Iconic SF Fisherman's Wharf location."
+      reason: "Stylish boutique hotel in the Trademark Collection. Central location near Union Square and cable cars. A step up in character from the Hilton at a modest premium."
     },
     optionC: {
       name: "Victorian Painted Lady Flat — Cole Valley",
@@ -238,28 +238,28 @@ window.HOTEL_DATA = {
   // ============================================================
   7: {
     optionA: {
-      name: "Handlery Union Square Hotel",
-      stars: 3,
-      bookingUrl: "https://sf.handlery.com/guestrooms-accommodations/",
-      pricePerNight: "$260",
-      priceNote: "From $131 average (KAYAK); family suite higher. Verify for May 2026.",
-      roomConfig: "Family Suite: two separate bedrooms connected by shared bathroom (sleeps 5). One room has 2 Queen beds, other has 1 Queen.",
+      name: "Hilton San Francisco Financial District",
+      stars: 4,
+      bookingUrl: "https://www.booking.com/hotel/us/hilton-san-francisco-financial-district.html?checkin=2026-05-29&checkout=2026-05-30&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$223",
+      priceNote: "Booking.com verified for May 28 2026 (2 adults + 3 kids); price approximate for May 29.",
+      roomConfig: "Rooms with 2 Double beds or King + sofa bed (sleeps 5). Close to Embarcadero, Chinatown, and cable cars.",
       freeBreakfast: false,
-      separateRoom: true,
-      pool: true,
-      reason: "Purpose-built Family Suite with TWO separate bedrooms and a closing door — specifically designed for families. Heated outdoor pool. 5-min walk from Powell Street cable car line. Best family suite value in Union Square."
-    },
-    optionB: {
-      name: "Holiday Inn Express & Suites San Francisco — Fisherman's Wharf",
-      stars: 3,
-      bookingUrl: "https://www.ihg.com/holidayinnexpress/hotels/us/en/san-francisco/sfonp/hoteldetail",
-      pricePerNight: "$320",
-      priceNote: "Estimated based on 2025 rates; verify for May 2026. Book nights 6–8 together for best rate.",
-      roomConfig: "Suite rooms; free breakfast buffet. Request 2 queens or suite for family of 5.",
-      freeBreakfast: true,
       separateRoom: false,
       pool: false,
-      reason: "Stay in place from night 6 for consistency. Free breakfast offsets SF's high food costs. Fisherman's Wharf location keeps kids entertained."
+      reason: "Stay in place for night 2 in SF. Same great Hilton value. Walking distance to Chinatown, North Beach, and cable cars to Fisherman's Wharf."
+    },
+    optionB: {
+      name: "BEI San Francisco, Trademark Collection by Wyndham",
+      stars: 4,
+      bookingUrl: "https://www.booking.com/hotel/us/bei-san-francisco-trademark-collection-by-wyndham.html?checkin=2026-05-29&checkout=2026-05-30&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$275",
+      priceNote: "Booking.com verified for May 28 2026 (2 adults + 3 kids); price approximate for May 29.",
+      roomConfig: "Boutique rooms; request connecting rooms or suite with sofa bed for family of 5.",
+      freeBreakfast: false,
+      separateRoom: false,
+      pool: false,
+      reason: "Stay in place for night 2 in SF. Central boutique hotel near Union Square and cable cars."
     },
     optionC: {
       name: "Edwardian Row House — Noe Valley (Family Favorite)",
@@ -277,28 +277,28 @@ window.HOTEL_DATA = {
   // ============================================================
   8: {
     optionA: {
-      name: "Handlery Union Square Hotel",
-      stars: 3,
-      bookingUrl: "https://sf.handlery.com/guestrooms-accommodations/",
-      pricePerNight: "$260",
-      priceNote: "From $131 average (KAYAK); family suite higher. Verify for May 2026. Book all 3 SF nights at Handlery for consistency.",
-      roomConfig: "Family Suite: two separate bedrooms + shared bathroom (sleeps 5). 2 Queens in one room, 1 Queen in the other.",
+      name: "Hilton San Francisco Financial District",
+      stars: 4,
+      bookingUrl: "https://www.booking.com/hotel/us/hilton-san-francisco-financial-district.html?checkin=2026-05-30&checkout=2026-05-31&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$223",
+      priceNote: "Booking.com verified for May 28 2026 (2 adults + 3 kids); price approximate for May 30.",
+      roomConfig: "Rooms with 2 Double beds or King + sofa bed (sleeps 5). Close to Embarcadero, Chinatown, and cable cars.",
       freeBreakfast: false,
-      separateRoom: true,
-      pool: true,
-      reason: "Staying 3 nights at Handlery means no repacking. Purpose-built Family Suite with two closing bedroom doors. Heated pool. Union Square location lets kids ride cable cars to Fisherman's Wharf."
+      separateRoom: false,
+      pool: false,
+      reason: "Stay in place for night 3 in SF — no repacking. Hilton consistency at a great price. 15-min walk to Alcatraz ferry at Pier 33."
     },
     optionB: {
-      name: "San Francisco Marriott Fisherman's Wharf",
+      name: "BEI San Francisco, Trademark Collection by Wyndham",
       stars: 4,
-      bookingUrl: "https://www.marriott.com/en-us/hotels/sfofw-san-francisco-marriott-fishermans-wharf/rooms/",
-      pricePerNight: "$350",
-      priceNote: "From ~$228 base; suites and connecting rooms higher. Rollaway available for $20/night. Verify for May 2026.",
-      roomConfig: "Connecting rooms available on request: adjacent rooms give family separate sleeping areas (request at booking). Rollaway $20/night.",
+      bookingUrl: "https://www.booking.com/hotel/us/bei-san-francisco-trademark-collection-by-wyndham.html?checkin=2026-05-30&checkout=2026-05-31&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$275",
+      priceNote: "Booking.com verified for May 28 2026 (2 adults + 3 kids); price approximate for May 30.",
+      roomConfig: "Boutique rooms; request connecting rooms or suite with sofa bed for family of 5.",
       freeBreakfast: false,
-      separateRoom: true,
+      separateRoom: false,
       pool: false,
-      reason: "Reliable Marriott at Fisherman's Wharf. Connecting rooms give separate adult/kid sleeping spaces. Steps from Pier 39 and Alcatraz ferry. Kids 18 and under stay free."
+      reason: "Stay in place for night 3. Boutique character near Union Square. Easy access to Alcatraz ferry and Muir Woods shuttle."
     },
     optionC: {
       name: "Modern Marina District Home with Rooftop Deck",
@@ -435,19 +435,6 @@ window.HOTEL_DATA = {
   12: {
     limitedInventory: true,
     optionA: {
-      name: "Myers Inn (Myers Country Inn)",
-      stars: 2,
-      bookingUrl: "https://www.myersinn.com",
-      pricePerNight: "$150",
-      priceNote: "Estimated; verify at booking. Very limited rooms — call directly: (707) 943-3259",
-      roomConfig: "10 rooms including Family rooms; some rooms sleep 3+, request largest configuration. Complimentary coffee/tea each morning. No full breakfast.",
-      freeBreakfast: false,
-      separateRoom: false,
-      pool: false,
-      limitedInventory: true,
-      reason: "THE primary lodging on the Avenue of the Giants. Historic 1867 stage stop in the heart of Humboldt Redwoods State Park — the biggest redwood forest in the world. Rooms are clean and functional. BOOK EARLY — very limited availability in this remote area."
-    },
-    optionB: {
       name: "Giant Redwoods RV & Cabin Destination",
       stars: 2,
       bookingUrl: "https://www.giantredwoodsrv.com/cabins/",
@@ -458,7 +445,20 @@ window.HOTEL_DATA = {
       separateRoom: false,
       pool: false,
       limitedInventory: true,
-      reason: "Riverside cabin destination in Myers Flat on the Eel River. Cabins have electric fireplaces and private baths. No gear needed beyond linens (or rent on site). Surrounded by redwood forest. BOOK EARLY — only 5 cabins total."
+      reason: "Budget riverside cabins in Myers Flat on the Eel River. Electric fireplaces and private baths. Surrounded by redwood forest — the cheapest way to sleep on the Avenue of the Giants. BOOK EARLY — only 5 cabins total."
+    },
+    optionB: {
+      name: "Myers Inn (Myers Country Inn)",
+      stars: 2,
+      bookingUrl: "https://www.myersinn.com",
+      pricePerNight: "$150",
+      priceNote: "Estimated; verify at booking. Very limited rooms — call directly: (707) 943-3259",
+      roomConfig: "10 rooms including Family rooms; some rooms sleep 3+, request largest configuration. Complimentary coffee/tea each morning. No full breakfast.",
+      freeBreakfast: false,
+      separateRoom: false,
+      pool: false,
+      limitedInventory: true,
+      reason: "THE primary lodging on the Avenue of the Giants. Historic 1867 stage stop in the heart of Humboldt Redwoods State Park — the biggest redwood forest in the world. A proper inn with more comfort than a cabin. BOOK EARLY — very limited availability."
     },
     optionC: {
       name: "Redwood Forest Cabin — Avenue of the Giants",
@@ -521,18 +521,6 @@ window.HOTEL_DATA = {
   // ============================================================
   14: {
     optionA: {
-      name: "Lighthouse Inn Crescent City",
-      stars: 3,
-      bookingUrl: "https://www.booking.com/hotel/us/lighthouse-inn-crescent-city.html?checkin=2026-06-05&checkout=2026-06-06&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      pricePerNight: "$219",
-      priceNote: "Booking.com verified for Jun 5 2026 (2 adults + 3 kids). Note: 'Holiday Inn Express Crescent City' does not exist — replaced with Lighthouse Inn.",
-      roomConfig: "Standard rooms with 2 Queens or King + sofa sleeper. Request room for family of 5.",
-      freeBreakfast: true,
-      separateRoom: false,
-      pool: true,
-      reason: "Reliable option in Crescent City with free breakfast and pool — after two nights in remote Redwood country, this feels luxurious. Close to Jedediah Smith and Del Norte Coast State Park."
-    },
-    optionB: {
       name: "Curly Redwood Lodge — Crescent City",
       stars: 2,
       bookingUrl: "https://www.booking.com/hotel/us/curly-redwood-lodge.html?checkin=2026-06-05&checkout=2026-06-06&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
@@ -542,7 +530,19 @@ window.HOTEL_DATA = {
       freeBreakfast: false,
       separateRoom: true,
       pool: false,
-      reason: "One of the most unique lodging experiences in California — the entire building came from one massive redwood. It's genuinely historic, well-maintained, and perfectly positioned for the Redwood NP day. The larger suites sleep 5 with some separation between sleeping areas."
+      reason: "One of the most unique lodging experiences in California — the entire building came from one massive redwood. It's genuinely historic, well-maintained, and the cheapest hotel option in Crescent City for a family of 5."
+    },
+    optionB: {
+      name: "Lighthouse Inn Crescent City",
+      stars: 3,
+      bookingUrl: "https://www.booking.com/hotel/us/lighthouse-inn-crescent-city.html?checkin=2026-06-05&checkout=2026-06-06&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$219",
+      priceNote: "Booking.com verified for Jun 5 2026 (2 adults + 3 kids)",
+      roomConfig: "Standard rooms with 2 Queens or King + sofa sleeper. Request room for family of 5.",
+      freeBreakfast: true,
+      separateRoom: false,
+      pool: true,
+      reason: "Free breakfast and pool — after two nights in remote Redwood country, this feels luxurious. The breakfast and pool amenities justify the small premium over the Curly Redwood Lodge."
     },
     optionC: {
       name: "Oceanfront Beach Cottage — Crescent City",
@@ -682,28 +682,28 @@ window.HOTEL_DATA = {
   // ============================================================
   18: {
     optionA: {
-      name: "University Inn and Suites — Eugene",
-      stars: 3,
-      bookingUrl: "https://www.booking.com/hotel/us/university-inn-and-suites-eugene.html?checkin=2026-06-09&checkout=2026-06-10&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      pricePerNight: "$383",
-      priceNote: "Booking.com verified for Jun 9 2026 (2 adults + 3 kids); requires 2 rooms. Note: 'Hilton Eugene' does not exist — replaced with University Inn.",
-      roomConfig: "Two rooms needed for family of 5. Located near University of Oregon campus, 2.4 km from downtown.",
-      freeBreakfast: false,
-      separateRoom: true,
-      pool: true,
-      reason: "Near the University of Oregon campus with pool. Two rooms give adults and kids separate sleeping areas. Walkable to 5th Street Market and Willamette River path. Note: Eugene hotels require 2 rooms for family of 5."
-    },
-    optionB: {
       name: "Graduate Eugene — University of Oregon Boutique",
       stars: 3,
       bookingUrl: "https://www.graduatehotels.com/eugene/",
       pricePerNight: "$165",
-      priceNote: "Estimated based on 2025 rates; verify at graduatehotels.com for June 2026",
+      priceNote: "Estimated based on 2025 rates; verify at graduatehotels.com for June 2026. May need 2 rooms for family of 5.",
       roomConfig: "Suite or connecting rooms for family of 5. Boutique UO-themed hotel with quirky Oregon Ducks decor. Connecting rooms available on request.",
       freeBreakfast: false,
       separateRoom: true,
       pool: false,
-      reason: "A fun, personality-filled boutique hotel a block from the University of Oregon campus. Connecting room option gives adult/kid separation. Kids like the college-town energy and the quirky sports-themed decor."
+      reason: "Fun boutique hotel a block from the University of Oregon campus. Quirky Oregon Ducks decor kids love. Connecting room option gives adult/kid separation. Best value in Eugene's college-town core."
+    },
+    optionB: {
+      name: "University Inn and Suites — Eugene",
+      stars: 3,
+      bookingUrl: "https://www.booking.com/hotel/us/university-inn-and-suites-eugene.html?checkin=2026-06-09&checkout=2026-06-10&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$383",
+      priceNote: "Booking.com verified for Jun 9 2026 (2 adults + 3 kids); requires 2 rooms for family of 5.",
+      roomConfig: "Two rooms needed for family of 5. Located near University of Oregon campus, 2.4 km from downtown. Pool on site.",
+      freeBreakfast: false,
+      separateRoom: true,
+      pool: true,
+      reason: "Two separate rooms guarantee adult/kid sleeping separation with pool. Near UO campus, walkable to 5th Street Market and Willamette River path. The 2-room configuration is the premium here — guaranteed privacy."
     },
     optionC: {
       name: "Whiteaker Craftsman Bungalow — Eugene's Coolest Neighborhood",
