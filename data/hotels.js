@@ -240,7 +240,7 @@ window.HOTEL_DATA = {
     optionA: {
       name: "Handlery Union Square Hotel",
       stars: 3,
-      bookingUrl: "https://sf.handlery.com/accommodations/family-suite/",
+      bookingUrl: "https://sf.handlery.com/guestrooms-accommodations/",
       pricePerNight: "$260",
       priceNote: "From $131 average (KAYAK); family suite higher. Verify for May 2026.",
       roomConfig: "Family Suite: two separate bedrooms connected by shared bathroom (sleeps 5). One room has 2 Queen beds, other has 1 Queen.",
@@ -279,7 +279,7 @@ window.HOTEL_DATA = {
     optionA: {
       name: "Handlery Union Square Hotel",
       stars: 3,
-      bookingUrl: "https://sf.handlery.com/accommodations/family-suite/",
+      bookingUrl: "https://sf.handlery.com/guestrooms-accommodations/",
       pricePerNight: "$260",
       priceNote: "From $131 average (KAYAK); family suite higher. Verify for May 2026. Book all 3 SF nights at Handlery for consistency.",
       roomConfig: "Family Suite: two separate bedrooms + shared bathroom (sleeps 5). 2 Queens in one room, 1 Queen in the other.",
@@ -396,7 +396,7 @@ window.HOTEL_DATA = {
     optionA: {
       name: "Hotel Trio Healdsburg",
       stars: 3,
-      bookingUrl: "https://www.hoteltrio.com/hotel-rooms-sonoma-ca/",
+      bookingUrl: "https://www.hoteltrio.com/stay/accommodations",
       pricePerNight: "$230",
       priceNote: "From $188 on KAYAK; estimate for June 2026. Self-parking $20/night.",
       roomConfig: "Bunk Room Suite: 4 Queen beds, full kitchen, flat-screen TVs, living area (sleeps 5–8). Or Family Suite with separate bedroom + sofa bed.",
@@ -640,11 +640,11 @@ window.HOTEL_DATA = {
   17: {
     limitedInventoryWarning: "Crater Lake Lodge sells out within minutes of opening reservations (typically released in mid-January for the coming summer). Mazama Village Motor Inn also fills up fast. Book the moment reservations open. If the park is full, Klamath Falls (1 hr south) or Chiloquin (45 min south) are the fallbacks.",
     optionA: {
-      name: "Mazama Village Motor Inn — Inside Crater Lake NP",
+      name: "The Cabins at Mazama Village — Inside Crater Lake NP",
       stars: 2,
-      bookingUrl: "https://www.travelcraterlake.com/lodging/mazama-village-motor-inn/",
+      bookingUrl: "https://explorecraterlake.com/stay-at-crater-lake/the-cabins-at-mazama-village/",
       pricePerNight: "$175",
-      priceNote: "Estimated based on 2025 published rates; verify at travelcraterlake.com. Book as early as possible — fills months in advance.",
+      priceNote: "Estimated based on 2025 published rates; verify at explorecraterlake.com. Book as early as possible — fills months in advance.",
       roomConfig: "Standard motel rooms with 2 Queen beds (sleeps 5 with rollaway). Located 7 miles from the lake rim. No frills but unbeatable location inside the national park.",
       freeBreakfast: false,
       separateRoom: false,
@@ -655,9 +655,9 @@ window.HOTEL_DATA = {
     optionB: {
       name: "Crater Lake Lodge — On the Rim (Historic 1915 Lodge)",
       stars: 4,
-      bookingUrl: "https://www.travelcraterlake.com/lodging/crater-lake-lodge/",
+      bookingUrl: "https://explorecraterlake.com/stay-at-crater-lake/crater-lake-lodge/",
       pricePerNight: "$325",
-      priceNote: "Estimated based on 2025 published rates; verify at travelcraterlake.com. Sells out almost instantly — reservations open in mid-January.",
+      priceNote: "Estimated based on 2025 published rates; verify at explorecraterlake.com. Sells out almost instantly — reservations open in mid-January.",
       roomConfig: "Rooms with 2 Queen beds available; request larger room or connecting rooms for family of 5. The Lodge is directly on the rim with lake views from many rooms.",
       freeBreakfast: false,
       separateRoom: false,
