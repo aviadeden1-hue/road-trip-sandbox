@@ -503,8 +503,82 @@ button {
 }
 
 .day-card:hover {
-  box-shadow: var(--shadow-hover);
-  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+/* Collapsed state — hide card body */
+.day-card.collapsed .card-body {
+  display: none;
+}
+
+/* Chevron rotates when collapsed */
+.day-card.collapsed .card-chevron svg {
+  transform: rotate(-90deg);
+}
+
+.card-chevron {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  transition: color var(--transition);
+}
+
+.card-chevron svg {
+  transition: transform 0.25s ease;
+  display: block;
+}
+
+/* Card header is now clickable */
+.card-header {
+  cursor: pointer;
+  user-select: none;
+}
+
+.card-header:hover {
+  background: var(--primary-light);
+}
+
+.card-header:hover .card-chevron {
+  color: var(--primary);
+}
+
+/* ── Hero Image ── */
+.card-hero {
+  position: relative;
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .card-hero {
+    height: 220px;
+  }
+}
+
+.card-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.55) 100%);
+}
+
+.card-hero-label {
+  position: absolute;
+  bottom: 10px;
+  left: 14px;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  letter-spacing: 0.02em;
+}
+
+/* Card body wrapper */
+.card-body {
+  /* visible by default; .collapsed hides it */
 }
 
 /* ── Driving Banner ── */

@@ -225,23 +225,58 @@ function buildRegionDivider(regionName, allDays) {
 
 function buildDayCard(day) {
   const card = document.createElement('div');
-  card.className = 'day-card';
+  card.className = 'day-card collapsed';
   card.id = 'day-' + day.dayNumber;
 
-  // Driving banner
+  // Driving banner (always visible — outside the collapsible body)
   if (day.driveHours > 0) {
     card.appendChild(buildDriveBanner(day));
   }
 
-  // Card header
-  card.appendChild(buildCardHeader(day));
+  // Card header — clickable, always visible
+  const header = buildCardHeader(day);
+  header.addEventListener('click', function () {
+    card.classList.toggle('collapsed');
+  });
+  card.appendChild(header);
+
+  // Card body — hidden when collapsed
+  const body = document.createElement('div');
+  body.className = 'card-body';
+
+  // Hero image
+  const regionCfg = REGION_CONFIG[day.region] || { color: '#888' };
+  const imgUrl = (window.IMAGE_DATA && window.IMAGE_DATA[day.dayNumber]) || null;
+  const heroImg = document.createElement('div');
+  heroImg.className = 'card-hero';
+  heroImg.style.background = 'linear-gradient(135deg, ' + regionCfg.color + 'cc, ' + regionCfg.color + '66)';
+  if (imgUrl) {
+    heroImg.style.backgroundImage = 'url("' + imgUrl + '")';
+    heroImg.style.backgroundSize = 'cover';
+    heroImg.style.backgroundPosition = 'center';
+    // Overlay for readability
+    const overlay = document.createElement('div');
+    overlay.className = 'card-hero-overlay';
+    heroImg.appendChild(overlay);
+    // Test image load; fall back to gradient on error
+    const testImg = new Image();
+    testImg.onerror = function () {
+      heroImg.style.backgroundImage = 'none';
+    };
+    testImg.src = imgUrl;
+  }
+  const heroLabel = document.createElement('div');
+  heroLabel.className = 'card-hero-label';
+  heroLabel.textContent = day.overnightCity;
+  heroImg.appendChild(heroLabel);
+  body.appendChild(heroImg);
 
   // Note
   if (day.note) {
     const noteEl = document.createElement('p');
     noteEl.className = 'card-note';
     noteEl.textContent = day.note;
-    card.appendChild(noteEl);
+    body.appendChild(noteEl);
   }
 
   // Day 19 (Portland arrival) — special celebration banner, hotel only
@@ -258,13 +293,14 @@ function buildDayCard(day) {
       '<span style="font-size:0.85rem;font-weight:400;color:#9333ea;">' +
         'LAX → Portland · 19 days · ~1,800 miles · all 5 travelers intact.' +
       '</span>';
-    card.appendChild(partyBanner);
+    body.appendChild(partyBanner);
 
     const sectionsWrapper = document.createElement('div');
     sectionsWrapper.className = 'card-sections';
     sectionsWrapper.appendChild(buildCollapsible('🏨', 'Hotel Tonight', buildHotelContent(day), true));
     sectionsWrapper.appendChild(buildCollapsible('🌙', 'Evening / Grocery', buildEveningContent(day), true));
-    card.appendChild(sectionsWrapper);
+    body.appendChild(sectionsWrapper);
+    card.appendChild(body);
     return card;
   }
 
@@ -278,7 +314,8 @@ function buildDayCard(day) {
   sectionsWrapper.appendChild(buildCollapsible('🏨', 'Hotel Tonight', buildHotelContent(day), true));
   sectionsWrapper.appendChild(buildCollapsible('🌧', 'Rainy Day Backup', buildRainyDayContent(day), false, true));
 
-  card.appendChild(sectionsWrapper);
+  body.appendChild(sectionsWrapper);
+  card.appendChild(body);
   return card;
 }
 
@@ -356,8 +393,13 @@ function buildCardHeader(day) {
   infoEl.appendChild(cityEl);
   infoEl.appendChild(badgesEl);
 
+  const chevron = document.createElement('div');
+  chevron.className = 'card-chevron';
+  chevron.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>';
+
   header.appendChild(numEl);
   header.appendChild(infoEl);
+  header.appendChild(chevron);
   return header;
 }
 
