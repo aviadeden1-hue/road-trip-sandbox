@@ -63,6 +63,101 @@ const NPS_SITES = [
   { day: 17, name: "Crater Lake National Park",     note: "Deepest lake in USA, vivid blue water" }
 ];
 
+/* ── Attractions we intentionally left out ── */
+const MISSING_ATTRACTIONS = [
+  {
+    name: "Yosemite National Park",
+    emoji: "🏔",
+    category: "Inland Detour",
+    why: "Yosemite sits ~4 hrs inland from San Francisco and ~5 hrs from LA. Reaching it requires a major detour off the coastal route, adding 2–3 extra days. We chose to stay on the Pacific Coast Highway and collect NPS sites on the way rather than doubling back inland.",
+    howToAdd: "Best inserted after Day 5 (Monterey): drive inland to Yosemite Valley for 2 nights, then loop back to San Francisco. Or start the trip east from LAX — drive to Sequoia → Yosemite → Monterey (adds 2–3 days before Day 3)."
+  },
+  {
+    name: "Sequoia & Kings Canyon National Parks",
+    emoji: "🌲",
+    category: "Inland Detour",
+    why: "Home to the world's largest trees by volume, including General Sherman. Located ~4 hrs inland from Monterey or ~4 hrs from LA via CA-99/CA-180. Same problem as Yosemite — the coastal route simply doesn't pass nearby.",
+    howToAdd: "Combine with Yosemite on an inland loop at the start: LAX → Sequoia (Day 2) → Kings Canyon / Yosemite Valley (Days 3–4) → Monterey (Day 5). Adds 2 days and a different departure style. Perfectly kid-friendly with the Giant Forest Museum."
+  },
+  {
+    name: "Channel Islands National Park",
+    emoji: "🏝",
+    category: "Logistics Barrier",
+    why: "Channel Islands requires a 1-hour ferry from Ventura and is a boat-only destination. With a 4-year-old, managing a round-trip ocean crossing, unpredictable swells, and a full-day hike was too risky and exhausting. Already noted as a deliberate skip on Day 3.",
+    howToAdd: "Swap Day 3 (Santa Barbara) for a Ventura base. Take the morning ferry to Santa Cruz Island, hike Cavern Point trail (easy, 2 miles), return by afternoon. Only works if the youngest child is a confident sailor and you book Condor Express well in advance."
+  },
+  {
+    name: "Hearst Castle & San Simeon",
+    emoji: "🏰",
+    category: "Trade-off: Chose Pinnacles",
+    why: "Hearst Castle is directly on PCH between Santa Barbara and Monterey — we just took the inland route to Pinnacles NP on Day 4 instead. The talus caves and California condors at Pinnacles felt more unique and NPS-pass-covered; Hearst Castle entry is ~$35/person.",
+    howToAdd: "Replace Pinnacles on Day 4 with a coastal route: Santa Barbara → San Simeon (Hearst Castle tour, 2 hrs) → Monterey via PCH. Equally beautiful, trades condors for gilded ceilings. Best for families who've already seen Pinnacles."
+  },
+  {
+    name: "Santa Cruz & the Beach Boardwalk",
+    emoji: "🎢",
+    category: "Close but Cut",
+    why: "Santa Cruz is only 45 minutes north of Monterey and has one of the best classic boardwalk amusement parks in California — the kids would love it. Cut for time: the Day 6 drive from Monterey to SF was already 2 hours, and adding a full boardwalk day would mean arriving in SF after dark.",
+    howToAdd: "Add a Santa Cruz overnight between Day 5 and Day 6. Leave Monterey, spend the afternoon at the Boardwalk, stay in Santa Cruz, then drive to SF the next morning (1.5 hrs). Adds 1 day to the trip."
+  },
+  {
+    name: "Napa Valley",
+    emoji: "🍷",
+    category: "Close but Cut",
+    why: "Napa is only 35 miles from Windsor (Days 9–10) and arguably more famous than Sonoma/Healdsburg for wine. We skipped it because the family visit days were the priority, the trip already had Healdsburg wine country on Day 11, and Napa's tasting rooms are less kid-friendly.",
+    howToAdd: "Easy half-day add from Windsor on Day 9 or 10: drive south to Yountville or Napa town (45 min), visit the Oxbow Public Market (great for kids), then return to Windsor for dinner. No extra overnight needed."
+  },
+  {
+    name: "Mendocino",
+    emoji: "🌊",
+    category: "Close but Cut",
+    why: "Mendocino is a stunning, headlands clifftop village directly on CA-1 between Healdsburg and Myers Flat. We drove straight through on Day 12 to save time, but it's genuinely worth a stop or overnight.",
+    howToAdd: "Split the Day 12 drive (Healdsburg → Myers Flat) into two days: Healdsburg → Mendocino overnight (2 hrs on CA-1), then Mendocino → Myers Flat (1.5 hrs) the next day. Adds 1 day, but CA-1 through Mendocino's cliffs is some of the best coastal scenery on the whole route."
+  },
+  {
+    name: "Lake Tahoe",
+    emoji: "🏔",
+    category: "Inland Detour",
+    why: "Lake Tahoe is spectacular — crystal clear alpine lake at 6,200 ft elevation. But it's 3.5 hrs east of San Francisco, a major inland detour off the northbound coast route.",
+    howToAdd: "Use as a SF day-trip alternative: replace Day 8 (Point Reyes) with a Tahoe overnight. Drive east on I-80 (3.5 hrs), spend a morning on the lake, drive back. It's a full day, but doable. Or add it as a standalone trip — Tahoe really deserves 2+ days."
+  },
+  {
+    name: "Lassen Volcanic National Park",
+    emoji: "🌋",
+    category: "Inland Detour",
+    why: "Lassen is California's most underrated national park — active volcanic landscape, boiling mud pots, hydrothermal pools. Located ~3 hrs east of US-101 near Redding, CA. Taking the coastal route bypasses it entirely.",
+    howToAdd: "Replace the Healdsburg → Myers Flat coastal route (Day 12) with an inland route: Healdsburg → I-5 → Lassen NP overnight → back to US-101 near Eureka. Adds 1 day and trades redwood scenery for volcanic scenery."
+  },
+  {
+    name: "Full Oregon Coast (Bandon, Heceta Head, Cape Perpetua)",
+    emoji: "🦀",
+    category: "Trade-off: Chose Crater Lake",
+    why: "The trip's Oregon section cuts inland at Brookings to Medford → Crater Lake → Eugene, skipping virtually the entire Oregon coast north of Brookings. Highlights missed: Bandon Dunes, Thor's Well, Cape Perpetua, Sea Lion Caves, Heceta Head Lighthouse, Newport, Cannon Beach, Haystack Rock.",
+    howToAdd: "Major reroute: replace Days 16–18 (Medford → Crater Lake → Eugene) with a full Oregon Coast drive (Brookings → Bandon → Newport → Lincoln City → Portland via US-101). Picks up all the coastal highlights, but you lose Crater Lake — arguably the single most spectacular day on the current itinerary."
+  },
+  {
+    name: "Bend, Oregon & Smith Rock",
+    emoji: "🧗",
+    category: "Close but Cut",
+    why: "Bend is Oregon's outdoor recreation hub with the Deschutes River, microbreweries, and nearby Smith Rock State Park (stunning volcanic rock formations). It's 1.5 hrs from Crater Lake and would make a great overnight — but adding it meant the Crater Lake → Portland drive became too long and fragmented.",
+    howToAdd: "Replace Eugene (Day 18) with Bend: Crater Lake → Bend (1.5 hrs), overnight at McMenamins Old St. Francis School. Then Bend → Portland (3 hrs) on Day 19. Same total driving, much more scenic. Works perfectly as a 1-for-1 swap with no extra days needed."
+  },
+  {
+    name: "Columbia River Gorge & Multnomah Falls",
+    emoji: "💧",
+    category: "Close but Cut",
+    why: "Multnomah Falls (620 ft, the second-tallest year-round waterfall in the US) is only 30 minutes east of Portland. We didn't build it in because Day 19 is explicitly arrival day and the party starts June 11. There was no room on the itinerary.",
+    howToAdd: "Easiest add of anything on this list — no extra days needed. On Day 19, take I-84 east from Eugene instead of I-5. Stop at Multnomah Falls (30 min hike to the bridge, kid-friendly), then continue west on I-84 into Portland. Arrives Portland ~1 hour later than the direct route."
+  },
+  {
+    name: "Death Valley National Park",
+    emoji: "☀️",
+    category: "Wrong Season",
+    why: "Death Valley in late May/early June records average highs of 105–115°F (40–46°C). Hiking or extended outdoor time is dangerous for adults and potentially life-threatening for a 4-year-old. The timing of this trip makes it a hard no.",
+    howToAdd: "Plan a separate Death Valley trip in November–February when highs are 65–75°F. Not a fit for this itinerary under any reroute."
+  }
+];
+
 /* ── Global Leaflet map reference ── */
 let map = null;
 
@@ -1193,6 +1288,7 @@ function buildAppendixSections() {
   buildSnackKitAppendix();
   buildBudgetAppendix();
   buildPassAppendix();
+  buildMissingAttractionsAppendix();
 }
 
 /* ── Snack Kit ── */
@@ -1409,6 +1505,94 @@ function buildPassAppendix() {
   passInfo.appendChild(altNote);
 
   body.appendChild(passInfo);
+  card.appendChild(header);
+  card.appendChild(body);
+  section.appendChild(card);
+}
+
+/* ── What We Left Out ── */
+function buildMissingAttractionsAppendix() {
+  const section = document.getElementById('appendix-missing');
+  if (!section) return;
+
+  const card = document.createElement('div');
+  card.className = 'appendix-card';
+
+  const header = document.createElement('div');
+  header.className = 'appendix-header';
+  header.style.background = '#7c3aed';
+  header.innerHTML = '<span class="appendix-icon">🗺</span><h2>What We Left Out — And Why</h2>';
+
+  const body = document.createElement('div');
+  body.className = 'appendix-body';
+
+  const intro = document.createElement('p');
+  intro.style.cssText = 'font-size:0.85rem;color:#555;margin-bottom:18px;line-height:1.5;';
+  intro.textContent =
+    'Every road trip is a series of trade-offs. Below are the major destinations we consciously ' +
+    'skipped, why they didn\'t fit, and exactly where you\'d slot them if you want to add them later.';
+  body.appendChild(intro);
+
+  // Group by category
+  const categories = [];
+  const catMap = new Map();
+  MISSING_ATTRACTIONS.forEach(function (item) {
+    if (!catMap.has(item.category)) {
+      const group = { label: item.category, items: [] };
+      catMap.set(item.category, group);
+      categories.push(group);
+    }
+    catMap.get(item.category).items.push(item);
+  });
+
+  const CATEGORY_COLORS = {
+    'Inland Detour':             '#b45309',
+    'Logistics Barrier':         '#dc2626',
+    'Trade-off: Chose Pinnacles':'#0369a1',
+    'Trade-off: Chose Crater Lake':'#0369a1',
+    'Close but Cut':             '#16a34a',
+    'Wrong Season':              '#9333ea'
+  };
+
+  categories.forEach(function (cat) {
+    const catColor = CATEGORY_COLORS[cat.label] || '#555';
+
+    const catLabel = document.createElement('div');
+    catLabel.style.cssText =
+      'font-size:0.7rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;' +
+      'color:' + catColor + ';margin:18px 0 8px;padding-left:2px;';
+    catLabel.textContent = cat.label;
+    body.appendChild(catLabel);
+
+    cat.items.forEach(function (item) {
+      const itemEl = document.createElement('div');
+      itemEl.className = 'missing-item';
+
+      const titleRow = document.createElement('div');
+      titleRow.className = 'missing-title';
+      titleRow.innerHTML =
+        '<span class="missing-emoji">' + item.emoji + '</span>' +
+        '<strong>' + escapeHtml(item.name) + '</strong>';
+      itemEl.appendChild(titleRow);
+
+      const whyEl = document.createElement('div');
+      whyEl.className = 'missing-why';
+      whyEl.innerHTML =
+        '<span class="missing-label">Why we skipped it:</span> ' +
+        escapeHtml(item.why);
+      itemEl.appendChild(whyEl);
+
+      const howEl = document.createElement('div');
+      howEl.className = 'missing-how';
+      howEl.innerHTML =
+        '<span class="missing-label missing-label-add">Where it fits if you add it:</span> ' +
+        escapeHtml(item.howToAdd);
+      itemEl.appendChild(howEl);
+
+      body.appendChild(itemEl);
+    });
+  });
+
   card.appendChild(header);
   card.appendChild(body);
   section.appendChild(card);

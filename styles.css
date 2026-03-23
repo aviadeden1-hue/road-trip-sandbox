@@ -1394,6 +1394,59 @@ button {
   line-height: 1.55;
 }
 
+/* ── Missing Attractions ── */
+.missing-item {
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid #7c3aed;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+
+.missing-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.missing-emoji {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.missing-title strong {
+  font-size: 0.92rem;
+  color: var(--text);
+}
+
+.missing-why,
+.missing-how {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-light);
+  margin-top: 4px;
+}
+
+.missing-how {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+}
+
+.missing-label {
+  font-weight: 700;
+  color: #dc2626;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.missing-label-add {
+  color: #16a34a;
+}
+
 /* ── Leaflet Popup Customization ── */
 .leaflet-popup-content-wrapper {
   border-radius: var(--radius-sm) !important;
