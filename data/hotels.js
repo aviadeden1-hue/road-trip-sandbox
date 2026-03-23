@@ -4,28 +4,28 @@ window.HOTEL_DATA = {
   // ============================================================
   1: {
     optionA: {
-      name: "Hampton Inn & Suites Santa Monica",
+      name: "Comfort Inn Santa Monica — West Los Angeles",
       stars: 3,
-      bookingUrl: "https://www.booking.com/hotel/us/hampton-inn-suites-los-angeles-santa-monica-ca.html?checkin=2026-05-23&checkout=2026-05-24&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      pricePerNight: "$867",
-      priceNote: "Booking.com verified for May 23 2026 (2 adults + 3 kids); requires 2 rooms for family of 5",
-      roomConfig: "Two Queen beds + rollaway (sleeps 5); suites with sofa bed available",
+      bookingUrl: "https://www.booking.com/hotel/us/hotel-santa-monica-blvd-santa-monica.html?checkin=2026-05-23&checkout=2026-05-24&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$250",
+      priceNote: "Estimated for May 23 2026 (2 adults + 3 kids, 1 room). Verify at Booking.com link — fits family of 5 in one room (2 Queens + rollaway $10).",
+      roomConfig: "2 Queen beds + rollaway ($10/stay); sleeps 5. Free breakfast, outdoor pool.",
       freeBreakfast: true,
       separateRoom: false,
       pool: true,
-      reason: "Free hot breakfast, pool, three blocks from Santa Monica Pier. Solid chain reliability for arrival night with tired kids. NOTE: $867 reflects 2-room rate needed for family of 5."
+      reason: "Free breakfast and pool save money and hassle on arrival night. 2 Queen beds + rollaway fits family of 5 in ONE room (vs 2 rooms at Hampton). Rated 8.0/10. Kids 17 & under free on existing beds."
     },
     optionB: {
-      name: "The Pierside Hotel Santa Monica — Coastal Family Suite",
-      stars: 4,
-      bookingUrl: "https://www.thepiersidehotel.com/rooms/coastal-family-suite/",
-      pricePerNight: "$1,100",
-      priceNote: "Booking.com verified for May 23 2026 (2 adults + 3 kids)",
-      roomConfig: "Connecting rooms: King suite + separate room with 2 Queen beds — two private spaces, two bathrooms, 750–900 sq ft total",
-      freeBreakfast: false,
-      separateRoom: true,
+      name: "Holiday Inn Express — West LA / Santa Monica",
+      stars: 3,
+      bookingUrl: "https://www.booking.com/hotel/us/holiday-inn-express-west-los-angeles.html?checkin=2026-05-23&checkout=2026-05-24&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$272",
+      priceNote: "Estimated for May 23 2026 (2 adults + 3 kids, 1 room). Verify at Booking.com link.",
+      roomConfig: "2 Queen bed rooms or connecting rooms available. Free breakfast buffet.",
+      freeBreakfast: true,
+      separateRoom: false,
       pool: false,
-      reason: "Connecting rooms with a closing door between adult and kids' spaces. Steps from the Pier and beach. Parents get evening privacy once kids are down at 8:30."
+      reason: "IHG chain reliability with free breakfast. On Santa Monica Blvd — 10 min drive to the Pier. Connecting rooms available for separate sleeping areas."
     },
     optionC: {
       name: "Sunny Beach Bungalow — 3 Blocks from the Pier",
@@ -43,28 +43,28 @@ window.HOTEL_DATA = {
   // ============================================================
   2: {
     optionA: {
-      name: "Hampton Inn & Suites Santa Monica",
+      name: "Comfort Inn Santa Monica — West Los Angeles",
       stars: 3,
-      bookingUrl: "https://www.booking.com/hotel/us/hampton-inn-suites-los-angeles-santa-monica-ca.html?checkin=2026-05-24&checkout=2026-05-25&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      pricePerNight: "$867",
-      priceNote: "Booking.com verified for May 24 2026 (2 adults + 3 kids); requires 2 rooms for family of 5",
-      roomConfig: "Two Queen beds + rollaway (sleeps 5); suites with sofa bed available",
+      bookingUrl: "https://www.booking.com/hotel/us/hotel-santa-monica-blvd-santa-monica.html?checkin=2026-05-24&checkout=2026-05-25&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$250",
+      priceNote: "Estimated for May 24 2026 (2 adults + 3 kids, 1 room). Verify at Booking.com link.",
+      roomConfig: "2 Queen beds + rollaway ($10/stay); sleeps 5. Free breakfast, outdoor pool.",
       freeBreakfast: true,
       separateRoom: false,
       pool: true,
-      reason: "Stay in place for night 2 — free breakfast removes morning chaos, pool keeps kids happy, central Santa Monica location for exploring."
+      reason: "Stay in place for night 2 — free breakfast removes morning chaos, pool keeps kids happy. Same hotel avoids repacking. Fits family of 5 in one room."
     },
     optionB: {
-      name: "The Pierside Hotel Santa Monica — Park View Family Suite",
-      stars: 4,
-      bookingUrl: "https://www.thepiersidehotel.com/rooms/park-view-family-suite-connecting-rooms/",
-      pricePerNight: "$1,100",
-      priceNote: "Booking.com verified for May 24 2026 (2 adults + 3 kids)",
-      roomConfig: "Connecting rooms: King suite + separate Queen room — private bedroom for adults, separate space for kids with closing door",
-      freeBreakfast: false,
-      separateRoom: true,
+      name: "Holiday Inn Express — West LA / Santa Monica",
+      stars: 3,
+      bookingUrl: "https://www.booking.com/hotel/us/holiday-inn-express-west-los-angeles.html?checkin=2026-05-24&checkout=2026-05-25&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$272",
+      priceNote: "Estimated for May 24 2026 (2 adults + 3 kids, 1 room). Verify at Booking.com link.",
+      roomConfig: "2 Queen bed rooms or connecting rooms available. Free breakfast buffet.",
+      freeBreakfast: true,
+      separateRoom: false,
       pool: false,
-      reason: "Park-view connecting rooms give adults evening separation. Same hotel as night 1 option means no repacking. Close to beach and Third Street Promenade."
+      reason: "Stay in place for night 2. Free breakfast offsets expensive Santa Monica dining. IHG chain reliability."
     },
     optionC: {
       name: "Charming Craftsman Cottage Near Montana Avenue",
@@ -394,6 +394,18 @@ window.HOTEL_DATA = {
   // ============================================================
   11: {
     optionA: {
+      name: "Hampton Inn & Suites Windsor — Sonoma Wine Country",
+      stars: 3,
+      bookingUrl: "https://www.booking.com/hotel/us/hampton-inn-suites-windsor-sonoma-wine-country.html?checkin=2026-06-02&checkout=2026-06-03&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      pricePerNight: "$145",
+      priceNote: "Booking.com verified for adjacent dates (2 adults + 3 kids). Same hotel as Nights 9-10 — 6 miles from Healdsburg.",
+      roomConfig: "King Bed Studio Suite with Sofa Bed (sleeps 5) — separate living area with sofa bed + king bedroom.",
+      freeBreakfast: true,
+      separateRoom: true,
+      pool: true,
+      reason: "Stay a 3rd night at the same Hampton Inn — no repacking, free breakfast, pool. Only 6 miles from downtown Healdsburg plaza. Saves $118/night vs. Hotel Trio."
+    },
+    optionB: {
       name: "Hotel Trio Healdsburg",
       stars: 3,
       bookingUrl: "https://www.booking.com/hotel/us/trio-healdsburg.html?checkin=2026-06-02&checkout=2026-06-03&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
@@ -403,19 +415,7 @@ window.HOTEL_DATA = {
       freeBreakfast: false,
       separateRoom: true,
       pool: true,
-      reason: "All-suite hotel with full kitchens, just north of Healdsburg's plaza. Bunk Room Suite purpose-built for families. Pool on site. Easy move from Windsor."
-    },
-    optionB: {
-      name: "The Lodge at Healdsburg, Tapestry Collection by Hilton",
-      stars: 4,
-      bookingUrl: "https://www.booking.com/hotel/us/the-lodge-at-healdsburg-tapestry-collection-by-hilton.html?checkin=2026-06-02&checkout=2026-06-03&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      pricePerNight: "$445",
-      priceNote: "Booking.com verified for Jun 2 2026 (2 adults + 3 kids)",
-      roomConfig: "Upscale boutique rooms; request connecting rooms or suite with sofa bed for family of 5. Pool on site.",
-      freeBreakfast: false,
-      separateRoom: false,
-      pool: true,
-      reason: "Upscale boutique hotel in Healdsburg wine country atmosphere. Hilton Tapestry Collection property with pool and wine country character. Walking distance to Healdsburg plaza restaurants and tasting rooms."
+      reason: "All-suite hotel with full kitchens right in Healdsburg. Bunk Room Suite purpose-built for families. Walking distance to Healdsburg plaza — worth the premium if you want the downtown wine country experience."
     },
     optionC: {
       name: "Healdsburg Bungalow with Pool — Wine Country",
