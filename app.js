@@ -623,9 +623,10 @@ function buildActivityList(activities) {
       '<span class="activity-icon">' + (activity.icon || '📍') + '</span>' +
       '<div class="activity-main">' +
         '<div class="activity-name">' + escapeHtml(activity.name || 'Activity') + '</div>' +
-        (activity.description ? '<div class="activity-desc">' + escapeHtml(activity.description) + '</div>' : '') +
+        (activity.description
+          ? '<div class="activity-desc">' + escapeHtml(activity.description) + ' ' + priceDisplay + '</div>'
+          : '<div class="activity-desc">' + priceDisplay + '</div>') +
       '</div>' +
-      priceDisplay +
       '<span class="activity-expand-chevron">▼</span>';
 
     headerEl.addEventListener('click', function () {
