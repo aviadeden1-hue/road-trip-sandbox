@@ -1,5 +1,5 @@
 /* ============================================================
-   LAX → Portland Road Trip 2026 — app.js
+   California–Oregon Road Trip 2026 — app.js
    All content data comes from window.ROUTE_DATA, window.HOTEL_DATA,
    window.ACTIVITY_DATA, and window.FOOD_DATA global variables.
    No city names, coordinates, or trip-specific content is hardcoded here.
@@ -386,7 +386,7 @@ function buildDayCard(day) {
     partyBanner.innerHTML =
       '🎉 YOU MADE IT! Party starts June 11.<br>' +
       '<span style="font-size:0.85rem;font-weight:400;color:#9333ea;">' +
-        'LAX → Portland · 19 days · ~1,800 miles · all 5 travelers intact.' +
+        'California–Oregon · 19 days · ~1,800 miles · all 5 travelers intact.' +
       '</span>';
     body.appendChild(partyBanner);
 

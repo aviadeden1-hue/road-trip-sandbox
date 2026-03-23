@@ -1,4 +1,4 @@
-# LAX to Portland Road Trip 2026
+# California–Oregon Road Trip 2026
 
 A single-page interactive itinerary for a family of 5 driving from Los Angeles to Portland over 19 days (May 23 – June 10, 2026). No server required — open `index.html` in any browser.
 
