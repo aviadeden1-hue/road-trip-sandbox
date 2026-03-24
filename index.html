@@ -23,7 +23,7 @@
     // If GitHub Pages or CDN serves a stale index.html, the version token
     // in the script/link tags won't match. This script forces a hard reload
     // when the user manually refreshes (shift-pull or long-press reload).
-    var SITE_VERSION = '20260324002';
+    var SITE_VERSION = '20260324003';
     try {
       var prev = localStorage.getItem('site_v');
       if (prev && prev !== SITE_VERSION) {
@@ -41,7 +41,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 
   <!-- App styles -->
-  <link rel="stylesheet" href="styles.css?v=20260324002">
+  <link rel="stylesheet" href="styles.css?v=20260324003">
 </head>
 <body>
 
@@ -140,17 +140,17 @@
   <button id="back-to-top" aria-label="Back to top">↑</button>
 
   <!-- Load data files BEFORE app.js -->
-  <script src="data/route.js?v=20260324002"></script>
-  <script src="data/images.js?v=20260324002"></script>
-  <script src="data/hotels.js?v=20260324002"></script>
-  <script src="data/activities.js?v=20260324002"></script>
-  <script src="data/food.js?v=20260324002"></script>
+  <script src="data/route.js?v=20260324003"></script>
+  <script src="data/images.js?v=20260324003"></script>
+  <script src="data/hotels.js?v=20260324003"></script>
+  <script src="data/activities.js?v=20260324003"></script>
+  <script src="data/food.js?v=20260324003"></script>
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WLEo=" crossorigin=""></script>
 
   <!-- App -->
-  <script src="app.js?v=20260324002"></script>
+  <script src="app.js?v=20260324003"></script>
 
 </body>
 </html>

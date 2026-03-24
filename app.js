@@ -571,6 +571,46 @@ function buildTimeOfDayContent(day, timeSlot) {
 
   // If data has explicit morning/afternoon arrays, use them directly
   if (activityData && activityData[timeSlot] && activityData[timeSlot].length > 0) {
+    if (timeSlot === 'afternoon') {
+      // Wrap activities + scenic drives + hidden gem + lunch into one container
+      const container = document.createElement('div');
+      container.appendChild(buildActivityList(activityData[timeSlot]));
+
+      if (activityData.scenicDrives && activityData.scenicDrives.length > 0) {
+        const driveHeader = document.createElement('div');
+        driveHeader.style.cssText = 'font-size:0.78rem;font-weight:700;color:#1a6b72;text-transform:uppercase;letter-spacing:0.05em;margin:10px 0 6px;';
+        driveHeader.textContent = '🚗 Scenic Drives';
+        container.appendChild(driveHeader);
+        activityData.scenicDrives.forEach(function (drive) {
+          const driveEl = document.createElement('div');
+          driveEl.style.cssText = 'font-size:0.82rem;padding:6px 0;border-bottom:1px solid #f0f0f0;';
+          driveEl.innerHTML =
+            '<strong>' + escapeHtml(drive.name) + '</strong>' +
+            (drive.duration ? ' <span style="color:#888;font-size:0.78rem;">· ' + escapeHtml(drive.duration) + '</span>' : '') +
+            (drive.description ? '<div style="color:#666;margin-top:3px;">' + escapeHtml(drive.description) + '</div>' : '');
+          container.appendChild(driveEl);
+        });
+      }
+
+      if (activityData.hiddenGem) {
+        const gemHeader = document.createElement('div');
+        gemHeader.style.cssText = 'font-size:0.78rem;font-weight:700;color:#7c3aed;text-transform:uppercase;letter-spacing:0.05em;margin:10px 0 6px;';
+        gemHeader.textContent = '💎 Hidden Gem';
+        container.appendChild(gemHeader);
+        const gemEl = document.createElement('div');
+        gemEl.style.cssText = 'font-size:0.82rem;background:#f5f3ff;border-radius:6px;padding:8px;';
+        gemEl.innerHTML =
+          '<strong>' + escapeHtml(activityData.hiddenGem.name) + '</strong>' +
+          (activityData.hiddenGem.description ? '<div style="color:#555;margin-top:3px;">' + escapeHtml(activityData.hiddenGem.description) + '</div>' : '');
+        container.appendChild(gemEl);
+      }
+
+      const foodData = window.FOOD_DATA && window.FOOD_DATA[day.dayNumber];
+      if (foodData && foodData.lunch) {
+        container.appendChild(buildLunchCard(foodData.lunch));
+      }
+      return container;
+    }
     return buildActivityList(activityData[timeSlot]);
   }
 
@@ -616,6 +656,13 @@ function buildTimeOfDayContent(day, timeSlot) {
         container.appendChild(gemEl);
       }
 
+      // Add lunch into afternoon section
+      const foodData = window.FOOD_DATA && window.FOOD_DATA[day.dayNumber];
+      if (foodData && foodData.lunch) {
+        hasContent = true;
+        container.appendChild(buildLunchCard(foodData.lunch));
+      }
+
       if (hasContent) return container;
     }
   }
@@ -625,12 +672,24 @@ function buildTimeOfDayContent(day, timeSlot) {
 }
 
 function buildEveningContent(day) {
-  const foodData = window.FOOD_DATA && window.FOOD_DATA[day.dayNumber];
+  const container = document.createElement('div');
+  let hasContent = false;
 
-  if (foodData) {
-    return buildFoodContent(foodData);
+  // Evening activities (from explicit evening array)
+  const activityData = window.ACTIVITY_DATA && window.ACTIVITY_DATA[day.dayNumber];
+  if (activityData && activityData.evening && activityData.evening.length > 0) {
+    hasContent = true;
+    container.appendChild(buildActivityList(activityData.evening));
   }
 
+  // Dinner / grocery (from food data — exclude lunch, that goes in Afternoon)
+  const foodData = window.FOOD_DATA && window.FOOD_DATA[day.dayNumber];
+  if (foodData) {
+    hasContent = true;
+    container.appendChild(buildDinnerContent(foodData));
+  }
+
+  if (hasContent) return container;
   return buildComingSoon('Dinner options being researched for Day ' + day.dayNumber + '…');
 }
 
@@ -1057,236 +1116,267 @@ function buildHotelTabs(options, dayNumber) {
   return tabContainer;
 }
 
-/* ── Food Content ── */
+/* ── Lunch Card (standalone, for Afternoon section) ── */
+function buildLunchCard(lunch) {
+  const card = document.createElement('div');
+  card.className = 'food-card';
+  card.style.cssText = 'margin-top:10px;';
+
+  const headerRow = document.createElement('div');
+  headerRow.className = 'food-card-header';
+  const emojiEl = document.createElement('span');
+  emojiEl.className = 'food-emoji';
+  emojiEl.textContent = lunch.type === 'packed' ? '🎒' : '🥗';
+  const nameEl = document.createElement('div');
+  nameEl.className = 'food-name';
+  nameEl.textContent = lunch.name || (lunch.type === 'packed' ? 'Packed Lunch' : 'Lunch');
+  nameEl.style.flex = '1';
+  headerRow.appendChild(emojiEl);
+  headerRow.appendChild(nameEl);
+  card.appendChild(headerRow);
+
+  const badgeRow = document.createElement('div');
+  badgeRow.className = 'card-badges';
+  badgeRow.style.padding = '0 0 6px';
+  badgeRow.appendChild(makeBadge('badge-lunch', lunch.type === 'packed' ? '🎒 Packed Lunch' : '🥗 Lunch'));
+  card.appendChild(badgeRow);
+
+  if (lunch.cuisine) {
+    const cuisineEl = document.createElement('div');
+    cuisineEl.className = 'food-cuisine';
+    cuisineEl.textContent = lunch.cuisine;
+    card.appendChild(cuisineEl);
+  }
+
+  const lunchNote = lunch.note || lunch.whyChosen;
+  if (lunchNote) {
+    const noteEl = document.createElement('div');
+    noteEl.style.cssText = 'font-size:0.8rem;color:#555;margin-top:4px;line-height:1.4;';
+    noteEl.textContent = lunchNote;
+    card.appendChild(noteEl);
+  }
+
+  if (lunch.costNote) {
+    const costEl = document.createElement('div');
+    costEl.style.cssText = 'font-size:0.78rem;color:#6b7280;margin-top:4px;';
+    costEl.textContent = '💰 ' + lunch.costNote;
+    card.appendChild(costEl);
+  }
+
+  const lunchUrl = lunch.mapsLink || lunch.url;
+  if (lunchUrl) {
+    const link = document.createElement('a');
+    link.className = 'food-link';
+    link.href = lunchUrl;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.style.display = 'block';
+    link.style.marginTop = '6px';
+    link.textContent = 'Open in Maps ↗';
+    card.appendChild(link);
+  }
+
+  return card;
+}
+
+/* ── Dinner / Grocery Content (for Evening section) ── */
+function buildDinnerContent(foodData) {
+  const list = document.createElement('div');
+  list.className = 'food-list';
+
+  const isGroceryNight = foodData.dinnerType === 'grocery';
+
+  if (foodData.dinner && !isGroceryNight) {
+    list.appendChild(buildDinnerCard(foodData.dinner));
+  }
+
+  if (isGroceryNight && foodData.groceryStore) {
+    list.appendChild(buildGroceryCard(foodData.groceryStore));
+  }
+
+  if (list.children.length === 0) {
+    list.appendChild(buildComingSoon('Dinner recommendations coming soon…'));
+  }
+
+  return list;
+}
+
+/* ── Dinner Card Builder ── */
+function buildDinnerCard(dinner) {
+  const card = document.createElement('div');
+  card.className = 'food-card';
+
+  const headerRow = document.createElement('div');
+  headerRow.className = 'food-card-header';
+  const emojiEl = document.createElement('span');
+  emojiEl.className = 'food-emoji';
+  emojiEl.textContent = '🍽';
+  const nameEl = document.createElement('div');
+  nameEl.className = 'food-name';
+  nameEl.textContent = dinner.name || 'Dinner';
+  nameEl.style.flex = '1';
+  headerRow.appendChild(emojiEl);
+  headerRow.appendChild(nameEl);
+  const priceText = dinner.pricePerPerson || dinner.price;
+  if (priceText) {
+    const priceEl = document.createElement('div');
+    priceEl.className = 'food-price';
+    priceEl.textContent = priceText + '/person';
+    headerRow.appendChild(priceEl);
+  }
+  card.appendChild(headerRow);
+
+  const badgeRow = document.createElement('div');
+  badgeRow.className = 'card-badges';
+  badgeRow.style.padding = '0 0 6px';
+  badgeRow.appendChild(makeBadge('badge-sitdown', '🍽 Sit-Down Dinner'));
+  if (dinner.reservationNeeded) {
+    badgeRow.appendChild(makeBadge('badge-reservation', '📅 Reservation Needed'));
+  }
+  card.appendChild(badgeRow);
+
+  if (dinner.cuisine) {
+    const cuisineEl = document.createElement('div');
+    cuisineEl.className = 'food-cuisine';
+    cuisineEl.textContent = dinner.cuisine;
+    card.appendChild(cuisineEl);
+  }
+
+  const signatureDish = dinner.signatureDish || dinner.dish;
+  if (signatureDish) {
+    const dishEl = document.createElement('div');
+    dishEl.className = 'food-dish';
+    dishEl.textContent = '✦ ' + signatureDish;
+    card.appendChild(dishEl);
+  }
+
+  if (dinner.familyPrice) {
+    const fpEl = document.createElement('div');
+    fpEl.style.cssText = 'font-size:0.78rem;color:#374151;margin-top:4px;font-weight:600;';
+    fpEl.textContent = '👨‍👩‍👧‍👦 ' + dinner.familyPrice;
+    card.appendChild(fpEl);
+  }
+
+  if (dinner.whyChosen) {
+    const whyEl = document.createElement('div');
+    whyEl.style.cssText = 'font-size:0.78rem;color:#555;margin-top:6px;line-height:1.4;font-style:italic;';
+    whyEl.textContent = dinner.whyChosen;
+    card.appendChild(whyEl);
+  }
+
+  if (dinner.reservationNeeded && dinner.reserveLink) {
+    const resBtn = document.createElement('a');
+    resBtn.className = 'food-link';
+    resBtn.style.cssText = 'display:inline-block;margin-top:8px;background:#1a6b72;color:#fff;padding:6px 12px;border-radius:6px;text-decoration:none;font-size:0.8rem;font-weight:600;';
+    resBtn.href = dinner.reserveLink;
+    resBtn.target = '_blank';
+    resBtn.rel = 'noopener noreferrer';
+    resBtn.textContent = 'Reserve →';
+    card.appendChild(resBtn);
+  }
+
+  if (dinner.reserveNote) {
+    const resNoteEl = document.createElement('div');
+    resNoteEl.style.cssText = 'font-size:0.75rem;color:#888;margin-top:4px;';
+    resNoteEl.textContent = '📌 ' + dinner.reserveNote;
+    card.appendChild(resNoteEl);
+  }
+
+  const dinnerUrl = dinner.mapsLink || dinner.websiteLink || dinner.url;
+  if (dinnerUrl) {
+    const link = document.createElement('a');
+    link.className = 'food-link';
+    link.href = dinnerUrl;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.style.display = 'block';
+    link.style.marginTop = '6px';
+    link.textContent = 'View on Maps / Website ↗';
+    card.appendChild(link);
+  }
+
+  return card;
+}
+
+/* ── Grocery Card Builder ── */
+function buildGroceryCard(store) {
+  const card = document.createElement('div');
+  card.className = 'food-card grocery';
+
+  const headerRow = document.createElement('div');
+  headerRow.className = 'food-card-header';
+  const emojiEl = document.createElement('span');
+  emojiEl.className = 'food-emoji';
+  emojiEl.textContent = '🛒';
+  const nameEl = document.createElement('div');
+  nameEl.className = 'food-name';
+  nameEl.textContent = store.name || 'Grocery Store';
+  nameEl.style.flex = '1';
+  headerRow.appendChild(emojiEl);
+  headerRow.appendChild(nameEl);
+  card.appendChild(headerRow);
+
+  const badgeRow = document.createElement('div');
+  badgeRow.className = 'card-badges';
+  badgeRow.style.padding = '0 0 6px';
+  badgeRow.appendChild(makeBadge('badge-grocery', '🛒 Grocery Night'));
+  card.appendChild(badgeRow);
+
+  if (store.distance) {
+    const distEl = document.createElement('div');
+    distEl.style.cssText = 'font-size:0.8rem;color:#555;margin-bottom:6px;';
+    distEl.textContent = '📍 ' + store.distance;
+    card.appendChild(distEl);
+  }
+
+  if (store.noCookMeals && store.noCookMeals.length > 0) {
+    const mealsHeader = document.createElement('div');
+    mealsHeader.style.cssText = 'font-size:0.78rem;font-weight:700;color:#374151;margin-bottom:4px;';
+    mealsHeader.textContent = '🥗 No-cook meal ideas:';
+    card.appendChild(mealsHeader);
+    const ul = document.createElement('ul');
+    ul.style.cssText = 'font-size:0.8rem;color:#555;margin:0;padding-left:16px;';
+    store.noCookMeals.forEach(function (meal) {
+      const li = document.createElement('li');
+      li.textContent = meal;
+      ul.appendChild(li);
+    });
+    card.appendChild(ul);
+  }
+
+  const storeUrl = store.mapsLink || store.url;
+  if (storeUrl) {
+    const link = document.createElement('a');
+    link.className = 'food-link';
+    link.href = storeUrl;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.style.display = 'block';
+    link.style.marginTop = '8px';
+    link.textContent = 'Open in Maps ↗';
+    card.appendChild(link);
+  }
+
+  return card;
+}
+
+/* ── Food Content (for days without explicit time-of-day arrays: puts dinner + lunch in Evening) ── */
 function buildFoodContent(foodData) {
   const list = document.createElement('div');
   list.className = 'food-list';
 
   const isGroceryNight = foodData.dinnerType === 'grocery';
 
-  /* ── Dinner restaurant card ── */
   if (foodData.dinner && !isGroceryNight) {
-    const dinner = foodData.dinner;
-    const card = document.createElement('div');
-    card.className = 'food-card';
-
-    const headerRow = document.createElement('div');
-    headerRow.className = 'food-card-header';
-    const emojiEl = document.createElement('span');
-    emojiEl.className = 'food-emoji';
-    emojiEl.textContent = '🍽';
-    const nameEl = document.createElement('div');
-    nameEl.className = 'food-name';
-    nameEl.textContent = dinner.name || 'Dinner';
-    nameEl.style.flex = '1';
-    headerRow.appendChild(emojiEl);
-    headerRow.appendChild(nameEl);
-    const priceText = dinner.pricePerPerson || dinner.price;
-    if (priceText) {
-      const priceEl = document.createElement('div');
-      priceEl.className = 'food-price';
-      priceEl.textContent = priceText + '/person';
-      headerRow.appendChild(priceEl);
-    }
-    card.appendChild(headerRow);
-
-    const badgeRow = document.createElement('div');
-    badgeRow.className = 'card-badges';
-    badgeRow.style.padding = '0 0 6px';
-    badgeRow.appendChild(makeBadge('badge-sitdown', '🍽 Sit-Down Dinner'));
-    if (dinner.reservationNeeded) {
-      badgeRow.appendChild(makeBadge('badge-reservation', '📅 Reservation Needed'));
-    }
-    card.appendChild(badgeRow);
-
-    if (dinner.cuisine) {
-      const cuisineEl = document.createElement('div');
-      cuisineEl.className = 'food-cuisine';
-      cuisineEl.textContent = dinner.cuisine;
-      card.appendChild(cuisineEl);
-    }
-
-    const signatureDish = dinner.signatureDish || dinner.dish;
-    if (signatureDish) {
-      const dishEl = document.createElement('div');
-      dishEl.className = 'food-dish';
-      dishEl.textContent = '✦ ' + signatureDish;
-      card.appendChild(dishEl);
-    }
-
-    if (dinner.familyPrice) {
-      const fpEl = document.createElement('div');
-      fpEl.style.cssText = 'font-size:0.78rem;color:#374151;margin-top:4px;font-weight:600;';
-      fpEl.textContent = '👨‍👩‍👧‍👦 ' + dinner.familyPrice;
-      card.appendChild(fpEl);
-    }
-
-    if (dinner.whyChosen) {
-      const whyEl = document.createElement('div');
-      whyEl.style.cssText = 'font-size:0.78rem;color:#555;margin-top:6px;line-height:1.4;font-style:italic;';
-      whyEl.textContent = dinner.whyChosen;
-      card.appendChild(whyEl);
-    }
-
-    if (dinner.reservationNeeded && dinner.reserveLink) {
-      const resBtn = document.createElement('a');
-      resBtn.className = 'food-link';
-      resBtn.style.cssText = 'display:inline-block;margin-top:8px;background:#1a6b72;color:#fff;padding:6px 12px;border-radius:6px;text-decoration:none;font-size:0.8rem;font-weight:600;';
-      resBtn.href = dinner.reserveLink;
-      resBtn.target = '_blank';
-      resBtn.rel = 'noopener noreferrer';
-      resBtn.textContent = 'Reserve →';
-      card.appendChild(resBtn);
-    }
-
-    if (dinner.reserveNote) {
-      const resNoteEl = document.createElement('div');
-      resNoteEl.style.cssText = 'font-size:0.75rem;color:#888;margin-top:4px;';
-      resNoteEl.textContent = '📌 ' + dinner.reserveNote;
-      card.appendChild(resNoteEl);
-    }
-
-    const dinnerUrl = dinner.mapsLink || dinner.websiteLink || dinner.url;
-    if (dinnerUrl) {
-      const link = document.createElement('a');
-      link.className = 'food-link';
-      link.href = dinnerUrl;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.style.display = 'block';
-      link.style.marginTop = '6px';
-      link.textContent = 'View on Maps / Website ↗';
-      card.appendChild(link);
-    }
-
-    list.appendChild(card);
+    list.appendChild(buildDinnerCard(foodData.dinner));
   }
 
-  /* ── Grocery night card ── */
   if (isGroceryNight && foodData.groceryStore) {
-    const store = foodData.groceryStore;
-    const card = document.createElement('div');
-    card.className = 'food-card grocery';
-
-    const headerRow = document.createElement('div');
-    headerRow.className = 'food-card-header';
-    const emojiEl = document.createElement('span');
-    emojiEl.className = 'food-emoji';
-    emojiEl.textContent = '🛒';
-    const nameEl = document.createElement('div');
-    nameEl.className = 'food-name';
-    nameEl.textContent = store.name || 'Grocery Store';
-    nameEl.style.flex = '1';
-    headerRow.appendChild(emojiEl);
-    headerRow.appendChild(nameEl);
-    card.appendChild(headerRow);
-
-    const badgeRow = document.createElement('div');
-    badgeRow.className = 'card-badges';
-    badgeRow.style.padding = '0 0 6px';
-    badgeRow.appendChild(makeBadge('badge-grocery', '🛒 Grocery Night'));
-    card.appendChild(badgeRow);
-
-    if (store.distance) {
-      const distEl = document.createElement('div');
-      distEl.style.cssText = 'font-size:0.8rem;color:#555;margin-bottom:6px;';
-      distEl.textContent = '📍 ' + store.distance;
-      card.appendChild(distEl);
-    }
-
-    if (store.noCookMeals && store.noCookMeals.length > 0) {
-      const mealsHeader = document.createElement('div');
-      mealsHeader.style.cssText = 'font-size:0.78rem;font-weight:700;color:#374151;margin-bottom:4px;';
-      mealsHeader.textContent = '🥗 No-cook meal ideas:';
-      card.appendChild(mealsHeader);
-      const ul = document.createElement('ul');
-      ul.style.cssText = 'font-size:0.8rem;color:#555;margin:0;padding-left:16px;';
-      store.noCookMeals.forEach(function (meal) {
-        const li = document.createElement('li');
-        li.textContent = meal;
-        ul.appendChild(li);
-      });
-      card.appendChild(ul);
-    }
-
-    const storeUrl = store.mapsLink || store.url;
-    if (storeUrl) {
-      const link = document.createElement('a');
-      link.className = 'food-link';
-      link.href = storeUrl;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.style.display = 'block';
-      link.style.marginTop = '8px';
-      link.textContent = 'Open in Maps ↗';
-      card.appendChild(link);
-    }
-
-    list.appendChild(card);
+    list.appendChild(buildGroceryCard(foodData.groceryStore));
   }
 
-  /* ── Lunch card ── */
   if (foodData.lunch) {
-    const lunch = foodData.lunch;
-    const card = document.createElement('div');
-    card.className = 'food-card';
-    card.style.cssText = 'opacity:0.85;';
-
-    const headerRow = document.createElement('div');
-    headerRow.className = 'food-card-header';
-    const emojiEl = document.createElement('span');
-    emojiEl.className = 'food-emoji';
-    emojiEl.textContent = lunch.type === 'packed' ? '🎒' : '🥗';
-    const nameEl = document.createElement('div');
-    nameEl.className = 'food-name';
-    nameEl.textContent = lunch.name || (lunch.type === 'packed' ? 'Packed Lunch' : 'Lunch');
-    nameEl.style.flex = '1';
-    headerRow.appendChild(emojiEl);
-    headerRow.appendChild(nameEl);
-    card.appendChild(headerRow);
-
-    const badgeRow = document.createElement('div');
-    badgeRow.className = 'card-badges';
-    badgeRow.style.padding = '0 0 6px';
-    badgeRow.appendChild(makeBadge('badge-lunch', lunch.type === 'packed' ? '🎒 Packed Lunch' : '🥗 Lunch'));
-    card.appendChild(badgeRow);
-
-    if (lunch.cuisine) {
-      const cuisineEl = document.createElement('div');
-      cuisineEl.className = 'food-cuisine';
-      cuisineEl.textContent = lunch.cuisine;
-      card.appendChild(cuisineEl);
-    }
-
-    const lunchNote = lunch.note || lunch.whyChosen;
-    if (lunchNote) {
-      const noteEl = document.createElement('div');
-      noteEl.style.cssText = 'font-size:0.8rem;color:#555;margin-top:4px;line-height:1.4;';
-      noteEl.textContent = lunchNote;
-      card.appendChild(noteEl);
-    }
-
-    if (lunch.costNote) {
-      const costEl = document.createElement('div');
-      costEl.style.cssText = 'font-size:0.78rem;color:#6b7280;margin-top:4px;';
-      costEl.textContent = '💰 ' + lunch.costNote;
-      card.appendChild(costEl);
-    }
-
-    const lunchUrl = lunch.mapsLink || lunch.url;
-    if (lunchUrl) {
-      const link = document.createElement('a');
-      link.className = 'food-link';
-      link.href = lunchUrl;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.style.display = 'block';
-      link.style.marginTop = '6px';
-      link.textContent = 'Open in Maps ↗';
-      card.appendChild(link);
-    }
-
-    list.appendChild(card);
+    list.appendChild(buildLunchCard(foodData.lunch));
   }
 
   if (list.children.length === 0) {

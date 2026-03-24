@@ -1,6 +1,6 @@
 window.ACTIVITY_DATA = {
   1: {
-    activities: [
+    morning: [
       {
         name: "Santa Monica Farmers Market",
         type: "outdoor/food",
@@ -24,7 +24,9 @@ window.ACTIVITY_DATA = {
         lng: -118.4975,
         kidFriendly: true,
         npsCovered: false
-      },
+      }
+    ],
+    afternoon: [
       {
         name: "Santa Monica Pier & Pacific Park",
         type: "outdoor/amusement",
@@ -60,7 +62,9 @@ window.ACTIVITY_DATA = {
         lng: -118.5053,
         kidFriendly: true,
         npsCovered: false
-      },
+      }
+    ],
+    evening: [
       {
         name: "Third Street Promenade",
         type: "outdoor/walking",
@@ -113,7 +117,7 @@ window.ACTIVITY_DATA = {
   },
 
   2: {
-    activities: [
+    morning: [
       {
         name: "The Getty Center",
         type: "indoor/cultural",
@@ -125,7 +129,9 @@ window.ACTIVITY_DATA = {
         lng: -118.4741,
         kidFriendly: true,
         npsCovered: false
-      },
+      }
+    ],
+    afternoon: [
       {
         name: "Griffith Observatory",
         type: "indoor-outdoor/educational",
@@ -161,7 +167,9 @@ window.ACTIVITY_DATA = {
         lng: -118.4003,
         kidFriendly: true,
         npsCovered: false
-      },
+      }
+    ],
+    evening: [
       {
         name: "Venice Beach Boardwalk & Canals — Sunset Walk",
         type: "outdoor",
@@ -202,7 +210,21 @@ window.ACTIVITY_DATA = {
   },
 
   3: {
-    activities: [
+    morning: [
+      {
+        name: "PCH through Malibu to Santa Barbara",
+        type: "scenic drive",
+        price: "Free",
+        description: "Take PCH (Highway 1) north from Santa Monica instead of the inland 101. The drive hugs the coastline through Malibu — stop at Point Dume for a short clifftop walk with ocean panoramas, or at Malibu Pier for a quick stretch. Past Malibu, PCH continues through Point Mugu State Park (dramatic sea cliffs) before merging onto 101 at Ventura for the final stretch to Santa Barbara. Adds 30–45 min vs the freeway but infinitely more beautiful.",
+        duration: "2.5–3 hrs with one stop",
+        link: "https://www.google.com/maps/dir/Santa+Monica,+CA/Point+Dume,+Malibu,+CA/Santa+Barbara,+CA",
+        lat: 34.0259,
+        lng: -118.8046,
+        kidFriendly: true,
+        npsCovered: false
+      }
+    ],
+    afternoon: [
       {
         name: "MOXI, The Wolf Museum of Exploration + Innovation",
         type: "indoor/educational",
@@ -226,7 +248,9 @@ window.ACTIVITY_DATA = {
         lng: -119.6856,
         kidFriendly: true,
         npsCovered: false
-      },
+      }
+    ],
+    evening: [
       {
         name: "Old Mission Santa Barbara",
         type: "cultural/historic",
@@ -240,14 +264,7 @@ window.ACTIVITY_DATA = {
         npsCovered: false
       }
     ],
-    scenicDrives: [
-      {
-        name: "PCH through Malibu to Santa Barbara",
-        description: "Take PCH (Highway 1) north from Santa Monica instead of the inland 101. The drive hugs the coastline through Malibu — stop at Point Dume for a short clifftop walk with ocean panoramas, or at Malibu Pier for a quick stretch. Past Malibu, PCH continues through Point Mugu State Park (dramatic sea cliffs) before merging onto 101 at Ventura for the final stretch to Santa Barbara. Adds 30–45 min vs the freeway but infinitely more beautiful.",
-        duration: "2.5–3 hrs with one stop",
-        link: "https://www.google.com/maps/dir/Santa+Monica,+CA/Point+Dume,+Malibu,+CA/Santa+Barbara,+CA"
-      }
-    ],
+    scenicDrives: [],
     hiddenGem: {
       name: "Shipwreck Playground at Leadbetter Beach",
       description: "Most tourists head to East Beach, but the playground at Leadbetter Beach near the harbor is extraordinary. Features climbing structures shaped like whale tails and a conch shell lighthouse, a medieval tower, rope climbs, and a small performance amphitheater. Completely free, very close to the harbor, and far less crowded than East Beach.",
