@@ -12,6 +12,28 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
 
+  <!-- Force Android Chrome to check for new versions -->
+  <script>
+    // Unregister any stale service workers that may cache aggressively
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        registrations.forEach(function(r) { r.unregister(); });
+      });
+    }
+    // If GitHub Pages or CDN serves a stale index.html, the version token
+    // in the script/link tags won't match. This script forces a hard reload
+    // when the user manually refreshes (shift-pull or long-press reload).
+    var SITE_VERSION = '20260323008';
+    try {
+      var prev = localStorage.getItem('site_v');
+      if (prev && prev !== SITE_VERSION) {
+        localStorage.setItem('site_v', SITE_VERSION);
+        if (window.caches) { caches.keys().then(function(k) { k.forEach(function(n) { caches.delete(n); }); }); }
+      }
+      localStorage.setItem('site_v', SITE_VERSION);
+    } catch(e) {}
+  </script>
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
@@ -19,7 +41,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 
   <!-- App styles -->
-  <link rel="stylesheet" href="styles.css?v=20260323007">
+  <link rel="stylesheet" href="styles.css?v=20260323008">
 </head>
 <body>
 
@@ -118,17 +140,17 @@
   <button id="back-to-top" aria-label="Back to top">↑</button>
 
   <!-- Load data files BEFORE app.js -->
-  <script src="data/route.js?v=20260323007"></script>
-  <script src="data/images.js?v=20260323007"></script>
-  <script src="data/hotels.js?v=20260323007"></script>
-  <script src="data/activities.js?v=20260323007"></script>
-  <script src="data/food.js?v=20260323007"></script>
+  <script src="data/route.js?v=20260323008"></script>
+  <script src="data/images.js?v=20260323008"></script>
+  <script src="data/hotels.js?v=20260323008"></script>
+  <script src="data/activities.js?v=20260323008"></script>
+  <script src="data/food.js?v=20260323008"></script>
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WLEo=" crossorigin=""></script>
 
   <!-- App -->
-  <script src="app.js?v=20260323007"></script>
+  <script src="app.js?v=20260323008"></script>
 
 </body>
 </html>
