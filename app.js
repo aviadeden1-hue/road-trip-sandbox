@@ -434,11 +434,16 @@ function buildDayCard(day) {
   const sectionsWrapper = document.createElement('div');
   sectionsWrapper.className = 'card-sections';
 
+  var priorityContent = buildPriorityContent(day);
+  if (priorityContent) {
+    sectionsWrapper.appendChild(buildCollapsible('⭐', 'Priorities', priorityContent, false));
+  }
   sectionsWrapper.appendChild(buildCollapsible('☀️', 'Morning', buildTimeOfDayContent(day, 'morning'), false));
   sectionsWrapper.appendChild(buildCollapsible('🌤', 'Afternoon', buildTimeOfDayContent(day, 'afternoon'), false));
   sectionsWrapper.appendChild(buildCollapsible('🌙', 'Evening', buildEveningContent(day), false));
   sectionsWrapper.appendChild(buildCollapsible('🏨', 'Hotel Tonight', buildHotelContent(day), false));
   sectionsWrapper.appendChild(buildCollapsible('🌧', 'Rainy Day Backup', buildRainyDayContent(day), false, true));
+  sectionsWrapper.appendChild(buildCollapsible('📝', 'My Notes', buildNotesContent(day), false));
 
   body.appendChild(sectionsWrapper);
   card.appendChild(body);
@@ -718,6 +723,84 @@ function buildRainyDayContent(day) {
   }
 
   return buildComingSoon('Rainy day backup plans coming soon…');
+}
+
+/* ── Priorities Section ── */
+function buildPriorityContent(day) {
+  var actData = window.ACTIVITY_DATA && window.ACTIVITY_DATA[day.dayNumber];
+  if (!actData || !actData.priorities) return null;
+  var p = actData.priorities;
+  if ((!p.mustDo || p.mustDo.length === 0) && (!p.skipIfShort || p.skipIfShort.length === 0)) return null;
+
+  var container = document.createElement('div');
+  container.className = 'priority-content';
+
+  if (p.mustDo && p.mustDo.length > 0) {
+    var mustLabel = document.createElement('div');
+    mustLabel.className = 'priority-label priority-must';
+    mustLabel.textContent = 'Must-Do';
+    container.appendChild(mustLabel);
+    var mustList = document.createElement('ul');
+    mustList.className = 'priority-list';
+    p.mustDo.forEach(function(item) {
+      var li = document.createElement('li');
+      li.textContent = item;
+      mustList.appendChild(li);
+    });
+    container.appendChild(mustList);
+  }
+
+  if (p.skipIfShort && p.skipIfShort.length > 0) {
+    var skipLabel = document.createElement('div');
+    skipLabel.className = 'priority-label priority-skip';
+    skipLabel.textContent = 'Skip If Short on Time';
+    container.appendChild(skipLabel);
+    var skipList = document.createElement('ul');
+    skipList.className = 'priority-list priority-skip-list';
+    p.skipIfShort.forEach(function(item) {
+      var li = document.createElement('li');
+      li.textContent = item;
+      skipList.appendChild(li);
+    });
+    container.appendChild(skipList);
+  }
+
+  return container;
+}
+
+/* ── My Notes Section ── */
+function buildNotesContent(day) {
+  var container = document.createElement('div');
+  container.className = 'notes-content';
+
+  var textarea = document.createElement('textarea');
+  textarea.className = 'day-notes-textarea';
+  textarea.placeholder = 'Type your notes for this day here…';
+  textarea.rows = 4;
+
+  var storageKey = 'roadtrip_notes_day_' + day.dayNumber;
+  var saved = localStorage.getItem(storageKey);
+  if (saved) textarea.value = saved;
+
+  var saveTimer = null;
+  textarea.addEventListener('input', function() {
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(function() {
+      localStorage.setItem(storageKey, textarea.value);
+      statusEl.textContent = 'Saved';
+      statusEl.style.opacity = '1';
+      setTimeout(function() { statusEl.style.opacity = '0'; }, 1500);
+    }, 500);
+  });
+
+  var statusEl = document.createElement('div');
+  statusEl.className = 'notes-save-status';
+  statusEl.textContent = 'Saved';
+  statusEl.style.opacity = '0';
+
+  container.appendChild(textarea);
+  container.appendChild(statusEl);
+  return container;
 }
 
 function buildComingSoon(message) {

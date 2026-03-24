@@ -98,6 +98,17 @@ window.ACTIVITY_DATA = {
       price: "Free admission; Space Shuttle Endeavour exhibit $5",
       link: "https://californiasciencecenter.org",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Santa Monica Pier & Pacific Park — the iconic first-day experience",
+        "Third Street Promenade dinner — best walkable dinner spot",
+        "Farmers Market (open Sat until 1 PM!) — grab lunch here first"
+      ],
+      skipIfShort: [
+        "Annenberg Community Beach House — nice but not essential",
+        "Heal the Bay Aquarium — small, better aquariums later in the trip"
+      ]
     }
   },
 
@@ -176,6 +187,17 @@ window.ACTIVITY_DATA = {
       price: "Free admission; Space Shuttle Endeavour exhibit $5",
       link: "https://californiasciencecenter.org",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "The Getty Center — free, world-class, tram ride kids love",
+        "Griffith Observatory — free views, telescopes, Hollywood Sign",
+        "La Brea Tar Pits — truly one-of-a-kind science experience"
+      ],
+      skipIfShort: [
+        "Rodeo Drive — a quick photo stop, 15 min is plenty",
+        "Venice Beach Boardwalk — nice sunset walk but non-essential"
+      ]
     }
   },
 
@@ -237,6 +259,16 @@ window.ACTIVITY_DATA = {
       price: "~$15 adults, ~$10 kids; check website for current rates",
       link: "https://www.sbnature.org",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "PCH through Malibu — the drive IS the attraction, don't rush it",
+        "MOXI Museum — best kid activity in Santa Barbara",
+        "Stearns Wharf — touch tanks and pier walk"
+      ],
+      skipIfShort: [
+        "Old Mission Santa Barbara — beautiful but less engaging for young kids"
+      ]
     }
   },
 
@@ -288,6 +320,15 @@ window.ACTIVITY_DATA = {
       price: "Included with park entry",
       link: "https://www.nps.gov/pinn/index.htm",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Balconies Cave Hike — the talus cave is the highlight, bring flashlights",
+        "Condor spotting — scan the skies near High Peaks at midday"
+      ],
+      skipIfShort: [
+        "Bear Gulch Reservoir — likely closed for bat season in late May"
+      ]
     },
     importantNotes: [
       "Bear Gulch Cave is typically CLOSED mid-May to mid-July for bat nursery season. Check status at nps.gov/pinn/planyourvisit/cavestatus.htm before your May 26 visit.",
@@ -357,6 +398,16 @@ window.ACTIVITY_DATA = {
       price: "~$10 adults, ~$5 kids; check current rates",
       link: "[LINK: search \"Maritime Museum of Monterey Custom House Plaza\"]",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Monterey Bay Aquarium — book timed tickets in advance, plan a full morning",
+        "Big Sur day trip (Bixby Bridge + McWay Falls) — one of the most scenic drives on Earth"
+      ],
+      skipIfShort: [
+        "Dennis the Menace Playground — fun but kids will have plenty of outdoor time",
+        "17-Mile Drive — pretty but $12 toll and similar to Big Sur views"
+      ]
     }
   },
 
@@ -418,6 +469,16 @@ window.ACTIVITY_DATA = {
       price: "$45–$55 adults, $39–$45 kids 3–12, free under 3",
       link: "https://www.calacademy.org",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Golden Gate Bridge Walk — the iconic SF experience",
+        "Pier 39 sea lions — free and endlessly entertaining for kids",
+        "Golden Gate Park Bison Paddock — genuinely surprising, free"
+      ],
+      skipIfShort: [
+        "Twin Peaks overlook — great views but similar to Golden Gate Bridge views"
+      ]
     }
   },
 
@@ -471,6 +532,15 @@ window.ACTIVITY_DATA = {
       price: "$39.95 adults, $29.95 kids 4–12, free under 4",
       link: "https://www.exploratorium.edu",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Muir Woods — book timed entry NOW at gomuirwoods.com, sells out fast",
+        "Alcatraz — book tickets ASAP, sells out 10+ days ahead"
+      ],
+      skipIfShort: [
+        "Marin Headlands / Hawk Hill — nice but optional if running late from Muir Woods"
+      ]
     }
   },
 
@@ -532,6 +602,15 @@ window.ACTIVITY_DATA = {
       price: "Free",
       link: "https://www.nps.gov/pore/planyourvisit/visitorcenters.htm",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Elephant Seal Overlook & Chimney Rock — easy walk, incredible wildlife",
+        "Limantour Beach — pristine, remote, unforgettable"
+      ],
+      skipIfShort: [
+        "Point Reyes Lighthouse — 300 steps down (tough for the 5-year-old), views are great from the top too"
+      ]
     }
   },
 
@@ -595,6 +674,15 @@ window.ACTIVITY_DATA = {
       price: "$58 adults, $30 kids 3–12",
       link: "https://www.safariwest.com",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Armstrong Redwoods — a stunning preview of the big redwoods ahead",
+        "Windsor Town Green — relaxed family time with the hosts"
+      ],
+      skipIfShort: [
+        "Burke's Canoe Trips — amazing but takes 4-5 hours, only if you have a full day"
+      ]
     }
   },
 
@@ -658,6 +746,16 @@ window.ACTIVITY_DATA = {
       price: "$58 adults, $30 kids 3–12",
       link: "https://www.safariwest.com",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Family time — this is the chill day with family in Windsor",
+        "Lake Sonoma swimming — best free outdoor spot in the area on a warm day"
+      ],
+      skipIfShort: [
+        "Bella Vineyards cave tour — fun but not essential with kids",
+        "Francis Ford Coppola Winery pool — needs advance booking, pricey"
+      ]
     }
   },
 
@@ -719,6 +817,16 @@ window.ACTIVITY_DATA = {
       price: "$15 adults, $10 kids 4–18, free under 4",
       link: "https://schulzmuseum.org",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Healdsburg Plaza & Farmers Market — charming town square, great food",
+        "Guerneville & Russian River — swimming and lunch in a fun little town"
+      ],
+      skipIfShort: [
+        "Armstrong Redwoods (if already done Day 9) — beautiful but repetitive",
+        "Westside Road scenic drive — pretty but similar to other wine country drives"
+      ]
     }
   },
 
@@ -786,6 +894,15 @@ window.ACTIVITY_DATA = {
       price: "Free",
       link: "https://www.parks.ca.gov/?page_id=425",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Founders Grove & Rockefeller Loop — the best old-growth walk on the Avenue",
+        "Drive the Avenue of the Giants — the 31-mile drive IS the activity, don't rush"
+      ],
+      skipIfShort: [
+        "Shrine Drive-Thru Tree — kitschy fun but $10 and not essential"
+      ]
     }
   },
 
@@ -853,6 +970,16 @@ window.ACTIVITY_DATA = {
       price: "$20 adults, $10 kids 5–12, free under 5",
       link: "https://www.treesofmystery.net",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Elk Prairie — effortless, jaw-dropping wildlife encounter",
+        "Lady Bird Johnson Grove — peaceful old-growth loop, easy for all ages",
+        "Newton B. Drury Scenic Parkway — one of the most beautiful drives in the US"
+      ],
+      skipIfShort: [
+        "Gold Bluffs Beach — amazing but requires unpaved Davison Road detour"
+      ]
     }
   },
 
@@ -923,6 +1050,16 @@ window.ACTIVITY_DATA = {
       price: "$7 adults, $5 kids, free under 2",
       link: "[LINK: search \"Redwood Discovery Museum Crescent City CA\"]",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Fern Canyon — Jurassic Park filming location, absolutely unforgettable (arrive early!)",
+        "Stout Grove — the single most impressive redwood grove in all the parks"
+      ],
+      skipIfShort: [
+        "Battery Point Lighthouse — only accessible at low tide, check tide chart first",
+        "Howland Hill Road — great drive but adds time if Stout Grove is already visited"
+      ]
     }
   },
 
@@ -987,6 +1124,15 @@ window.ACTIVITY_DATA = {
       price: "Free (donations welcome)",
       link: "[LINK: search \"Chetco Valley Historical Society Museum Brookings Oregon\"]",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Samuel H. Boardman Corridor — the most dramatic sea stacks on the Oregon coast",
+        "Harris Beach tide pools — easy, free, great for kids at low tide"
+      ],
+      skipIfShort: [
+        "Lone Ranch Beach — lovely but similar to Harris Beach"
+      ]
     }
   },
 
@@ -1056,6 +1202,16 @@ window.ACTIVITY_DATA = {
       price: "Free",
       link: "[LINK: search \"Crater Rock Museum Central Point Oregon\"]",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Oregon Caves cave tour — book in advance, unique marble caves (90 min tour)",
+        "Applegate Valley scenic route — much prettier than the highway to Medford"
+      ],
+      skipIfShort: [
+        "Bear Creek Greenway — pleasant but just a paved path, not a destination",
+        "Crater Rock Museum — free and fun but skip if Oregon Caves ran long"
+      ]
     }
   },
 
@@ -1124,6 +1280,15 @@ window.ACTIVITY_DATA = {
       price: "Free to enter the lodge; food at Rim Village Café",
       link: "https://www.travelcraterlake.com",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Rim Village & Discovery Point — the essential Crater Lake experience, easy walk",
+        "Crater Lake Rim Drive — 33 miles of jaw-dropping views, don't skip any pullouts"
+      ],
+      skipIfShort: [
+        "Watchman Peak Trail — best views but 420 ft climb, tough for the youngest"
+      ]
     }
   },
 
@@ -1188,6 +1353,15 @@ window.ACTIVITY_DATA = {
       price: "$7 adults, $5 kids, free under 2",
       link: "[LINK: search \"Science Factory Children's Museum Eugene Oregon\"]",
       icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "5th Street Public Market — great food, relaxed vibe after 3-hr drive",
+        "Skinner Butte Park — let kids burn energy on the climbing rock"
+      ],
+      skipIfShort: [
+        "Owen Memorial Rose Garden — lovely but passive, skip if kids are antsy"
+      ]
     }
   },
 
