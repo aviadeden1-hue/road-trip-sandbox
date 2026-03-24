@@ -28,7 +28,7 @@ const DAY_TYPE_CONFIG = {
 
 /* ── Budget Estimates (hardcoded as these are non-trip-specific estimates) ── */
 const BUDGET_ESTIMATES = [
-  { category: "Hotels",                    detail: "~$189/night avg × 19 nights",       amount: 3590 },
+  { category: "Hotels",                    detail: "~$189/night avg × 20 nights",       amount: 3780 },
   { category: "Restaurants",              detail: "~$80/meal × 12 meals",              amount: 960 },
   { category: "Groceries",                detail: "~$40 × 7 nights",                   amount: 280 },
   { category: "Gas",                       detail: "~1,800 miles, SUV at 22 mpg",       amount: 400 },

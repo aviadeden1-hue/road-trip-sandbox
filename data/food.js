@@ -108,15 +108,45 @@ window.FOOD_DATA = {
 
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 4 — May 26 | Monterey, CA | 4-hr drive from Santa Barbara (via Big Sur)
-  // GROCERY NIGHT — long drive day
+  // DAY 4 — May 26 | Cambria, CA | SLO + Hearst Castle + Elephant Seals
   // ─────────────────────────────────────────────────────────────────────────
   4: {
+    dinnerType: "restaurant",
+    dinner: {
+      name: "Linn's Restaurant",
+      cuisine: "American comfort — famous olallieberry pie",
+      address: "2277 Main St, Cambria, CA 93428",
+      websiteLink: "https://www.linnsfruitbin.com",
+      mapsLink: "https://www.google.com/maps/search/Linn's+Restaurant+Cambria+CA",
+      signatureDish: "Chicken pot pie, tri-tip, and the legendary olallieberry pie (a Central Coast original)",
+      pricePerPerson: "$20-35",
+      familyPrice: "$100-175 for family of 5",
+      whyChosen: "A Cambria institution since 1989. The olallieberry pie is legendary — the berry only grows on the Central Coast. Comfort food in a cozy setting. Very family-friendly.",
+      reservationNeeded: false,
+      reserveNote: "Walk-in friendly, but busy summer weekends. Arrive before 6 PM."
+    },
+    lunch: {
+      name: "Firestone Grill — San Luis Obispo",
+      cuisine: "BBQ — tri-tip sandwiches, ribs, burgers",
+      address: "1001 Higuera St, San Luis Obispo, CA 93401",
+      mapsLink: "https://www.google.com/maps/search/Firestone+Grill+San+Luis+Obispo",
+      whyChosen: "An SLO institution. The tri-tip sandwich is the Central Coast's signature dish and Firestone does it perfectly. Huge portions, great prices, family-friendly. Right on Higuera St downtown.",
+      costNote: "~$12-18/person. Cash and cards accepted.",
+      reservationNeeded: false
+    },
+    groceryStore: null
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // DAY 5 — May 27 | Monterey, CA | Cambria → Paso Robles → Monterey
+  // GROCERY NIGHT — drive day
+  // ─────────────────────────────────────────────────────────────────────────
+  5: {
     dinnerType: "grocery",
     dinner: null,
     lunch: {
       type: "packed",
-      note: "Pack snacks and sandwiches from Trader Joe's Santa Barbara before departing. Eat at a Big Sur pullout or Julia Pfeiffer Burns State Park — the views beat any restaurant."
+      note: "Grab pastries or a quick breakfast in Cambria before departing. Paso Robles candy shop for sweets, then snacks from the car until Monterey."
     },
     groceryStore: {
       name: "Whole Foods Market Monterey",
@@ -132,10 +162,10 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 5 — May 27 | Monterey, CA | Day trips only
+  // DAY 6 — May 28 | Monterey, CA | Day trips only
   // RESTAURANT NIGHT — the iconic Monterey seafood experience
   // ─────────────────────────────────────────────────────────────────────────
-  5: {
+  6: {
     dinnerType: "restaurant",
     dinner: {
       name: "Old Fisherman's Grotto",
@@ -164,10 +194,10 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 6 — May 28 | San Francisco, CA | 2-hr drive from Monterey
+  // DAY 7 — May 29 | San Francisco, CA | 2-hr drive from Monterey
   // GROCERY NIGHT — arrive in SF, settle in
   // ─────────────────────────────────────────────────────────────────────────
-  6: {
+  7: {
     dinnerType: "grocery",
     dinner: null,
     lunch: {
@@ -188,10 +218,10 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 7 — May 29 | San Francisco, CA | Day trips
+  // DAY 8 — May 30 | San Francisco, CA | Day trips
   // RESTAURANT NIGHT — the family-friendly SF seafood classic
   // ─────────────────────────────────────────────────────────────────────────
-  7: {
+  8: {
     dinnerType: "restaurant",
     dinner: {
       name: "Fog Harbor Fish House",
@@ -220,10 +250,10 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 8 — May 30 | San Francisco, CA | Day trips
+  // DAY 9 — May 31 | San Francisco, CA | Day trips
   // RESTAURANT NIGHT — the SF foodie splurge
   // ─────────────────────────────────────────────────────────────────────────
-  8: {
+  9: {
     dinnerType: "restaurant",
     dinner: {
       name: "Thanh Long",
@@ -247,10 +277,10 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 9 — May 31 | Windsor, CA | 1.5-hr drive from San Francisco
+  // DAY 10 — June 1 | Windsor, CA | 1.5-hr drive from San Francisco
   // GROCERY NIGHT — arrive in wine country, settle in
   // ─────────────────────────────────────────────────────────────────────────
-  9: {
+  10: {
     dinnerType: "grocery",
     dinner: null,
     lunch: {
@@ -271,10 +301,10 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 10 — June 1 | Windsor, CA | Wine Country — no drive
+  // DAY 11 — June 2 | Windsor, CA | Wine Country — no drive
   // RESTAURANT NIGHT — wine country tapas
   // ─────────────────────────────────────────────────────────────────────────
-  10: {
+  11: {
     dinnerType: "restaurant",
     dinner: {
       name: "Bravas Bar de Tapas",
@@ -298,10 +328,10 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 11 — June 2 | Healdsburg, CA | Short drive from Windsor
+  // DAY 12 — June 3 | Healdsburg, CA | Short drive from Windsor
   // RESTAURANT NIGHT — wine country farm-to-table splurge
   // ─────────────────────────────────────────────────────────────────────────
-  11: {
+  12: {
     dinnerType: "restaurant",
     dinner: {
       name: "Valette",
@@ -330,13 +360,13 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 12 — June 3 | Myers Flat, CA | 3-hr drive to the Redwoods
+  // DAY 13 — June 4 | Myers Flat, CA | 3-hr drive to the Redwoods
   // GROCERY NIGHT — big drive day, very remote overnight
   // ⚠️ STOCK UP WARNING: Myers Flat is extremely remote. Stock up in Healdsburg
   //   before departing OR stop at Safeway in Fortuna (701 S Fortuna Blvd) if
   //   routing that way. Do NOT count on finding a full grocery store at destination.
   // ─────────────────────────────────────────────────────────────────────────
-  12: {
+  13: {
     dinnerType: "grocery",
     dinner: null,
     lunch: {
@@ -358,12 +388,12 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 13 — June 4 | Orick, CA | 2-hr drive along the coast
+  // DAY 14 — June 5 | Orick, CA | 2-hr drive along the coast
   // GROCERY NIGHT — very remote, few options
   // ⚠️ STOCK UP WARNING: Orick has almost no food services. Stock up at
   //   Safeway Crescent City (475 M St) if possible, or use what you packed.
   // ─────────────────────────────────────────────────────────────────────────
-  13: {
+  14: {
     dinnerType: "grocery",
     dinner: null,
     lunch: {
@@ -385,10 +415,10 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 14 — June 5 | Crescent City, CA | Day in the park
+  // DAY 15 — June 6 | Crescent City, CA | Day in the park
   // RESTAURANT NIGHT — Crescent City harbor dining
   // ─────────────────────────────────────────────────────────────────────────
-  14: {
+  15: {
     dinnerType: "restaurant",
     dinner: {
       name: "Chart Room Restaurant",
@@ -411,10 +441,10 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 15 — June 6 | Brookings, OR | 1-hr drive north
+  // DAY 16 — June 7 | Brookings, OR | 1-hr drive north
   // RESTAURANT NIGHT — first Oregon coast dinner
   // ─────────────────────────────────────────────────────────────────────────
-  15: {
+  16: {
     dinnerType: "restaurant",
     dinner: {
       name: "Catalyst Seafood",
@@ -437,10 +467,10 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 16 — June 7 | Medford, OR | 3.5-hr drive from Brookings
+  // DAY 17 — June 8 | Medford, OR | 3.5-hr drive from Brookings
   // GROCERY NIGHT — long drive day
   // ─────────────────────────────────────────────────────────────────────────
-  16: {
+  17: {
     dinnerType: "grocery",
     dinner: null,
     lunch: {
@@ -461,12 +491,12 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 17 — June 8 | Crater Lake, OR | 1.5-hr drive from Medford
+  // DAY 18 — June 9 | Crater Lake, OR | 1.5-hr drive from Medford
   // RESTAURANT NIGHT — the most spectacular dining room in the country
   // ⚠️ RESERVATION ALERT: Crater Lake Lodge Dining Room books up far in advance.
   //   Call as soon as you book the lodge: 541-594-2255 x3217
   // ─────────────────────────────────────────────────────────────────────────
-  17: {
+  18: {
     dinnerType: "restaurant",
     dinner: {
       name: "Crater Lake Lodge Dining Room",
@@ -490,10 +520,10 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 18 — June 9 | Eugene, OR | 3-hr drive from Crater Lake
+  // DAY 19 — June 10 | Eugene, OR | 3-hr drive from Crater Lake
   // RESTAURANT NIGHT — Eugene's James Beard-recognized gem
   // ─────────────────────────────────────────────────────────────────────────
-  18: {
+  19: {
     dinnerType: "restaurant",
     dinner: {
       name: "Marche",
@@ -517,10 +547,10 @@ window.FOOD_DATA = {
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DAY 19 — June 10 | Portland, OR | 1.5-hr drive (ARRIVAL ONLY)
+  // DAY 20 — June 20 | Portland, OR | 1.5-hr drive (ARRIVAL ONLY)
   // No dinner recommendation needed — arrival night
   // ─────────────────────────────────────────────────────────────────────────
-  19: {
+  20: {
     dinnerType: "grocery",
     dinner: null,
     lunch: {

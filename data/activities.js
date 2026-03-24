@@ -289,73 +289,157 @@ window.ACTIVITY_DATA = {
     }
   },
 
+  // ============================================================
+  // DAY 4 — May 26 — Cambria, CA (SLO + Hearst Castle + Elephant Seals)
+  // ============================================================
   4: {
-    activities: [
+    morning: [
       {
-        name: "Pinnacles National Park — Balconies Cave Hike",
+        name: "San Luis Obispo — Downtown Walk & Bubblegum Alley",
+        type: "outdoor/walking",
+        price: "Free",
+        description: "A charming college town halfway between LA and SF. Walk Higuera Street's pedestrian-friendly downtown with shops, cafés, and the famous Bubblegum Alley — a narrow alley covered floor-to-ceiling in chewed gum. Gross? Yes. Do kids love it? Absolutely. Also see the Mission San Luis Obispo de Tolosa on the creek. A perfect morning stretch stop.",
+        duration: "1–1.5 hours",
+        link: "https://www.downtownslo.com",
+        lat: 35.2828,
+        lng: -120.6596,
+        kidFriendly: true,
+        npsCovered: false
+      }
+    ],
+    afternoon: [
+      {
+        name: "Hearst Castle",
+        type: "indoor/cultural",
+        price: "$25 adults, $12 kids 5–12, free under 5",
+        description: "William Randolph Hearst's legendary hilltop estate overlooking the Pacific. The Grand Rooms Tour (recommended for families) takes about 45 min and covers the main house, Neptune Pool, and Roman Pool. The opulence is staggering — 165 rooms, 127 acres of gardens, and zebras still roam the grounds (visible from the road). The bus ride up the hill has panoramic ocean views. Book timed tickets in advance.",
+        duration: "2–2.5 hours (including bus ride)",
+        link: "https://hearstcastle.org",
+        lat: 35.6852,
+        lng: -121.1682,
+        kidFriendly: true,
+        npsCovered: false,
+        advanceBookingRequired: true,
+        bookingNote: "Book timed tour tickets in advance at hearstcastle.org or recreation.gov. Grand Rooms Tour is best for families with young kids. Summer weekends sell out."
+      },
+      {
+        name: "Piedras Blancas Elephant Seal Rookery",
+        type: "outdoor/wildlife",
+        price: "Free",
+        description: "One of the most incredible free wildlife experiences in California. Thousands of northern elephant seals haul out on the beach just off Highway 1 near San Simeon. A boardwalk overlook lets you watch them from just 20 feet away — they're enormous (males weigh up to 5,000 lbs), loud, and completely wild. In late May you'll see juveniles and molting adults. Docents are usually on-site to answer questions. No reservation needed.",
+        duration: "30–45 min",
+        link: "https://elephantseal.org",
+        lat: 35.6649,
+        lng: -121.2569,
+        kidFriendly: true,
+        npsCovered: false
+      }
+    ],
+    evening: [
+      {
+        name: "Cambria Moonstone Beach Boardwalk",
+        type: "outdoor/walking",
+        price: "Free",
+        description: "A mile-long wooden boardwalk along Moonstone Beach in Cambria. Search for moonstones and jade in the surf, watch otters in the kelp beds, and enjoy the sunset over the Pacific. The boardwalk is flat, stroller-friendly, and one of the most beautiful sunset walks on the Central Coast. Cambria's charming village has great restaurants for dinner.",
+        duration: "1 hour",
+        link: "https://www.visitcambria.com",
+        lat: 35.5753,
+        lng: -121.1116,
+        kidFriendly: true,
+        npsCovered: false
+      }
+    ],
+    scenicDrives: [],
+    hiddenGem: {
+      name: "Nitt Witt Ridge — Cambria's Folk Art Castle",
+      description: "A folk art house built entirely from found objects (beer cans, abalone shells, car parts, toilet seats) by Art Beal over 50 years. It's a registered state historical landmark and the polar opposite of Hearst Castle — a perfect contrast. Tours by appointment only; even driving past is fun.",
+      link: "https://www.visitcambria.com"
+    },
+    rainyDay: {
+      name: "Hearst Castle (it's mostly indoors)",
+      description: "Hearst Castle tours are mostly inside the grand rooms, so rain doesn't matter much. The bus ride and outdoor pools are the only exposed parts. A rainy day actually makes the castle feel even more dramatic.",
+      price: "$25 adults, $12 kids 5–12",
+      link: "https://hearstcastle.org",
+      icon: "🌧"
+    },
+    priorities: {
+      mustDo: [
+        "Piedras Blancas Elephant Seal Rookery — free, unforgettable, kids go nuts",
+        "Hearst Castle — book the Grand Rooms Tour in advance"
+      ],
+      skipIfShort: [
+        "San Luis Obispo — charming but Bubblegum Alley is the only must-see",
+        "Cambria Moonstone Beach — lovely but just a walk, do it if time allows"
+      ]
+    }
+  },
+
+  // ============================================================
+  // DAY 5 — May 27 — Monterey, CA (Cambria → Paso Robles → Monterey)
+  // ============================================================
+  5: {
+    morning: [
+      {
+        name: "Paso Robles Candy Shop",
+        type: "indoor/food",
+        price: "Varies — candy!",
+        description: "A must-stop in Paso Robles on the way to Monterey. Stock up on handmade sweets, taffy, and chocolate. Paso Robles' downtown square is also great for a morning coffee and stroll — the town has a charming, laid-back wine-country vibe.",
+        duration: "30–45 min",
+        link: "https://www.google.com/maps/search/candy+shop+Paso+Robles+CA",
+        lat: 35.6265,
+        lng: -120.6910,
+        kidFriendly: true,
+        npsCovered: false
+      }
+    ],
+    afternoon: [
+      {
+        name: "Pinnacles National Park — Balconies Cave Hike (Optional Detour)",
         type: "outdoor/hiking",
         price: "$30/vehicle; FREE with America the Beautiful Pass",
-        description: "A must-stop on the drive from Santa Barbara to Monterey. The Balconies Cave trail (2.4 miles round trip, easy-moderate) is the best family hike in the park. You walk through a talus cave — rocks have tumbled together creating a natural tunnel you squeeze and clamber through. Bring headlamps/flashlights for the cave section. Condors with 9.5-ft wingspans are regularly spotted soaring overhead. Bats live in the caves too!",
-        duration: "2–2.5 hours",
+        description: "An optional 2-hour detour from Paso Robles via Soledad. The Balconies Cave trail (2.4 miles round trip, easy-moderate) is a talus cave you squeeze through in the dark — bring flashlights. Condors soar overhead. Great adventure for kids, but adds ~2 hours of driving to the day. Skip if you want to arrive in Monterey earlier.",
+        duration: "2–2.5 hours (plus 1.5 hrs driving detour)",
         link: "https://www.nps.gov/pinn/planyourvisit/trails.htm",
         lat: 36.4906,
         lng: -121.1825,
         kidFriendly: true,
         npsCovered: true,
-        advanceBookingRequired: false,
-        bookingNote: "No reservations needed. Enter from the WEST side (Chaparral Trailhead) to reach Balconies Cave. The east and west sides of the park are NOT connected by road — plan to enter and exit from the same side."
-      },
-      {
-        name: "Pinnacles — California Condor Spotting",
-        type: "outdoor/wildlife",
-        price: "Included with park entry; FREE with America the Beautiful Pass",
-        description: "California condors were nearly extinct but were reintroduced at Pinnacles. With a 9.5-foot wingspan, they're the largest land birds in North America. Look for them soaring over the High Peaks in the middle of the day on thermals. The park has one of the best condor viewing opportunities in the US. Rangers can point you toward recent sightings.",
-        duration: "30 min–1 hour",
-        link: "https://www.nps.gov/pinn/learn/nature/condors.htm",
-        lat: 36.4906,
-        lng: -121.1825,
-        kidFriendly: true,
-        npsCovered: true
+        bookingNote: "Enter from the WEST side (Chaparral Trailhead off CA-146 from Soledad). Bring flashlights — caves are pitch dark. PINNACLES covered by America the Beautiful Pass."
       }
     ],
+    evening: [],
     scenicDrives: [
       {
-        name: "Highway 101 to Highway 25 — Pinnacles Approach",
-        description: "The drive through the Salinas Valley and Gavilan Range to Pinnacles is genuinely scenic — golden rolling hills, wild turkey sightings, and dramatic rock formations appearing on the horizon as you approach the park.",
-        duration: "2 hrs from Santa Barbara",
-        link: "[LINK: search \"Pinnacles National Park west entrance driving directions\"]"
+        name: "US-101 through Salinas Valley",
+        description: "The drive from Paso Robles to Monterey on US-101 passes through the Salinas Valley — John Steinbeck country. Golden rolling hills, artichoke fields, and vineyard views. A pleasant, easy drive.",
+        duration: "2.5 hrs direct, 4+ hrs with Pinnacles detour",
+        link: "https://www.google.com/maps/dir/Paso+Robles,+CA/Monterey,+CA"
       }
     ],
     hiddenGem: {
-      name: "Bear Gulch Reservoir (if cave section is open)",
-      description: "If Bear Gulch Cave happens to be open (it is frequently closed mid-May to mid-July for bat nursery season — VERIFY at nps.gov/pinn before going), the trail to the reservoir beyond the cave is a hidden gem. The mossy, shaded reservoir feels completely other-worldly. Check cave status at the visitor center on arrival.",
-      link: "https://www.nps.gov/pinn/planyourvisit/cavestatus.htm"
+      name: "Paso Robles Downtown Square & City Park",
+      description: "Paso Robles has a beautiful central park with a playground, duck pond, and old-fashioned town square surrounded by tasting rooms and restaurants. A great place for kids to run while parents grab a coffee or taste some local wine.",
+      link: "https://www.google.com/maps/search/Paso+Robles+downtown+park"
     },
     rainyDay: {
-      name: "Pinnacles Visitor Center Exhibits",
-      description: "If weather makes trails unsafe, the Chaparral Trailhead area has exhibits on condor recovery, the park's volcanic origins, and the talus cave formations. A rainy Pinnacles day is still worthwhile for the drive-through and the visitor center learning.",
-      price: "Included with park entry",
-      link: "https://www.nps.gov/pinn/index.htm",
+      name: "Paso Robles Pioneer Museum",
+      description: "A small free museum in Paso Robles with exhibits on ranching history, pioneer life, and local agriculture. Housed in a 1907 schoolhouse near the downtown park.",
+      price: "Free",
+      link: "https://www.google.com/maps/search/Paso+Robles+Pioneer+Museum",
       icon: "🌧"
     },
     priorities: {
       mustDo: [
-        "Balconies Cave Hike — the talus cave is the highlight, bring flashlights",
-        "Condor spotting — scan the skies near High Peaks at midday"
+        "Paso Robles candy shop — the kids will love it, quick stop",
+        "Arrive in Monterey with energy — big aquarium day tomorrow"
       ],
       skipIfShort: [
-        "Bear Gulch Reservoir — likely closed for bat season in late May"
+        "Pinnacles NP detour — amazing but adds 2+ hrs, skip if tired from yesterday"
       ]
-    },
-    importantNotes: [
-      "Bear Gulch Cave is typically CLOSED mid-May to mid-July for bat nursery season. Check status at nps.gov/pinn/planyourvisit/cavestatus.htm before your May 26 visit.",
-      "Balconies Cave (west side) has a different closure schedule and is more reliably open in May — but always check current conditions.",
-      "Bring headlamps or flashlights for the cave sections — they are pitch dark inside.",
-      "This is a drive-through stop en route to Monterey; plan 3–4 hours total including park time."
-    ]
+    }
   },
 
-  5: {
+  6: {
     activities: [
       {
         name: "Monterey Bay Aquarium",
@@ -428,7 +512,7 @@ window.ACTIVITY_DATA = {
     }
   },
 
-  6: {
+  7: {
     activities: [
       {
         name: "Pier 39 — Sea Lions & Free Attractions",
@@ -465,6 +549,34 @@ window.ACTIVITY_DATA = {
         lng: -122.4862,
         kidFriendly: true,
         npsCovered: false
+      },
+      {
+        name: "California Academy of Sciences",
+        type: "indoor/educational",
+        price: "$45–$55 adults, $39–$45 kids 3–12, free under 3",
+        description: "One of the most extraordinary science museums in the world, inside Golden Gate Park. Features a living rainforest dome you walk through with tropical birds and butterflies, a 4-story coral reef aquarium, a planetarium, natural history hall with dinosaurs and an albino alligator, and a living roof covered in California wildflowers. Kids could easily spend a full day here. Consider doing this INSTEAD of Golden Gate Park outdoors if the weather is iffy.",
+        duration: "3–4 hours",
+        link: "https://www.calacademy.org",
+        lat: 37.7699,
+        lng: -122.4661,
+        kidFriendly: true,
+        npsCovered: false,
+        advanceBookingRequired: true,
+        bookingNote: "Buy timed tickets in advance at calacademy.org — weekends sell out. Discounted tickets available for SF residents."
+      },
+      {
+        name: "VW Van Tour of San Francisco",
+        type: "outdoor/tour",
+        price: "~$75–$100/person (check operator for family pricing)",
+        description: "Tour San Francisco in a classic Volkswagen van — a retro, Instagram-worthy way to see the city's highlights with a local guide. Most tours cover the Golden Gate Bridge, Haight-Ashbury, Lombard Street, Painted Ladies, and Chinatown in about 2–3 hours. Kids love riding in the vintage van. Several operators run these; book in advance.",
+        duration: "2–3 hours",
+        link: "https://www.google.com/search?q=VW+van+tour+San+Francisco",
+        lat: 37.7749,
+        lng: -122.4194,
+        kidFriendly: true,
+        npsCovered: false,
+        advanceBookingRequired: true,
+        bookingNote: "Book online in advance. Check operators like San Francisco Love Tours or Vantigo SF for family-friendly options and group pricing."
       }
     ],
     scenicDrives: [
@@ -491,15 +603,17 @@ window.ACTIVITY_DATA = {
       mustDo: [
         "Golden Gate Bridge Walk — the iconic SF experience",
         "Pier 39 sea lions — free and endlessly entertaining for kids",
-        "Golden Gate Park Bison Paddock — genuinely surprising, free"
+        "California Academy of Sciences — world-class, book timed tickets in advance"
       ],
       skipIfShort: [
-        "Twin Peaks overlook — great views but similar to Golden Gate Bridge views"
+        "VW Van Tour — fun but pricey, skip if doing the bridge walk + Pier 39",
+        "Twin Peaks overlook — great views but similar to Golden Gate Bridge views",
+        "Golden Gate Park Bison Paddock — delightful but skip if doing Cal Academy instead"
       ]
     }
   },
 
-  7: {
+  8: {
     activities: [
       {
         name: "Muir Woods National Monument",
@@ -561,7 +675,7 @@ window.ACTIVITY_DATA = {
     }
   },
 
-  8: {
+  9: {
     activities: [
       {
         name: "Point Reyes National Seashore — Elephant Seal Overlook & Chimney Rock",
@@ -631,7 +745,7 @@ window.ACTIVITY_DATA = {
     }
   },
 
-  9: {
+  10: {
     activities: [
       {
         name: "Armstrong Redwoods State Natural Reserve",
@@ -703,13 +817,13 @@ window.ACTIVITY_DATA = {
     }
   },
 
-  10: {
+  11: {
     activities: [
       {
         name: "Lake Sonoma Recreation Area",
         type: "outdoor/water",
         price: "Free",
-        description: "A beautiful reservoir in the Dry Creek Valley hills above Healdsburg with swimming beaches, hiking trails, and fishing. The Yorty Creek Recreation Area has a sandy swimming beach that's free and excellent for families. The surrounding oak woodland trails are easy and scenic. On warm June 1 days, this is one of the best free outdoor spots in Sonoma County.",
+        description: "A beautiful reservoir in the Dry Creek Valley hills above Healdsburg with swimming beaches, hiking trails, and fishing. The Yorty Creek Recreation Area has a sandy swimming beach that's free and excellent for families. The surrounding oak woodland trails are easy and scenic. On warm June 2 days, this is one of the best free outdoor spots in Sonoma County.",
         duration: "2–3 hours",
         link: "[LINK: search \"Lake Sonoma Recreation Area swimming beach Yorty Creek\"]",
         lat: 38.7126,
@@ -776,7 +890,7 @@ window.ACTIVITY_DATA = {
     }
   },
 
-  11: {
+  12: {
     activities: [
       {
         name: "Healdsburg Plaza — Morning Farmers Market & Stroll",
@@ -794,7 +908,7 @@ window.ACTIVITY_DATA = {
         name: "Armstrong Redwoods — East Ridge Trail (if not done Day 9)",
         type: "outdoor/hiking",
         price: "$10/vehicle",
-        description: "If you didn't visit Armstrong Redwoods on Day 9, this is a perfect Day 11 option. The East Ridge Trail is a moderate 2.7-mile loop above the valley floor with good views and old-growth groves. The Pioneer Nature Trail (1 mile, flat, paved) is the easy family option. Giant trees, mossy forest floor, and complete quiet.",
+        description: "If you didn't visit Armstrong Redwoods on Day 9, this is a perfect Day 12 option. The East Ridge Trail is a moderate 2.7-mile loop above the valley floor with good views and old-growth groves. The Pioneer Nature Trail (1 mile, flat, paved) is the easy family option. Giant trees, mossy forest floor, and complete quiet.",
         duration: "2 hours",
         link: "https://www.parks.ca.gov/?page_id=450",
         lat: 38.5363,
@@ -848,9 +962,9 @@ window.ACTIVITY_DATA = {
   },
 
   // ============================================================
-  // DAY 12 — June 3 — Myers Flat, CA (Humboldt Redwoods / Avenue of the Giants)
+  // DAY 13 — June 4 — Myers Flat, CA (Humboldt Redwoods / Avenue of the Giants)
   // ============================================================
-  12: {
+  13: {
     activities: [
       {
         name: "Founders Grove & Rockefeller Loop",
@@ -924,9 +1038,9 @@ window.ACTIVITY_DATA = {
   },
 
   // ============================================================
-  // DAY 13 — June 4 — Orick, CA (Redwood National & State Parks)
+  // DAY 14 — June 5 — Orick, CA (Redwood National & State Parks)
   // ============================================================
-  13: {
+  14: {
     activities: [
       {
         name: "Elk Prairie — Roosevelt Elk Herd",
@@ -1001,9 +1115,9 @@ window.ACTIVITY_DATA = {
   },
 
   // ============================================================
-  // DAY 14 — June 5 — Crescent City, CA (Fern Canyon + Jedediah Smith)
+  // DAY 15 — June 6 — Crescent City, CA (Fern Canyon + Jedediah Smith)
   // ============================================================
-  14: {
+  15: {
     activities: [
       {
         name: "Fern Canyon — Jurassic Park Filming Location",
@@ -1081,9 +1195,9 @@ window.ACTIVITY_DATA = {
   },
 
   // ============================================================
-  // DAY 15 — June 6 — Brookings, OR (Oregon Coast Entry)
+  // DAY 16 — June 7 — Brookings, OR (Oregon Coast Entry)
   // ============================================================
-  15: {
+  16: {
     activities: [
       {
         name: "Samuel H. Boardman State Scenic Corridor",
@@ -1154,9 +1268,9 @@ window.ACTIVITY_DATA = {
   },
 
   // ============================================================
-  // DAY 16 — June 7 — Medford, OR (Oregon Caves + Medford)
+  // DAY 17 — June 8 — Medford, OR (Oregon Caves + Medford)
   // ============================================================
-  16: {
+  17: {
     activities: [
       {
         name: "Oregon Caves National Monument — Cave Tour",
@@ -1233,9 +1347,9 @@ window.ACTIVITY_DATA = {
   },
 
   // ============================================================
-  // DAY 17 — June 8 — Crater Lake, OR (Full Day at Crater Lake NP)
+  // DAY 18 — June 9 — Crater Lake, OR (Full Day at Crater Lake NP)
   // ============================================================
-  17: {
+  18: {
     activities: [
       {
         name: "Watchman Peak Trail",
@@ -1310,9 +1424,9 @@ window.ACTIVITY_DATA = {
   },
 
   // ============================================================
-  // DAY 18 — June 9 — Eugene, OR (Crater Lake to Eugene)
+  // DAY 19 — June 10 — Eugene, OR (Crater Lake to Eugene)
   // ============================================================
-  18: {
+  19: {
     activities: [
       {
         name: "Owen Memorial Rose Garden — Peak June Bloom",
@@ -1330,7 +1444,7 @@ window.ACTIVITY_DATA = {
         name: "5th Street Public Market",
         type: "shopping / food",
         price: "Free to browse; food extra",
-        description: "An open-air market complex in downtown Eugene with independent shops, restaurants, a courtyard, and a farmers market on Tuesdays (June 9 is a Tuesday!). The Eugene Tuesday Farmers Market runs from 10 AM – 3 PM at the nearby Lane Events Center. Fresh strawberries, flowers, prepared foods, and crafts from local farms.",
+        description: "An open-air market complex in downtown Eugene with independent shops, restaurants, a courtyard, and a farmers market on Tuesdays (June 10 is a Tuesday!). The Eugene Tuesday Farmers Market runs from 10 AM – 3 PM at the nearby Lane Events Center. Fresh strawberries, flowers, prepared foods, and crafts from local farms.",
         duration: "1 hour",
         link: "[LINK: search \"5th Street Public Market Eugene Oregon\"]",
         lat: 44.0521,
@@ -1383,13 +1497,13 @@ window.ACTIVITY_DATA = {
   },
 
   // ============================================================
-  // DAY 19 — June 10 — Portland, OR (Arrival Day — Party Eve)
+  // DAY 20 — June 20 — Portland, OR (Arrival Day — Party Eve)
   // ============================================================
-  19: {
+  20: {
     activities: [],
     scenicDrives: [],
     hiddenGem: null,
     rainyDay: null,
-    note: "Portland is the endpoint — YOU MADE IT! 🎉 The friend's party starts June 11, so Day 19 is for arriving, checking in, and celebrating the journey. No itinerary content planned for Portland — just relax, shower, and get excited for tomorrow. If anyone has energy, a walk along Tom McCall Waterfront Park (right downtown) is always free and lovely."
+    note: "Portland is the endpoint — YOU MADE IT! 🎉 The friend's party starts June 21, so Day 20 is for arriving, checking in, and celebrating the journey. No itinerary content planned for Portland — just relax, shower, and get excited for tomorrow. If anyone has energy, a walk along Tom McCall Waterfront Park (right downtown) is always free and lovely."
   }
 };

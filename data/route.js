@@ -41,19 +41,32 @@ window.ROUTE_DATA = [
   {
     dayNumber: 4,
     date: "May 26, 2026",
-    overnightCity: "Monterey, CA",
-    region: "Big Sur & Monterey",
-    lat: 36.6002,
-    lng: -121.8947,
+    overnightCity: "Cambria, CA",
+    region: "Central Coast",
+    lat: 35.5641,
+    lng: -121.0908,
     driveFrom: "Santa Barbara",
-    driveHours: 4.0,
-    driveMapsUrl: "https://www.google.com/maps/dir/Santa+Barbara,+CA/Pinnacles+National+Park,+CA/Monterey,+CA",
+    driveHours: 3.0,
+    driveMapsUrl: "https://www.google.com/maps/dir/Santa+Barbara,+CA/San+Luis+Obispo,+CA/Cambria,+CA/Piedras+Blancas+Elephant+Seal+Rookery",
     dayType: "drive",
-    note: "Split: 2.5 hrs to Pinnacles NP (east entrance), explore caves + condors, then 1.5 hrs to Monterey. Total 4 hrs driving but split with meaningful stop. PINNACLES NP covered by America the Beautiful Pass."
+    note: "Drive US-101 north to San Luis Obispo (1.5 hrs) — walk downtown, see Bubblegum Alley. Continue on CA-1 through Cambria to San Simeon. Hearst Castle tour (book in advance!), Piedras Blancas Elephant Seal Rookery (free, incredible), overnight in charming Cambria."
   },
   {
     dayNumber: 5,
     date: "May 27, 2026",
+    overnightCity: "Monterey, CA",
+    region: "Big Sur & Monterey",
+    lat: 36.6002,
+    lng: -121.8947,
+    driveFrom: "Cambria",
+    driveHours: 3.5,
+    driveMapsUrl: "https://www.google.com/maps/dir/Cambria,+CA/Paso+Robles,+CA/Monterey,+CA",
+    dayType: "drive",
+    note: "Head inland to Paso Robles (30 min) for the famous candy shop, then north on US-101 to Monterey (2.5 hrs). Scenic farmland and wine country along the way. Optional detour to Pinnacles NP adds ~2 hrs."
+  },
+  {
+    dayNumber: 6,
+    date: "May 28, 2026",
     overnightCity: "Monterey, CA",
     region: "Big Sur & Monterey",
     lat: 36.6002,
@@ -65,8 +78,8 @@ window.ROUTE_DATA = [
     note: "Monterey Bay Aquarium AM. Big Sur scenic drive afternoon: 17-Mile Drive, Bixby Creek Bridge, Point Sur. Drive is scenic 1-hr each way."
   },
   {
-    dayNumber: 6,
-    date: "May 28, 2026",
+    dayNumber: 7,
+    date: "May 29, 2026",
     overnightCity: "San Francisco, CA",
     region: "San Francisco",
     lat: 37.7749,
@@ -78,8 +91,8 @@ window.ROUTE_DATA = [
     note: "2-hr drive north on US-101/CA-1. Enter via Golden Gate Bridge if time allows."
   },
   {
-    dayNumber: 7,
-    date: "May 29, 2026",
+    dayNumber: 8,
+    date: "May 30, 2026",
     overnightCity: "San Francisco, CA",
     region: "San Francisco",
     lat: 37.7749,
@@ -91,8 +104,8 @@ window.ROUTE_DATA = [
     note: "Muir Woods NM day trip — 30 min each way. MUST BOOK TIMED ENTRY IN ADVANCE at recreation.gov. Afternoon: Fisherman's Wharf, Pier 39. MUIR WOODS covered by America the Beautiful Pass."
   },
   {
-    dayNumber: 8,
-    date: "May 30, 2026",
+    dayNumber: 9,
+    date: "May 31, 2026",
     overnightCity: "San Francisco, CA",
     region: "San Francisco",
     lat: 37.7749,
@@ -104,8 +117,8 @@ window.ROUTE_DATA = [
     note: "Point Reyes National Seashore day trip — 1.5 hrs each way. Lighthouse, Tule Elk Reserve, Kehoe Beach. POINT REYES covered by America the Beautiful Pass."
   },
   {
-    dayNumber: 9,
-    date: "May 31, 2026",
+    dayNumber: 10,
+    date: "June 1, 2026",
     overnightCity: "Windsor, CA",
     region: "Wine Country",
     lat: 38.5474,
@@ -117,8 +130,8 @@ window.ROUTE_DATA = [
     note: "1.5-hr drive north on US-101. Arrive Windsor for family visit. Windsor is in Sonoma County, ~8 miles north of Santa Rosa."
   },
   {
-    dayNumber: 10,
-    date: "June 1, 2026",
+    dayNumber: 11,
+    date: "June 2, 2026",
     overnightCity: "Windsor, CA",
     region: "Wine Country",
     lat: 38.5474,
@@ -130,8 +143,8 @@ window.ROUTE_DATA = [
     note: "Full day with family in Windsor. Explore local parks, visit downtown Windsor."
   },
   {
-    dayNumber: 11,
-    date: "June 2, 2026",
+    dayNumber: 12,
+    date: "June 3, 2026",
     overnightCity: "Healdsburg, CA",
     region: "Wine Country",
     lat: 38.6113,
@@ -143,8 +156,8 @@ window.ROUTE_DATA = [
     note: "Short 15-min drive to Healdsburg. Healdsburg Plaza, wine tasting in Dry Creek Valley (kid-friendly wineries), Russian River swimming."
   },
   {
-    dayNumber: 12,
-    date: "June 3, 2026",
+    dayNumber: 13,
+    date: "June 4, 2026",
     overnightCity: "Myers Flat, CA",
     region: "Redwoods",
     lat: 40.2491,
@@ -156,8 +169,8 @@ window.ROUTE_DATA = [
     note: "3-hr drive north on US-101 through Ukiah and Leggett. Avenue of the Giants begins near Myers Flat. Humboldt Redwoods State Park."
   },
   {
-    dayNumber: 13,
-    date: "June 4, 2026",
+    dayNumber: 14,
+    date: "June 5, 2026",
     overnightCity: "Orick, CA",
     region: "Redwoods",
     lat: 41.2946,
@@ -169,8 +182,8 @@ window.ROUTE_DATA = [
     note: "2-hr drive north on US-101. Redwood National and State Parks. Prairie Creek Redwoods — elk meadow at Elk Prairie."
   },
   {
-    dayNumber: 14,
-    date: "June 5, 2026",
+    dayNumber: 15,
+    date: "June 6, 2026",
     overnightCity: "Crescent City, CA",
     region: "Redwoods",
     lat: 41.7558,
@@ -182,8 +195,8 @@ window.ROUTE_DATA = [
     note: "Short 45-min drive to Crescent City for better hotel options. Full exploration day: Fern Canyon (10 min south of Orick), Stout Grove, Jedediah Smith Redwoods. REDWOOD NP covered by America the Beautiful Pass."
   },
   {
-    dayNumber: 15,
-    date: "June 6, 2026",
+    dayNumber: 16,
+    date: "June 7, 2026",
     overnightCity: "Brookings, OR",
     region: "Oregon Coast",
     lat: 42.0571,
@@ -195,8 +208,8 @@ window.ROUTE_DATA = [
     note: "1-hr drive north on US-101 into Oregon. Thomas Creek Bridge (tallest bridge in Oregon), Harris Beach State Park, Lone Ranch Beach."
   },
   {
-    dayNumber: 16,
-    date: "June 7, 2026",
+    dayNumber: 17,
+    date: "June 8, 2026",
     overnightCity: "Medford, OR",
     region: "Oregon Coast",
     lat: 42.3265,
@@ -208,8 +221,8 @@ window.ROUTE_DATA = [
     note: "Split: 1 hr to Cave Junction, Oregon Caves NM tour (great for kids! 90 min tour), then 1.5 hrs to Medford. Total ~3.5 hrs driving split with Oregon Caves visit. OREGON CAVES covered by America the Beautiful Pass."
   },
   {
-    dayNumber: 17,
-    date: "June 8, 2026",
+    dayNumber: 18,
+    date: "June 9, 2026",
     overnightCity: "Crater Lake, OR",
     region: "Crater Lake & Oregon",
     lat: 42.9450,
@@ -221,8 +234,8 @@ window.ROUTE_DATA = [
     note: "1.5-hr drive north to Crater Lake. Rim Drive, Watchman Peak viewpoint, Wizard Island views. Stay at Mazama Village or Crater Lake Lodge (book WAY in advance). CRATER LAKE covered by America the Beautiful Pass."
   },
   {
-    dayNumber: 18,
-    date: "June 9, 2026",
+    dayNumber: 19,
+    date: "June 10, 2026",
     overnightCity: "Eugene, OR",
     region: "Crater Lake & Oregon",
     lat: 44.0521,
@@ -234,8 +247,8 @@ window.ROUTE_DATA = [
     note: "3-hr drive northwest to Eugene via OR-138 and I-5. Eugene: 5th Street Market area, Skinner Butte Park."
   },
   {
-    dayNumber: 19,
-    date: "June 10, 2026",
+    dayNumber: 20,
+    date: "June 11, 2026",
     overnightCity: "Portland, OR",
     region: "Portland",
     lat: 45.5051,
