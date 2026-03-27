@@ -287,16 +287,129 @@ window.ACTIVITY_DATA = {
     }
   },
   "4": {
-    "morning": [
+    "activities": [
       {
         "name": "San Luis Obispo — Downtown Walk & Bubblegum Alley",
         "type": "outdoor/walking",
         "price": "Free",
-        "description": "A charming college town halfway between LA and SF. Walk Higuera Street's pedestrian-friendly downtown with shops, cafés, and the famous Bubblegum Alley — a narrow alley covered floor-to-ceiling in chewed gum. Gross? Yes. Do kids love it? Absolutely. Also see the Mission San Luis Obispo de Tolosa on the creek. A perfect morning stretch stop.",
+        "description": "A charming college town halfway between LA and SF. Walk Higuera Street's pedestrian-friendly downtown with shops, cafes, and the famous Bubblegum Alley — a narrow alley covered floor-to-ceiling in chewed gum. Gross? Yes. Do kids love it? Absolutely. A perfect morning stretch stop on the drive north.",
         "duration": "1–1.5 hours",
         "link": "https://www.downtownslo.com",
         "lat": 35.2828,
         "lng": -120.6596,
+        "kidFriendly": true,
+        "npsCovered": false
+      },
+      {
+        "name": "Pinnacles National Park — Balconies Cave Trail",
+        "type": "outdoor/hiking",
+        "price": "$30/vehicle; FREE with America the Beautiful Pass",
+        "description": "Pinnacles NP is built around the remnants of an ancient volcano, with towering rock spires, talus caves, and California condors soaring overhead. The Balconies Cave trail (2.4 miles round trip, easy-moderate) takes you through pitch-dark talus caves formed by massive boulders — bring flashlights! Kids think it's the greatest adventure ever. Enter from the WEST side (Chaparral Trailhead off CA-146 from Soledad). PINNACLES covered by America the Beautiful Pass.",
+        "duration": "2–2.5 hours",
+        "trailLength": "2.4 miles round trip",
+        "difficulty": "Easy-moderate — some uneven footing in caves",
+        "link": "https://www.nps.gov/pinn/planyourvisit/trails.htm",
+        "lat": 36.4906,
+        "lng": -121.1825,
+        "kidFriendly": true,
+        "npsCovered": true,
+        "advanceBookingRequired": false,
+        "bookingNote": "Enter from the WEST side (Chaparral Trailhead off CA-146 from Soledad). Bring flashlights — caves are pitch dark. PINNACLES covered by America the Beautiful Pass."
+      }
+    ],
+    "scenicDrives": [
+      {
+        "name": "US-101 through Salinas Valley",
+        "description": "The drive from SLO north on US-101 passes through the Salinas Valley — John Steinbeck country. Golden rolling hills and artichoke fields.",
+        "duration": "1.5 hours to Soledad turnoff",
+        "link": "https://www.google.com/maps/dir/San+Luis+Obispo,+CA/Pinnacles+National+Park,+CA"
+      }
+    ],
+    "hiddenGem": {
+      "name": "Paso Robles Downtown Square & City Park",
+      "description": "If routing through Paso Robles, the town has a beautiful central park with a playground, duck pond, and old-fashioned town square surrounded by tasting rooms and restaurants. A great place for kids to run while parents grab a coffee.",
+      "link": "https://www.google.com/maps/search/Paso+Robles+downtown+park"
+    },
+    "rainyDay": {
+      "name": "Pinnacles caves are even more atmospheric in rain",
+      "description": "The Balconies Cave trail is mostly underground — rain barely matters. The above-ground sections through the volcanic rock formations are dramatic in wet weather.",
+      "price": "$30/vehicle (or America the Beautiful Pass)",
+      "link": "https://www.nps.gov/pinn/planyourvisit/trails.htm",
+      "icon": "🌧"
+    },
+    "priorities": {
+      "mustDo": [
+        "Pinnacles NP — Balconies Cave trail, an unforgettable adventure for kids",
+        "SLO Bubblegum Alley — quick, gross, kids love it"
+      ],
+      "skipIfShort": [
+        "SLO downtown walk beyond Bubblegum Alley — charming but time is limited"
+      ]
+    }
+  },
+  "5": {
+    "activities": [
+      {
+        "name": "Monterey Bay Aquarium",
+        "type": "indoor / museum",
+        "price": "$59.95 adults, $39.95 kids 5-12, $44.95 kids 3-4 (book timed tickets!)",
+        "description": "One of the world's greatest aquariums. The Open Sea exhibit has a million-gallon tank with hammerhead sharks, ocean sunfish, and sea turtles. The kelp forest is mesmerizing. Touch pools let kids handle sea stars and sea urchins. The sea otter exhibit is the highlight — rescued otters playing feet from the glass. Plan 3-4 hours minimum. This is a top-3 activity on the entire trip.",
+        "duration": "3-4 hours",
+        "link": "https://www.montereybayaquarium.org",
+        "lat": 36.6186,
+        "lng": -121.9018,
+        "kidFriendly": true,
+        "npsCovered": false,
+        "advanceBookingRequired": true,
+        "bookingNote": "Buy timed tickets at montereybayaquarium.org — sells out in summer. Book 2-4 weeks ahead."
+      },
+      {
+        "name": "Cannery Row & Old Fisherman's Wharf",
+        "type": "walking / sightseeing",
+        "price": "Free to walk; food extra",
+        "description": "Walk the historic waterfront that inspired John Steinbeck's novel. Now lined with shops, restaurants, and galleries. Old Fisherman's Wharf has chowder vendors, salt water taffy, and sea lion viewing. A natural extension of the Aquarium visit.",
+        "duration": "1-2 hours",
+        "link": "https://www.canneryrow.com",
+        "lat": 36.6121,
+        "lng": -121.8994,
+        "kidFriendly": true,
+        "npsCovered": false
+      }
+    ],
+    "scenicDrives": [],
+    "hiddenGem": {
+      "name": "Dennis the Menace Playground — Designed by Hank Ketcham",
+      "description": "A massive playground in El Estero Park designed by Dennis the Menace creator Hank Ketcham. Giant climbing structures, a real Southern Pacific locomotive to climb on, a hedge maze, and a roller slide. One of the best playgrounds in California. Free. A 5-minute drive from the Aquarium.",
+      "link": "[LINK: search \"Dennis the Menace Playground Monterey CA\"]"
+    },
+    "rainyDay": {
+      "name": "MY Museum (Monterey County Youth Museum)",
+      "description": "A hands-on children's museum with interactive exhibits on art, science, and nature. Designed for ages 0-10. Located on Custom House Plaza near Fisherman's Wharf.",
+      "price": "$12/person, free under 2",
+      "link": "[LINK: search \"MY Museum Monterey CA\"]",
+      "icon": "🌧"
+    },
+    "priorities": {
+      "mustDo": [
+        "Monterey Bay Aquarium — one of the best aquariums in the world, give it 3-4 hours",
+        "Cannery Row walk — natural extension of the Aquarium visit"
+      ],
+      "skipIfShort": [
+        "Dennis the Menace Playground — only if kids have energy after the Aquarium"
+      ]
+    }
+  },
+  "6": {
+    "morning": [
+      {
+        "name": "Big Sur Coastal Drive — CA-1 South",
+        "type": "scenic drive",
+        "price": "Free (gas only)",
+        "description": "One of the most spectacular coastal drives on Earth. The 90 miles from Monterey south to Cambria hugs sheer cliffs above the Pacific. Major stops: Bixby Bridge (iconic arched bridge, photo stop), McWay Falls (80-ft waterfall onto a pristine beach — 0.3 mi easy walk), and Julia Pfeiffer Burns SP. Go slow, stop at every pullout. This drive is the activity.",
+        "duration": "2.5-3 hours with stops",
+        "link": "https://www.google.com/maps/dir/Monterey,+CA/Bixby+Bridge,+CA/McWay+Falls,+Big+Sur,+CA/Cambria,+CA",
+        "lat": 36.3714,
+        "lng": -121.857,
         "kidFriendly": true,
         "npsCovered": false
       }
@@ -305,23 +418,23 @@ window.ACTIVITY_DATA = {
       {
         "name": "Hearst Castle",
         "type": "indoor/cultural",
-        "price": "$25 adults, $12 kids 5–12, free under 5",
-        "description": "William Randolph Hearst's legendary hilltop estate overlooking the Pacific. The Grand Rooms Tour (recommended for families) takes about 45 min and covers the main house, Neptune Pool, and Roman Pool. The opulence is staggering — 165 rooms, 127 acres of gardens, and zebras still roam the grounds (visible from the road). The bus ride up the hill has panoramic ocean views. Book timed tickets in advance.",
-        "duration": "2–2.5 hours (including bus ride)",
+        "price": "$25 adults, $12 kids 5-12, free under 5",
+        "description": "William Randolph Hearst's legendary hilltop estate overlooking the Pacific. The Grand Rooms Tour (recommended for families) takes about 45 min and covers the main house, Neptune Pool, and Roman Pool. The opulence is staggering — 165 rooms, 127 acres of gardens, and zebras still roam the grounds (visible from the road). Book timed tickets in advance.",
+        "duration": "2-2.5 hours (including bus ride)",
         "link": "https://hearstcastle.org",
         "lat": 35.6852,
         "lng": -121.1682,
         "kidFriendly": true,
         "npsCovered": false,
         "advanceBookingRequired": true,
-        "bookingNote": "Book timed tour tickets in advance at hearstcastle.org or recreation.gov. Grand Rooms Tour is best for families with young kids. Summer weekends sell out."
+        "bookingNote": "Book timed tour tickets in advance at hearstcastle.org. Grand Rooms Tour is best for families with young kids. Summer weekends sell out."
       },
       {
         "name": "Piedras Blancas Elephant Seal Rookery",
         "type": "outdoor/wildlife",
         "price": "Free",
-        "description": "One of the most incredible free wildlife experiences in California. Thousands of northern elephant seals haul out on the beach just off Highway 1 near San Simeon. A boardwalk overlook lets you watch them from just 20 feet away — they're enormous (males weigh up to 5,000 lbs), loud, and completely wild. In late May you'll see juveniles and molting adults. Docents are usually on-site to answer questions. No reservation needed.",
-        "duration": "30–45 min",
+        "description": "One of the most incredible free wildlife experiences in California. Thousands of northern elephant seals on the beach just off Highway 1 near San Simeon. A boardwalk overlook lets you watch them from just 20 feet away — they're enormous (males up to 5,000 lbs), loud, and completely wild. No reservation needed.",
+        "duration": "30-45 min",
         "link": "https://elephantseal.org",
         "lat": 35.6649,
         "lng": -121.2569,
@@ -334,7 +447,7 @@ window.ACTIVITY_DATA = {
         "name": "Cambria Moonstone Beach Boardwalk",
         "type": "outdoor/walking",
         "price": "Free",
-        "description": "A mile-long wooden boardwalk along Moonstone Beach in Cambria. Search for moonstones and jade in the surf, watch otters in the kelp beds, and enjoy the sunset over the Pacific. The boardwalk is flat, stroller-friendly, and one of the most beautiful sunset walks on the Central Coast. Cambria's charming village has great restaurants for dinner.",
+        "description": "A mile-long wooden boardwalk along Moonstone Beach. Search for moonstones and jade in the surf, watch otters in the kelp beds, and enjoy the sunset over the Pacific. Flat, stroller-friendly, and one of the most beautiful sunset walks on the Central Coast.",
         "duration": "1 hour",
         "link": "https://www.visitcambria.com",
         "lat": 35.5753,
@@ -343,7 +456,14 @@ window.ACTIVITY_DATA = {
         "npsCovered": false
       }
     ],
-    "scenicDrives": [],
+    "scenicDrives": [
+      {
+        "name": "CA-1 Big Sur — Monterey to Cambria",
+        "description": "The full Big Sur coastal drive. Bixby Bridge, Point Sur Lighthouse, McWay Falls, Ragged Point. One of the most iconic drives in the world.",
+        "duration": "2.5-3 hours with stops",
+        "link": "https://www.google.com/maps/dir/Monterey,+CA/Cambria,+CA"
+      }
+    ],
     "hiddenGem": {
       "name": "Nitt Witt Ridge — Cambria's Folk Art Castle",
       "description": "A folk art house built entirely from found objects (beer cans, abalone shells, car parts, toilet seats) by Art Beal over 50 years. It's a registered state historical landmark and the polar opposite of Hearst Castle — a perfect contrast. Tours by appointment only; even driving past is fun.",
@@ -352,158 +472,67 @@ window.ACTIVITY_DATA = {
     "rainyDay": {
       "name": "Hearst Castle (it's mostly indoors)",
       "description": "Hearst Castle tours are mostly inside the grand rooms, so rain doesn't matter much. The bus ride and outdoor pools are the only exposed parts. A rainy day actually makes the castle feel even more dramatic.",
-      "price": "$25 adults, $12 kids 5–12",
+      "price": "$25 adults, $12 kids 5-12",
       "link": "https://hearstcastle.org",
       "icon": "🌧"
     },
     "priorities": {
       "mustDo": [
-        "Piedras Blancas Elephant Seal Rookery — free, unforgettable, kids go nuts",
+        "Big Sur coastal drive — Bixby Bridge and McWay Falls are unmissable",
+        "Piedras Blancas Elephant Seal Rookery — free, unforgettable",
         "Hearst Castle — book the Grand Rooms Tour in advance"
       ],
       "skipIfShort": [
-        "San Luis Obispo — charming but Bubblegum Alley is the only must-see",
         "Cambria Moonstone Beach — lovely but just a walk, do it if time allows"
       ]
     }
   },
-  "5": {
-    "morning": [
+  "7": {
+    "activities": [
       {
         "name": "Paso Robles Candy Shop",
         "type": "indoor/food",
         "price": "Varies — candy!",
-        "description": "A must-stop in Paso Robles on the way to Monterey. Stock up on handmade sweets, taffy, and chocolate. Paso Robles' downtown square is also great for a morning coffee and stroll — the town has a charming, laid-back wine-country vibe.",
-        "duration": "30–45 min",
+        "description": "A must-stop in Paso Robles on the way inland. Stock up on handmade sweets, taffy, and chocolate. Paso Robles' downtown square is also great for a morning coffee and stroll.",
+        "duration": "30-45 min",
         "link": "https://www.google.com/maps/search/candy+shop+Paso+Robles+CA",
         "lat": 35.6265,
         "lng": -120.691,
         "kidFriendly": true,
         "npsCovered": false
-      }
-    ],
-    "afternoon": [
+      },
       {
-        "name": "Pinnacles National Park — Balconies Cave Hike (Optional Detour)",
-        "type": "outdoor/hiking",
-        "price": "$30/vehicle; FREE with America the Beautiful Pass",
-        "description": "An optional 2-hour detour from Paso Robles via Soledad. The Balconies Cave trail (2.4 miles round trip, easy-moderate) is a talus cave you squeeze through in the dark — bring flashlights. Condors soar overhead. Great adventure for kids, but adds ~2 hours of driving to the day. Skip if you want to arrive in Monterey earlier.",
-        "duration": "2–2.5 hours (plus 1.5 hrs driving detour)",
-        "link": "https://www.nps.gov/pinn/planyourvisit/trails.htm",
-        "lat": 36.4906,
-        "lng": -121.1825,
-        "kidFriendly": true,
-        "npsCovered": true,
-        "bookingNote": "Enter from the WEST side (Chaparral Trailhead off CA-146 from Soledad). Bring flashlights — caves are pitch dark. PINNACLES covered by America the Beautiful Pass."
-      }
-    ],
-    "evening": [],
-    "scenicDrives": [
-      {
-        "name": "US-101 through Salinas Valley",
-        "description": "The drive from Paso Robles to Monterey on US-101 passes through the Salinas Valley — John Steinbeck country. Golden rolling hills, artichoke fields, and vineyard views. A pleasant, easy drive.",
-        "duration": "2.5 hrs direct, 4+ hrs with Pinnacles detour",
-        "link": "https://www.google.com/maps/dir/Paso+Robles,+CA/Monterey,+CA"
-      }
-    ],
-    "hiddenGem": {
-      "name": "Paso Robles Downtown Square & City Park",
-      "description": "Paso Robles has a beautiful central park with a playground, duck pond, and old-fashioned town square surrounded by tasting rooms and restaurants. A great place for kids to run while parents grab a coffee or taste some local wine.",
-      "link": "https://www.google.com/maps/search/Paso+Robles+downtown+park"
-    },
-    "rainyDay": {
-      "name": "Paso Robles Pioneer Museum",
-      "description": "A small free museum in Paso Robles with exhibits on ranching history, pioneer life, and local agriculture. Housed in a 1907 schoolhouse near the downtown park.",
-      "price": "Free",
-      "link": "https://www.google.com/maps/search/Paso+Robles+Pioneer+Museum",
-      "icon": "🌧"
-    },
-    "priorities": {
-      "mustDo": [
-        "Paso Robles candy shop — the kids will love it, quick stop",
-        "Arrive in Monterey with energy — big aquarium day tomorrow"
-      ],
-      "skipIfShort": [
-        "Pinnacles NP detour — amazing but adds 2+ hrs, skip if tired from yesterday"
-      ]
-    }
-  },
-  "6": {
-    "morning": [
-      {
-        "name": "Monterey Bay Aquarium",
-        "type": "indoor/educational",
-        "price": "$65 adults, $50 kids 3–12, free under 3",
-        "description": "One of the finest aquariums in the world, built on historic Cannery Row. The Open Sea tank (1.2-million-gallon) with bluefin tuna and sea turtles is breathtaking. The kelp forest, touch pools, sea otter exhibit, and jellyfish galleries are all spectacular. Plan a focused morning — arrive at opening (10 AM) to beat the crowds.",
-        "duration": "3 hours",
-        "link": "https://www.montereybayaquarium.org",
-        "lat": 36.6183,
-        "lng": -121.9018,
-        "kidFriendly": true,
-        "npsCovered": false,
-        "advanceBookingRequired": true,
-        "bookingNote": "Advance online tickets REQUIRED — walk-up purchase is not available. Book at montereybayaquarium.org. May is peak season; book several weeks ahead."
-      }
-    ],
-    "afternoon": [
-      {
-        "name": "Casa de Fruta — Roadside Attraction",
-        "type": "outdoor/roadside",
-        "price": "Free to visit; rides $3-5 each",
-        "description": "A wonderfully quirky roadside attraction on CA-152 at Pacheco Pass, on the way from Monterey to Mariposa. Started as a cherry stand in the 1940s, now a sprawling complex with fruit orchards, a carousel, miniature train ride, peacocks roaming freely, a candy shop, and a general store. The kids will love the train and carousel. Perfect road-trip pitstop to break up the 3.5-hr drive to Mariposa.",
-        "duration": "45 min–1 hour",
+        "name": "Casa de Fruta — Quirky Roadside Attraction",
+        "type": "roadside attraction",
+        "price": "Free entry; rides/activities $3-8 each",
+        "description": "A sprawling roadside attraction on Pacheco Pass with fruit stands, a carousel, peacocks roaming free, a mini train ride, and a candy shop. It's been here since the 1940s and feels like stepping back in time. Perfect leg-stretch on the drive from the coast to Mariposa. Kids go nuts for the peacocks and train.",
+        "duration": "45 min – 1 hour",
         "link": "https://www.casadefruta.com",
-        "lat": 36.9585,
-        "lng": -121.403,
-        "kidFriendly": true,
-        "npsCovered": false
-      }
-    ],
-    "evening": [
-      {
-        "name": "Mariposa — Historic Gold Rush Town Evening Walk",
-        "type": "outdoor/walking",
-        "price": "Free",
-        "description": "Mariposa is the gateway to Yosemite and one of the original Gold Rush towns (est. 1849). Walk the charming main street with historic buildings, the oldest courthouse in California still in continuous use, and local shops. Small-town California at its best. A quiet evening before your big Yosemite day.",
-        "duration": "45 min",
-        "link": "https://www.homeofyosemite.com",
-        "lat": 37.4849,
-        "lng": -119.9663,
+        "lat": 36.8592,
+        "lng": -121.4028,
         "kidFriendly": true,
         "npsCovered": false
       }
     ],
     "scenicDrives": [
       {
-        "name": "CA-152 Pacheco Pass — Monterey to Central Valley",
-        "description": "The drive from Monterey east on CA-152 crosses the Pacheco Pass through the Diablo Range with sweeping views of the San Luis Reservoir and the Central Valley below. On clear days you can see the Sierra Nevada in the distance — your destination. A dramatic transition from coast to mountains.",
-        "duration": "1.5 hours (Monterey to Casa de Fruta)",
-        "link": "https://www.google.com/maps/dir/Monterey,+CA/Casa+de+Fruta,+CA"
+        "name": "CA-152 Pacheco Pass",
+        "description": "The drive east over Pacheco Pass from US-101 climbs into California's Central Valley. Rolling golden hills, hawks circling overhead, and San Luis Reservoir views. A beautiful transition from coast to mountains.",
+        "duration": "1.5 hours",
+        "link": "https://www.google.com/maps/dir/Paso+Robles,+CA/Mariposa,+CA"
       }
     ],
-    "hiddenGem": {
-      "name": "Mariposa Museum and History Center",
-      "description": "A small but excellent museum covering Gold Rush history, Miwok Native American culture, and the natural history of the Yosemite region. The gold and mineral collection is surprisingly impressive. Housed in the historic 1860s Trabucco Warehouse. Free/donation, usually open afternoons.",
-      "link": "https://www.mariposamuseum.com"
-    },
-    "rainyDay": {
-      "name": "California State Mining & Mineral Museum — Mariposa",
-      "description": "Located at the Mariposa County Fairgrounds, this museum has one of the finest gem and mineral collections in California, including a 13.8-pound crystalline gold nugget, fluorescent minerals, and geological exhibits. Perfect indoor activity before or after Yosemite.",
-      "price": "$4 adults, $2 kids 6-17, free under 6",
-      "link": "https://www.parks.ca.gov/?page_id=588",
-      "icon": "🌧"
-    },
+    "hiddenGem": null,
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
-        "Monterey Bay Aquarium — book timed tickets in advance, arrive at 10 AM",
-        "Casa de Fruta — a perfect mid-drive stop the kids will love"
+        "Paso Robles candy shop — quick stop, kids will love it",
+        "Casa de Fruta — the best leg-stretch stop on the drive to Mariposa"
       ],
-      "skipIfShort": [
-        "Mariposa evening walk — charming but optional if arriving late"
-      ]
+      "skipIfShort": []
     }
   },
-  "7": {
+  "8": {
     "morning": [
       {
         "name": "Lower Yosemite Fall Trail",
@@ -618,7 +647,7 @@ window.ACTIVITY_DATA = {
       ]
     }
   },
-  "8": {
+  "9": {
     "morning": [
       {
         "name": "Glacier Point (if road is open)",
@@ -679,7 +708,7 @@ window.ACTIVITY_DATA = {
       ]
     }
   },
-  "9": {
+  "10": {
     "morning": [
       {
         "name": "Columbia State Historic Park — Living Gold Rush Town",
@@ -727,27 +756,27 @@ window.ACTIVITY_DATA = {
       ]
     }
   },
-  "10": {
+  "11": {
     "activities": [
       {
-        "name": "Muir Woods National Monument",
-        "type": "outdoor/hiking",
-        "price": "$15/adult 16+, free kids 15 and under; PLUS $10 parking or $4/person shuttle reservation",
-        "description": "Old-growth coastal redwoods just 30 minutes from San Francisco — some trees are over 1,000 years old and 250 feet tall. The Main Trail is 1 mile round trip, completely flat, paved, and stroller-accessible. Cathedral Grove (3/4 mile in) is the most awe-inspiring old-growth section with the tallest trees in the park. No pets allowed. Bring a jacket — the canyon stays cool and shaded year-round.",
-        "duration": "2–2.5 hours",
-        "link": "https://www.nps.gov/muwo/index.htm",
-        "lat": 37.897,
-        "lng": -122.5811,
+        "name": "Exploratorium — Hands-On Science Museum",
+        "type": "indoor/educational",
+        "price": "$40 adults, $25 kids 4-12, free under 4",
+        "description": "One of the world's greatest hands-on science museums, on the Embarcadero with bay views. Over 650 interactive exhibits covering physics, perception, biology, and art. The Tactile Dome (total darkness, navigate by touch) is legendary. Kids of all ages go wild here. On the waterfront near Pier 39, so it pairs perfectly with the Wharf.",
+        "duration": "2-3 hours",
+        "link": "https://www.exploratorium.edu",
+        "lat": 37.8017,
+        "lng": -122.3977,
         "kidFriendly": true,
-        "npsCovered": true,
+        "npsCovered": false,
         "advanceBookingRequired": true,
-        "bookingNote": "TIMED ENTRY REQUIRED — reservations open 90 days in advance at gomuirwoods.com (NOT recreation.gov). Book as early as possible; May weekends sell out quickly. The $15/adult entry fee IS covered by the America the Beautiful Pass. The $10 parking or $4/person shuttle reservation fee is NOT covered by the pass and must be paid separately."
+        "bookingNote": "Buy tickets online at exploratorium.edu — walk-ups available but online is faster."
       },
       {
         "name": "Pier 39 — Sea Lions & Free Attractions",
         "type": "outdoor/free",
         "price": "Free to visit pier; individual attractions extra",
-        "description": "San Francisco's most visited attraction is also mostly free. Hundreds of California sea lions haul out on the K-Dock floats (visible from the pier for free). Watch the two-story carousel ($3/ride), catch free street performers and magic shows, and visit the nearby free antique arcade (Musée Mécanique). Fisherman's Wharf restaurants and Ghirardelli Square are a short walk away.",
+        "description": "San Francisco's most visited attraction is also mostly free. Hundreds of California sea lions haul out on the K-Dock floats. Watch the two-story carousel ($3/ride), catch free street performers, and visit the free antique arcade (Musee Mecanique). Fisherman's Wharf and Ghirardelli Square are a short walk away.",
         "duration": "2 hours",
         "link": "https://pier39.com",
         "lat": 37.8087,
@@ -758,9 +787,9 @@ window.ACTIVITY_DATA = {
       {
         "name": "Golden Gate Bridge Walk",
         "type": "outdoor/free",
-        "price": "Free (pedestrian); parking at Visitor Plaza $25–$35",
-        "description": "Walking the 1.7-mile east sidewalk of the Golden Gate Bridge is one of the most iconic things you can do in San Francisco. The views of the bay, Alcatraz, and the SF skyline are stunning. The walk is mostly flat and stroller-accessible. Dress in warm layers — it's almost always windy and often foggy at the bridge even on sunny SF days. Bridge open to pedestrians sunrise to 9pm.",
-        "duration": "1.5–2 hours (round trip)",
+        "price": "Free (pedestrian); parking at Visitor Plaza $25-$35",
+        "description": "Walking the 1.7-mile east sidewalk of the Golden Gate Bridge is one of the most iconic things you can do in San Francisco. Views of the bay, Alcatraz, and the SF skyline. Mostly flat and stroller-accessible. Dress in warm layers — always windy. Open sunrise to 9pm.",
+        "duration": "1.5-2 hours (round trip)",
         "link": "https://www.goldengate.org/bridge/visiting-the-bridge/",
         "lat": 37.8199,
         "lng": -122.4783,
@@ -768,11 +797,23 @@ window.ACTIVITY_DATA = {
         "npsCovered": false
       },
       {
+        "name": "Cable Car Ride — Powell-Hyde Line",
+        "type": "outdoor/transit experience",
+        "price": "$8/person one-way (free under 5)",
+        "description": "The San Francisco cable car is the last manually operated cable car system in the world — a National Historic Landmark. The Powell-Hyde line has the best views: climbs Nob Hill and descends to Ghirardelli Square with stunning bay panoramas. Kids love hanging off the side. Expect 30-60 min waits at the Powell St turnaround; shorter waits if you board mid-route. Ride late afternoon when lines thin out.",
+        "duration": "30 min ride + wait time",
+        "link": "https://www.sfmta.com/getting-around/muni/cable-cars",
+        "lat": 37.7847,
+        "lng": -122.408,
+        "kidFriendly": true,
+        "npsCovered": false
+      },
+      {
         "name": "California Academy of Sciences",
         "type": "indoor/educational",
-        "price": "$45–$55 adults, $39–$45 kids 3–12, free under 3",
-        "description": "One of the most extraordinary science museums in the world, inside Golden Gate Park. Features a living rainforest dome you walk through with tropical birds and butterflies, a 4-story coral reef aquarium, a planetarium, natural history hall with dinosaurs and an albino alligator, and a living roof covered in California wildflowers. Kids could easily spend a full day here. Consider doing this INSTEAD of Golden Gate Bridge if the weather is iffy.",
-        "duration": "3–4 hours",
+        "price": "$45-$55 adults, $39-$45 kids 3-12, free under 3",
+        "description": "One of the most extraordinary science museums in the world, inside Golden Gate Park. Living rainforest dome with tropical birds and butterflies, 4-story coral reef aquarium, planetarium, dinosaurs, and an albino alligator. Consider this INSTEAD of Exploratorium if choosing between the two.",
+        "duration": "3-4 hours",
         "link": "https://www.calacademy.org",
         "lat": 37.7699,
         "lng": -122.4661,
@@ -780,61 +821,41 @@ window.ACTIVITY_DATA = {
         "npsCovered": false,
         "advanceBookingRequired": true,
         "bookingNote": "Buy timed tickets in advance at calacademy.org — weekends sell out."
-      },
-      {
-        "name": "VW Van Tour of San Francisco",
-        "type": "outdoor/tour",
-        "price": "~$75–$100/person (check operator for family pricing)",
-        "description": "Tour San Francisco in a classic Volkswagen van — a retro, Instagram-worthy way to see the city's highlights with a local guide. Most tours cover the Golden Gate Bridge, Haight-Ashbury, Lombard Street, Painted Ladies, and Chinatown in about 2–3 hours. Kids love riding in the vintage van. Several operators run these; book in advance.",
-        "duration": "2–3 hours",
-        "link": "https://www.google.com/search?q=VW+van+tour+San+Francisco",
-        "lat": 37.7749,
-        "lng": -122.4194,
-        "kidFriendly": true,
-        "npsCovered": false,
-        "advanceBookingRequired": true,
-        "bookingNote": "Book online in advance. Check operators like San Francisco Love Tours or Vantigo SF for family-friendly options and group pricing."
       }
     ],
     "scenicDrives": [
       {
         "name": "Twin Peaks Boulevard — Panoramic Overlook",
-        "description": "Drive up Twin Peaks for a 360-degree panoramic view of San Francisco, the bay, and on clear days, the Marin headlands and Mount Tamalpais. Best at sunset. Short walk from the parking area to the summit viewpoint — very windy but spectacular.",
-        "duration": "30–45 min",
+        "description": "Drive up Twin Peaks for a 360-degree panoramic view of San Francisco, the bay, and on clear days, the Marin headlands. Best at sunset. Short walk from parking to the summit viewpoint.",
+        "duration": "30-45 min",
         "link": "[LINK: search \"Twin Peaks Boulevard San Francisco scenic overlook\"]"
-      },
-      {
-        "name": "Marin Headlands — Hawk Hill Overlook",
-        "description": "After Muir Woods, cross the Golden Gate Bridge and turn off at the Marin Headlands exit for a 10-minute drive to Hawk Hill. The view back toward San Francisco and the Golden Gate Bridge from this hilltop is one of the most iconic in California.",
-        "duration": "30–45 min detour",
-        "link": "[LINK: search \"Hawk Hill Marin Headlands Golden Gate Bridge overlook\"]"
       }
     ],
     "hiddenGem": {
-      "name": "Musée Mécanique — Free Antique Arcade",
-      "description": "Near Pier 45 at Fisherman's Wharf, this museum contains the world's largest collection of antique coin-operated arcade machines — some dating back to the 1890s. Entry is free; the machines cost 25 cents to $1 to play. Kids love the mechanical fortune tellers, penny arcade games, and 100-year-old music machines.",
+      "name": "Musee Mecanique — Free Antique Arcade",
+      "description": "Near Pier 45 at Fisherman's Wharf. World's largest collection of antique coin-operated arcade machines — some from the 1890s. Entry is free; machines cost 25 cents to $1. Kids love the mechanical fortune tellers and 100-year-old music machines.",
       "link": "[LINK: search \"Musee Mecanique San Francisco Fishermans Wharf antique arcade\"]"
     },
     "rainyDay": {
-      "name": "California Academy of Sciences (see above)",
-      "description": "If it rains, the Academy of Sciences becomes the clear #1 choice — it's all indoors and you could easily spend 4+ hours. The rainforest dome, aquarium, and planetarium are world-class wet-weather activities.",
-      "price": "$45–$55 adults, $39–$45 kids 3–12, free under 3",
+      "name": "California Academy of Sciences",
+      "description": "If it rains, the Academy of Sciences is the clear #1 choice — all indoors, 4+ hours easily. Rainforest dome, aquarium, planetarium.",
+      "price": "$45-$55 adults, $39-$45 kids 3-12, free under 3",
       "link": "https://www.calacademy.org",
       "icon": "🌧"
     },
     "priorities": {
       "mustDo": [
-        "Muir Woods — book timed entry NOW at gomuirwoods.com, sells out fast",
         "Pier 39 sea lions — free and endlessly entertaining for kids",
-        "Golden Gate Bridge Walk — the iconic SF experience"
+        "Golden Gate Bridge Walk — the iconic SF experience",
+        "Cable Car ride — Powell-Hyde line for the best views"
       ],
       "skipIfShort": [
-        "VW Van Tour — fun but pricey, skip if doing the bridge walk + Pier 39",
-        "California Academy of Sciences — amazing but 3-4 hrs, choose this OR bridge walk + Pier 39"
+        "Choose ONE science museum: Exploratorium (more hands-on) OR Cal Academy (more variety)",
+        "Twin Peaks — great views but requires driving across the city"
       ]
     }
   },
-  "11": {
+  "12": {
     "activities": [
       {
         "name": "Armstrong Redwoods State Natural Reserve",
@@ -905,113 +926,41 @@ window.ACTIVITY_DATA = {
       ]
     }
   },
-  "12": {
-    "activities": [
-      {
-        "name": "Lake Sonoma Recreation Area",
-        "type": "outdoor/water",
-        "price": "Free",
-        "description": "A beautiful reservoir in the Dry Creek Valley hills above Healdsburg with swimming beaches, hiking trails, and fishing. The Yorty Creek Recreation Area has a sandy swimming beach that's free and excellent for families. The surrounding oak woodland trails are easy and scenic. On warm June 2 days, this is one of the best free outdoor spots in Sonoma County.",
-        "duration": "2–3 hours",
-        "link": "[LINK: search \"Lake Sonoma Recreation Area swimming beach Yorty Creek\"]",
-        "lat": 38.7126,
-        "lng": -123.02,
-        "kidFriendly": true,
-        "npsCovered": false
-      },
-      {
-        "name": "Francis Ford Coppola Winery — Pool & Bocce",
-        "type": "outdoor/family",
-        "price": "Pool passes required (check current rates at winery); wine tasting extra",
-        "description": "The Godfather director's winery in Geyserville is one of the most family-friendly in Napa/Sonoma. The property has two swimming pools with lifeguards, bocce ball courts, a café, and movie memorabilia from Coppola's films. Kids swim while adults taste wine and enjoy the scenery. Pool passes go on sale in April — book early as they sell out on summer weekends.",
-        "duration": "2–3 hours",
-        "link": "https://www.francisfordcoppolawinery.com",
-        "lat": 38.7107,
-        "lng": -122.8977,
-        "kidFriendly": true,
-        "npsCovered": false,
-        "advanceBookingRequired": true,
-        "bookingNote": "Pool passes must be booked in advance online — they sell out on weekends. Check francisfordcoppolawinery.com for current season availability and pricing."
-      },
-      {
-        "name": "Bella Vineyards Wine Cave Tour — Dry Creek Valley",
-        "type": "outdoor/cultural",
-        "price": "~$35/adult for cave tour (kids generally free or reduced)",
-        "description": "One of the most child-friendly winery experiences in Sonoma County. Bella's underground wine caves are dramatic and cool, and the outdoor lawn has bocce ball, hula hoops, bag toss, and wide-open spaces for kids to roam. Dogs and kids are explicitly welcomed. The cave tour is genuinely interesting for curious older kids.",
-        "duration": "1.5 hours",
-        "link": "https://www.bellawinery.com",
-        "lat": 38.6866,
-        "lng": -122.9746,
-        "kidFriendly": true,
-        "npsCovered": false
-      }
-    ],
-    "scenicDrives": [
-      {
-        "name": "Alexander Valley — Highway 128",
-        "description": "A gorgeous drive through the Alexander Valley from Healdsburg toward Cloverdale along Highway 128. The valley floor is planted with vines and the hillsides are covered in oak woodland. One of the prettiest agricultural landscapes in California.",
-        "duration": "45 min",
-        "link": "[LINK: search \"Alexander Valley Highway 128 scenic drive Healdsburg\"]"
-      }
-    ],
-    "hiddenGem": {
-      "name": "Healdsburg Veterans Memorial Beach",
-      "description": "A free swimming hole on the Russian River right in Healdsburg with a sandy beach, a rope swing, and calm water. Local families come here all summer. Completely free, easy to access from downtown, and far less hyped than the winery scene. A great hot-afternoon stop for kids who need to cool off.",
-      "link": "[LINK: search \"Healdsburg Veterans Memorial Beach Russian River swimming\"]"
-    },
-    "rainyDay": {
-      "name": "Safari West Wildlife Preserve",
-      "description": "A private African wildlife preserve 30 minutes from Windsor in Santa Rosa. Over 900 animals including giraffe, zebra, cheetah, and cape buffalo. Open-air jeep tours available rain or shine. Genuinely impressive — unlike anything else in Northern California. Book in advance.",
-      "price": "$58 adults, $30 kids 3–12",
-      "link": "https://www.safariwest.com",
-      "icon": "🌧"
-    },
-    "priorities": {
-      "mustDo": [
-        "Family time — this is the chill day with family in Windsor",
-        "Lake Sonoma swimming — best free outdoor spot in the area on a warm day"
-      ],
-      "skipIfShort": [
-        "Bella Vineyards cave tour — fun but not essential with kids",
-        "Francis Ford Coppola Winery pool — needs advance booking, pricey"
-      ]
-    }
-  },
   "13": {
     "activities": [
       {
-        "name": "Healdsburg Plaza — Morning Farmers Market & Stroll",
+        "name": "Healdsburg Plaza — Day Trip (15 min from Windsor)",
         "type": "outdoor/free",
-        "price": "Free to browse; budget for produce and snacks",
-        "description": "Healdsburg's beautiful central plaza is one of the most pleasant town squares in California. On Saturday mornings (May through November), the Healdsburg Farmers Market sets up around the plaza with fresh produce, local food vendors, and artisans. Pack a picnic, let the kids play in the fountain, and soak up the wine-country small-town atmosphere.",
-        "duration": "1–2 hours",
-        "link": "[LINK: search \"Healdsburg Plaza Farmers Market Saturday\"]",
+        "price": "Free to browse",
+        "description": "Healdsburg's beautiful central plaza is one of the most pleasant town squares in California. Great restaurants, tasting rooms, and shops surround the square. A perfect morning or afternoon outing from Windsor. Saturday farmers market May through November.",
+        "duration": "1-2 hours",
+        "link": "[LINK: search \"Healdsburg Plaza\"]",
         "lat": 38.6111,
         "lng": -122.8697,
         "kidFriendly": true,
         "npsCovered": false
       },
       {
-        "name": "Armstrong Redwoods — East Ridge Trail (if not done Day 9)",
-        "type": "outdoor/hiking",
-        "price": "$10/vehicle",
-        "description": "If you didn't visit Armstrong Redwoods on Day 9, this is a perfect Day 12 option. The East Ridge Trail is a moderate 2.7-mile loop above the valley floor with good views and old-growth groves. The Pioneer Nature Trail (1 mile, flat, paved) is the easy family option. Giant trees, mossy forest floor, and complete quiet.",
-        "duration": "2 hours",
-        "link": "https://www.parks.ca.gov/?page_id=450",
-        "lat": 38.5363,
-        "lng": -123.0022,
-        "kidFriendly": true,
-        "npsCovered": false
-      },
-      {
         "name": "Guerneville & Russian River Beaches",
         "type": "outdoor/free",
-        "price": "Free",
-        "description": "The quirky, laid-back town of Guerneville on the Russian River is worth a stop. Johnson's Beach (small day use fee) has calm river swimming with a sandy bank, kayak and paddleboard rentals, and a festive summer atmosphere. The town has great tacos, ice cream, and a friendly vibe. A perfect post-redwoods afternoon.",
+        "price": "Free (small day use fee at Johnson's Beach)",
+        "description": "The quirky, laid-back town of Guerneville on the Russian River is ~30 min from Windsor. Johnson's Beach has calm river swimming with a sandy bank, kayak and paddleboard rentals. The town has great tacos, ice cream, and a friendly vibe. Perfect summer afternoon with kids.",
         "duration": "2 hours",
         "link": "[LINK: search \"Johnson's Beach Guerneville Russian River swimming\"]",
         "lat": 38.5024,
         "lng": -122.9994,
+        "kidFriendly": true,
+        "npsCovered": false
+      },
+      {
+        "name": "Armstrong Redwoods State Natural Reserve",
+        "type": "outdoor/hiking",
+        "price": "$10/vehicle",
+        "description": "A magnificent grove of ancient coastal redwoods north of Guerneville — 45 min from Windsor. The oldest tree (Colonel Armstrong) is over 1,400 years old; the tallest tops 310 feet. The Pioneer Nature Trail is 1 mile, flat, and paved — easy for all ages. A real redwoods warm-up before Humboldt later in the trip.",
+        "duration": "2 hours",
+        "link": "https://www.parks.ca.gov/?page_id=450",
+        "lat": 38.5363,
+        "lng": -123.0022,
         "kidFriendly": true,
         "npsCovered": false
       }
@@ -1019,31 +968,30 @@ window.ACTIVITY_DATA = {
     "scenicDrives": [
       {
         "name": "Westside Road — Russian River Wine Country",
-        "description": "A narrow, winding road along the western side of the Russian River from Healdsburg to Guerneville, passing small artisan wineries, redwood groves, and the river. One of the most scenic and uncrowded wine-country drives in Sonoma County.",
+        "description": "A narrow, winding road along the western side of the Russian River from Healdsburg to Guerneville, passing small artisan wineries, redwood groves, and the river.",
         "duration": "45 min",
         "link": "[LINK: search \"Westside Road Russian River Healdsburg scenic drive\"]"
       }
     ],
     "hiddenGem": {
       "name": "Preston Farm & Winery — Sheep, Cats & Picnic",
-      "description": "Preston Farm in Dry Creek Valley is not your typical winery. It's a working farm with sheep, chickens, cats, and gardens, with an honor-system farm stand selling homemade breads, olive oil, and jams. Kids can wander the gardens and meet the animals while adults taste wine. Bring your own picnic to enjoy on the grounds.",
+      "description": "Preston Farm in Dry Creek Valley is a working farm with sheep, chickens, cats, and gardens, with an honor-system farm stand selling homemade breads, olive oil, and jams. Kids can wander the gardens while adults taste wine. Bring a picnic.",
       "link": "[LINK: search \"Preston Farm Winery Dry Creek Valley Healdsburg\"]"
     },
     "rainyDay": {
-      "name": "Charles M. Schulz Museum — Santa Rosa",
-      "description": "20 minutes from Healdsburg, the Schulz Museum celebrates the creator of Peanuts (Charlie Brown, Snoopy). Features original comic strip artwork, a recreation of Schulz's studio, rotating exhibits, and a great gift shop. Kids who know Snoopy will love it; the art and storytelling are interesting even for those who don't.",
-      "price": "$15 adults, $10 kids 4–18, free under 4",
+      "name": "Charles M. Schulz Museum — Santa Rosa (20 min)",
+      "description": "The Schulz Museum celebrates the creator of Peanuts (Charlie Brown, Snoopy). Original comic strip artwork, a recreation of Schulz's studio, rotating exhibits, and a great gift shop.",
+      "price": "$15 adults, $10 kids 4-18, free under 4",
       "link": "https://schulzmuseum.org",
       "icon": "🌧"
     },
     "priorities": {
       "mustDo": [
-        "Healdsburg Plaza & Farmers Market — charming town square, great food",
-        "Guerneville & Russian River — swimming and lunch in a fun little town"
+        "Healdsburg Plaza — charming town square, great food (15 min from Windsor)",
+        "Russian River swimming in Guerneville — perfect summer afternoon with kids"
       ],
       "skipIfShort": [
-        "Armstrong Redwoods (if already done Day 9) — beautiful but repetitive",
-        "Westside Road scenic drive — pretty but similar to other wine country drives"
+        "Armstrong Redwoods — beautiful but you'll see plenty of redwoods on Days 15-17"
       ]
     }
   },

@@ -124,30 +124,44 @@ window.HOTEL_DATA = {
   },
   "4": {
     "optionA": {
-      "name": "Cambria Palms Motel",
+      "name": "Pacific Inn Monterey",
       "stars": 3,
-      "bookingUrl": "https://www.booking.com/hotel/us/cambria-palms-motel.html?checkin=2026-05-26&checkout=2026-05-27&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$180",
-      "priceNote": "Estimated for May 26 2026 (2 adults + 3 kids). Verify on Booking.com.",
-      "roomConfig": "Family room with 2 Queen beds. Walking distance to Moonstone Beach and village shops.",
-      "freeBreakfast": false,
+      "bookingUrl": "https://www.booking.com/hotel/us/best-western-ramona-inn.html?checkin=2026-05-26&checkout=2026-05-27&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$191",
+      "priceNote": "Booking.com verified for May 26 2026 (2 adults + 3 kids). Rated 8.5/10.",
+      "roomConfig": "Family rooms with 2 Queen beds (sleeps 5). Free parking included.",
+      "freeBreakfast": true,
       "separateRoom": false,
       "pool": false,
-      "reason": "Clean, affordable motel steps from Moonstone Beach. Cambria is a small town — most lodging is charming motels and inns. Great location for an evening boardwalk walk."
+      "reason": "Well-rated (8.5/10) budget hotel in Monterey with free breakfast and free parking. Near Cannery Row and Monterey Bay Aquarium. Best value-for-rating option in Monterey for a family of 5."
     },
     "optionB": {
-      "name": "Cavalier Oceanfront Resort",
+      "name": "Padre Oaks — Monterey",
       "stars": 3,
-      "bookingUrl": "https://www.booking.com/hotel/us/cavalier-oceanfront-resort.html?checkin=2026-05-26&checkout=2026-05-27&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$250",
-      "priceNote": "Estimated for May 26 2026 (2 adults + 3 kids). Verify on Booking.com.",
-      "roomConfig": "Oceanfront rooms with fireplaces. Family rooms with 2 Queen beds available.",
+      "bookingUrl": "https://www.booking.com/hotel/us/padre-oaks.html?checkin=2026-05-26&checkout=2026-05-27&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$229",
+      "priceNote": "Booking.com verified for May 26 2026 (2 adults + 3 kids). Rated 8.5/10.",
+      "roomConfig": "Spacious rooms with 2 Queen beds or King + sofa bed. Family-friendly layout (sleeps 5). Free parking.",
       "freeBreakfast": false,
       "separateRoom": false,
-      "pool": false,
-      "reason": "Oceanfront resort in San Simeon, right between Hearst Castle and the Elephant Seal Rookery. Cliffside location with ocean views from rooms. Higher price but unbeatable location."
+      "pool": true,
+      "reason": "Highly rated (8.5/10) Monterey hotel with pool. A step up from the Pacific Inn at a modest premium. Close to Cannery Row, Aquarium, and 17-Mile Drive."
     },
-    "optionC": null
+    "optionC": {
+      "name": "Coastal Cottage Two Blocks from Cannery Row",
+      "isAirbnb": true,
+      "pricePerNight": "$265",
+      "roomConfig": "Entire cottage · 2 bed · sleeps 5",
+      "bookingUrl": "https://www.airbnb.com/s/Monterey--CA/homes?checkin=2026-05-26&checkout=2026-05-27&adults=2&children=3&min_bedrooms=2",
+      "reason": "A classic Monterey fisherman's cottage blocks from the Aquarium — all the character of Cannery Row without the hotel-corridor feel. Kids love having a real home base after the tide pools.",
+      "amenities": [
+        "Full kitchen",
+        "Fireplace",
+        "Washer/dryer",
+        "Parking",
+        "Outdoor seating"
+      ]
+    }
   },
   "5": {
     "optionA": {
@@ -192,9 +206,36 @@ window.HOTEL_DATA = {
   },
   "6": {
     "optionA": {
+      "name": "Cambria Palms Motel",
+      "stars": 3,
+      "bookingUrl": "https://www.booking.com/hotel/us/cambria-palms-motel.html?checkin=2026-05-28&checkout=2026-05-29&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$180",
+      "priceNote": "Estimated for May 26 2026 (2 adults + 3 kids). Verify on Booking.com.",
+      "roomConfig": "Family room with 2 Queen beds. Walking distance to Moonstone Beach and village shops.",
+      "freeBreakfast": false,
+      "separateRoom": false,
+      "pool": false,
+      "reason": "Clean, affordable motel steps from Moonstone Beach. Cambria is a small town — most lodging is charming motels and inns. Great location for an evening boardwalk walk."
+    },
+    "optionB": {
+      "name": "Cavalier Oceanfront Resort",
+      "stars": 3,
+      "bookingUrl": "https://www.booking.com/hotel/us/cavalier-oceanfront-resort.html?checkin=2026-05-28&checkout=2026-05-29&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$250",
+      "priceNote": "Estimated for May 26 2026 (2 adults + 3 kids). Verify on Booking.com.",
+      "roomConfig": "Oceanfront rooms with fireplaces. Family rooms with 2 Queen beds available.",
+      "freeBreakfast": false,
+      "separateRoom": false,
+      "pool": false,
+      "reason": "Oceanfront resort in San Simeon, right between Hearst Castle and the Elephant Seal Rookery. Cliffside location with ocean views from rooms. Higher price but unbeatable location."
+    },
+    "optionC": null
+  },
+  "7": {
+    "optionA": {
       "name": "Mariposa Lodge Motel",
       "stars": 3,
-      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Mariposa%2C+CA&checkin=2026-05-28&checkout=2026-05-29&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Mariposa%2C+CA&checkin=2026-05-30&checkout=2026-05-29&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
       "pricePerNight": "$150–$200",
       "priceNote": "Estimated for May 28 2026. Mariposa is the gateway to Yosemite — book early, limited lodging.",
       "roomConfig": "2 Queen beds, family rooms available. Walking distance to downtown Mariposa.",
@@ -220,7 +261,7 @@ window.HOTEL_DATA = {
       "isAirbnb": true,
       "pricePerNight": "$200–$280",
       "roomConfig": "Entire cabin · 2 bed · sleeps 5",
-      "bookingUrl": "https://www.airbnb.com/s/Mariposa--CA/homes?checkin=2026-05-28&checkout=2026-05-29&adults=2&children=3&min_bedrooms=2",
+      "bookingUrl": "https://www.airbnb.com/s/Mariposa--CA/homes?checkin=2026-05-30&checkout=2026-05-29&adults=2&children=3&min_bedrooms=2",
       "reason": "A private cabin in the Sierra foothills outside Mariposa — pine trees, stars, quiet. The authentic Yosemite experience starts the moment you arrive. Book very early for May dates.",
       "amenities": [
         "Full kitchen",
@@ -231,7 +272,7 @@ window.HOTEL_DATA = {
       ]
     }
   },
-  "7": {
+  "8": {
     "optionA": {
       "name": "Mariposa Lodge Motel (2nd night)",
       "stars": 3,
@@ -272,7 +313,7 @@ window.HOTEL_DATA = {
       ]
     }
   },
-  "8": {
+  "9": {
     "optionA": {
       "name": "Sonora Days Inn — Historic Sonora",
       "stars": 2,
@@ -313,7 +354,7 @@ window.HOTEL_DATA = {
       ]
     }
   },
-  "9": {
+  "10": {
     "optionA": {
       "name": "Hilton San Francisco Financial District",
       "stars": 4,
@@ -354,7 +395,7 @@ window.HOTEL_DATA = {
       ]
     }
   },
-  "10": {
+  "11": {
     "optionA": {
       "name": "Hilton San Francisco Financial District",
       "stars": 4,
@@ -395,7 +436,7 @@ window.HOTEL_DATA = {
       ]
     }
   },
-  "11": {
+  "12": {
     "optionA": {
       "name": "Hampton Inn & Suites Windsor — Sonoma Wine Country",
       "stars": 3,
@@ -436,7 +477,7 @@ window.HOTEL_DATA = {
       ]
     }
   },
-  "12": {
+  "13": {
     "optionA": {
       "name": "Hampton Inn & Suites Windsor — Sonoma Wine Country",
       "stars": 3,
@@ -474,47 +515,6 @@ window.HOTEL_DATA = {
         "Outdoor space",
         "2 bedrooms",
         "Washer/dryer"
-      ]
-    }
-  },
-  "13": {
-    "optionA": {
-      "name": "Hampton Inn & Suites Windsor — Sonoma Wine Country",
-      "stars": 3,
-      "bookingUrl": "https://www.booking.com/hotel/us/hampton-inn-suites-windsor-sonoma-wine-country.html?checkin=2026-06-04&checkout=2026-06-05&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$145",
-      "priceNote": "Booking.com verified for adjacent dates (2 adults + 3 kids). Same hotel as Nights 9-10 — 6 miles from Healdsburg.",
-      "roomConfig": "King Bed Studio Suite with Sofa Bed (sleeps 5) — separate living area with sofa bed + king bedroom.",
-      "freeBreakfast": true,
-      "separateRoom": true,
-      "pool": true,
-      "reason": "Stay a 3rd night at the same Hampton Inn — no repacking, free breakfast, pool. Only 6 miles from downtown Healdsburg plaza. Saves $118/night vs. Hotel Trio."
-    },
-    "optionB": {
-      "name": "Hotel Trio Healdsburg",
-      "stars": 3,
-      "bookingUrl": "https://www.booking.com/hotel/us/trio-healdsburg.html?checkin=2026-06-04&checkout=2026-06-05&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$263",
-      "priceNote": "Booking.com verified for Jun 2 2026 (2 adults + 3 kids). Self-parking $20/night.",
-      "roomConfig": "Bunk Room Suite: 4 Queen beds, full kitchen, flat-screen TVs, living area (sleeps 5–8). Or Family Suite with separate bedroom + sofa bed.",
-      "freeBreakfast": false,
-      "separateRoom": true,
-      "pool": true,
-      "reason": "All-suite hotel with full kitchens right in Healdsburg. Bunk Room Suite purpose-built for families. Walking distance to Healdsburg plaza — worth the premium if you want the downtown wine country experience."
-    },
-    "optionC": {
-      "name": "Healdsburg Bungalow with Pool — Wine Country",
-      "isAirbnb": true,
-      "pricePerNight": "$245",
-      "roomConfig": "Entire bungalow · 2 bed · sleeps 5",
-      "bookingUrl": "https://www.airbnb.com/s/Healdsburg--CA/homes?checkin=2026-06-04&checkout=2026-06-05&adults=2&children=3&min_bedrooms=2",
-      "reason": "A private bungalow in Healdsburg is a fraction of the Montage price with the same wine country setting. Walking distance to the Healdsburg plaza — wander to dinner at one of its Michelin-starred restaurants and walk back.",
-      "amenities": [
-        "Private pool",
-        "Full kitchen",
-        "Outdoor dining area",
-        "Fire pit",
-        "2 bedrooms"
       ]
     }
   },

@@ -16,7 +16,7 @@ const REGION_CONFIG = {
   "San Francisco":          { color: "#45b7d1", icon: "🌉", order: 5 },
   "Wine Country":           { color: "#96ceb4", icon: "🍷", order: 6 },
   "Redwoods":               { color: "#2d6a4f", icon: "🌲", order: 7 },
-  "Oregon Coast":           { color: "#74b9ff", icon: "🦀", order: 8 },
+  "Southern Oregon":        { color: "#74b9ff", icon: "🏔", order: 8 },
   "Crater Lake & Oregon":   { color: "#a29bfe", icon: "🏔", order: 9 },
   "Portland":               { color: "#fd79a8", icon: "🌹", order: 10 }
 };
@@ -35,7 +35,7 @@ const BUDGET_ESTIMATES = [
   { category: "Groceries",                detail: "~$40 × 7 nights",                   amount: 280 },
   { category: "Gas",                       detail: "~1,900 miles, SUV at 22 mpg",       amount: 420 },
   { category: "Attractions / NPS entries", detail: "State parks, aquarium, caves tour, gold panning", amount: 350 },
-  { category: "America the Beautiful Pass",detail: "Covers 7 NPS sites on this trip",   amount: 80 },
+  { category: "America the Beautiful Pass",detail: "Covers 8 NPS sites on this trip",   amount: 80 },
   { category: "Misc / Emergency fund",     detail: "Snacks, parking, surprises",        amount: 500 }
 ];
 
@@ -128,7 +128,7 @@ const MISSING_ATTRACTIONS = [
     emoji: "🌋",
     category: "Inland Detour",
     why: "Lassen is California's most underrated national park — active volcanic landscape, boiling mud pots, hydrothermal pools. Located ~3 hrs east of US-101 near Redding, CA. Taking the coastal route bypasses it entirely.",
-    howToAdd: "Replace the Healdsburg → Orick coastal route (Day 14) with an inland route: Healdsburg → I-5 → Lassen NP overnight → back to US-101 near Eureka. Adds 1 day and trades redwood scenery for volcanic scenery."
+    howToAdd: "Replace the Windsor → Orick coastal route (Day 14) with an inland route: Windsor → I-5 → Lassen NP overnight → back to US-101 near Eureka. Adds 1 day and trades redwood scenery for volcanic scenery."
   },
   {
     name: "Full Oregon Coast (Bandon, Heceta Head, Cape Perpetua)",

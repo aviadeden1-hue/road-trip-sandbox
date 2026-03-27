@@ -73,6 +73,56 @@ window.FOOD_DATA = {
     }
   },
   "4": {
+    "dinnerType": "grocery",
+    "dinner": null,
+    "lunch": {
+      "name": "Firestone Grill — San Luis Obispo",
+      "cuisine": "BBQ — tri-tip sandwiches, ribs, burgers",
+      "address": "1001 Higuera St, San Luis Obispo, CA 93401",
+      "mapsLink": "https://www.google.com/maps/search/Firestone+Grill+San+Luis+Obispo",
+      "whyChosen": "An SLO institution. The tri-tip sandwich is the Central Coast's signature dish. Huge portions, great prices, family-friendly. Right on Higuera St downtown near Bubblegum Alley.",
+      "costNote": "~$12-18/person. Cash and cards accepted.",
+      "reservationNeeded": false
+    },
+    "groceryStore": {
+      "name": "Whole Foods Market Monterey",
+      "address": "800 Del Monte Center, Monterey, CA 93940",
+      "mapsLink": "https://www.google.com/maps/search/Whole+Foods+Market+800+Del+Monte+Center+Monterey+CA",
+      "distance": "About 1.5 miles from Cannery Row / hotel zone",
+      "noCookMeals": [
+        "Rotisserie chicken + prepared sides from the hot bar + fresh fruit",
+        "Whole Foods sushi platter + miso soup + edamame",
+        "Smoked salmon + cream cheese + bagels + pre-made salad"
+      ]
+    }
+  },
+  "5": {
+    "dinnerType": "restaurant",
+    "dinner": {
+      "name": "Old Monterey Cafe",
+      "cuisine": "Classic American — comfort food, seafood, breakfast-all-day",
+      "address": "489 Alvarado St, Monterey, CA 93940",
+      "websiteLink": "[LINK: search \"Old Monterey Cafe Alvarado St\"]",
+      "mapsLink": "https://www.google.com/maps/search/Old+Monterey+Cafe+489+Alvarado+St+Monterey+CA",
+      "signatureDish": "Fresh local seafood, comfort classics, famous pancakes and omelets",
+      "pricePerPerson": "$18-30",
+      "familyPrice": "$90-150 for family of 5",
+      "whyChosen": "A beloved Monterey institution on historic Alvarado Street. Casual, family-friendly, with hearty portions after a big Aquarium day.",
+      "reservationNeeded": false,
+      "reserveNote": "Walk-in friendly."
+    },
+    "lunch": {
+      "name": "Clam Chowder Bread Bowl on the Wharf",
+      "cuisine": "Classic Monterey seafood street food",
+      "address": "Old Fisherman's Wharf, Monterey, CA 93940",
+      "mapsLink": "https://www.google.com/maps/search/Old+Fisherman%27s+Wharf+Monterey+CA",
+      "whyChosen": "The quintessential Monterey experience — clam chowder in a sourdough bread bowl, eaten walking along the wharf with sea lions barking below.",
+      "costNote": "~$12-18/person. Multiple vendors to choose from.",
+      "reservationNeeded": false
+    },
+    "groceryStore": null
+  },
+  "6": {
     "dinnerType": "restaurant",
     "dinner": {
       "name": "Linn's Restaurant",
@@ -88,36 +138,12 @@ window.FOOD_DATA = {
       "reserveNote": "Walk-in friendly, but busy summer weekends. Arrive before 6 PM."
     },
     "lunch": {
-      "name": "Firestone Grill — San Luis Obispo",
-      "cuisine": "BBQ — tri-tip sandwiches, ribs, burgers",
-      "address": "1001 Higuera St, San Luis Obispo, CA 93401",
-      "mapsLink": "https://www.google.com/maps/search/Firestone+Grill+San+Luis+Obispo",
-      "whyChosen": "An SLO institution. The tri-tip sandwich is the Central Coast's signature dish and Firestone does it perfectly. Huge portions, great prices, family-friendly. Right on Higuera St downtown.",
-      "costNote": "~$12-18/person. Cash and cards accepted.",
-      "reservationNeeded": false
+      "type": "packed",
+      "note": "Pack lunch from Monterey before the Big Sur drive. There are very few food stops along the CA-1 through Big Sur. Eat at a scenic pullout overlooking the Pacific — best picnic on the trip so far."
     },
     "groceryStore": null
   },
-  "5": {
-    "dinnerType": "grocery",
-    "dinner": null,
-    "lunch": {
-      "type": "packed",
-      "note": "Grab pastries or a quick breakfast in Cambria before departing. Paso Robles candy shop for sweets, then snacks from the car until Monterey."
-    },
-    "groceryStore": {
-      "name": "Whole Foods Market Monterey",
-      "address": "800 Del Monte Center, Monterey, CA 93940",
-      "mapsLink": "https://www.google.com/maps/search/Whole+Foods+Market+800+Del+Monte+Center+Monterey+CA",
-      "distance": "About 1.5 miles from Cannery Row / hotel zone",
-      "noCookMeals": [
-        "Rotisserie chicken + prepared sides from the hot bar + fresh fruit",
-        "Whole Foods sushi platter (the deli counter has solid sushi) + miso soup + edamame",
-        "Smoked salmon + cream cheese + bagels + a pre-made salad from the deli"
-      ]
-    }
-  },
-  "6": {
+  "7": {
     "dinnerType": "restaurant",
     "dinner": {
       "name": "Charles Street Dinner House — Mariposa",
@@ -133,17 +159,12 @@ window.FOOD_DATA = {
       "reserveNote": "Reservations recommended for summer weekends. Open Thu-Mon dinner only."
     },
     "lunch": {
-      "name": "Clam Chowder Bread Bowl on the Wharf (quick, before leaving Monterey)",
-      "cuisine": "Classic Monterey seafood street food",
-      "address": "Old Fisherman's Wharf, Monterey, CA 93940",
-      "mapsLink": "https://www.google.com/maps/search/Old+Fisherman%27s+Wharf+Monterey+CA",
-      "whyChosen": "Grab a quick chowder bread bowl before hitting the road to Mariposa. This is the quintessential Monterey experience — you can eat it walking on the wharf.",
-      "costNote": "~$12-18/person. Multiple vendors to choose from.",
-      "reservationNeeded": false
+      "type": "packed",
+      "note": "Grab a quick bite in Cambria or pack lunch before the long drive. Stop at Paso Robles candy shop for sweets, and at Casa de Fruta for fruit and snacks. Limited food options on CA-152 over Pacheco Pass."
     },
     "groceryStore": null
   },
-  "7": {
+  "8": {
     "dinnerType": "restaurant",
     "dinner": {
       "name": "1850 Restaurant & Brewing Co. — Mariposa",
@@ -164,7 +185,7 @@ window.FOOD_DATA = {
     },
     "groceryStore": null
   },
-  "8": {
+  "9": {
     "dinnerType": "restaurant",
     "dinner": {
       "name": "Diamondback Grill — Sonora",
@@ -185,7 +206,7 @@ window.FOOD_DATA = {
     },
     "groceryStore": null
   },
-  "9": {
+  "10": {
     "dinnerType": "grocery",
     "dinner": null,
     "lunch": {
@@ -204,7 +225,7 @@ window.FOOD_DATA = {
       ]
     }
   },
-  "10": {
+  "11": {
     "dinnerType": "restaurant",
     "dinner": {
       "name": "Fog Harbor Fish House",
@@ -231,7 +252,7 @@ window.FOOD_DATA = {
     },
     "groceryStore": null
   },
-  "11": {
+  "12": {
     "dinnerType": "grocery",
     "dinner": null,
     "lunch": {
@@ -250,7 +271,7 @@ window.FOOD_DATA = {
       ]
     }
   },
-  "12": {
+  "13": {
     "dinnerType": "restaurant",
     "dinner": {
       "name": "Bravas Bar de Tapas",
@@ -268,34 +289,7 @@ window.FOOD_DATA = {
     },
     "lunch": {
       "type": "packed",
-      "note": "Today is a wine country exploration day. Pack sandwiches or grab something from the hotel breakfast. Many wineries have picnic areas — bring a cheese board."
-    },
-    "groceryStore": null
-  },
-  "13": {
-    "dinnerType": "restaurant",
-    "dinner": {
-      "name": "Valette",
-      "cuisine": "New American — Michelin-listed, Sonoma County farm-to-table",
-      "address": "344 Center St, Healdsburg, CA 95448",
-      "websiteLink": "https://www.valettehealdsburg.com",
-      "mapsLink": "https://www.google.com/maps/search/Valette+Restaurant+344+Center+St+Healdsburg+CA",
-      "signatureDish": "Weekly-changing tasting menu: Day Boat Scallops en Croute, Liberty Farms Duck Breast, estate-grown produce",
-      "pricePerPerson": "$100 (5-course tasting menu); wine pairing +$60-$95",
-      "familyPrice": "$500+ for family of 5 (this is the trip splurge — worth it)",
-      "whyChosen": "Celebrating 10 years of culinary excellence in 2025. Michelin Guide listed, sourcing produce from their own farm 100 yards from the restaurant. Chef Dustin Valette is the gold standard for Sonoma County cuisine. Kids menu available. The weekly-changing tasting menu is built entirely around what's peak-season right now. Healdsburg's best meal.",
-      "reservationNeeded": true,
-      "reserveLink": "https://www.opentable.com/valette",
-      "reserveNote": "Reserve well ahead — this is Healdsburg's most celebrated restaurant. Book 2-3 weeks minimum."
-    },
-    "lunch": {
-      "name": "Journeyman Meat Co.",
-      "cuisine": "Old World deli & salumeria — handmade salumi, wood-fired sandwiches, charcuterie",
-      "address": "404 Center St, Healdsburg, CA 95448",
-      "mapsLink": "https://www.google.com/maps/search/Journeyman+Meat+Co+404+Center+St+Healdsburg+CA",
-      "whyChosen": "A Downtown Healdsburg institution — locally sourced butcher and salumeria with wood-fired sandwiches and incredible house-cured meats. Perfect for a light lunch before tonight's tasting menu dinner. Steps from the Healdsburg Plaza. Closed Tuesdays.",
-      "costNote": "~$15-22/person. Wed-Sun 11am-7pm, Mon 10am-5pm.",
-      "reservationNeeded": false
+      "note": "Relaxed day — pack sandwiches or grab lunch in Healdsburg (15-min drive). Journeyman Meat Co. on Center St has excellent wood-fired sandwiches and house-cured meats. Or picnic at a Russian River beach."
     },
     "groceryStore": null
   },
@@ -304,7 +298,7 @@ window.FOOD_DATA = {
     "dinner": null,
     "lunch": {
       "type": "packed",
-      "note": "STOCK UP before leaving Healdsburg — grab sandwiches and road snacks from Journeyman Meat Co. or Safeway Windsor (9080 Brooks Rd). The 5-hour drive passes through very remote areas with limited food stops. Eat packed lunch at a pullout on the Avenue of the Giants."
+      "note": "STOCK UP before leaving Windsor — grab sandwiches and road snacks from Journeyman Meat Co. or Safeway Windsor (9080 Brooks Rd). The 5-hour drive passes through very remote areas with limited food stops. Eat packed lunch at a pullout on the Avenue of the Giants."
     },
     "groceryStore": {
       "name": "Safeway Fortuna (last full grocery before Orick)",
