@@ -1,7 +1,7 @@
 window.ROUTE_DATA = [
   {
     dayNumber: 1,
-    date: "May 23, 2026",
+    date: "Saturday, May 23, 2026",
     overnightCity: "Santa Monica, CA",
     region: "LA Area",
     lat: 34.0195,
@@ -14,7 +14,7 @@ window.ROUTE_DATA = [
   },
   {
     dayNumber: 2,
-    date: "May 24, 2026",
+    date: "Sunday, May 24, 2026",
     overnightCity: "Santa Monica, CA",
     region: "LA Area",
     lat: 34.0195,
@@ -27,7 +27,7 @@ window.ROUTE_DATA = [
   },
   {
     dayNumber: 3,
-    date: "May 25, 2026",
+    date: "Monday, May 25, 2026",
     overnightCity: "Santa Barbara, CA",
     region: "LA Area",
     lat: 34.4208,
@@ -40,7 +40,7 @@ window.ROUTE_DATA = [
   },
   {
     dayNumber: 4,
-    date: "May 26, 2026",
+    date: "Tuesday, May 26, 2026",
     overnightCity: "Cambria, CA",
     region: "Central Coast",
     lat: 35.5641,
@@ -53,7 +53,7 @@ window.ROUTE_DATA = [
   },
   {
     dayNumber: 5,
-    date: "May 27, 2026",
+    date: "Wednesday, May 27, 2026",
     overnightCity: "Monterey, CA",
     region: "Big Sur & Monterey",
     lat: 36.6002,
@@ -69,7 +69,7 @@ window.ROUTE_DATA = [
 
   {
     dayNumber: 6,
-    date: "May 28, 2026",
+    date: "Thursday, May 28, 2026",
     overnightCity: "Mariposa, CA",
     region: "Yosemite & Gold Country",
     lat: 37.4849,
@@ -82,7 +82,7 @@ window.ROUTE_DATA = [
   },
   {
     dayNumber: 7,
-    date: "May 29, 2026",
+    date: "Friday, May 29, 2026",
     overnightCity: "Mariposa, CA",
     region: "Yosemite & Gold Country",
     lat: 37.7456,
@@ -95,7 +95,7 @@ window.ROUTE_DATA = [
   },
   {
     dayNumber: 8,
-    date: "May 30, 2026",
+    date: "Saturday, May 30, 2026",
     overnightCity: "Sonora, CA",
     region: "Yosemite & Gold Country",
     lat: 37.9829,
@@ -108,7 +108,7 @@ window.ROUTE_DATA = [
   },
   {
     dayNumber: 9,
-    date: "May 31, 2026",
+    date: "Sunday, May 31, 2026",
     overnightCity: "San Francisco, CA",
     region: "San Francisco",
     lat: 37.7749,
@@ -121,7 +121,7 @@ window.ROUTE_DATA = [
   },
   {
     dayNumber: 10,
-    date: "June 1, 2026",
+    date: "Monday, June 1, 2026",
     overnightCity: "San Francisco, CA",
     region: "San Francisco",
     lat: 37.7749,
@@ -137,7 +137,7 @@ window.ROUTE_DATA = [
 
   {
     dayNumber: 11,
-    date: "June 2, 2026",
+    date: "Tuesday, June 2, 2026",
     overnightCity: "Windsor, CA",
     region: "Wine Country",
     lat: 38.5474,
@@ -150,7 +150,7 @@ window.ROUTE_DATA = [
   },
   {
     dayNumber: 12,
-    date: "June 3, 2026",
+    date: "Wednesday, June 3, 2026",
     overnightCity: "Windsor, CA",
     region: "Wine Country",
     lat: 38.5474,
@@ -163,7 +163,7 @@ window.ROUTE_DATA = [
   },
   {
     dayNumber: 13,
-    date: "June 4, 2026",
+    date: "Thursday, June 4, 2026",
     overnightCity: "Healdsburg, CA",
     region: "Wine Country",
     lat: 38.6113,
@@ -179,7 +179,7 @@ window.ROUTE_DATA = [
 
   {
     dayNumber: 14,
-    date: "June 5, 2026",
+    date: "Friday, June 5, 2026",
     overnightCity: "Myers Flat, CA",
     region: "Redwoods",
     lat: 40.2491,
@@ -192,7 +192,7 @@ window.ROUTE_DATA = [
   },
   {
     dayNumber: 15,
-    date: "June 6, 2026",
+    date: "Saturday, June 6, 2026",
     overnightCity: "Orick, CA",
     region: "Redwoods",
     lat: 41.2946,
@@ -205,7 +205,7 @@ window.ROUTE_DATA = [
   },
   {
     dayNumber: 16,
-    date: "June 7, 2026",
+    date: "Sunday, June 7, 2026",
     overnightCity: "Crescent City, CA",
     region: "Redwoods",
     lat: 41.7558,
@@ -221,7 +221,7 @@ window.ROUTE_DATA = [
 
   {
     dayNumber: 17,
-    date: "June 8, 2026",
+    date: "Monday, June 8, 2026",
     overnightCity: "Medford, OR",
     region: "Oregon Coast",
     lat: 42.3265,
@@ -237,7 +237,7 @@ window.ROUTE_DATA = [
 
   {
     dayNumber: 18,
-    date: "June 9, 2026",
+    date: "Tuesday, June 9, 2026",
     overnightCity: "Crater Lake, OR",
     region: "Crater Lake & Oregon",
     lat: 42.9450,
@@ -250,7 +250,7 @@ window.ROUTE_DATA = [
   },
   {
     dayNumber: 19,
-    date: "June 10, 2026",
+    date: "Wednesday, June 10, 2026",
     overnightCity: "Eugene, OR",
     region: "Crater Lake & Oregon",
     lat: 44.0521,
@@ -263,7 +263,7 @@ window.ROUTE_DATA = [
   },
   {
     dayNumber: 20,
-    date: "June 11, 2026",
+    date: "Thursday, June 11, 2026",
     overnightCity: "Portland, OR",
     region: "Portland",
     lat: 45.5051,
