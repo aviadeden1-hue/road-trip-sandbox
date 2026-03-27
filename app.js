@@ -10,13 +10,15 @@
 /* ── Region Configuration ── */
 const REGION_CONFIG = {
   "LA Area":                { color: "#ff6b6b", icon: "🌴", order: 1 },
-  "Big Sur & Monterey":     { color: "#4ecdc4", icon: "🌊", order: 2 },
-  "San Francisco":          { color: "#45b7d1", icon: "🌉", order: 3 },
-  "Wine Country":           { color: "#96ceb4", icon: "🍷", order: 4 },
-  "Redwoods":               { color: "#2d6a4f", icon: "🌲", order: 5 },
-  "Oregon Coast":           { color: "#74b9ff", icon: "🦀", order: 6 },
-  "Crater Lake & Oregon":   { color: "#a29bfe", icon: "🏔", order: 7 },
-  "Portland":               { color: "#fd79a8", icon: "🌹", order: 8 }
+  "Central Coast":          { color: "#f0932b", icon: "🐘", order: 2 },
+  "Big Sur & Monterey":     { color: "#4ecdc4", icon: "🌊", order: 3 },
+  "Yosemite & Gold Country":{ color: "#d4a373", icon: "🏔️", order: 4 },
+  "San Francisco":          { color: "#45b7d1", icon: "🌉", order: 5 },
+  "Wine Country":           { color: "#96ceb4", icon: "🍷", order: 6 },
+  "Redwoods":               { color: "#2d6a4f", icon: "🌲", order: 7 },
+  "Oregon Coast":           { color: "#74b9ff", icon: "🦀", order: 8 },
+  "Crater Lake & Oregon":   { color: "#a29bfe", icon: "🏔", order: 9 },
+  "Portland":               { color: "#fd79a8", icon: "🌹", order: 10 }
 };
 
 /* ── Day Type Configuration ── */
@@ -31,9 +33,9 @@ const BUDGET_ESTIMATES = [
   { category: "Hotels",                    detail: "~$189/night avg × 20 nights",       amount: 3780 },
   { category: "Restaurants",              detail: "~$80/meal × 12 meals",              amount: 960 },
   { category: "Groceries",                detail: "~$40 × 7 nights",                   amount: 280 },
-  { category: "Gas",                       detail: "~1,800 miles, SUV at 22 mpg",       amount: 400 },
-  { category: "Attractions / NPS entries", detail: "State parks, aquarium, caves tour", amount: 300 },
-  { category: "America the Beautiful Pass",detail: "Covers 6 NPS sites on this trip",   amount: 80 },
+  { category: "Gas",                       detail: "~2,000 miles, SUV at 22 mpg",       amount: 445 },
+  { category: "Attractions / NPS entries", detail: "State parks, aquarium, caves tour, gold panning", amount: 350 },
+  { category: "America the Beautiful Pass",detail: "Covers 7 NPS sites on this trip",   amount: 80 },
   { category: "Misc / Emergency fund",     detail: "Snacks, parking, surprises",        amount: 500 }
 ];
 
