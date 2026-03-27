@@ -2,6 +2,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 1,
     "date": "Saturday, May 23, 2026",
+    "dayTitle": "Santa Monica",
     "overnightCity": "Santa Monica, CA",
     "region": "LA Area",
     "lat": 34.0195,
@@ -15,6 +16,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 2,
     "date": "Sunday, May 24, 2026",
+    "dayTitle": "Los Angeles Highlights",
     "overnightCity": "Santa Monica, CA",
     "region": "LA Area",
     "lat": 34.0195,
@@ -28,6 +30,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 3,
     "date": "Monday, May 25, 2026",
+    "dayTitle": "Malibu Coast & Santa Barbara",
     "overnightCity": "Santa Barbara, CA",
     "region": "LA Area",
     "lat": 34.4208,
@@ -41,6 +44,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 4,
     "date": "Tuesday, May 26, 2026",
+    "dayTitle": "Pinnacles National Park",
     "overnightCity": "Monterey, CA",
     "region": "Big Sur & Monterey",
     "lat": 36.6002,
@@ -54,6 +58,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 5,
     "date": "Wednesday, May 27, 2026",
+    "dayTitle": "Monterey Bay Aquarium",
     "overnightCity": "Monterey, CA",
     "region": "Big Sur & Monterey",
     "lat": 36.6002,
@@ -67,6 +72,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 6,
     "date": "Thursday, May 28, 2026",
+    "dayTitle": "Big Sur & Hearst Castle",
     "overnightCity": "Cambria, CA",
     "region": "Central Coast",
     "lat": 35.5641,
@@ -80,6 +86,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 7,
     "date": "Friday, May 29, 2026",
+    "dayTitle": "Paso Robles & Casa de Fruta",
     "overnightCity": "Mariposa, CA",
     "region": "Yosemite & Gold Country",
     "lat": 37.4849,
@@ -93,6 +100,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 8,
     "date": "Saturday, May 30, 2026",
+    "dayTitle": "Yosemite Valley",
     "overnightCity": "Mariposa, CA",
     "region": "Yosemite & Gold Country",
     "lat": 37.4849,
@@ -106,6 +114,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 9,
     "date": "Sunday, May 31, 2026",
+    "dayTitle": "Yosemite & Glacier Point",
     "overnightCity": "Sonora, CA",
     "region": "Yosemite & Gold Country",
     "lat": 37.9829,
@@ -119,6 +128,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 10,
     "date": "Monday, June 1, 2026",
+    "dayTitle": "Columbia Gold Rush Town",
     "overnightCity": "San Francisco, CA",
     "region": "San Francisco",
     "lat": 37.7749,
@@ -132,6 +142,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 11,
     "date": "Tuesday, June 2, 2026",
+    "dayTitle": "San Francisco",
     "overnightCity": "San Francisco, CA",
     "region": "San Francisco",
     "lat": 37.7749,
@@ -145,6 +156,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 12,
     "date": "Wednesday, June 3, 2026",
+    "dayTitle": "Windsor",
     "overnightCity": "Windsor, CA",
     "region": "Wine Country",
     "lat": 38.5474,
@@ -158,6 +170,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 13,
     "date": "Thursday, June 4, 2026",
+    "dayTitle": "Wine Country",
     "overnightCity": "Windsor, CA",
     "region": "Wine Country",
     "lat": 38.5474,
@@ -171,6 +184,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 14,
     "date": "Friday, June 5, 2026",
+    "dayTitle": "Avenue of the Giants",
     "overnightCity": "Orick, CA",
     "region": "Redwoods",
     "lat": 41.2946,
@@ -184,6 +198,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 15,
     "date": "Saturday, June 6, 2026",
+    "dayTitle": "Redwood National Park",
     "overnightCity": "Orick, CA",
     "region": "Redwoods",
     "lat": 41.2946,
@@ -197,6 +212,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 16,
     "date": "Sunday, June 7, 2026",
+    "dayTitle": "Fern Canyon & Jedediah Smith",
     "overnightCity": "Crescent City, CA",
     "region": "Redwoods",
     "lat": 41.7558,
@@ -210,8 +226,9 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 17,
     "date": "Monday, June 8, 2026",
+    "dayTitle": "Oregon Caves",
     "overnightCity": "Medford, OR",
-    "region": "Oregon Coast",
+    "region": "Southern Oregon",
     "lat": 42.3265,
     "lng": -122.8756,
     "driveFrom": "Crescent City",
@@ -223,6 +240,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 18,
     "date": "Tuesday, June 9, 2026",
+    "dayTitle": "Crater Lake",
     "overnightCity": "Crater Lake, OR",
     "region": "Southern Oregon",
     "lat": 42.945,
@@ -236,6 +254,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 19,
     "date": "Wednesday, June 10, 2026",
+    "dayTitle": "Lake Oswego",
     "overnightCity": "Lake Oswego, OR",
     "region": "Portland",
     "lat": 45.4207,

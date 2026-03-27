@@ -280,7 +280,7 @@ function buildDrawerNav() {
       linkEl.innerHTML =
         '<div class="drawer-day-num">' + day.dayNumber + '</div>' +
         '<div class="drawer-day-info">' +
-          '<div class="drawer-day-city">' + escapeHtml(day.overnightCity) + '</div>' +
+          '<div class="drawer-day-city">' + escapeHtml(day.dayTitle || day.overnightCity) + '</div>' +
           '<div class="drawer-day-date">' + escapeHtml(day.date) + '</div>' +
         '</div>';
 
@@ -395,7 +395,7 @@ function buildDayCard(day) {
   }
   const heroLabel = document.createElement('div');
   heroLabel.className = 'card-hero-label';
-  heroLabel.textContent = day.overnightCity;
+  heroLabel.textContent = day.dayTitle || day.overnightCity;
   heroImg.appendChild(heroLabel);
   body.appendChild(heroImg);
 
@@ -501,7 +501,7 @@ function buildCardHeader(day) {
 
   const cityEl = document.createElement('div');
   cityEl.className = 'card-city';
-  cityEl.textContent = day.overnightCity;
+  cityEl.textContent = day.dayTitle || day.overnightCity;
 
   const badgesEl = document.createElement('div');
   badgesEl.className = 'card-badges';
@@ -1458,7 +1458,7 @@ function initMap() {
 
     const popupHtml =
       '<div class="map-popup-day">Day ' + day.dayNumber + '</div>' +
-      '<div class="map-popup-city">' + escapeHtml(day.overnightCity) + '</div>' +
+      '<div class="map-popup-city">' + escapeHtml(day.dayTitle || day.overnightCity) + '</div>' +
       '<div class="map-popup-date">' + escapeHtml(day.date) + '</div>' +
       '<a class="map-popup-link" href="#day-' + day.dayNumber + '" onclick="document.getElementById(\'day-' + day.dayNumber + '\').scrollIntoView({behavior:\'smooth\'});return false;">→ Go to Day ' + day.dayNumber + '</a>';
 
