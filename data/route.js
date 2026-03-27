@@ -180,15 +180,15 @@ window.ROUTE_DATA = [
   {
     dayNumber: 14,
     date: "Friday, June 5, 2026",
-    overnightCity: "Myers Flat, CA",
+    overnightCity: "Orick, CA",
     region: "Redwoods",
-    lat: 40.2491,
-    lng: -123.6630,
+    lat: 41.2946,
+    lng: -124.0597,
     driveFrom: "Healdsburg",
-    driveHours: 3.0,
-    driveMapsUrl: "https://www.google.com/maps/dir/Healdsburg,+CA/Myers+Flat,+CA",
+    driveHours: 5.0,
+    driveMapsUrl: "https://www.google.com/maps/dir/Healdsburg,+CA/Myers+Flat,+CA/Orick,+CA",
     dayType: "drive",
-    note: "3-hr drive north on US-101 through Ukiah and Leggett. Avenue of the Giants begins near Myers Flat. Humboldt Redwoods State Park."
+    note: "Big drive day: 5 hrs north on US-101 through Ukiah and Leggett into the Redwoods. Detour onto the Avenue of the Giants for Founders Grove (1-mile flat loop through ancient old-growth) and the Shrine Drive-Thru Tree. Then continue north on US-101 to Orick. Arrive by evening."
   },
   {
     dayNumber: 15,
@@ -197,11 +197,11 @@ window.ROUTE_DATA = [
     region: "Redwoods",
     lat: 41.2946,
     lng: -124.0597,
-    driveFrom: "Myers Flat",
-    driveHours: 2.0,
-    driveMapsUrl: "https://www.google.com/maps/dir/Myers+Flat,+CA/Orick,+CA",
-    dayType: "drive",
-    note: "2-hr drive north on US-101. Redwood National and State Parks. Prairie Creek Redwoods — elk meadow at Elk Prairie."
+    driveFrom: "Orick",
+    driveHours: 0.5,
+    driveMapsUrl: "https://www.google.com/maps/dir/Orick,+CA/Orick,+CA",
+    dayType: "explore",
+    note: "Full day exploring Redwood National and State Parks from Orick base. Elk Prairie (Roosevelt elk herd), Lady Bird Johnson Grove (1.4-mile old-growth loop), Newton B. Drury Scenic Parkway. No long drives — just short hops between trailheads. REDWOOD NP covered by America the Beautiful Pass."
   },
   {
     dayNumber: 16,
@@ -251,27 +251,14 @@ window.ROUTE_DATA = [
   {
     dayNumber: 19,
     date: "Wednesday, June 10, 2026",
-    overnightCity: "Eugene, OR",
-    region: "Crater Lake & Oregon",
-    lat: 44.0521,
-    lng: -123.0868,
-    driveFrom: "Crater Lake",
-    driveHours: 3.0,
-    driveMapsUrl: "https://www.google.com/maps/dir/Crater+Lake+National+Park,+OR/Eugene,+OR",
-    dayType: "drive",
-    note: "3-hr drive northwest to Eugene via OR-138 and I-5. Eugene: 5th Street Market area, Skinner Butte Park."
-  },
-  {
-    dayNumber: 20,
-    date: "Thursday, June 11, 2026",
-    overnightCity: "Portland, OR",
+    overnightCity: "Lake Oswego, OR",
     region: "Portland",
-    lat: 45.5051,
-    lng: -122.6750,
-    driveFrom: "Eugene",
-    driveHours: 1.5,
-    driveMapsUrl: "https://www.google.com/maps/dir/Eugene,+OR/Portland,+OR",
+    lat: 45.4207,
+    lng: -122.6706,
+    driveFrom: "Crater Lake",
+    driveHours: 4.5,
+    driveMapsUrl: "https://www.google.com/maps/dir/Crater+Lake+National+Park,+OR/Lake+Oswego,+OR",
     dayType: "drive",
-    note: "Final 1.5-hr drive north on I-5 to Portland. Arrival day — YOU MADE IT! Party starts June 11."
+    note: "Final drive day — 4.5 hrs northwest from Crater Lake via OR-138 and I-5 to Lake Oswego. YOU MADE IT! Arrive Wednesday evening."
   }
 ];

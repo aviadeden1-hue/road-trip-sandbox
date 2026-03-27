@@ -1050,10 +1050,10 @@ window.ACTIVITY_DATA = {
   "14": {
     "activities": [
       {
-        "name": "Founders Grove & Rockefeller Loop",
+        "name": "Founders Grove & Rockefeller Loop (Avenue of the Giants stop)",
         "type": "hike",
         "price": "Free (Humboldt Redwoods State Park)",
-        "description": "The Founders Tree is one of the tallest trees in Humboldt Redwoods SP. The nearby Rockefeller Loop (1.0 mile, easy, flat) passes through some of the most magnificent old-growth redwoods on the Avenue. Founders Tree stands 346 ft tall. Perfect first-day Redwoods experience for all ages.",
+        "description": "A quick stop on the Avenue of the Giants detour during the drive north. The Rockefeller Loop (1.0 mile, easy, flat) passes through some of the most magnificent old-growth redwoods anywhere. Founders Tree stands 346 ft tall. Perfect leg-stretch on a long drive day.",
         "duration": "1 hour",
         "trailLength": "1.0 mile loop",
         "difficulty": "Easy — flat, wide, well-maintained trail",
@@ -1065,22 +1065,10 @@ window.ACTIVITY_DATA = {
         "passNote": "Humboldt Redwoods is a State Park — America the Beautiful Pass does NOT cover it, but there is no day-use fee for hiking."
       },
       {
-        "name": "Drive the Avenue of the Giants",
-        "type": "scenic drive",
-        "price": "Free",
-        "description": "The full 31-mile Avenue of the Giants parallels US-101 through the largest remaining stand of old-growth coast redwood forest on Earth. Drive slowly, stop at every pullout, and let the kids run between the ancient trees. Several roadside attractions along the way including the Shrine Drive-Thru Tree (small fee) and the Immortal Tree.",
-        "duration": "1.5–2 hours driving + stops",
-        "link": "https://www.google.com/maps/dir/Myers+Flat,+CA/Pepperwood,+CA/@40.35,-123.87,11z",
-        "lat": 40.2491,
-        "lng": -123.663,
-        "kidFriendly": true,
-        "npsCovered": false
-      },
-      {
-        "name": "Shrine Drive-Thru Tree",
+        "name": "Shrine Drive-Thru Tree (Avenue of the Giants stop)",
         "type": "roadside attraction",
         "price": "$10 per car",
-        "description": "A living redwood tree with a tunnel carved through the base large enough to drive a standard car through. Kitschy? Yes. Do kids love it? Absolutely. The surrounding grove also has a pleasant short walk. Just south of Myers Flat on the Avenue.",
+        "description": "A living redwood tree with a tunnel carved through the base large enough to drive a standard car through. Kitschy? Yes. Do kids love it? Absolutely. Quick stop on the Avenue of the Giants detour during the drive north to Orick.",
         "duration": "30 min",
         "link": "[LINK: search \"Shrine Drive-Thru Tree Myers Flat Avenue of the Giants\"]",
         "lat": 40.223,
@@ -1091,10 +1079,10 @@ window.ACTIVITY_DATA = {
     ],
     "scenicDrives": [
       {
-        "name": "Avenue of the Giants — Full Drive (31 miles)",
-        "description": "The entire 31-mile route from Phillipsville to Pepperwood is arguably the most beautiful drive in California. The road tunnels through cathedral groves of 2,000-year-old redwoods, with the Eel River running alongside in stretches. No rush — this IS the activity.",
+        "name": "Avenue of the Giants — Detour on drive to Orick (31 miles)",
+        "description": "Detour off US-101 onto the 31-mile Avenue of the Giants through the largest remaining stand of old-growth coast redwood forest on Earth. The road tunnels through cathedral groves of 2,000-year-old redwoods, with the Eel River running alongside. Stop at Founders Grove and the Shrine Drive-Thru Tree, then rejoin US-101 north to Orick.",
         "duration": "1.5–2 hours with stops",
-        "link": "https://www.google.com/maps/dir/Myers+Flat,+CA/Pepperwood,+CA"
+        "link": "https://www.google.com/maps/dir/Phillipsville,+CA/Pepperwood,+CA"
       }
     ],
     "hiddenGem": {
@@ -1111,11 +1099,11 @@ window.ACTIVITY_DATA = {
     },
     "priorities": {
       "mustDo": [
-        "Founders Grove & Rockefeller Loop — the best old-growth walk on the Avenue",
-        "Drive the Avenue of the Giants — the 31-mile drive IS the activity, don't rush"
+        "Founders Grove & Rockefeller Loop — quick stop, the best old-growth walk on the Avenue",
+        "Avenue of the Giants detour — the 31-mile drive through cathedral redwoods"
       ],
       "skipIfShort": [
-        "Shrine Drive-Thru Tree — kitschy fun but $10 and not essential"
+        "Shrine Drive-Thru Tree — kitschy fun but $10 and not essential if running late"
       ]
     }
   },
@@ -1417,79 +1405,23 @@ window.ACTIVITY_DATA = {
     }
   },
   "19": {
-    "activities": [
-      {
-        "name": "Owen Memorial Rose Garden — Peak June Bloom",
-        "type": "outdoor / free",
-        "price": "Free",
-        "description": "A 4-acre public rose garden in Hendricks Park in Eugene, open daily. By early June, over 4,000 rose plants across hundreds of varieties are in full bloom. The garden overlooks the Willamette River. A peaceful, beautiful, and completely free stop after a long drive. The 4-year-old can run on the grass while everyone else enjoys the flowers.",
-        "duration": "45 min",
-        "link": "[LINK: search \"Owen Memorial Rose Garden Eugene Oregon\"]",
-        "lat": 44.0468,
-        "lng": -123.0896,
-        "kidFriendly": true,
-        "npsCovered": false
-      },
-      {
-        "name": "5th Street Public Market",
-        "type": "shopping / food",
-        "price": "Free to browse; food extra",
-        "description": "An open-air market complex in downtown Eugene with independent shops, restaurants, a courtyard, and a farmers market on Tuesdays (June 10 is a Tuesday!). The Eugene Tuesday Farmers Market runs from 10 AM – 3 PM at the nearby Lane Events Center. Fresh strawberries, flowers, prepared foods, and crafts from local farms.",
-        "duration": "1 hour",
-        "link": "[LINK: search \"5th Street Public Market Eugene Oregon\"]",
-        "lat": 44.0521,
-        "lng": -123.0868,
-        "kidFriendly": true,
-        "npsCovered": false
-      },
-      {
-        "name": "Skinner Butte Park & Climbing Rock",
-        "type": "outdoor / park",
-        "price": "Free",
-        "description": "A park at the foot of Skinner Butte with a playground, a natural basalt climbing rock (kids love scrambling on it), and a short trail to the butte summit with views of Eugene and the Cascades. The Willamette River runs alongside the park. Easy, free, and the kids can burn energy.",
-        "duration": "1 hour",
-        "link": "[LINK: search \"Skinner Butte Park Eugene Oregon playground\"]",
-        "lat": 44.0586,
-        "lng": -123.0963,
-        "kidFriendly": true,
-        "npsCovered": false
-      }
-    ],
+    "activities": [],
     "scenicDrives": [
       {
-        "name": "OR-138 — North Umpqua River Canyon to Roseburg",
+        "name": "OR-138 — North Umpqua River Canyon",
         "description": "The drive from Crater Lake northwest on OR-138 follows the North Umpqua River through a dramatic canyon with waterfalls, bridges, and old-growth Douglas fir. Susan Creek Falls (0.4 mile easy hike) is worth the stop if you have energy.",
         "duration": "1.5 hours",
-        "link": "https://www.google.com/maps/dir/Crater+Lake+National+Park,+OR/Eugene,+OR"
+        "link": "https://www.google.com/maps/dir/Crater+Lake+National+Park,+OR/Lake+Oswego,+OR"
       }
     ],
-    "hiddenGem": {
-      "name": "Prince Pückler's Ice Cream — Eugene Institution Since 1976",
-      "description": "A Eugene institution (and a University of Oregon tradition) making rich, dense homemade ice cream in unusual flavors. Look for lavender, black sesame, and seasonal Oregon fruit flavors. The small shop on 18th Ave has a line but it moves fast. A perfect end-of-day treat after arriving from Crater Lake.",
-      "link": "[LINK: search \"Prince Puckler's Ice Cream Eugene Oregon 18th Ave\"]"
-    },
-    "rainyDay": {
-      "name": "Science Factory Children's Museum & Planetarium",
-      "description": "Eugene's hands-on children's science museum with interactive exhibits on physics, biology, engineering, and space. The Planetarium shows change seasonally. Designed for ages 2–12 — the 4, 6, and 8-year-old will all find plenty to do. Perfect rainy-day activity.",
-      "price": "$7 adults, $5 kids, free under 2",
-      "link": "[LINK: search \"Science Factory Children's Museum Eugene Oregon\"]",
-      "icon": "🌧"
-    },
-    "priorities": {
-      "mustDo": [
-        "5th Street Public Market — great food, relaxed vibe after 3-hr drive",
-        "Skinner Butte Park — let kids burn energy on the climbing rock"
-      ],
-      "skipIfShort": [
-        "Owen Memorial Rose Garden — lovely but passive, skip if kids are antsy"
-      ]
-    }
-  },
-  "20": {
-    "activities": [],
-    "scenicDrives": [],
     "hiddenGem": null,
     "rainyDay": null,
-    "note": "Portland is the endpoint — YOU MADE IT! 🎉 The friend's party starts June 21, so Day 20 is for arriving, checking in, and celebrating the journey. No itinerary content planned for Portland — just relax, shower, and get excited for tomorrow. If anyone has energy, a walk along Tom McCall Waterfront Park (right downtown) is always free and lovely."
+    "note": "Lake Oswego is the endpoint — YOU MADE IT! The final drive is long (4.5 hrs) but all highway after Roseburg. Arrive Wednesday evening, relax, and celebrate the journey.",
+    "priorities": {
+      "mustDo": [
+        "Arrive Lake Oswego — the journey is complete!"
+      ],
+      "skipIfShort": []
+    }
   }
 };

@@ -30,10 +30,10 @@ const DAY_TYPE_CONFIG = {
 
 /* ── Budget Estimates (hardcoded as these are non-trip-specific estimates) ── */
 const BUDGET_ESTIMATES = [
-  { category: "Hotels",                    detail: "~$189/night avg × 20 nights",       amount: 3780 },
+  { category: "Hotels",                    detail: "~$189/night avg × 19 nights",       amount: 3591 },
   { category: "Restaurants",              detail: "~$80/meal × 12 meals",              amount: 960 },
   { category: "Groceries",                detail: "~$40 × 7 nights",                   amount: 280 },
-  { category: "Gas",                       detail: "~2,000 miles, SUV at 22 mpg",       amount: 445 },
+  { category: "Gas",                       detail: "~1,900 miles, SUV at 22 mpg",       amount: 420 },
   { category: "Attractions / NPS entries", detail: "State parks, aquarium, caves tour, gold panning", amount: 350 },
   { category: "America the Beautiful Pass",detail: "Covers 7 NPS sites on this trip",   amount: 80 },
   { category: "Misc / Emergency fund",     detail: "Snacks, parking, surprises",        amount: 500 }
@@ -128,28 +128,28 @@ const MISSING_ATTRACTIONS = [
     emoji: "🌋",
     category: "Inland Detour",
     why: "Lassen is California's most underrated national park — active volcanic landscape, boiling mud pots, hydrothermal pools. Located ~3 hrs east of US-101 near Redding, CA. Taking the coastal route bypasses it entirely.",
-    howToAdd: "Replace the Healdsburg → Myers Flat coastal route (Day 12) with an inland route: Healdsburg → I-5 → Lassen NP overnight → back to US-101 near Eureka. Adds 1 day and trades redwood scenery for volcanic scenery."
+    howToAdd: "Replace the Healdsburg → Orick coastal route (Day 14) with an inland route: Healdsburg → I-5 → Lassen NP overnight → back to US-101 near Eureka. Adds 1 day and trades redwood scenery for volcanic scenery."
   },
   {
     name: "Full Oregon Coast (Bandon, Heceta Head, Cape Perpetua)",
     emoji: "🦀",
     category: "Trade-off: Chose Crater Lake",
-    why: "The trip's Oregon section cuts inland at Brookings to Medford → Crater Lake → Eugene, skipping virtually the entire Oregon coast north of Brookings. Highlights missed: Bandon Dunes, Thor's Well, Cape Perpetua, Sea Lion Caves, Heceta Head Lighthouse, Newport, Cannon Beach, Haystack Rock.",
-    howToAdd: "Major reroute: replace Days 16–18 (Medford → Crater Lake → Eugene) with a full Oregon Coast drive (Brookings → Bandon → Newport → Lincoln City → Portland via US-101). Picks up all the coastal highlights, but you lose Crater Lake — arguably the single most spectacular day on the current itinerary."
+    why: "The trip's Oregon section cuts inland at Crescent City to Medford → Crater Lake → Lake Oswego, skipping virtually the entire Oregon coast. Highlights missed: Bandon Dunes, Thor's Well, Cape Perpetua, Sea Lion Caves, Heceta Head Lighthouse, Newport, Cannon Beach, Haystack Rock.",
+    howToAdd: "Major reroute: replace Days 17–19 (Medford → Crater Lake → Lake Oswego) with a full Oregon Coast drive (Crescent City → Bandon → Newport → Lincoln City → Lake Oswego via US-101). Picks up all the coastal highlights, but you lose Crater Lake — arguably the single most spectacular day on the current itinerary."
   },
   {
     name: "Bend, Oregon & Smith Rock",
     emoji: "🧗",
     category: "Close but Cut",
-    why: "Bend is Oregon's outdoor recreation hub with the Deschutes River, microbreweries, and nearby Smith Rock State Park (stunning volcanic rock formations). It's 1.5 hrs from Crater Lake and would make a great overnight — but adding it meant the Crater Lake → Portland drive became too long and fragmented.",
-    howToAdd: "Replace Eugene (Day 18) with Bend: Crater Lake → Bend (1.5 hrs), overnight at McMenamins Old St. Francis School. Then Bend → Portland (3 hrs) on Day 19. Same total driving, much more scenic. Works perfectly as a 1-for-1 swap with no extra days needed."
+    why: "Bend is Oregon's outdoor recreation hub with the Deschutes River, microbreweries, and nearby Smith Rock State Park (stunning volcanic rock formations). It's 1.5 hrs from Crater Lake and would make a great overnight — but adding it meant the Crater Lake → Lake Oswego drive became too long.",
+    howToAdd: "Add a day: Crater Lake → Bend (1.5 hrs), overnight at McMenamins Old St. Francis School. Then Bend → Lake Oswego (3 hrs). Requires adding an extra day to the itinerary."
   },
   {
     name: "Columbia River Gorge & Multnomah Falls",
     emoji: "💧",
     category: "Close but Cut",
-    why: "Multnomah Falls (620 ft, the second-tallest year-round waterfall in the US) is only 30 minutes east of Portland. We didn't build it in because Day 19 is explicitly arrival day and the party starts June 11. There was no room on the itinerary.",
-    howToAdd: "Easiest add of anything on this list — no extra days needed. On Day 19, take I-84 east from Eugene instead of I-5. Stop at Multnomah Falls (30 min hike to the bridge, kid-friendly), then continue west on I-84 into Portland. Arrives Portland ~1 hour later than the direct route."
+    why: "Multnomah Falls (620 ft, the second-tallest year-round waterfall in the US) is only 30 minutes east of Portland/Lake Oswego. We didn't build it in because Day 19 is a long 4.5-hr drive day from Crater Lake. There was no room on the itinerary.",
+    howToAdd: "On Day 19, take I-84 east through the Columbia River Gorge instead of I-5 direct. Stop at Multnomah Falls (30 min hike to the bridge, kid-friendly), then continue west on I-84 into Lake Oswego. Adds ~1 hour to an already long drive day."
   },
   {
     name: "Death Valley National Park",
@@ -417,9 +417,9 @@ function buildDayCard(day) {
       'text-align:center;font-size:1.1rem;font-weight:700;color:#7e22ce;' +
       'margin-bottom:12px;';
     partyBanner.innerHTML =
-      '🎉 YOU MADE IT! Party starts June 11.<br>' +
+      '🎉 YOU MADE IT! Welcome to Lake Oswego!<br>' +
       '<span style="font-size:0.85rem;font-weight:400;color:#9333ea;">' +
-        'California–Oregon · 19 days · ~1,800 miles · all 5 travelers intact.' +
+        'California–Oregon · 19 days · ~1,900 miles · all 5 travelers intact.' +
       '</span>';
     body.appendChild(partyBanner);
 

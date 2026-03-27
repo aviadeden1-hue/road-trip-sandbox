@@ -304,19 +304,19 @@ window.FOOD_DATA = {
     "dinner": null,
     "lunch": {
       "type": "packed",
-      "note": "STOCK UP before leaving Healdsburg — grab sandwiches and road snacks from Journeyman Meat Co. or Safeway Windsor (9080 Brooks Rd). The drive passes through very remote areas with limited stops."
+      "note": "STOCK UP before leaving Healdsburg — grab sandwiches and road snacks from Journeyman Meat Co. or Safeway Windsor (9080 Brooks Rd). The 5-hour drive passes through very remote areas with limited food stops. Eat packed lunch at a pullout on the Avenue of the Giants."
     },
     "groceryStore": {
-      "name": "Redwoods Market & Deli (Myers Flat) — LIMITED STOCK",
-      "address": "12880 Avenue of the Giants, Myers Flat, CA 95554",
-      "mapsLink": "https://www.google.com/maps/search/Redwoods+Market+Deli+Myers+Flat+CA",
-      "distance": "Located right on Avenue of the Giants in Myers Flat — the only grocery option for miles",
+      "name": "Safeway Fortuna (last full grocery before Orick)",
+      "address": "701 S Fortuna Blvd, Fortuna, CA 95540",
+      "mapsLink": "https://www.google.com/maps/search/Safeway+701+S+Fortuna+Blvd+Fortuna+CA",
+      "distance": "On US-101, about 1.5 hrs before Orick — your last real grocery store",
       "noCookMeals": [
-        "Rotisserie chicken or deli sandwiches from their counter + chips + drinks",
-        "Pre-packaged charcuterie + crackers + cheese (limited selection — stock key items in Healdsburg)",
-        "Deli grab-and-go items + fresh fruit + snacks"
+        "Rotisserie chicken + prepared potato salad + fresh berries — simple after a long drive",
+        "Charcuterie board: salami, cheddar, crackers, grapes, mustard",
+        "Deli sandwiches + chips + coleslaw + cookies from the bakery"
       ],
-      "stockUpAlert": "IMPORTANT: Stock up the day before in Healdsburg or stop at Safeway Fortuna (701 S Fortuna Blvd, Fortuna, CA 95540) if routing through Fortuna on US-101. The Redwoods Market is small — treat it as emergency backup, not primary grocery stop. Hours: Mon-Sat 8am-7:30pm, Sun 8am-7pm."
+      "stockUpAlert": "IMPORTANT: Orick has no grocery store. Stop at Safeway Fortuna on US-101 (open 5am-midnight) to stock up for tonight and tomorrow. Buy enough for 2 nights of dinners and packed lunches for park exploration."
     }
   },
   "15": {
@@ -324,19 +324,19 @@ window.FOOD_DATA = {
     "dinner": null,
     "lunch": {
       "type": "packed",
-      "note": "Pack a picnic lunch before leaving Myers Flat. Head into Redwood National Park — eat amid the giant trees at a pull-off on the Newton B. Drury Scenic Parkway. This is one of the most spectacular picnic spots in the world."
+      "note": "Pack a picnic lunch from supplies bought at Safeway Fortuna yesterday. Head into Redwood National Park — eat amid the giant trees at a pull-off on the Newton B. Drury Scenic Parkway. This is one of the most spectacular picnic spots in the world."
     },
     "groceryStore": {
       "name": "Stock up at Safeway Crescent City (nearest full grocery)",
       "address": "475 M St, Crescent City, CA 95531",
       "mapsLink": "https://www.google.com/maps/search/Safeway+475+M+St+Crescent+City+CA",
-      "distance": "Crescent City is ~30 min north of Orick — stop here if heading north, or rely on what you packed from Myers Flat",
+      "distance": "Crescent City is ~30 min north of Orick — stop here if heading north, or rely on supplies from Safeway Fortuna",
       "noCookMeals": [
         "Rotisserie chicken + prepared potato salad + fresh berries — simple after a day in the park",
         "Charcuterie board: salami, sharp cheddar, crackers, grapes, mustard, dried fruit",
         "Deli sandwiches + chips + coleslaw container + cookies from the bakery"
       ],
-      "stockUpAlert": "Orick itself has no grocery store. If driving through Crescent City, stop at Safeway (open 24 hours). Otherwise rely on items packed from Myers Flat / Redwoods Market. Plan dinners around what you can carry."
+      "stockUpAlert": "Orick itself has no grocery store. If driving through Crescent City, stop at Safeway (open 24 hours). Otherwise rely on supplies from Safeway Fortuna (Day 14). Plan dinners around what you can carry."
     }
   },
   "16": {
@@ -402,45 +402,23 @@ window.FOOD_DATA = {
     "groceryStore": null
   },
   "19": {
-    "dinnerType": "restaurant",
-    "dinner": {
-      "name": "Marche",
-      "cuisine": "French-inspired Pacific Northwest farm-to-table",
-      "address": "296 E 5th Ave, Eugene, OR 97401",
-      "websiteLink": "https://marcherestaurant.com",
-      "mapsLink": "https://www.google.com/maps/search/Marche+Restaurant+296+E+5th+Ave+Eugene+OR",
-      "signatureDish": "Seasonal tasting dishes using Willamette Valley farms, fresh Pacific seafood, grilled hanger steak, market vegetables",
-      "pricePerPerson": "$31-50",
-      "familyPrice": "$155-250 for family of 5",
-      "whyChosen": "25+ years as the heart of Eugene's food scene. James Beard Foundation honoree, located in the charming 5th Street Market. Chef uses French technique to showcase the Willamette Valley's extraordinary produce. Open daily for lunch and dinner — one of Oregon's most consistently celebrated restaurants. Warm and welcoming for families.",
-      "reservationNeeded": true,
-      "reserveLink": "https://www.opentable.com/marche-eugene",
-      "reserveNote": "Reserve on OpenTable. Open daily 12-9pm, brunch Sat-Sun 10am-2pm."
-    },
-    "lunch": {
-      "type": "packed",
-      "note": "The 3-hour drive from Crater Lake goes through the Cascades — pack lunch from the Crater Lake area before departing. Eat at Collier Memorial State Park or another roadside stop on OR-58."
-    },
-    "groceryStore": null
-  },
-  "20": {
     "dinnerType": "grocery",
     "dinner": null,
     "lunch": {
       "type": "packed",
-      "note": "Pack lunch or grab something in Eugene before the 1.5-hr drive to Portland. Arrive and settle in — Portland is your home base now."
+      "note": "The 4.5-hour drive from Crater Lake goes through the Cascades — pack lunch from the Crater Lake area before departing. Eat at a roadside stop on OR-138 or OR-58."
     },
     "groceryStore": {
-      "name": "Fred Meyer NW Portland",
-      "address": "100 NW 20th Pl, Portland, OR 97209",
-      "mapsLink": "https://www.google.com/maps/search/Fred+Meyer+100+NW+20th+Pl+Portland+OR",
-      "distance": "Central Portland location near major hotels — two-story store, open 7am-10pm",
+      "name": "New Seasons Market Lake Oswego",
+      "address": "3 Monroe Pkwy, Lake Oswego, OR 97034",
+      "mapsLink": "https://www.google.com/maps/search/New+Seasons+Market+Lake+Oswego+OR",
+      "distance": "Central Lake Oswego location",
       "noCookMeals": [
-        "Arrival night: rotisserie chicken + Pacific Northwest potato salad + fresh Oregon strawberries",
+        "Arrival night: rotisserie chicken + prepared sides + fresh Oregon strawberries (peak season!)",
         "Charcuterie board: Oregon charcuterie, Tillamook cheddar (iconic OR cheese), crackers, fruit",
-        "Fred Meyer deli — wide prepared foods section, sushi trays, sandwiches"
+        "New Seasons deli — excellent prepared foods, salads, soups, sandwiches"
       ],
-      "note": "This is just an arrival-night grocery stop. Portland has exceptional restaurants — save the sit-down dinners for when you explore the city properly."
+      "note": "This is just an arrival-night grocery stop. You made it to Lake Oswego — grab something easy and celebrate!"
     }
   },
   "snackKit": {

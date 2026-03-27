@@ -519,45 +519,45 @@ window.HOTEL_DATA = {
     }
   },
   "14": {
-    "limitedInventory": true,
+    "limitedInventoryWarning": "Hotel options near Orick are extremely limited. Strongly recommend booking 6+ months in advance.",
     "optionA": {
-      "name": "Giant Redwoods RV & Cabin Destination",
-      "stars": 2,
-      "bookingUrl": "https://www.giantredwoodsrv.com/cabins/",
-      "pricePerNight": "$100",
-      "priceNote": "Nightly rates $65–$85; extra person fee $10/person above 2. Linens rental $35Q/$25T. Park open March 13–November 2. Verify for June 3026.",
-      "roomConfig": "Cabins: Queen bed + twin bunk beds (sleeps 5 with extra person fee). Fiber optic WiFi, electric fireplace, private bathroom. Bring or rent linens.",
-      "freeBreakfast": false,
+      "name": "Historic Requa Inn — Klamath, CA",
+      "stars": 3,
+      "bookingUrl": "https://www.requainn.com",
+      "pricePerNight": "$160",
+      "priceNote": "Estimated; verify at requainn.com. Book very early — small property with ~10 rooms.",
+      "roomConfig": "Two connecting rooms (or book two adjacent rooms with private baths) — request rooms that work for 5 people. Small historic inn on the Klamath River, ~12 miles north of Orick.",
+      "freeBreakfast": true,
       "separateRoom": false,
       "pool": false,
       "limitedInventory": true,
-      "reason": "Budget riverside cabins in Myers Flat on the Eel River. Electric fireplaces and private baths. Surrounded by redwood forest — the cheapest way to sleep on the Avenue of the Giants. BOOK EARLY — only 5 cabins total."
+      "reason": "The best inn within reasonable distance of Orick. Historic 1914 building overlooking the Klamath River estuary. Full breakfast included. Peaceful, charming, close to the park. Limited rooms — book immediately."
     },
     "optionB": {
-      "name": "Myers Inn (Myers Country Inn)",
+      "name": "Elk Meadow Cabins — Orick (National Park Cabin)",
       "stars": 2,
-      "bookingUrl": "https://www.myersinn.com",
-      "pricePerNight": "$150",
-      "priceNote": "Estimated; verify at booking. Very limited rooms — call directly: (707) 943-3259",
-      "roomConfig": "10 rooms including Family rooms; some rooms sleep 3+, request largest configuration. Complimentary coffee/tea each morning. No full breakfast.",
+      "bookingUrl": "https://elkmeadowcabins.com/",
+      "pricePerNight": "$180",
+      "priceNote": "Estimated $150–200/night; verify at elkmeadowcabins.com. Very limited availability — book as early as possible.",
+      "roomConfig": "Historic ranch cabin complex within Redwood National Park. Multiple buildings available for group rental. Contact the park directly for availability.",
       "freeBreakfast": false,
-      "separateRoom": false,
+      "separateRoom": true,
       "pool": false,
       "limitedInventory": true,
-      "reason": "THE primary lodging on the Avenue of the Giants. Historic 1867 stage stop in the heart of Humboldt Redwoods State Park — the biggest redwood forest in the world. A proper inn with more comfort than a cabin. BOOK EARLY — very limited availability."
+      "reason": "A unique option — staying literally inside Redwood National Park at historic cabins. Very limited availability. Contact park (707-465-7335) to inquire about rental availability."
     },
     "optionC": {
-      "name": "Redwood Forest Cabin — Avenue of the Giants",
+      "name": "Redwood Forest Cabin near Orick",
       "isAirbnb": true,
-      "pricePerNight": "$165",
+      "pricePerNight": "$175",
       "roomConfig": "Entire cabin · 2 bed · sleeps 5",
-      "bookingUrl": "https://www.airbnb.com/s/Myers-Flat--CA/homes?checkin=2026-06-05&checkout=2026-06-06&adults=2&children=3&min_bedrooms=2",
-      "reason": "A private cabin tucked in the redwood forest with full kitchen and separate bedrooms. Sleeping under 300-foot trees is a memory kids never forget. Book 6+ months early — inventory is very thin in this remote area.",
+      "bookingUrl": "https://www.airbnb.com/s/Orick--CA/homes?checkin=2026-06-05&checkout=2026-06-06&adults=2&children=3&min_bedrooms=2",
+      "reason": "A riverside cabin near Orick puts you right at the doorstep of Redwood National Park. Sleeping under 300-foot trees is a memory kids never forget. Book very early — listings here are rare.",
       "amenities": [
         "Surrounded by redwoods",
         "Full kitchen",
         "2 bedrooms",
-        "Fire pit",
+        "River access",
         "Private outdoor space"
       ],
       "limitedInventory": true
@@ -737,83 +737,42 @@ window.HOTEL_DATA = {
   },
   "19": {
     "optionA": {
-      "name": "Graduate Eugene — University of Oregon Boutique",
+      "name": "Lake Oswego Inn & Suites",
       "stars": 3,
-      "bookingUrl": "https://www.graduatehotels.com/eugene/",
-      "pricePerNight": "$165",
-      "priceNote": "Estimated based on 2025 rates; verify at graduatehotels.com for June 3026. May need 2 rooms for family of 5.",
-      "roomConfig": "Suite or connecting rooms for family of 5. Boutique UO-themed hotel with quirky Oregon Ducks decor. Connecting rooms available on request.",
-      "freeBreakfast": false,
-      "separateRoom": true,
-      "pool": false,
-      "reason": "Fun boutique hotel a block from the University of Oregon campus. Quirky Oregon Ducks decor kids love. Connecting room option gives adult/kid separation. Best value in Eugene's college-town core."
+      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Lake+Oswego%2C+OR&checkin=2026-06-10&checkout=2026-06-11&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$160",
+      "priceNote": "Estimated; verify on Booking.com for June 2026.",
+      "roomConfig": "Suite or two-Queen room for family of 5. Lake Oswego is a quiet, upscale suburb just south of Portland.",
+      "freeBreakfast": true,
+      "separateRoom": false,
+      "pool": true,
+      "reason": "Comfortable end-of-trip hotel in Lake Oswego with pool and breakfast. After 19 days on the road, a pool and free breakfast are the perfect way to unwind."
     },
     "optionB": {
-      "name": "University Inn and Suites — Eugene",
+      "name": "Crowne Plaza Portland–Lake Oswego",
       "stars": 3,
-      "bookingUrl": "https://www.booking.com/hotel/us/university-inn-and-suites-eugene.html?checkin=2026-06-10&checkout=2026-06-11&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$383",
-      "priceNote": "Booking.com verified for Jun 9 2026 (2 adults + 3 kids); requires 2 rooms for family of 5.",
-      "roomConfig": "Two rooms needed for family of 5. Located near University of Oregon campus, 2.4 km from downtown. Pool on site.",
-      "freeBreakfast": false,
-      "separateRoom": true,
-      "pool": true,
-      "reason": "Two separate rooms guarantee adult/kid sleeping separation with pool. Near UO campus, walkable to 5th Street Market and Willamette River path. The 2-room configuration is the premium here — guaranteed privacy."
-    },
-    "optionC": {
-      "name": "Whiteaker Craftsman Bungalow — Eugene's Coolest Neighborhood",
-      "isAirbnb": true,
-      "pricePerNight": "$195",
-      "roomConfig": "Entire bungalow · 2 bed · sleeps 5",
-      "bookingUrl": "https://www.airbnb.com/s/Eugene--OR/homes?checkin=2026-06-10&checkout=2026-06-11&adults=2&children=3&min_bedrooms=2",
-      "reason": "Eugene's Whiteaker neighborhood has the best food, coffee, and street art in the city. A craftsman bungalow here beats any hotel — walkable to dinner, quiet streets for the kids to wind down on the penultimate night.",
-      "amenities": [
-        "Full kitchen",
-        "2 bedrooms",
-        "Patio/yard",
-        "Walking distance to restaurants",
-        "Washer/dryer"
-      ]
-    }
-  },
-  "20": {
-    "optionA": {
-      "name": "The Royal Sonesta Portland Downtown",
-      "stars": 4,
-      "bookingUrl": "https://www.booking.com/hotel/us/royal-sonesta-portland.html?checkin=2026-06-11&checkout=2026-06-11&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$110",
-      "priceNote": "Booking.com verified for Jun 10 2026 (2 adults + 3 kids). Rated 8.8/10 'Excellent'.",
-      "roomConfig": "Two-Queen rooms or King suite with sofa bed (sleeps 5). 450m from downtown Portland.",
+      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Lake+Oswego%2C+OR&checkin=2026-06-10&checkout=2026-06-11&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$180",
+      "priceNote": "Estimated; verify on Booking.com or IHG.com for June 2026.",
+      "roomConfig": "Two-Queen rooms or King suite with pullout sofa for family of 5.",
       "freeBreakfast": false,
       "separateRoom": false,
       "pool": true,
-      "reason": "A 4-star downtown Portland hotel at an incredible price. Walkable to Powell's Books, Tom McCall Waterfront Park, and the Pearl District. The best value find on the entire trip — rated 8.8 'Excellent' on Booking.com."
-    },
-    "optionB": {
-      "name": "Embassy Suites by Hilton Portland Downtown",
-      "stars": 3,
-      "bookingUrl": "https://www.hilton.com/en/hotels/pdxeses-embassy-suites-portland-downtown/",
-      "pricePerNight": "$250",
-      "priceNote": "Estimated; not found on Booking.com for this date. Verify at Hilton.com for June 3026.",
-      "roomConfig": "All-suite hotel: every room is a two-room suite with separate bedroom + living area with sofa bed + closing door. Sleeps 5. Free cooked-to-order breakfast included.",
-      "freeBreakfast": true,
-      "separateRoom": true,
-      "pool": true,
-      "reason": "Embassy Suites guarantees the two-room suite with a closing door — adults get their evening to celebrate the end of the trip. Free full breakfast means morning-of-party logistics are handled."
+      "reason": "Full-service hotel in Lake Oswego with pool and on-site restaurant. A solid end-of-trip option with all the amenities after a long final drive."
     },
     "optionC": {
-      "name": "Portland Treehouse in the Treetops — Alberta Arts District",
+      "name": "Lake Oswego Home — Quiet Neighborhood",
       "isAirbnb": true,
-      "pricePerNight": "$220",
-      "roomConfig": "Entire treehouse · 2 bed · sleeps 5",
-      "bookingUrl": "https://www.airbnb.com/s/Portland--OR/homes?checkin=2026-06-11&checkout=2026-06-11&adults=2&children=3&min_bedrooms=2",
-      "reason": "End the trip with something unforgettable: a treehouse in Portland's Alberta Arts District. The kids will talk about sleeping in a treehouse for years. You're 20 minutes from the party venue and in the most interesting neighborhood in Portland.",
+      "pricePerNight": "$200",
+      "roomConfig": "Entire home · 2+ bed · sleeps 5",
+      "bookingUrl": "https://www.airbnb.com/s/Lake-Oswego--OR/homes?checkin=2026-06-10&checkout=2026-06-11&adults=2&children=3&min_bedrooms=2",
+      "reason": "A whole house in Lake Oswego's leafy neighborhoods gives everyone room to spread out after 19 days in hotels. Full kitchen, yard for the kids, washer/dryer for the mountain of laundry.",
       "amenities": [
-        "Unique treehouse structure",
         "Full kitchen",
-        "2 bedrooms",
-        "Outdoor deck",
-        "Alberta Arts District location"
+        "2+ bedrooms",
+        "Yard/outdoor space",
+        "Washer/dryer",
+        "Quiet residential neighborhood"
       ]
     }
   }
