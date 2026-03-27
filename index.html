@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>California–Oregon Road Trip · May 23 – June 11, 2026</title>
+
+  <meta name="description" content="California-Oregon Road Trip 2026 — 20-day family itinerary with hotels, restaurants, national parks, and kid-friendly activities.">
+
+  <!-- Cache busting: bump ?v= on every push so phones pick up changes -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <!-- Force Android Chrome to check for new versions -->
+  <script>
+    // Unregister any stale service workers that may cache aggressively
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        registrations.forEach(function(r) { r.unregister(); });
+      });
+    }
+    // If GitHub Pages or CDN serves a stale index.html, the version token
+    // in the script/link tags won't match. This script forces a hard reload
+    // when the user manually refreshes (shift-pull or long-press reload).
+    var SITE_VERSION = '20260324004';
+    try {
+      var prev = localStorage.getItem('site_v');
+      if (prev && prev !== SITE_VERSION) {
+        localStorage.setItem('site_v', SITE_VERSION);
+        if (window.caches) { caches.keys().then(function(k) { k.forEach(function(n) { caches.delete(n); }); }); }
+      }
+      localStorage.setItem('site_v', SITE_VERSION);
+    } catch(e) {}
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="styles.css?v=20260324004">
+</head>
+<body>
+
+  <!-- Password Overlay -->
+  <div id="pw-overlay">
+    <div id="pw-box">
+      <div id="pw-title">🚗 Eden Family Road Trip</div>
+      <div id="pw-subtitle">Enter the trip password to continue</div>
+      <input id="pw-input" type="password" placeholder="Password" autocomplete="off">
+      <button id="pw-btn">Unlock</button>
+      <div id="pw-error"></div>
+    </div>
+  </div>
+
+  <!-- Sticky Header -->
+  <header id="site-header">
+    <button id="hamburger" aria-label="Open navigation">&#9776;</button>
+    <div class="header-title">
+      <span class="header-emoji">🚗</span>
+      <span>California-Oregon 2026</span>
+    </div>
+    <div class="header-dates">May 23 – Jun 11</div>
+  </header>
+
+  <!-- Navigation Drawer -->
+  <div id="drawer-overlay"></div>
+  <nav id="nav-drawer">
+    <div class="drawer-header">
+      <h2>Trip Navigation</h2>
+      <button id="drawer-close">✕</button>
+    </div>
+    <div id="drawer-content">
+      <!-- Populated by app.js from ROUTE_DATA -->
+    </div>
+    <div class="drawer-appendix">
+      <h3>Appendix</h3>
+      <a href="#appendix-snacks">🍎 Road Trip Snack Kit</a>
+      <a href="#appendix-budget">💰 Budget Summary</a>
+      <a href="#appendix-pass">🏕 America the Beautiful Pass</a>
+      <a href="#appendix-missing">🗺 What We Left Out</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- Hero Banner -->
+    <section id="hero-banner">
+      <img src="family.jpeg" alt="The Eden family" id="hero-photo">
+      <div id="hero-overlay">
+        <div id="hero-text">
+          <div id="hero-title">California–Oregon 2026</div>
+          <div id="hero-sub">May 23 – June 11 &nbsp;·&nbsp; 20 days &nbsp;·&nbsp; ~1,900 miles &nbsp;·&nbsp; 5 travelers</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map-section">
+      <div id="map"></div>
+      <div class="map-footer">
+        <button id="full-route-btn" onclick="openFullRouteInMaps()">📍 View Full Route in Google Maps</button>
+      </div>
+    </section>
+
+    <!-- Trip Summary Bar -->
+    <section id="trip-summary">
+      <div class="summary-item"><span class="summary-num">20</span><span class="summary-label">Days</span></div>
+      <div class="summary-item"><span class="summary-num">7</span><span class="summary-label">NPS Sites</span></div>
+      <div class="summary-item"><span class="summary-num">~1,900</span><span class="summary-label">Miles</span></div>
+      <div class="summary-item"><span class="summary-num">5</span><span class="summary-label">Travelers</span></div>
+    </section>
+
+    <!-- Day Cards Container -->
+    <div id="days-container">
+      <!-- Populated by app.js from ROUTE_DATA -->
+    </div>
+
+    <!-- Appendix Sections -->
+    <section id="appendix-snacks" class="appendix-section">
+      <!-- Populated by app.js -->
+    </section>
+    <section id="appendix-budget" class="appendix-section">
+      <!-- Populated by app.js -->
+    </section>
+    <section id="appendix-pass" class="appendix-section">
+      <!-- Populated by app.js -->
+    </section>
+    <section id="appendix-missing" class="appendix-section">
+      <!-- Populated by app.js -->
+    </section>
+
+  </main>
+
+  <!-- Floating Back to Top -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Load data files BEFORE app.js -->
+  <script src="data/route.js?v=20260324004"></script>
+  <script src="data/images.js?v=20260324004"></script>
+  <script src="data/hotels.js?v=20260324004"></script>
+  <script src="data/activities.js?v=20260324004"></script>
+  <script src="data/food.js?v=20260324004"></script>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WLEo=" crossorigin=""></script>
+
+  <!-- App -->
+  <script src="app.js?v=20260324004"></script>
+
+</body>
+</html>
+<!--
+╔══════════════════════════════════════════════════════════╗
+║           HOW TO SHARE THIS SITE WITH YOUR FAMILY        ║
+╠══════════════════════════════════════════════════════════╣
+║                                                          ║
+║  OPTION 1 — Netlify Drop (easiest, free, no account)     ║
+║  1. Go to https://app.netlify.com/drop                   ║
+║  2. Drag the road-trip-site/ folder onto the page        ║
+║  3. Get a live URL instantly (e.g. my-trip.netlify.app)  ║
+║  4. Share the URL with your family — works on any phone  ║
+║                                                          ║
+║  OPTION 2 — GitHub Pages (free, permanent)               ║
+║  1. Create a repo at github.com                          ║
+║  2. Upload road-trip-site/ folder contents               ║
+║  3. Settings → Pages → Deploy from main branch           ║
+║  4. URL: https://yourusername.github.io/road-trip        ║
+║                                                          ║
+║  OPTION 3 — Save to phone (offline access)               ║
+║  Open index.html in Chrome/Safari → Share →              ║
+║  "Add to Home Screen" for app-like access                ║
+╚══════════════════════════════════════════════════════════╝
+-->
