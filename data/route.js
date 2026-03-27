@@ -11,7 +11,7 @@ window.ROUTE_DATA = [
     "driveHours": 0.5,
     "driveMapsUrl": "https://www.google.com/maps/dir/Los+Angeles+International+Airport/Santa+Monica,+CA",
     "dayType": "chill",
-    "note": "Flight DL358 lands 9:20 AM (Saturday). Pick up SUV at LAX, 30-min drive to Santa Monica. All-walkable day: Farmers Market (open til 1 PM!), Tongva Park, Pier & Pacific Park, Aquarium, Annenberg Beach House, Third Street Promenade dinner, Muscle Beach sunset acrobats. No car needed after arrival."
+    "note": "Flight DL358 lands 9:20 AM (Saturday). Pick up SUV at LAX, 30-min drive to Santa Monica. All-walkable day: Farmers Market (open til 1 PM!), Tongva Park, Pier & Pacific Park, Annenberg Beach House splash pad, Third Street Promenade, Muscle Beach sunset acrobats. Dinner at Cha Cha Chicken — relaxed Caribbean jerk on a colorful patio. No car needed after arrival."
   },
   {
     "dayNumber": 2,
@@ -58,16 +58,16 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 5,
     "date": "Wednesday, May 27, 2026",
-    "dayTitle": "Monterey Bay Aquarium",
+    "dayTitle": "Monterey & Carmel",
     "overnightCity": "Monterey, CA",
     "region": "Big Sur & Monterey",
     "lat": 36.6002,
     "lng": -121.8947,
     "driveFrom": "Monterey",
-    "driveHours": 0,
-    "driveMapsUrl": "https://www.google.com/maps/dir/Monterey,+CA/Monterey,+CA",
+    "driveHours": 0.5,
+    "driveMapsUrl": "https://www.google.com/maps/dir/Monterey,+CA/Carmel-by-the-Sea,+CA/Monterey,+CA",
     "dayType": "explore",
-    "note": "Full day in Monterey. Monterey Bay Aquarium (book timed tickets — plan 3-4 hours, it's world-class). Walk Cannery Row, Old Fisherman's Wharf. Kids will love the touch pools, jellyfish exhibits, and sea otters. One of the best aquariums on Earth — give it the time it deserves."
+    "note": "Full day in Monterey & Carmel. Monterey Bay Aquarium (book timed tickets — plan 3-4 hours, it's world-class). Walk Cannery Row, Old Fisherman's Wharf. Then drive 10 min south to Carmel-by-the-Sea — a fairytale village with storybook cottages, art galleries, and a stunning white-sand beach. Kids will love the touch pools, jellyfish exhibits, and sea otters at the Aquarium."
   },
   {
     "dayNumber": 6,
@@ -81,7 +81,7 @@ window.ROUTE_DATA = [
     "driveHours": 2.5,
     "driveMapsUrl": "https://www.google.com/maps/dir/Monterey,+CA/Bixby+Bridge,+CA/McWay+Falls,+Big+Sur,+CA/Cambria,+CA",
     "dayType": "drive",
-    "note": "Drive south on CA-1 through Big Sur — one of the most spectacular coastal drives on Earth. Bixby Bridge, McWay Falls (80-ft waterfall onto a beach), Julia Pfeiffer Burns SP. Continue south to Cambria/San Simeon. Hearst Castle tour (book in advance!), Piedras Blancas Elephant Seal Rookery (free, incredible). Overnight in charming Cambria."
+    "note": "Morning in Monterey — 17-Mile Drive through Pebble Beach (Lone Cypress!) or Dennis the Menace Playground. Then drive south on CA-1 through Big Sur — one of the most spectacular coastal drives on Earth. Bixby Bridge, McWay Falls (80-ft waterfall onto a beach), Julia Pfeiffer Burns SP. Continue south to Cambria/San Simeon. Hearst Castle tour (book in advance!). Overnight in charming Cambria."
   },
   {
     "dayNumber": 7,
@@ -92,10 +92,10 @@ window.ROUTE_DATA = [
     "lat": 37.4849,
     "lng": -119.9663,
     "driveFrom": "Cambria",
-    "driveHours": 4.5,
-    "driveMapsUrl": "https://www.google.com/maps/dir/Cambria,+CA/Paso+Robles,+CA/Casa+de+Fruta,+Pacheco+Pass+Hwy,+Hollister,+CA/Mariposa,+CA",
+    "driveHours": 5,
+    "driveMapsUrl": "https://www.google.com/maps/dir/Cambria,+CA/Piedras+Blancas+Elephant+Seal+Rookery/Paso+Robles,+CA/Casa+de+Fruta,+Pacheco+Pass+Hwy,+Hollister,+CA/Mariposa,+CA",
     "dayType": "drive",
-    "note": "Head inland to Paso Robles (30 min) for the famous candy shop, then north on US-101 to CA-152 east over Pacheco Pass. Stop at Casa de Fruta — quirky roadside attraction with fruit stands, carousel, peacocks, and mini train. Continue to Mariposa by evening (~4.5 hrs total)."
+    "note": "First stop: Piedras Blancas Elephant Seal Rookery (free, incredible — thousands of seals just 20 feet away). Then head inland to Paso Robles (30 min) for the famous candy shop, north on US-101 to CA-152 east over Pacheco Pass. Stop at Casa de Fruta — quirky roadside attraction with fruit stands, carousel, peacocks, and mini train. Continue to Mariposa by evening (~5 hrs total)."
   },
   {
     "dayNumber": 8,

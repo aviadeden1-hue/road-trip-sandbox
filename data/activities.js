@@ -40,18 +40,6 @@ window.ACTIVITY_DATA = {
         "npsCovered": false
       },
       {
-        "name": "Heal the Bay Aquarium",
-        "type": "indoor/educational",
-        "price": "$12 adults, $5 kids 4–12, free under 4",
-        "description": "Tucked underneath the Santa Monica Pier at beach level, this marine education aquarium features touch tanks with sea stars, urchins, and local tide-pool creatures. Small but wonderfully hands-on for young kids — a favorite for the 4–8 age range.",
-        "duration": "45 min–1 hour",
-        "link": "https://healthebay.org/aquarium/",
-        "lat": 34.0089,
-        "lng": -118.4982,
-        "kidFriendly": true,
-        "npsCovered": false
-      },
-      {
         "name": "Annenberg Community Beach House",
         "type": "outdoor/free",
         "price": "Free (splash pad and playground); Pool ~$10/person extra",
@@ -374,6 +362,18 @@ window.ACTIVITY_DATA = {
         "lng": -121.8994,
         "kidFriendly": true,
         "npsCovered": false
+      },
+      {
+        "name": "Carmel-by-the-Sea",
+        "type": "walking / sightseeing",
+        "price": "Free",
+        "description": "A fairytale village 5 miles south of Monterey. Storybook cottages with no street addresses, art galleries, and a stunning white-sand beach at the bottom of Ocean Avenue. Walk the compact downtown (8 blocks), peek into the courtyards hiding between shops, and end at Carmel Beach — one of the most beautiful city beaches in California. Dogs outnumber people. The whole town feels like a picture book.",
+        "duration": "1.5–2 hours",
+        "link": "https://www.carmelcalifornia.com",
+        "lat": 36.5554,
+        "lng": -121.9233,
+        "kidFriendly": true,
+        "npsCovered": false
       }
     ],
     "scenicDrives": [],
@@ -392,6 +392,7 @@ window.ACTIVITY_DATA = {
     "priorities": {
       "mustDo": [
         "Monterey Bay Aquarium — one of the best aquariums in the world, give it 3-4 hours",
+        "Carmel-by-the-Sea — fairytale village and gorgeous beach, don't miss it",
         "Cannery Row walk — natural extension of the Aquarium visit"
       ],
       "skipIfShort": [
@@ -401,6 +402,18 @@ window.ACTIVITY_DATA = {
   },
   "6": {
     "morning": [
+      {
+        "name": "Monterey's Cannery Row & 17-Mile Drive",
+        "type": "walking / scenic drive",
+        "price": "17-Mile Drive: $11.75/car",
+        "description": "One last Monterey morning before heading south. Walk Cannery Row if you didn't yesterday, or drive the famous 17-Mile Drive through Pebble Beach — the Lone Cypress, Bird Rock, and stunning coastal views. Families with young kids may prefer the free Dennis the Menace Playground in El Estero Park instead (giant climbing structures, a real train engine, hedge maze). Depart for Big Sur by late morning.",
+        "duration": "1.5-2 hours",
+        "link": "https://www.pebblebeach.com/17-mile-drive/",
+        "lat": 36.5692,
+        "lng": -121.9611,
+        "kidFriendly": true,
+        "npsCovered": false
+      },
       {
         "name": "Big Sur Coastal Drive — CA-1 South",
         "type": "scenic drive",
@@ -428,18 +441,6 @@ window.ACTIVITY_DATA = {
         "npsCovered": false,
         "advanceBookingRequired": true,
         "bookingNote": "Book timed tour tickets in advance at hearstcastle.org. Grand Rooms Tour is best for families with young kids. Summer weekends sell out."
-      },
-      {
-        "name": "Piedras Blancas Elephant Seal Rookery",
-        "type": "outdoor/wildlife",
-        "price": "Free",
-        "description": "One of the most incredible free wildlife experiences in California. Thousands of northern elephant seals on the beach just off Highway 1 near San Simeon. A boardwalk overlook lets you watch them from just 20 feet away — they're enormous (males up to 5,000 lbs), loud, and completely wild. No reservation needed.",
-        "duration": "30-45 min",
-        "link": "https://elephantseal.org",
-        "lat": 35.6649,
-        "lng": -121.2569,
-        "kidFriendly": true,
-        "npsCovered": false
       }
     ],
     "evening": [
@@ -478,17 +479,30 @@ window.ACTIVITY_DATA = {
     },
     "priorities": {
       "mustDo": [
+        "Morning Monterey — 17-Mile Drive or Dennis the Menace Playground",
         "Big Sur coastal drive — Bixby Bridge and McWay Falls are unmissable",
-        "Piedras Blancas Elephant Seal Rookery — free, unforgettable",
         "Hearst Castle — book the Grand Rooms Tour in advance"
       ],
       "skipIfShort": [
+        "17-Mile Drive — beautiful but costs $12 and takes 1+ hr. Skip if running late.",
         "Cambria Moonstone Beach — lovely but just a walk, do it if time allows"
       ]
     }
   },
   "7": {
     "activities": [
+      {
+        "name": "Piedras Blancas Elephant Seal Rookery",
+        "type": "outdoor/wildlife",
+        "price": "Free",
+        "description": "One of the most incredible free wildlife experiences in California. Thousands of northern elephant seals on the beach just off Highway 1 near San Simeon — a short drive north from Cambria before heading inland. A boardwalk overlook lets you watch them from just 20 feet away — they're enormous (males up to 5,000 lbs), loud, and completely wild. No reservation needed. Stop here first thing in the morning before heading to Paso Robles.",
+        "duration": "30-45 min",
+        "link": "https://elephantseal.org",
+        "lat": 35.6649,
+        "lng": -121.2569,
+        "kidFriendly": true,
+        "npsCovered": false
+      },
       {
         "name": "Paso Robles Candy Shop",
         "type": "indoor/food",
@@ -526,10 +540,13 @@ window.ACTIVITY_DATA = {
     "rainyDay": null,
     "priorities": {
       "mustDo": [
+        "Piedras Blancas Elephant Seal Rookery — free, unforgettable, first stop of the day",
         "Paso Robles candy shop — quick stop, kids will love it",
         "Casa de Fruta — the best leg-stretch stop on the drive to Mariposa"
       ],
-      "skipIfShort": []
+      "skipIfShort": [
+        "Paso Robles downtown stroll beyond the candy shop — charming but time is tight on a big drive day"
+      ]
     }
   },
   "8": {

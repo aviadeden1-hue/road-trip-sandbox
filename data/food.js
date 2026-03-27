@@ -2,18 +2,17 @@ window.FOOD_DATA = {
   "1": {
     "dinnerType": "restaurant",
     "dinner": {
-      "name": "Water Grill Santa Monica",
-      "cuisine": "California Seafood",
-      "address": "1401 Ocean Ave, Santa Monica, CA 90401",
-      "websiteLink": "https://www.watergrill.com/sm",
-      "mapsLink": "https://www.google.com/maps/search/Water+Grill+Santa+Monica",
-      "signatureDish": "Daily fresh catch, Dungeness crab, oysters on the half shell, seafood towers",
-      "pricePerPerson": "$60-85",
-      "familyPrice": "$300-425 for family of 5 (incl. kids meals)",
-      "whyChosen": "Iconic Ocean Ave seafood destination directly across from the Pacific — the perfect first-night welcome to California. Menu changes daily based on what came off the boat. Upscale but unpretentious, with ocean views and a kids menu. A true West Coast seafood experience unavailable in Florida.",
-      "reservationNeeded": true,
-      "reserveLink": "https://www.opentable.com/water-grill-santa-monica",
-      "reserveNote": "Reserve 1-2 weeks ahead on OpenTable, especially for a party of 5"
+      "name": "Cha Cha Chicken",
+      "cuisine": "Caribbean jerk — jerk chicken, plantains, rice & beans",
+      "address": "1906 Ocean Ave, Santa Monica, CA 90405",
+      "websiteLink": "https://www.chachachicken.com",
+      "mapsLink": "https://www.google.com/maps/search/Cha+Cha+Chicken+Santa+Monica",
+      "signatureDish": "Jerk chicken plate, Caribbean roasted chicken, fried plantains, coconut rice & beans, mango salsa",
+      "pricePerPerson": "$12-18",
+      "familyPrice": "$60-90 for family of 5",
+      "whyChosen": "A Santa Monica institution with a colorful, tropical outdoor patio strung with lights — feels like a Caribbean beach shack dropped onto Ocean Ave. The jerk chicken is legendary. Totally relaxed, no reservations, kids can run around the patio, and the plates are huge. Perfect after a long flight day: zero stress, unique flavors, steps from the ocean. Nothing like this in Florida despite being Caribbean-inspired.",
+      "reservationNeeded": false,
+      "reserveNote": "No reservations — order at the counter, grab a table on the patio. Arrive before 7 PM to avoid a wait."
     },
     "lunch": {
       "type": "packed",
