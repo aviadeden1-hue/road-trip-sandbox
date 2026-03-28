@@ -734,6 +734,18 @@ window.ACTIVITY_DATA = {
   "11": {
     "activities": [
       {
+        "name": "Tartine Bakery — Mission District",
+        "type": "indoor/food",
+        "price": "~$5-12/person",
+        "description": "San Francisco's most legendary bakery. The morning bun (orange-sugar brioche) is famous worldwide, and the croissants are flaky perfection. Grab pastries and coffee to start the SF day. The Mission District location at 18th & Guerrero is the original — expect a short line but it moves fast. Worth every minute. Pick up a loaf of their country bread for car snacks.",
+        "duration": "30 min",
+        "link": "https://www.tartinebakery.com",
+        "lat": 37.7614,
+        "lng": -122.4241,
+        "kidFriendly": true,
+        "npsCovered": false
+      },
+      {
         "name": "Exploratorium — Hands-On Science Museum",
         "type": "indoor/educational",
         "price": "$40 adults, $25 kids 4-12, free under 4",
