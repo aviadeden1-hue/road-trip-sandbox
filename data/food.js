@@ -35,8 +35,13 @@ window.FOOD_DATA = {
       }
     ],
     "lunch": {
-      "type": "packed",
-      "note": "Arrival day — grab a quick bite near the airport or pick up snacks from Walmart on the way to Santa Monica"
+      "name": "In-N-Out Burger — LAX / Westchester",
+      "cuisine": "California's iconic burger chain — Double-Double, Animal Style fries, milkshakes",
+      "address": "9149 S Sepulveda Blvd, Los Angeles, CA 90045",
+      "mapsLink": "https://www.google.com/maps/search/In-N-Out+Burger+9149+Sepulveda+Blvd+Los+Angeles",
+      "whyChosen": "You just landed in California — this is mandatory. The Sepulveda location is 5 minutes from LAX, right on the way to Santa Monica. Order a Double-Double Animal Style. The kids get cheeseburgers and shakes. No trip to California is complete without this stop.",
+      "costNote": "~$8-12/person. No reservations, cash and cards.",
+      "reservationNeeded": false
     },
     "groceryStore": null
   },
