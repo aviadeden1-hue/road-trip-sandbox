@@ -1163,6 +1163,59 @@ function buildDinnerContent(foodData) {
     list.appendChild(buildDinnerCard(foodData.dinner));
   }
 
+  // Dinner alternatives (compact cards)
+  if (foodData.dinnerAlternatives && foodData.dinnerAlternatives.length > 0 && !isGroceryNight) {
+    var altHeader = document.createElement('div');
+    altHeader.style.cssText = 'font-size:0.75rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.05em;margin:12px 0 6px;padding-left:2px;';
+    altHeader.textContent = 'Alternative Options';
+    list.appendChild(altHeader);
+
+    foodData.dinnerAlternatives.forEach(function (alt) {
+      var altCard = document.createElement('div');
+      altCard.className = 'food-card';
+      altCard.style.cssText = 'background:#f9fafb;border:1px solid #e5e7eb;padding:10px 12px;';
+
+      var altRow = document.createElement('div');
+      altRow.style.cssText = 'display:flex;align-items:center;gap:8px;';
+      var altName = document.createElement('div');
+      altName.style.cssText = 'font-weight:700;font-size:0.85rem;flex:1;';
+      altName.textContent = alt.name;
+      altRow.appendChild(altName);
+      if (alt.pricePerPerson) {
+        var altPrice = document.createElement('div');
+        altPrice.className = 'food-price';
+        altPrice.textContent = alt.pricePerPerson + '/person';
+        altRow.appendChild(altPrice);
+      }
+      altCard.appendChild(altRow);
+
+      if (alt.cuisine) {
+        var altCuisine = document.createElement('div');
+        altCuisine.style.cssText = 'font-size:0.78rem;color:#555;margin-top:3px;';
+        altCuisine.textContent = alt.cuisine;
+        altCard.appendChild(altCuisine);
+      }
+      if (alt.whyChosen) {
+        var altWhy = document.createElement('div');
+        altWhy.style.cssText = 'font-size:0.75rem;color:#777;margin-top:4px;line-height:1.3;font-style:italic;';
+        altWhy.textContent = alt.whyChosen;
+        altCard.appendChild(altWhy);
+      }
+      var altUrl = alt.mapsLink || alt.websiteLink || alt.url;
+      if (altUrl) {
+        var altLink = document.createElement('a');
+        altLink.className = 'food-link';
+        altLink.href = altUrl;
+        altLink.target = '_blank';
+        altLink.rel = 'noopener noreferrer';
+        altLink.style.cssText = 'display:block;margin-top:6px;font-size:0.78rem;';
+        altLink.textContent = 'View on Maps ↗';
+        altCard.appendChild(altLink);
+      }
+      list.appendChild(altCard);
+    });
+  }
+
   if (isGroceryNight && foodData.groceryStore) {
     list.appendChild(buildGroceryCard(foodData.groceryStore));
   }
