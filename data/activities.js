@@ -100,6 +100,18 @@ window.ACTIVITY_DATA = {
   "2": {
     "morning": [
       {
+        "name": "Skirball Cultural Center — Noah's Ark Exhibit",
+        "type": "indoor/cultural",
+        "price": "~$18 adults, $14 kids 2–12; Noah's Ark free with admission",
+        "description": "A massive interactive Noah's Ark experience built from recycled materials — kids climb through a full-size wooden ark, load stuffed animals two-by-two, and explore hands-on exhibits about nature and community. The outdoor Noah's Ark play area is a highlight for ages 3–10. Right in the Sepulveda Pass, 5 min from the Getty. Opens at 10 AM (closed Mon). Great pairing: Skirball first (10–11:30 AM), then Getty (noon–2 PM).",
+        "duration": "1–1.5 hours",
+        "link": "https://www.skirball.org/noahs-ark",
+        "lat": 34.0805,
+        "lng": -118.4793,
+        "kidFriendly": true,
+        "npsCovered": false
+      },
+      {
         "name": "The Getty Center",
         "type": "indoor/cultural",
         "price": "Free admission; parking $20",
