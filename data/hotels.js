@@ -85,33 +85,33 @@ window.HOTEL_DATA = {
     "optionA": {
       "name": "Hampton Inn Santa Barbara/Goleta",
       "stars": 3,
-      "bookingUrl": "https://www.booking.com/hotel/us/hampton-inn-santa-barbara-goleta.html?checkin=2026-05-25&checkout=2026-05-27&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "bookingUrl": "https://www.booking.com/hotel/us/hampton-inn-santa-barbara-goleta.html?checkin=2026-05-25&checkout=2026-05-26&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
       "pricePerNight": "$264",
-      "priceNote": "Booking.com verified for May 25 2026 (2 adults + 3 kids)",
+      "priceNote": "Estimated for May 25 2026 (1 night, 2 adults + 3 kids)",
       "roomConfig": "Studio room: 2 Queen beds + Sofa Bed + Wet Bar (sleeps 5). Located at 5665 Hollister Ave, Goleta — 10 min from downtown Santa Barbara.",
       "freeBreakfast": true,
       "separateRoom": false,
-      "pool": false,
-      "reason": "Free hot breakfast, 2 queens + sofa bed studio rooms confirmed, reliable chain, free parking. 10 minutes to State Street and Santa Barbara beach."
+      "pool": true,
+      "reason": "Free hot breakfast, 2 queens + sofa bed studio rooms confirmed, outdoor pool & hot tub, reliable chain, free parking. 10 minutes to State Street and Santa Barbara beach."
     },
     "optionB": {
-      "name": "The Presidio — Santa Barbara",
+      "name": "Hotel Milo Santa Barbara",
       "stars": 4,
-      "bookingUrl": "https://www.booking.com/hotel/us/the-presidio.html?checkin=2026-05-25&checkout=2026-05-27&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$328",
-      "priceNote": "Booking.com verified for May 25 2026 (2 adults + 3 kids)",
-      "roomConfig": "Boutique rooms and suites with separate sleeping areas. Request suite or connecting rooms for family of 5.",
+      "bookingUrl": "https://www.booking.com/hotel/us/hotel-milo-santa-barbara.html?checkin=2026-05-25&checkout=2026-05-26&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$310",
+      "priceNote": "Estimated for May 25 2026 (2 adults + 3 kids). Verify at Booking.com.",
+      "roomConfig": "Family suites with bunk beds available. 2 Queen rooms also available. Pool, near the beach.",
       "freeBreakfast": false,
       "separateRoom": true,
       "pool": true,
-      "reason": "Upscale boutique hotel in downtown Santa Barbara with pool. Walking distance to State Street and the waterfront. A character-filled step up from the Hampton Inn at a reasonable premium."
+      "reason": "Family-friendly beachfront hotel with pool, bunk-bed family suites, and a great location near the harbor. Walking distance to Stearns Wharf and State Street. Kids love the pool and beach access."
     },
     "optionC": {
       "name": "Spanish-Style Casita with Courtyard — Near State Street",
       "isAirbnb": true,
       "pricePerNight": "$215",
       "roomConfig": "Entire guesthouse · 2 bed · sleeps 5",
-      "bookingUrl": "https://www.airbnb.com/s/Santa-Barbara--CA/homes?checkin=2026-05-25&checkout=2026-05-27&adults=2&children=3&min_bedrooms=2",
+      "bookingUrl": "https://www.airbnb.com/s/Santa-Barbara--CA/homes?checkin=2026-05-25&checkout=2026-05-26&adults=2&children=3&min_bedrooms=2",
       "reason": "Santa Barbara's architecture is all white stucco and red tile — staying in a real Spanish colonial casita is far more immersive than a Goleta chain hotel 10 minutes from downtown.",
       "amenities": [
         "Full kitchen",
@@ -144,8 +144,8 @@ window.HOTEL_DATA = {
       "roomConfig": "Spacious rooms with 2 Queen beds or King + sofa bed. Family-friendly layout (sleeps 5). Free parking.",
       "freeBreakfast": false,
       "separateRoom": false,
-      "pool": true,
-      "reason": "Highly rated (8.5/10) Monterey hotel with pool. A step up from the Pacific Inn at a modest premium. Close to Cannery Row, Aquarium, and 17-Mile Drive."
+      "pool": false,
+      "reason": "Highly rated (8.5/10) Monterey hotel. A step up from the Pacific Inn at a modest premium. Close to Cannery Row, Aquarium, and 17-Mile Drive."
     },
     "optionC": {
       "name": "Coastal Cottage Two Blocks from Cannery Row",
@@ -185,8 +185,8 @@ window.HOTEL_DATA = {
       "roomConfig": "Spacious rooms with 2 Queen beds or King + sofa bed. Family-friendly layout (sleeps 5). Free parking.",
       "freeBreakfast": false,
       "separateRoom": false,
-      "pool": true,
-      "reason": "Highly rated (8.5/10) Monterey hotel with pool. A step up from the Pacific Inn at a modest premium. Close to Cannery Row, Aquarium, and 17-Mile Drive."
+      "pool": false,
+      "reason": "Highly rated (8.5/10) Monterey hotel. A step up from the Pacific Inn at a modest premium. Close to Cannery Row, Aquarium, and 17-Mile Drive."
     },
     "optionC": {
       "name": "Coastal Cottage Two Blocks from Cannery Row",
@@ -226,18 +226,29 @@ window.HOTEL_DATA = {
       "roomConfig": "Oceanfront rooms with fireplaces. Family rooms with 2 Queen beds available.",
       "freeBreakfast": false,
       "separateRoom": false,
-      "pool": false,
+      "pool": true,
       "reason": "Oceanfront resort in San Simeon, right between Hearst Castle and the Elephant Seal Rookery. Cliffside location with ocean views from rooms. Higher price but unbeatable location."
     },
-    "optionC": null
+    "optionC": {
+      "name": "Cambria Pines Lodge",
+      "stars": 3,
+      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Cambria+Pines+Lodge+Cambria+CA&checkin=2026-05-28&checkout=2026-05-29&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$240",
+      "priceNote": "Estimated for May 28 2026. Verify at Booking.com.",
+      "roomConfig": "2-Queen rooms available. Located at 2905 Burton Dr, Cambria. Set in 25 acres of Monterey pines.",
+      "freeBreakfast": true,
+      "separateRoom": false,
+      "pool": true,
+      "reason": "Charming lodge set in 25 acres of Monterey pines with heated pool, hot tub, and gardens. Free breakfast buffet. Kids can explore the grounds. A more resort-like experience than downtown Cambria motels."
+    }
   },
   "7": {
     "optionA": {
       "name": "Mariposa Lodge Motel",
       "stars": 3,
-      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Mariposa%2C+CA&checkin=2026-05-30&checkout=2026-05-29&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Mariposa%2C+CA&checkin=2026-05-29&checkout=2026-05-30&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
       "pricePerNight": "$150–$200",
-      "priceNote": "Estimated for May 28 2026. Mariposa is the gateway to Yosemite — book early, limited lodging.",
+      "priceNote": "Estimated for May 29 2026. Mariposa is the gateway to Yosemite — book early, limited lodging.",
       "roomConfig": "2 Queen beds, family rooms available. Walking distance to downtown Mariposa.",
       "freeBreakfast": true,
       "separateRoom": false,
@@ -249,7 +260,7 @@ window.HOTEL_DATA = {
       "stars": 2,
       "bookingUrl": "https://www.yosemitebug.com",
       "pricePerNight": "$120–$180",
-      "priceNote": "Estimated for May 28 2026. Multiple room types from dorm to private cabins.",
+      "priceNote": "Estimated for May 29 2026. Multiple room types from dorm to private cabins.",
       "roomConfig": "Private cabins and rooms available for families. Shared hot tub, café on site.",
       "freeBreakfast": false,
       "separateRoom": false,
@@ -261,7 +272,7 @@ window.HOTEL_DATA = {
       "isAirbnb": true,
       "pricePerNight": "$200–$280",
       "roomConfig": "Entire cabin · 2 bed · sleeps 5",
-      "bookingUrl": "https://www.airbnb.com/s/Mariposa--CA/homes?checkin=2026-05-30&checkout=2026-05-29&adults=2&children=3&min_bedrooms=2",
+      "bookingUrl": "https://www.airbnb.com/s/Mariposa--CA/homes?checkin=2026-05-29&checkout=2026-05-30&adults=2&children=3&min_bedrooms=2",
       "reason": "A private cabin in the Sierra foothills outside Mariposa — pine trees, stars, quiet. The authentic Yosemite experience starts the moment you arrive. Book very early for May dates.",
       "amenities": [
         "Full kitchen",
@@ -276,9 +287,9 @@ window.HOTEL_DATA = {
     "optionA": {
       "name": "Mariposa Lodge Motel (2nd night)",
       "stars": 3,
-      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Mariposa%2C+CA&checkin=2026-05-29&checkout=2026-05-30&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Mariposa%2C+CA&checkin=2026-05-30&checkout=2026-05-31&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
       "pricePerNight": "$150–$200",
-      "priceNote": "Estimated for May 29 2026. Stay in place for night 2 — no repacking after a big Yosemite day.",
+      "priceNote": "Estimated for May 30 2026. Stay in place for night 2 — no repacking after a big Yosemite day.",
       "roomConfig": "2 Queen beds, family rooms available. Walking distance to downtown Mariposa.",
       "freeBreakfast": true,
       "separateRoom": false,
@@ -290,7 +301,7 @@ window.HOTEL_DATA = {
       "stars": 2,
       "bookingUrl": "https://www.yosemitebug.com",
       "pricePerNight": "$120–$180",
-      "priceNote": "Estimated for May 29 2026.",
+      "priceNote": "Estimated for May 30 2026.",
       "roomConfig": "Private cabins and rooms. Hot tub under the stars after a big Yosemite day.",
       "freeBreakfast": false,
       "separateRoom": false,
@@ -302,7 +313,7 @@ window.HOTEL_DATA = {
       "isAirbnb": true,
       "pricePerNight": "$200–$280",
       "roomConfig": "Entire cabin · 2 bed · sleeps 5",
-      "bookingUrl": "https://www.airbnb.com/s/Mariposa--CA/homes?checkin=2026-05-29&checkout=2026-05-30&adults=2&children=3&min_bedrooms=2",
+      "bookingUrl": "https://www.airbnb.com/s/Mariposa--CA/homes?checkin=2026-05-30&checkout=2026-05-31&adults=2&children=3&min_bedrooms=2",
       "reason": "Stay in place for night 2 at the cabin. Kids collapse into their own beds after the Yosemite day.",
       "amenities": [
         "Full kitchen",
@@ -315,11 +326,11 @@ window.HOTEL_DATA = {
   },
   "9": {
     "optionA": {
-      "name": "Sonora Days Inn — Historic Sonora",
+      "name": "Historic Sonora Inn",
       "stars": 2,
-      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Sonora%2C+CA&checkin=2026-05-30&checkout=2026-05-31&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Sonora%2C+CA&checkin=2026-05-31&checkout=2026-06-01&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
       "pricePerNight": "$130–$170",
-      "priceNote": "Estimated for May 30 2026. Sonora has limited lodging — book early.",
+      "priceNote": "Estimated for May 31 2026. Sonora has limited lodging — book early.",
       "roomConfig": "2 Queen beds rooms available for family of 5.",
       "freeBreakfast": true,
       "separateRoom": false,
@@ -331,7 +342,7 @@ window.HOTEL_DATA = {
       "stars": 3,
       "bookingUrl": "https://www.gunnhousehotel.com",
       "pricePerNight": "$170–$220",
-      "priceNote": "Estimated for May 30 2026. Historic property — call ahead to confirm family room availability.",
+      "priceNote": "Estimated for May 31 2026. Historic property — call ahead to confirm family room availability.",
       "roomConfig": "Historic rooms vary in size. Request connecting rooms or largest configuration for family of 5. Pool and gardens on site.",
       "freeBreakfast": false,
       "separateRoom": false,
@@ -343,7 +354,7 @@ window.HOTEL_DATA = {
       "isAirbnb": true,
       "pricePerNight": "$175–$250",
       "roomConfig": "Entire cabin · 2 bed · sleeps 5",
-      "bookingUrl": "https://www.airbnb.com/s/Sonora--CA/homes?checkin=2026-05-30&checkout=2026-05-31&adults=2&children=3&min_bedrooms=2",
+      "bookingUrl": "https://www.airbnb.com/s/Sonora--CA/homes?checkin=2026-05-31&checkout=2026-06-01&adults=2&children=3&min_bedrooms=2",
       "reason": "A cabin in the Gold Country foothills near Columbia State Historic Park. Oak woodlands, rolling hills, a front porch. The Sierra foothill landscape is gorgeous and utterly different from the coast.",
       "amenities": [
         "Full kitchen",
@@ -589,7 +600,7 @@ window.HOTEL_DATA = {
       "separateRoom": true,
       "pool": false,
       "limitedInventory": true,
-      "reason": "A unique option — staying literally inside Redwood National Park at historic cabins. Very limited availability. Contact park (707-465-7335) to inquire about rental availability for June 3026."
+      "reason": "A unique option — staying literally inside Redwood National Park at historic cabins. Very limited availability. Contact park (707-465-7335) to inquire about rental availability for June 2026."
     },
     "optionC": {
       "name": "Klamath River Cabin with Private Dock",
@@ -630,7 +641,7 @@ window.HOTEL_DATA = {
       "roomConfig": "Standard rooms with 2 Queens or King + sofa sleeper. Request room for family of 5.",
       "freeBreakfast": true,
       "separateRoom": false,
-      "pool": true,
+      "pool": false,
       "reason": "Free breakfast and pool — after two nights in remote Redwood country, this feels luxurious. The breakfast and pool amenities justify the small premium over the Curly Redwood Lodge."
     },
     "optionC": {
@@ -737,28 +748,28 @@ window.HOTEL_DATA = {
   },
   "19": {
     "optionA": {
-      "name": "Lake Oswego Inn & Suites",
+      "name": "Residence Inn Portland South/Lake Oswego",
       "stars": 3,
-      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Lake+Oswego%2C+OR&checkin=2026-06-10&checkout=2026-06-11&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$160",
-      "priceNote": "Estimated; verify on Booking.com for June 2026.",
-      "roomConfig": "Suite or two-Queen room for family of 5. Lake Oswego is a quiet, upscale suburb just south of Portland.",
+      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Residence+Inn+Lake+Oswego+OR&checkin=2026-06-10&checkout=2026-06-11&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$180",
+      "priceNote": "Estimated for June 10 2026. Verify at Marriott.com or Booking.com.",
+      "roomConfig": "Studio and 1-bedroom suites with full kitchens. Pull-out sofa bed fits family of 5. Located at 15200 SW Bangy Rd, Lake Oswego.",
       "freeBreakfast": true,
-      "separateRoom": false,
+      "separateRoom": true,
       "pool": true,
-      "reason": "Comfortable end-of-trip hotel in Lake Oswego with pool and breakfast. After 19 days on the road, a pool and free breakfast are the perfect way to unwind."
+      "reason": "Suites with full kitchens are perfect for an end-of-trip unwind. Pool, free hot breakfast, and grocery-store-friendly setup. Do laundry, spread out, and decompress after 19 days on the road."
     },
     "optionB": {
-      "name": "Crowne Plaza Portland–Lake Oswego",
-      "stars": 3,
-      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Lake+Oswego%2C+OR&checkin=2026-06-10&checkout=2026-06-11&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$180",
-      "priceNote": "Estimated; verify on Booking.com or IHG.com for June 2026.",
-      "roomConfig": "Two-Queen rooms or King suite with pullout sofa for family of 5.",
+      "name": "AC Hotel by Marriott Portland Lake Oswego",
+      "stars": 4,
+      "bookingUrl": "https://www.booking.com/searchresults.html?ss=AC+Hotel+Lake+Oswego+OR&checkin=2026-06-10&checkout=2026-06-11&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$200",
+      "priceNote": "Estimated for June 10 2026. Verify at Marriott.com. Formerly Crowne Plaza, renovated 2025.",
+      "roomConfig": "Two-Queen rooms for family of 5. Located at 15700 SW Upper Boones Ferry Rd, Lake Oswego.",
       "freeBreakfast": false,
       "separateRoom": false,
       "pool": true,
-      "reason": "Full-service hotel in Lake Oswego with pool and on-site restaurant. A solid end-of-trip option with all the amenities after a long final drive."
+      "reason": "Recently renovated (2025) modern hotel with indoor/outdoor pool and on-site restaurant. A polished end-of-trip option in Lake Oswego."
     },
     "optionC": {
       "name": "Lake Oswego Home — Quiet Neighborhood",

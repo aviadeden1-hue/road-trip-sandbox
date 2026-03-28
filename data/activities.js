@@ -84,13 +84,7 @@ window.ACTIVITY_DATA = {
       "description": "Inside a small building at the edge of Palisades Park (the clifftop bluff above the beach), this 19th-century optical device projects a live, moving image of the surrounding streets and ocean onto a round table in a darkened room. Free, open to the public, and genuinely fascinating for curious kids. Most tourists walk right past it.",
       "link": "[LINK: search \"Camera Obscura Palisades Park Santa Monica\"]"
     },
-    "rainyDay": {
-      "name": "California Science Center",
-      "description": "About 20 minutes from Santa Monica, this is one of the best free science museums in the US. Home to the actual Space Shuttle Endeavour — kids can stand underneath it. Interactive exhibits cover air, space, ecosystems, and the human body. The Endeavour exhibit costs $5 extra but is unmissable for space-curious kids.",
-      "price": "Free admission; Space Shuttle Endeavour exhibit $5",
-      "link": "https://californiasciencecenter.org",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Santa Monica Pier & Pacific Park — the iconic first-day experience",
@@ -176,13 +170,7 @@ window.ACTIVITY_DATA = {
       "description": "If you time it right, stay at Griffith through sunset into twilight. The free telescopes open at dusk and you can look at the moon, planets, and stars through the rooftop Zeiss refractor. The city lights spreading below you are iconic. The kids will remember looking through a real telescope at Saturn's rings.",
       "link": "https://griffithobservatory.lacity.gov/public-telescopes"
     },
-    "rainyDay": {
-      "name": "California Science Center",
-      "description": "About 20 minutes from Santa Monica, this is one of the best free science museums in the US. Home to the actual Space Shuttle Endeavour — kids can stand underneath it. Interactive exhibits cover air, space, ecosystems, and the human body. The Endeavour exhibit costs $5 extra but is unmissable for space-curious kids.",
-      "price": "Free admission; Space Shuttle Endeavour exhibit $5",
-      "link": "https://californiasciencecenter.org",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "The Getty Center — free, world-class, tram ride kids love",
@@ -256,13 +244,7 @@ window.ACTIVITY_DATA = {
       "description": "Most tourists head to East Beach, but the playground at Leadbetter Beach near the harbor is extraordinary. Features climbing structures shaped like whale tails and a conch shell lighthouse, a medieval tower, rope climbs, and a small performance amphitheater. Completely free, very close to the harbor, and far less crowded than East Beach.",
       "link": "[LINK: search \"Shipwreck Playground Leadbetter Beach Santa Barbara\"]"
     },
-    "rainyDay": {
-      "name": "Santa Barbara Museum of Natural History",
-      "description": "Set on 17 oak-shaded acres along Mission Creek near the mission, this museum has 3.5 million specimens, interactive exhibits for all ages, and the Central Coast's only planetarium. The gem and mineral hall, Chumash Indian Hall, and the full blue whale skeleton are kid favorites. Much larger than the Sea Center on the wharf.",
-      "price": "~$15 adults, ~$10 kids; check website for current rates",
-      "link": "https://www.sbnature.org",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "PCH through Malibu — the drive IS the attraction, don't rush it",
@@ -318,13 +300,7 @@ window.ACTIVITY_DATA = {
       "description": "If routing through Paso Robles, the town has a beautiful central park with a playground, duck pond, and old-fashioned town square surrounded by tasting rooms and restaurants. A great place for kids to run while parents grab a coffee.",
       "link": "https://www.google.com/maps/search/Paso+Robles+downtown+park"
     },
-    "rainyDay": {
-      "name": "Pinnacles caves are even more atmospheric in rain",
-      "description": "The Balconies Cave trail is mostly underground — rain barely matters. The above-ground sections through the volcanic rock formations are dramatic in wet weather.",
-      "price": "$30/vehicle (or America the Beautiful Pass)",
-      "link": "https://www.nps.gov/pinn/planyourvisit/trails.htm",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Pinnacles NP — Balconies Cave trail, an unforgettable adventure for kids",
@@ -382,13 +358,7 @@ window.ACTIVITY_DATA = {
       "description": "A massive playground in El Estero Park designed by Dennis the Menace creator Hank Ketcham. Giant climbing structures, a real Southern Pacific locomotive to climb on, a hedge maze, and a roller slide. One of the best playgrounds in California. Free. A 5-minute drive from the Aquarium.",
       "link": "[LINK: search \"Dennis the Menace Playground Monterey CA\"]"
     },
-    "rainyDay": {
-      "name": "MY Museum (Monterey County Youth Museum)",
-      "description": "A hands-on children's museum with interactive exhibits on art, science, and nature. Designed for ages 0-10. Located on Custom House Plaza near Fisherman's Wharf.",
-      "price": "$12/person, free under 2",
-      "link": "[LINK: search \"MY Museum Monterey CA\"]",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Monterey Bay Aquarium — one of the best aquariums in the world, give it 3-4 hours",
@@ -470,13 +440,7 @@ window.ACTIVITY_DATA = {
       "description": "A folk art house built entirely from found objects (beer cans, abalone shells, car parts, toilet seats) by Art Beal over 50 years. It's a registered state historical landmark and the polar opposite of Hearst Castle — a perfect contrast. Tours by appointment only; even driving past is fun.",
       "link": "https://www.visitcambria.com"
     },
-    "rainyDay": {
-      "name": "Hearst Castle (it's mostly indoors)",
-      "description": "Hearst Castle tours are mostly inside the grand rooms, so rain doesn't matter much. The bus ride and outdoor pools are the only exposed parts. A rainy day actually makes the castle feel even more dramatic.",
-      "price": "$25 adults, $12 kids 5-12",
-      "link": "https://hearstcastle.org",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Morning Monterey — 17-Mile Drive or Dennis the Menace Playground",
@@ -645,13 +609,7 @@ window.ACTIVITY_DATA = {
       "description": "A 2-mile flat walk (or shuttle ride) from the valley floor to a seasonal lake that perfectly reflects Half Dome and Mount Watkins. By late May it may be transitioning to a meadow (the 'lake' is seasonal), but the reflections can still be spectacular in the morning. Few tourists walk this far — it's quieter than the main falls.",
       "link": "https://www.nps.gov/yose/planyourvisit/mirrorlake.htm"
     },
-    "rainyDay": {
-      "name": "Yosemite Valley Visitor Center & Ansel Adams Gallery",
-      "description": "The visitor center has excellent exhibits on Yosemite's geology, ecology, and human history. The Ansel Adams Gallery next door displays and sells prints of Adams' iconic Yosemite photographs — free to browse. The adjacent Yosemite Museum has Miwok and Paiute cultural exhibits. All indoors, all free.",
-      "price": "Free",
-      "link": "https://www.nps.gov/yose/planyourvisit/yosemitevalleyvisitorcenter.htm",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Lower Yosemite Fall — the single most iconic view, thunderous in late May",
@@ -708,13 +666,7 @@ window.ACTIVITY_DATA = {
       "description": "A tiny Gold Rush town on CA-120 between Yosemite and Sonora with one of the oldest continuously operating saloons west of the Mississippi (Iron Door Saloon, est. 1852). The saloon has dollar bills pinned to the ceiling and is family-friendly during the day. Worth a 15-min stop.",
       "link": "https://www.iron-door-saloon.com"
     },
-    "rainyDay": {
-      "name": "Tuolumne County Museum — Free Jailhouse Museum",
-      "description": "Housed in Sonora's 1866 jailhouse, this free museum covers Gold Rush history, mining artifacts, and local lore. The old jail cells are intact. Kids enjoy the mining tools and Gold Rush stories. Open Thu-Sun afternoons.",
-      "price": "Free",
-      "link": "https://www.tchistory.org",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Glacier Point (if road is open) — possibly the best viewpoint in all the national parks",
@@ -756,13 +708,7 @@ window.ACTIVITY_DATA = {
       "description": "5 minutes south of Sonora in Jamestown, this is the 'Movie Railroad' — the filming location for High Noon, Back to the Future Part III, Unforgiven, and dozens more. The roundhouse tour shows working steam locomotives. On weekends, you can ride a historic steam train. Kids who like trains will lose their minds.",
       "link": "https://www.railtown1897.org"
     },
-    "rainyDay": {
-      "name": "Columbia State Historic Park is mostly covered",
-      "description": "Most of Columbia's buildings have covered porches and indoor spaces — the blacksmith shop, candy kitchen, schoolhouse, and museum are all sheltered. Gold panning is under a covered trough. Rain actually adds to the Old West atmosphere.",
-      "price": "Free admission; activities $6-10",
-      "link": "https://www.parks.ca.gov/?page_id=552",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Columbia State Historic Park — gold panning, stagecoach, candy store — kids will love it",
@@ -853,13 +799,7 @@ window.ACTIVITY_DATA = {
       "description": "Near Pier 45 at Fisherman's Wharf. World's largest collection of antique coin-operated arcade machines — some from the 1890s. Entry is free; machines cost 25 cents to $1. Kids love the mechanical fortune tellers and 100-year-old music machines.",
       "link": "[LINK: search \"Musee Mecanique San Francisco Fishermans Wharf antique arcade\"]"
     },
-    "rainyDay": {
-      "name": "California Academy of Sciences",
-      "description": "If it rains, the Academy of Sciences is the clear #1 choice — all indoors, 4+ hours easily. Rainforest dome, aquarium, planetarium.",
-      "price": "$45-$55 adults, $39-$45 kids 3-12, free under 3",
-      "link": "https://www.calacademy.org",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Pier 39 sea lions — free and endlessly entertaining for kids",
@@ -926,13 +866,7 @@ window.ACTIVITY_DATA = {
       "description": "A certified organic farm in Healdsburg open April through November for u-pick strawberries and other seasonal produce. Kids love picking their own fruit directly from the plants. June is also blueberry season at Duckworth Family Farm in Sebastopol (15 min away) — check farmtrails.org for what's ripe when you arrive.",
       "link": "https://www.farmtrails.org/resources/u-pick/"
     },
-    "rainyDay": {
-      "name": "Safari West Wildlife Preserve",
-      "description": "A private African wildlife preserve 30 minutes from Windsor in Santa Rosa. Over 900 animals including giraffe, zebra, cheetah, and cape buffalo roam the 400-acre property. Open-air jeep tours and walking tours available. Genuinely impressive and unlike anything else in Northern California. Book in advance.",
-      "price": "$58 adults, $30 kids 3–12",
-      "link": "https://www.safariwest.com",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Armstrong Redwoods — a stunning preview of the big redwoods ahead",
@@ -995,13 +929,7 @@ window.ACTIVITY_DATA = {
       "description": "Preston Farm in Dry Creek Valley is a working farm with sheep, chickens, cats, and gardens, with an honor-system farm stand selling homemade breads, olive oil, and jams. Kids can wander the gardens while adults taste wine. Bring a picnic.",
       "link": "[LINK: search \"Preston Farm Winery Dry Creek Valley Healdsburg\"]"
     },
-    "rainyDay": {
-      "name": "Charles M. Schulz Museum — Santa Rosa (20 min)",
-      "description": "The Schulz Museum celebrates the creator of Peanuts (Charlie Brown, Snoopy). Original comic strip artwork, a recreation of Schulz's studio, rotating exhibits, and a great gift shop.",
-      "price": "$15 adults, $10 kids 4-18, free under 4",
-      "link": "https://schulzmuseum.org",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Healdsburg Plaza — charming town square, great food (15 min from Windsor)",
@@ -1055,13 +983,7 @@ window.ACTIVITY_DATA = {
       "description": "A redwood on the Avenue with a hand-painted sign listing everything it has survived: the 1964 flood, lightning strikes, logging attempts, fires. It's 950+ years old and 243 feet tall. The sign is wonderfully earnest and old-fashioned. Free, roadside, and a great talking point for kids.",
       "link": "[LINK: search \"Immortal Tree Avenue of the Giants Humboldt\"]"
     },
-    "rainyDay": {
-      "name": "The Avenue in the Rain — Arguably Better",
-      "description": "Redwood forests in the rain are something otherworldly. The mist in the canopy, the smell of the forest floor, and the total silence make it one of nature's great sensory experiences. Rain gear is all you need — the wide, flat Founders Grove trail is manageable even for a 4-year-old in light rain.",
-      "price": "Free",
-      "link": "https://www.parks.ca.gov/?page_id=425",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Founders Grove & Rockefeller Loop — quick stop, the best old-growth walk on the Avenue",
@@ -1127,13 +1049,7 @@ window.ACTIVITY_DATA = {
       "description": "One of the most surreal landscapes in California: a remote beach backed by 100-foot sand bluffs, with Roosevelt elk wandering the shoreline and redwood forest just behind the dunes. Reach it via Davison Road (unpaved, no RVs). The 4-year-old will tell this story for years.",
       "link": "https://www.nps.gov/redw/planyourvisit/gold-bluffs-beach-campground.htm"
     },
-    "rainyDay": {
-      "name": "Trees of Mystery — Gondola Ride Through the Canopy",
-      "description": "A classic roadside attraction in Klamath (12 miles south of Orick) featuring walking trails through groves, a gondola ride above the redwood canopy, and the giant Paul Bunyan and Babe statues at the entrance. Covered walkways throughout. The gondola is fantastic in any weather. Indoor museum of Native American artifacts.",
-      "price": "$20 adults, $10 kids 5–12, free under 5",
-      "link": "https://www.treesofmystery.net",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Elk Prairie — effortless, jaw-dropping wildlife encounter",
@@ -1203,13 +1119,7 @@ window.ACTIVITY_DATA = {
       "description": "A very short hike (0.5 mile easy path) leads to a remote, often-empty black-sand beach with tide pools, where whale sightings are common in late May. The overlook above gives a sweeping view of the Pacific and sea stacks. Almost no tourists know it exists.",
       "link": "https://www.nps.gov/redw/planyourvisit/enderts-beach.htm"
     },
-    "rainyDay": {
-      "name": "Redwood Discovery Museum — Crescent City",
-      "description": "A hands-on children's science and nature museum in Crescent City with interactive exhibits about the local ecosystem, tidal zones, forest life, and the 1964 tsunami that destroyed much of the city. Designed for ages 3–12. Good 2-hour indoor option on a rainy day.",
-      "price": "$7 adults, $5 kids, free under 2",
-      "link": "[LINK: search \"Redwood Discovery Museum Crescent City CA\"]",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Fern Canyon — Jurassic Park filming location, absolutely unforgettable (arrive early!)",
@@ -1278,13 +1188,7 @@ window.ACTIVITY_DATA = {
       "description": "The Medford/Central Point area is Oregon's cherry capital, and by early June the orchards along Beall Lane and Table Rock Road are selling fresh-picked cherries at roadside stands. Stop and buy a flat — they're extraordinary. Kids eating cherries in the car is a perfect Oregon moment.",
       "link": "[LINK: search \"Medford Oregon cherry orchards farm stand June\"]"
     },
-    "rainyDay": {
-      "name": "Crater Rock Museum (already indoors)",
-      "description": "The Crater Rock Museum in Central Point is fully indoors and free — it's actually better on a rainy day when you have nowhere to be. Spend an extra hour browsing the geology halls.",
-      "price": "Free",
-      "link": "[LINK: search \"Crater Rock Museum Central Point Oregon\"]",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Oregon Caves cave tour — book in advance, unique marble caves (90 min tour)",
@@ -1352,13 +1256,7 @@ window.ACTIVITY_DATA = {
       "description": "Everyone knows Wizard Island, but few visitors stop at the Sun Notch Trail (0.8 mile easy loop from the east rim) to see the Phantom Ship — a jagged, 170-foot volcanic island that looks like a ghost ship sailing on the lake. Best seen in early morning light when mist sometimes surrounds it.",
       "link": "https://www.nps.gov/crla/planyourvisit/trailheads.htm"
     },
-    "rainyDay": {
-      "name": "Crater Lake Lodge — Sit by the Stone Fireplace",
-      "description": "If weather closes in, Crater Lake Lodge's Great Hall has floor-to-ceiling windows overlooking the lake, a massive stone fireplace, and the unique experience of watching storm clouds sweep across the caldera. The Rim Village Café serves hot food. Honestly, Crater Lake in a moody overcast is spectacular — you haven't truly seen the deep blue until the sky matches it.",
-      "price": "Free to enter the lodge; food at Rim Village Café",
-      "link": "https://www.travelcraterlake.com",
-      "icon": "🌧"
-    },
+    "rainyDay": null,
     "priorities": {
       "mustDo": [
         "Rim Village & Discovery Point — the essential Crater Lake experience, easy walk",
