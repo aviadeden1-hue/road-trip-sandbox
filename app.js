@@ -10,13 +10,15 @@
 /* ── Region Configuration ── */
 const REGION_CONFIG = {
   "LA Area":                { color: "#ff6b6b", icon: "🌴", order: 1 },
-  "Big Sur & Monterey":     { color: "#4ecdc4", icon: "🌊", order: 2 },
-  "San Francisco":          { color: "#45b7d1", icon: "🌉", order: 3 },
-  "Wine Country":           { color: "#96ceb4", icon: "🍷", order: 4 },
-  "Redwoods":               { color: "#2d6a4f", icon: "🌲", order: 5 },
-  "Oregon Coast":           { color: "#74b9ff", icon: "🦀", order: 6 },
-  "Crater Lake & Oregon":   { color: "#a29bfe", icon: "🏔", order: 7 },
-  "Portland":               { color: "#fd79a8", icon: "🌹", order: 8 }
+  "Central Coast":          { color: "#f0932b", icon: "🐘", order: 2 },
+  "Big Sur & Monterey":     { color: "#4ecdc4", icon: "🌊", order: 3 },
+  "Yosemite & Gold Country":{ color: "#d4a373", icon: "🏔️", order: 4 },
+  "San Francisco":          { color: "#45b7d1", icon: "🌉", order: 5 },
+  "Wine Country":           { color: "#96ceb4", icon: "🍷", order: 6 },
+  "Redwoods":               { color: "#2d6a4f", icon: "🌲", order: 7 },
+  "Southern Oregon":        { color: "#74b9ff", icon: "🏔", order: 8 },
+  "Crater Lake & Oregon":   { color: "#a29bfe", icon: "🏔", order: 9 },
+  "Portland":               { color: "#fd79a8", icon: "🌹", order: 10 }
 };
 
 /* ── Day Type Configuration ── */
@@ -28,13 +30,14 @@ const DAY_TYPE_CONFIG = {
 
 /* ── Budget Estimates (hardcoded as these are non-trip-specific estimates) ── */
 const BUDGET_ESTIMATES = [
-  { category: "Hotels",                    detail: "~$189/night avg × 20 nights",       amount: 3780 },
-  { category: "Restaurants",              detail: "~$80/meal × 12 meals",              amount: 960 },
-  { category: "Groceries",                detail: "~$40 × 7 nights",                   amount: 280 },
-  { category: "Gas",                       detail: "~1,800 miles, SUV at 22 mpg",       amount: 400 },
-  { category: "Attractions / NPS entries", detail: "State parks, aquarium, caves tour", amount: 300 },
-  { category: "America the Beautiful Pass",detail: "Covers 6 NPS sites on this trip",   amount: 80 },
-  { category: "Misc / Emergency fund",     detail: "Snacks, parking, surprises",        amount: 500 }
+  { category: "Hotels",                    detail: "~$190/night avg × 19 nights",       amount: 3600 },
+  { category: "Car Rental",               detail: "SUV × 19 days (booked via Costco Travel)", amount: 1500 },
+  { category: "Restaurants",              detail: "~$80/meal × 12 restaurant nights",  amount: 1000 },
+  { category: "Groceries",                detail: "~$75 avg × 8 Walmart stops",        amount: 600 },
+  { category: "Gas",                       detail: "~1,900 miles, SUV at 22 mpg",       amount: 420 },
+  { category: "Attractions",              detail: "Aquarium, Hearst Castle, caves tour, gold panning, 17-Mile Drive", amount: 600 },
+  { category: "America the Beautiful Pass",detail: "Covers 5 NPS sites on this trip",   amount: 80 },
+  { category: "Misc / Emergency fund",     detail: "Snacks, parking, tolls, surprises", amount: 200 }
 ];
 
 /* ── Snack Kit Items ── */
@@ -56,105 +59,76 @@ const SNACK_KIT = [
 /* ── NPS Sites on this trip (for America the Beautiful Pass appendix) ── */
 const NPS_SITES = [
   { day: 4,  name: "Pinnacles National Park",       note: "Talus caves + California condors" },
-  { day: 7,  name: "Muir Woods National Monument",  note: "Timed entry required — book at recreation.gov" },
-  { day: 8,  name: "Point Reyes National Seashore", note: "Lighthouse, Tule Elk, Kehoe Beach" },
-  { day: 14, name: "Redwood National & State Parks",note: "Fern Canyon, Stout Grove, tall trees" },
-  { day: 16, name: "Oregon Caves National Monument",note: "Underground cave tours — kids love it" },
-  { day: 17, name: "Crater Lake National Park",     note: "Deepest lake in USA, vivid blue water" }
+  { day: 8,  name: "Yosemite National Park",        note: "Valley floor, waterfalls, El Capitan (Days 8–9)" },
+  { day: 15, name: "Redwood National & State Parks", note: "Elk Prairie, Lady Bird Johnson Grove, Fern Canyon (Days 15–16)" },
+  { day: 17, name: "Oregon Caves National Monument", note: "Underground cave tours — kids love it" },
+  { day: 18, name: "Crater Lake National Park",      note: "Deepest lake in USA, vivid blue water" }
 ];
 
 /* ── Attractions we intentionally left out ── */
 const MISSING_ATTRACTIONS = [
   {
-    name: "Yosemite National Park",
-    emoji: "🏔",
-    category: "Inland Detour",
-    why: "Yosemite sits ~4 hrs inland from San Francisco and ~5 hrs from LA. Reaching it requires a major detour off the coastal route, adding 2–3 extra days. We chose to stay on the Pacific Coast Highway and collect NPS sites on the way rather than doubling back inland.",
-    howToAdd: "Best inserted after Day 5 (Monterey): drive inland to Yosemite Valley for 2 nights, then loop back to San Francisco. Or start the trip east from LAX — drive to Sequoia → Yosemite → Monterey (adds 2–3 days before Day 3)."
-  },
-  {
-    name: "Sequoia & Kings Canyon National Parks",
+    name: "Muir Woods National Monument",
     emoji: "🌲",
-    category: "Inland Detour",
-    why: "Home to the world's largest trees by volume, including General Sherman. Located ~4 hrs inland from Monterey or ~4 hrs from LA via CA-99/CA-180. Same problem as Yosemite — the coastal route simply doesn't pass nearby.",
-    howToAdd: "Combine with Yosemite on an inland loop at the start: LAX → Sequoia (Day 2) → Kings Canyon / Yosemite Valley (Days 3–4) → Monterey (Day 5). Adds 2 days and a different departure style. Perfectly kid-friendly with the Giant Forest Museum."
+    category: "Close but Cut",
+    why: "Only 30 min north of the Golden Gate Bridge. Stunning old-growth coast redwoods in a cathedral-like canyon. We skipped it because the Redwoods section (Days 14–16) covers even bigger trees, and Muir Woods requires timed entry reservations that sell out weeks ahead.",
+    howToAdd: "Replace one SF morning on Day 11: drive to Muir Woods early (arrives 8 AM for least crowds), hike the 1-mile main loop, back to SF by noon. Book timed parking at recreation.gov 2+ weeks ahead."
   },
   {
-    name: "Channel Islands National Park",
+    name: "Alcatraz Island",
     emoji: "🏝",
     category: "Logistics Barrier",
-    why: "Channel Islands requires a 1-hour ferry from Ventura and is a boat-only destination. With a 4-year-old, managing a round-trip ocean crossing, unpredictable swells, and a full-day hike was too risky and exhausting. Already noted as a deliberate skip on Day 3.",
-    howToAdd: "Swap Day 3 (Santa Barbara) for a Ventura base. Take the morning ferry to Santa Cruz Island, hike Cavern Point trail (easy, 2 miles), return by afternoon. Only works if the youngest child is a confident sailor and you book Condor Express well in advance."
+    why: "The ferry + island tour takes 3–4 hours minimum. With three kids aged 5–10, that's a big block of an already packed SF day. Tickets sell out 2–3 months ahead. The prison history is also a bit intense for a 5-year-old.",
+    howToAdd: "Book night tour tickets at alcatrazcruises.com exactly 90 days before June 2. Replace the afternoon of Day 11. The night tour is the best — fewer crowds, more dramatic. Ages 7+ only."
   },
   {
-    name: "Hearst Castle & San Simeon",
+    name: "Disneyland",
     emoji: "🏰",
-    category: "Trade-off: Chose Pinnacles",
-    why: "Hearst Castle is directly on PCH between Santa Barbara and Monterey — we just took the inland route to Pinnacles NP on Day 4 instead. The talus caves and California condors at Pinnacles felt more unique and NPS-pass-covered; Hearst Castle entry is ~$35/person.",
-    howToAdd: "Replace Pinnacles on Day 4 with a coastal route: Santa Barbara → San Simeon (Hearst Castle tour, 2 hrs) → Monterey via PCH. Equally beautiful, trades condors for gilded ceilings. Best for families who've already seen Pinnacles."
+    category: "Close but Cut",
+    why: "Anaheim is only 35 min from LAX but a Disneyland day requires a full day minimum, costs $150+/person, and would eat Days 1–2 entirely. This is a nature/coast trip, not a theme park trip.",
+    howToAdd: "Add 1–2 days at the start: LAX → Anaheim (Day 1) → Disneyland (Day 2) → Santa Monica (Day 3). Book tickets + Genie+ at disneyland.disney.go.com well ahead. Budget $800+ for family of 5."
   },
   {
-    name: "Santa Cruz & the Beach Boardwalk",
-    emoji: "🎢",
-    category: "Close but Cut",
-    why: "Santa Cruz is only 45 minutes north of Monterey and has one of the best classic boardwalk amusement parks in California — the kids would love it. Cut for time: the Day 6 drive from Monterey to SF was already 2 hours, and adding a full boardwalk day would mean arriving in SF after dark.",
-    howToAdd: "Add a Santa Cruz overnight between Day 5 and Day 6. Leave Monterey, spend the afternoon at the Boardwalk, stay in Santa Cruz, then drive to SF the next morning (1.5 hrs). Adds 1 day to the trip."
-  },
-  {
-    name: "Napa Valley",
-    emoji: "🍷",
-    category: "Close but Cut",
-    why: "Napa is only 35 miles from Windsor (Days 9–10) and arguably more famous than Sonoma/Healdsburg for wine. We skipped it because the family visit days were the priority, the trip already had Healdsburg wine country on Day 11, and Napa's tasting rooms are less kid-friendly.",
-    howToAdd: "Easy half-day add from Windsor on Day 9 or 10: drive south to Yountville or Napa town (45 min), visit the Oxbow Public Market (great for kids), then return to Windsor for dinner. No extra overnight needed."
-  },
-  {
-    name: "Mendocino",
-    emoji: "🌊",
-    category: "Close but Cut",
-    why: "Mendocino is a stunning, headlands clifftop village directly on CA-1 between Healdsburg and Myers Flat. We drove straight through on Day 12 to save time, but it's genuinely worth a stop or overnight.",
-    howToAdd: "Split the Day 12 drive (Healdsburg → Myers Flat) into two days: Healdsburg → Mendocino overnight (2 hrs on CA-1), then Mendocino → Myers Flat (1.5 hrs) the next day. Adds 1 day, but CA-1 through Mendocino's cliffs is some of the best coastal scenery on the whole route."
+    name: "Joshua Tree & Death Valley",
+    emoji: "☀️",
+    category: "Wrong Direction / Wrong Season",
+    why: "Both are east of LA and inland. Death Valley in late May hits 105–115°F — dangerous for kids. Joshua Tree is doable but adds a full day in the wrong direction before the northbound route begins.",
+    howToAdd: "Plan as a separate winter trip (Nov–Feb). Joshua Tree is magic at 65°F. Not a fit for this itinerary."
   },
   {
     name: "Lake Tahoe",
     emoji: "🏔",
     category: "Inland Detour",
-    why: "Lake Tahoe is spectacular — crystal clear alpine lake at 6,200 ft elevation. But it's 3.5 hrs east of San Francisco, a major inland detour off the northbound coast route.",
-    howToAdd: "Use as a SF day-trip alternative: replace Day 8 (Point Reyes) with a Tahoe overnight. Drive east on I-80 (3.5 hrs), spend a morning on the lake, drive back. It's a full day, but doable. Or add it as a standalone trip — Tahoe really deserves 2+ days."
+    why: "Spectacular alpine lake at 6,200 ft. But it's 3.5 hrs east of San Francisco — a major inland detour that doesn't connect to anything else on the route.",
+    howToAdd: "Replace a Windsor day (Day 12 or 13) with a Tahoe overnight: drive east on I-80 (3.5 hrs), stay lakeside, drive back next morning. Or plan as a standalone 3-day trip from SF."
   },
   {
-    name: "Lassen Volcanic National Park",
-    emoji: "🌋",
-    category: "Inland Detour",
-    why: "Lassen is California's most underrated national park — active volcanic landscape, boiling mud pots, hydrothermal pools. Located ~3 hrs east of US-101 near Redding, CA. Taking the coastal route bypasses it entirely.",
-    howToAdd: "Replace the Healdsburg → Myers Flat coastal route (Day 12) with an inland route: Healdsburg → I-5 → Lassen NP overnight → back to US-101 near Eureka. Adds 1 day and trades redwood scenery for volcanic scenery."
-  },
-  {
-    name: "Full Oregon Coast (Bandon, Heceta Head, Cape Perpetua)",
+    name: "Full Oregon Coast",
     emoji: "🦀",
     category: "Trade-off: Chose Crater Lake",
-    why: "The trip's Oregon section cuts inland at Brookings to Medford → Crater Lake → Eugene, skipping virtually the entire Oregon coast north of Brookings. Highlights missed: Bandon Dunes, Thor's Well, Cape Perpetua, Sea Lion Caves, Heceta Head Lighthouse, Newport, Cannon Beach, Haystack Rock.",
-    howToAdd: "Major reroute: replace Days 16–18 (Medford → Crater Lake → Eugene) with a full Oregon Coast drive (Brookings → Bandon → Newport → Lincoln City → Portland via US-101). Picks up all the coastal highlights, but you lose Crater Lake — arguably the single most spectacular day on the current itinerary."
+    why: "Our Oregon section cuts inland (Crescent City → Medford → Crater Lake → Lake Oswego), skipping the entire coast: Bandon, Cape Perpetua, Thor's Well, Sea Lion Caves, Heceta Head, Newport, Cannon Beach, Haystack Rock.",
+    howToAdd: "Major reroute: replace Days 17–19 with a coast drive (Crescent City → Bandon → Newport → Lake Oswego via US-101). You gain all the coastal highlights but lose Crater Lake."
   },
   {
-    name: "Bend, Oregon & Smith Rock",
-    emoji: "🧗",
+    name: "Portland Exploration",
+    emoji: "🌹",
     category: "Close but Cut",
-    why: "Bend is Oregon's outdoor recreation hub with the Deschutes River, microbreweries, and nearby Smith Rock State Park (stunning volcanic rock formations). It's 1.5 hrs from Crater Lake and would make a great overnight — but adding it meant the Crater Lake → Portland drive became too long and fragmented.",
-    howToAdd: "Replace Eugene (Day 18) with Bend: Crater Lake → Bend (1.5 hrs), overnight at McMenamins Old St. Francis School. Then Bend → Portland (3 hrs) on Day 19. Same total driving, much more scenic. Works perfectly as a 1-for-1 swap with no extra days needed."
+    why: "We end in Lake Oswego (10 min from Portland) but arrive after a 4.5-hr drive from Crater Lake. No time built in for Portland itself — Powell's Books, Japanese Garden, Voodoo Doughnut, OMSI, etc.",
+    howToAdd: "Add 1 day: arrive Lake Oswego evening Day 19, spend Day 20 exploring Portland before departure. Or cut Crater Lake to a half-day and arrive Portland by noon on Day 19."
   },
   {
-    name: "Columbia River Gorge & Multnomah Falls",
-    emoji: "💧",
+    name: "Sequoia & Kings Canyon",
+    emoji: "🌲",
+    category: "Inland Detour",
+    why: "Home to General Sherman (world's largest tree by volume). Located 4 hrs from LA or Monterey. Same inland detour problem as the other Sierra parks.",
+    howToAdd: "Combine with Yosemite at the start: LAX → Sequoia (Day 2) → Yosemite (Days 3–4) → Monterey (Day 5). Adds 2 days."
+  },
+  {
+    name: "Napa Valley",
+    emoji: "🍷",
     category: "Close but Cut",
-    why: "Multnomah Falls (620 ft, the second-tallest year-round waterfall in the US) is only 30 minutes east of Portland. We didn't build it in because Day 19 is explicitly arrival day and the party starts June 11. There was no room on the itinerary.",
-    howToAdd: "Easiest add of anything on this list — no extra days needed. On Day 19, take I-84 east from Eugene instead of I-5. Stop at Multnomah Falls (30 min hike to the bridge, kid-friendly), then continue west on I-84 into Portland. Arrives Portland ~1 hour later than the direct route."
-  },
-  {
-    name: "Death Valley National Park",
-    emoji: "☀️",
-    category: "Wrong Season",
-    why: "Death Valley in late May/early June records average highs of 105–115°F (40–46°C). Hiking or extended outdoor time is dangerous for adults and potentially life-threatening for a 4-year-old. The timing of this trip makes it a hard no.",
-    howToAdd: "Plan a separate Death Valley trip in November–February when highs are 65–75°F. Not a fit for this itinerary under any reroute."
+    why: "Only 35 miles from Windsor but Napa tasting rooms are less kid-friendly than Healdsburg/Sonoma. Family visit days were the priority.",
+    howToAdd: "Easy half-day from Windsor: drive to Yountville or Napa (45 min), visit Oxbow Public Market (great for kids), return for dinner. No extra overnight needed."
   }
 ];
 
@@ -278,7 +252,7 @@ function buildDrawerNav() {
       linkEl.innerHTML =
         '<div class="drawer-day-num">' + day.dayNumber + '</div>' +
         '<div class="drawer-day-info">' +
-          '<div class="drawer-day-city">' + escapeHtml(day.overnightCity) + '</div>' +
+          '<div class="drawer-day-city">' + escapeHtml(day.dayTitle || day.overnightCity) + '</div>' +
           '<div class="drawer-day-date">' + escapeHtml(day.date) + '</div>' +
         '</div>';
 
@@ -393,7 +367,7 @@ function buildDayCard(day) {
   }
   const heroLabel = document.createElement('div');
   heroLabel.className = 'card-hero-label';
-  heroLabel.textContent = day.overnightCity;
+  heroLabel.textContent = day.dayTitle || day.overnightCity;
   heroImg.appendChild(heroLabel);
   body.appendChild(heroImg);
 
@@ -415,9 +389,9 @@ function buildDayCard(day) {
       'text-align:center;font-size:1.1rem;font-weight:700;color:#7e22ce;' +
       'margin-bottom:12px;';
     partyBanner.innerHTML =
-      '🎉 YOU MADE IT! Party starts June 11.<br>' +
+      '🎉 YOU MADE IT! Welcome to Lake Oswego!<br>' +
       '<span style="font-size:0.85rem;font-weight:400;color:#9333ea;">' +
-        'California–Oregon · 19 days · ~1,800 miles · all 5 travelers intact.' +
+        'California–Oregon · 19 days · ~1,900 miles · all 5 travelers intact.' +
       '</span>';
     body.appendChild(partyBanner);
 
@@ -442,7 +416,6 @@ function buildDayCard(day) {
   sectionsWrapper.appendChild(buildCollapsible('🌤', 'Afternoon', buildTimeOfDayContent(day, 'afternoon'), false));
   sectionsWrapper.appendChild(buildCollapsible('🌙', 'Evening', buildEveningContent(day), false));
   sectionsWrapper.appendChild(buildCollapsible('🏨', 'Hotel Tonight', buildHotelContent(day), false));
-  sectionsWrapper.appendChild(buildCollapsible('🌧', 'Rainy Day Backup', buildRainyDayContent(day), false, true));
   sectionsWrapper.appendChild(buildCollapsible('📝', 'My Notes', buildNotesContent(day), false));
 
   body.appendChild(sectionsWrapper);
@@ -499,7 +472,7 @@ function buildCardHeader(day) {
 
   const cityEl = document.createElement('div');
   cityEl.className = 'card-city';
-  cityEl.textContent = day.overnightCity;
+  cityEl.textContent = day.dayTitle || day.overnightCity;
 
   const badgesEl = document.createElement('div');
   badgesEl.className = 'card-badges';
@@ -1190,6 +1163,59 @@ function buildDinnerContent(foodData) {
     list.appendChild(buildDinnerCard(foodData.dinner));
   }
 
+  // Dinner alternatives (compact cards)
+  if (foodData.dinnerAlternatives && foodData.dinnerAlternatives.length > 0 && !isGroceryNight) {
+    var altHeader = document.createElement('div');
+    altHeader.style.cssText = 'font-size:0.75rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.05em;margin:12px 0 6px;padding-left:2px;';
+    altHeader.textContent = 'Alternative Options';
+    list.appendChild(altHeader);
+
+    foodData.dinnerAlternatives.forEach(function (alt) {
+      var altCard = document.createElement('div');
+      altCard.className = 'food-card';
+      altCard.style.cssText = 'background:#f9fafb;border:1px solid #e5e7eb;padding:10px 12px;';
+
+      var altRow = document.createElement('div');
+      altRow.style.cssText = 'display:flex;align-items:center;gap:8px;';
+      var altName = document.createElement('div');
+      altName.style.cssText = 'font-weight:700;font-size:0.85rem;flex:1;';
+      altName.textContent = alt.name;
+      altRow.appendChild(altName);
+      if (alt.pricePerPerson) {
+        var altPrice = document.createElement('div');
+        altPrice.className = 'food-price';
+        altPrice.textContent = alt.pricePerPerson + '/person';
+        altRow.appendChild(altPrice);
+      }
+      altCard.appendChild(altRow);
+
+      if (alt.cuisine) {
+        var altCuisine = document.createElement('div');
+        altCuisine.style.cssText = 'font-size:0.78rem;color:#555;margin-top:3px;';
+        altCuisine.textContent = alt.cuisine;
+        altCard.appendChild(altCuisine);
+      }
+      if (alt.whyChosen) {
+        var altWhy = document.createElement('div');
+        altWhy.style.cssText = 'font-size:0.75rem;color:#777;margin-top:4px;line-height:1.3;font-style:italic;';
+        altWhy.textContent = alt.whyChosen;
+        altCard.appendChild(altWhy);
+      }
+      var altUrl = alt.mapsLink || alt.websiteLink || alt.url;
+      if (altUrl) {
+        var altLink = document.createElement('a');
+        altLink.className = 'food-link';
+        altLink.href = altUrl;
+        altLink.target = '_blank';
+        altLink.rel = 'noopener noreferrer';
+        altLink.style.cssText = 'display:block;margin-top:6px;font-size:0.78rem;';
+        altLink.textContent = 'View on Maps ↗';
+        altCard.appendChild(altLink);
+      }
+      list.appendChild(altCard);
+    });
+  }
+
   if (isGroceryNight && foodData.groceryStore) {
     list.appendChild(buildGroceryCard(foodData.groceryStore));
   }
@@ -1329,16 +1355,18 @@ function buildGroceryCard(store) {
     card.appendChild(distEl);
   }
 
-  if (store.noCookMeals && store.noCookMeals.length > 0) {
-    const mealsHeader = document.createElement('div');
-    mealsHeader.style.cssText = 'font-size:0.78rem;font-weight:700;color:#374151;margin-bottom:4px;';
-    mealsHeader.textContent = '🥗 No-cook meal ideas:';
-    card.appendChild(mealsHeader);
+  // Shopping list (new format) or no-cook meals (legacy fallback)
+  var shopItems = store.shoppingList || store.noCookMeals;
+  if (shopItems && shopItems.length > 0) {
+    const listHeader = document.createElement('div');
+    listHeader.style.cssText = 'font-size:0.78rem;font-weight:700;color:#374151;margin-bottom:4px;';
+    listHeader.textContent = store.shoppingList ? '🛒 Shopping list:' : '🥗 No-cook meal ideas:';
+    card.appendChild(listHeader);
     const ul = document.createElement('ul');
     ul.style.cssText = 'font-size:0.8rem;color:#555;margin:0;padding-left:16px;';
-    store.noCookMeals.forEach(function (meal) {
+    shopItems.forEach(function (item) {
       const li = document.createElement('li');
-      li.textContent = meal;
+      li.textContent = item;
       ul.appendChild(li);
     });
     card.appendChild(ul);
@@ -1369,6 +1397,59 @@ function buildFoodContent(foodData) {
 
   if (foodData.dinner && !isGroceryNight) {
     list.appendChild(buildDinnerCard(foodData.dinner));
+  }
+
+  // Dinner alternatives (compact cards)
+  if (foodData.dinnerAlternatives && foodData.dinnerAlternatives.length > 0 && !isGroceryNight) {
+    var altHeader = document.createElement('div');
+    altHeader.style.cssText = 'font-size:0.75rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.05em;margin:12px 0 6px;padding-left:2px;';
+    altHeader.textContent = 'Alternative Options';
+    list.appendChild(altHeader);
+
+    foodData.dinnerAlternatives.forEach(function (alt) {
+      var altCard = document.createElement('div');
+      altCard.className = 'food-card';
+      altCard.style.cssText = 'background:#f9fafb;border:1px solid #e5e7eb;padding:10px 12px;';
+
+      var altRow = document.createElement('div');
+      altRow.style.cssText = 'display:flex;align-items:center;gap:8px;';
+      var altName = document.createElement('div');
+      altName.style.cssText = 'font-weight:700;font-size:0.85rem;flex:1;';
+      altName.textContent = alt.name;
+      altRow.appendChild(altName);
+      if (alt.pricePerPerson) {
+        var altPrice = document.createElement('div');
+        altPrice.className = 'food-price';
+        altPrice.textContent = alt.pricePerPerson + '/person';
+        altRow.appendChild(altPrice);
+      }
+      altCard.appendChild(altRow);
+
+      if (alt.cuisine) {
+        var altCuisine = document.createElement('div');
+        altCuisine.style.cssText = 'font-size:0.78rem;color:#555;margin-top:3px;';
+        altCuisine.textContent = alt.cuisine;
+        altCard.appendChild(altCuisine);
+      }
+      if (alt.whyChosen) {
+        var altWhy = document.createElement('div');
+        altWhy.style.cssText = 'font-size:0.75rem;color:#777;margin-top:4px;line-height:1.3;font-style:italic;';
+        altWhy.textContent = alt.whyChosen;
+        altCard.appendChild(altWhy);
+      }
+      var altUrl = alt.mapsLink || alt.websiteLink || alt.url;
+      if (altUrl) {
+        var altLink = document.createElement('a');
+        altLink.className = 'food-link';
+        altLink.href = altUrl;
+        altLink.target = '_blank';
+        altLink.rel = 'noopener noreferrer';
+        altLink.style.cssText = 'display:block;margin-top:6px;font-size:0.78rem;';
+        altLink.textContent = 'View on Maps ↗';
+        altCard.appendChild(altLink);
+      }
+      list.appendChild(altCard);
+    });
   }
 
   if (isGroceryNight && foodData.groceryStore) {
@@ -1456,7 +1537,7 @@ function initMap() {
 
     const popupHtml =
       '<div class="map-popup-day">Day ' + day.dayNumber + '</div>' +
-      '<div class="map-popup-city">' + escapeHtml(day.overnightCity) + '</div>' +
+      '<div class="map-popup-city">' + escapeHtml(day.dayTitle || day.overnightCity) + '</div>' +
       '<div class="map-popup-date">' + escapeHtml(day.date) + '</div>' +
       '<a class="map-popup-link" href="#day-' + day.dayNumber + '" onclick="document.getElementById(\'day-' + day.dayNumber + '\').scrollIntoView({behavior:\'smooth\'});return false;">→ Go to Day ' + day.dayNumber + '</a>';
 
@@ -1519,6 +1600,8 @@ function openFullRouteInMaps() {
    APPENDIX SECTIONS
    ============================================================ */
 function buildAppendixSections() {
+  buildBookingChecklistAppendix();
+  buildPackingListAppendix();
   buildSnackKitAppendix();
   buildBudgetAppendix();
   buildPassAppendix();
@@ -1682,15 +1765,15 @@ function buildPassAppendix() {
 
   const headline = document.createElement('div');
   headline.className = 'pass-info-headline';
-  headline.textContent = '$80 covers 6 NPS sites on this trip — a no-brainer.';
+  headline.textContent = '$80 covers 5 NPS sites on this trip — a no-brainer.';
   passInfo.appendChild(headline);
 
   const priceNote = document.createElement('p');
   priceNote.className = 'pass-price-note';
   priceNote.textContent =
     'The America the Beautiful Annual Pass grants free entry to all federal lands ' +
-    'for one full year from date of purchase. For a family visiting 6 sites on this trip alone, ' +
-    'individual entry fees would easily exceed $200. Buy one pass, use it everywhere.';
+    'for one full year from date of purchase. For a family visiting 5 NPS sites on this trip, ' +
+    'individual entry fees would easily exceed $175. Buy one pass, use it everywhere.';
   passInfo.appendChild(priceNote);
 
   // Sites grid
@@ -1718,11 +1801,6 @@ function buildPassAppendix() {
 
   passInfo.appendChild(sitesGrid);
 
-  const muirWarning = document.createElement('div');
-  muirWarning.style.cssText = 'background:#fef9c3;border:1px solid #fde047;border-radius:6px;padding:10px 12px;font-size:0.82rem;color:#854d0e;';
-  muirWarning.innerHTML = '⚠️ <strong>Muir Woods</strong>: Pass covers the fee, but you STILL need a timed entry reservation. Book at <a href="https://www.recreation.gov" target="_blank" rel="noopener">recreation.gov</a> well in advance — they sell out weeks ahead.';
-  passInfo.appendChild(muirWarning);
-
   const buyLink = document.createElement('a');
   buyLink.className = 'pass-buy-link';
   buyLink.href = 'https://store.usgs.gov/america-the-beautiful-passes';
@@ -1739,6 +1817,256 @@ function buildPassAppendix() {
   passInfo.appendChild(altNote);
 
   body.appendChild(passInfo);
+  card.appendChild(header);
+  card.appendChild(body);
+  section.appendChild(card);
+}
+
+/* ── Booking Checklist ── */
+function buildBookingChecklistAppendix() {
+  var section = document.getElementById('appendix-todo');
+  if (!section) return;
+
+  var BOOKING_ITEMS = [
+    { priority: 'ASAP', task: 'Buy America the Beautiful Pass', detail: '$80 at store.usgs.gov — or buy at Pinnacles entrance Day 4', url: 'https://store.usgs.gov/america-the-beautiful-passes' },
+    { priority: 'ASAP', task: 'Book Monterey Bay Aquarium tickets', detail: 'Day 5, May 27. Timed entry sells out weeks ahead for summer.', url: 'https://www.montereybayaquarium.org/visit/tickets' },
+    { priority: 'ASAP', task: 'Book Hearst Castle tour', detail: 'Day 6, May 28. Grand Rooms Tour recommended for kids. ~$25/adult, $12/child.', url: 'https://hearstcastle.org/' },
+    { priority: 'ASAP', task: 'Book Oregon Caves tour', detail: 'Day 17, June 8. 90-min guided tour. Kids must be 42" tall & wear closed-toe shoes.', url: 'https://www.recreation.gov/ticket/facility/233396' },
+    { priority: 'ASAP', task: 'Book Crater Lake Lodge or Mazama Village', detail: 'Day 18, June 9. These sell out 6+ months ahead. Check cancellations regularly.', url: 'https://www.travelcraterlake.com/' },
+    { priority: '2-3 months', task: 'Reserve rental SUV via Costco Travel', detail: 'LAX pickup May 23 → Lake Oswego drop Jun 10. One-way fee applies. Compare Costco vs direct.', url: 'https://www.costcotravel.com/Rental-Cars' },
+    { priority: '2-3 months', task: 'Book all hotels (19 nights)', detail: 'See Hotel Tonight section on each day card. Book refundable rates where possible.' },
+    { priority: '2-3 months', task: 'Reserve Forma Restaurant (Day 2)', detail: 'Pasta-in-Parmesan-wheel show, party of 5. OpenTable.', url: 'https://www.opentable.com/forma-restaurant-and-cheese-bar' },
+    { priority: '1 month', task: 'Book 17-Mile Drive entry', detail: 'Day 6 morning. $11.25/car at gate, no advance booking needed — just budget time.' },
+    { priority: '1 month', task: 'Download offline maps', detail: 'Google Maps offline: LA to SF corridor, Yosemite area, Redwoods area, Crater Lake to Portland.' },
+    { priority: '1 week', task: 'Walmart grocery order pickup (Day 3)', detail: 'Order online for Walmart Goleta — pickup on arrival. First grocery stop.' },
+    { priority: '1 week', task: 'Pack car kit', detail: 'See Packing List section below. Snack kit, entertainment bag, first aid.' },
+    { priority: '1 week', task: 'Print/save key confirmations', detail: 'Hotel confirmations, aquarium tickets, Hearst Castle, Oregon Caves — save PDFs offline.' }
+  ];
+
+  var card = document.createElement('div');
+  card.className = 'appendix-card';
+
+  var header = document.createElement('div');
+  header.className = 'appendix-header';
+  header.style.background = '#0369a1';
+  header.innerHTML = '<span class="appendix-icon">📋</span><h2>Booking Checklist</h2>';
+
+  var body = document.createElement('div');
+  body.className = 'appendix-body';
+
+  var intro = document.createElement('p');
+  intro.style.cssText = 'font-size:0.85rem;color:#555;margin-bottom:14px;line-height:1.5;';
+  intro.textContent = 'Things that sell out or need advance booking, sorted by urgency. Check items off as you go.';
+  body.appendChild(intro);
+
+  var currentPriority = '';
+  BOOKING_ITEMS.forEach(function (item) {
+    if (item.priority !== currentPriority) {
+      currentPriority = item.priority;
+      var priorityLabel = document.createElement('div');
+      var priorityColor = item.priority === 'ASAP' ? '#dc2626' : item.priority === '2-3 months' ? '#d97706' : item.priority === '1 month' ? '#2563eb' : '#16a34a';
+      priorityLabel.style.cssText = 'font-size:0.7rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:' + priorityColor + ';margin:14px 0 6px;padding-left:2px;';
+      priorityLabel.textContent = item.priority === 'ASAP' ? '🔴 Book ASAP' : item.priority === '2-3 months' ? '🟡 2–3 Months Before' : item.priority === '1 month' ? '🔵 1 Month Before' : '🟢 1 Week Before';
+      body.appendChild(priorityLabel);
+    }
+
+    var row = document.createElement('div');
+    row.style.cssText = 'display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #f3f4f6;';
+
+    var check = document.createElement('div');
+    check.className = 'snack-check';
+    check.setAttribute('role', 'checkbox');
+    check.setAttribute('aria-checked', 'false');
+    check.setAttribute('tabindex', '0');
+    check.style.cssText = 'min-width:20px;min-height:20px;width:20px;height:20px;border:2px solid #d1d5db;border-radius:4px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:12px;margin-top:2px;';
+
+    function makeToggle(checkEl, rowEl) {
+      return function () {
+        var isChecked = checkEl.classList.toggle('checked');
+        checkEl.setAttribute('aria-checked', isChecked ? 'true' : 'false');
+        checkEl.textContent = isChecked ? '✓' : '';
+        checkEl.style.background = isChecked ? '#16a34a' : '';
+        checkEl.style.borderColor = isChecked ? '#16a34a' : '#d1d5db';
+        checkEl.style.color = isChecked ? '#fff' : '';
+        rowEl.style.opacity = isChecked ? '0.5' : '1';
+      };
+    }
+    var toggle = makeToggle(check, row);
+    check.addEventListener('click', toggle);
+    check.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+
+    var content = document.createElement('div');
+    content.style.flex = '1';
+    var taskName = document.createElement('div');
+    taskName.style.cssText = 'font-weight:600;font-size:0.84rem;';
+    taskName.textContent = item.task;
+    content.appendChild(taskName);
+    if (item.detail) {
+      var detailEl = document.createElement('div');
+      detailEl.style.cssText = 'font-size:0.78rem;color:#666;line-height:1.3;margin-top:2px;';
+      detailEl.textContent = item.detail;
+      content.appendChild(detailEl);
+    }
+    if (item.url) {
+      var linkEl = document.createElement('a');
+      linkEl.href = item.url;
+      linkEl.target = '_blank';
+      linkEl.rel = 'noopener noreferrer';
+      linkEl.style.cssText = 'font-size:0.75rem;font-weight:600;margin-top:3px;display:inline-block;';
+      linkEl.textContent = 'Book / Info ↗';
+      content.appendChild(linkEl);
+    }
+
+    row.appendChild(check);
+    row.appendChild(content);
+    body.appendChild(row);
+  });
+
+  card.appendChild(header);
+  card.appendChild(body);
+  section.appendChild(card);
+}
+
+/* ── Packing List ── */
+function buildPackingListAppendix() {
+  var section = document.getElementById('appendix-packing');
+  if (!section) return;
+
+  var PACKING_CATEGORIES = [
+    {
+      title: '🧳 Per Person — Carry-On Suitcase',
+      items: [
+        '5–6 t-shirts / tops',
+        '2 pairs shorts + 2 pairs pants/leggings',
+        '1 light jacket / hoodie',
+        '1 warm fleece or puffy (Crater Lake is cold!)',
+        '1 rain shell (packable)',
+        '7 pairs underwear + socks',
+        '1 pair hiking shoes/sneakers (worn on plane)',
+        '1 pair sandals/flip-flops',
+        '1 swimsuit',
+        'Pajamas',
+        'Sun hat or cap',
+        'Sunglasses',
+        'Toiletry bag (travel-size)'
+      ]
+    },
+    {
+      title: '🎒 Per Person — Backpack (Day Bag)',
+      items: [
+        'Refillable water bottle',
+        'Snacks for the day',
+        'Phone + charger + battery pack',
+        'Sunscreen (SPF 50+)',
+        'Lip balm with SPF',
+        'Light layer (always carry — coast fog is real)',
+        'Personal meds',
+        'Hand sanitizer + wet wipes'
+      ]
+    },
+    {
+      title: '👶 Kids Entertainment Bag (shared)',
+      items: [
+        'Tablets + headphones (3 sets)',
+        'Charger cables + car adapter',
+        'Coloring books + colored pencils',
+        'Card games (Uno, Go Fish)',
+        'Travel bingo / road trip games',
+        'Small stuffed animal or comfort item each',
+        'Sticker books',
+        'Audiobook downloads (Audible/Libby)'
+      ]
+    },
+    {
+      title: '🚗 Car Kit (shared)',
+      items: [
+        'Cooler bag (soft-sided, for groceries)',
+        'Ice packs (buy ice at Walmart stops)',
+        'Paper towels + napkins',
+        'Trash bags (gallon Ziplocs work great)',
+        'Blanket (picnic + warmth)',
+        'Flashlights × 2 (for Pinnacles caves!)',
+        'First aid kit',
+        'Motion sickness meds (Big Sur curves!)',
+        'Reusable shopping bags',
+        'Phone mount for car',
+        'USB car charger (multi-port)',
+        'Umbrella'
+      ]
+    },
+    {
+      title: '📄 Documents & Tech',
+      items: [
+        'Drivers licenses (both adults)',
+        'Car rental confirmation',
+        'Hotel confirmations (offline PDF)',
+        'Aquarium / Hearst Castle / Oregon Caves tickets',
+        'Insurance cards (health + auto)',
+        'America the Beautiful Pass',
+        'Offline Google Maps downloaded',
+        'This website bookmarked on all phones'
+      ]
+    }
+  ];
+
+  var card = document.createElement('div');
+  card.className = 'appendix-card';
+
+  var header = document.createElement('div');
+  header.className = 'appendix-header';
+  header.style.background = '#7c3aed';
+  header.innerHTML = '<span class="appendix-icon">🎒</span><h2>Packing List</h2>';
+
+  var body = document.createElement('div');
+  body.className = 'appendix-body';
+
+  var intro = document.createElement('p');
+  intro.style.cssText = 'font-size:0.85rem;color:#555;margin-bottom:14px;line-height:1.5;';
+  intro.textContent = 'Each person gets one carry-on suitcase + one backpack. 19 days, but Walmart stops mean you can re-stock basics. Click items to check them off.';
+  body.appendChild(intro);
+
+  PACKING_CATEGORIES.forEach(function (cat) {
+    var catTitle = document.createElement('div');
+    catTitle.style.cssText = 'font-weight:700;font-size:0.88rem;margin:16px 0 8px;';
+    catTitle.textContent = cat.title;
+    body.appendChild(catTitle);
+
+    var grid = document.createElement('div');
+    grid.className = 'snack-grid';
+
+    cat.items.forEach(function (itemText) {
+      var itemEl = document.createElement('div');
+      itemEl.className = 'snack-item';
+
+      var checkEl = document.createElement('div');
+      checkEl.className = 'snack-check';
+      checkEl.setAttribute('role', 'checkbox');
+      checkEl.setAttribute('aria-checked', 'false');
+      checkEl.setAttribute('tabindex', '0');
+
+      function makePackToggle(chk, el) {
+        return function () {
+          var isChecked = chk.classList.toggle('checked');
+          chk.setAttribute('aria-checked', isChecked ? 'true' : 'false');
+          chk.textContent = isChecked ? '✓' : '';
+          el.style.opacity = isChecked ? '0.5' : '1';
+        };
+      }
+      var packToggle = makePackToggle(checkEl, itemEl);
+      checkEl.addEventListener('click', packToggle);
+      checkEl.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); packToggle(); } });
+
+      var labelEl = document.createElement('span');
+      labelEl.textContent = itemText;
+
+      itemEl.appendChild(checkEl);
+      itemEl.appendChild(labelEl);
+      grid.appendChild(itemEl);
+    });
+
+    body.appendChild(grid);
+  });
+
   card.appendChild(header);
   card.appendChild(body);
   section.appendChild(card);
@@ -1780,12 +2108,11 @@ function buildMissingAttractionsAppendix() {
   });
 
   const CATEGORY_COLORS = {
-    'Inland Detour':             '#b45309',
-    'Logistics Barrier':         '#dc2626',
-    'Trade-off: Chose Pinnacles':'#0369a1',
-    'Trade-off: Chose Crater Lake':'#0369a1',
-    'Close but Cut':             '#16a34a',
-    'Wrong Season':              '#9333ea'
+    'Close but Cut':                '#16a34a',
+    'Logistics Barrier':            '#dc2626',
+    'Wrong Direction / Wrong Season':'#9333ea',
+    'Inland Detour':                '#b45309',
+    'Trade-off: Chose Crater Lake': '#0369a1'
   };
 
   categories.forEach(function (cat) {
