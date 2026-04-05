@@ -155,6 +155,9 @@ document.addEventListener('DOMContentLoaded', function () {
     buildAppendixSections();
     initMap();
     initBackToTop();
+    initScrollProgress();
+    initJumpToday();
+    initDarkMode();
   }
 
   if (sessionStorage.getItem('rt-auth') === '1') {
@@ -312,13 +315,18 @@ function buildRegionDivider(regionName, allDays) {
     ? 'Day ' + firstDay.dayNumber
     : 'Days ' + firstDay.dayNumber + '–' + lastDay.dayNumber;
 
+  const color = regionCfg.color;
+  const regionIcon = regionCfg.icon;
+
   const divider = document.createElement('div');
   divider.className = 'region-divider';
-  divider.style.background = regionCfg.color;
   divider.innerHTML =
-    '<span class="region-icon">' + regionCfg.icon + '</span>' +
-    '<span>' + escapeHtml(regionName) + '</span>' +
-    '<span class="region-day-range">' + dayRange + '</span>';
+    '<div class="region-divider-line" style="background:' + color + '"></div>' +
+    '<div class="region-divider-pill" style="background:' + color + '">' +
+      regionIcon + ' ' + escapeHtml(regionName) +
+      ' <span class="region-divider-days">' + escapeHtml(dayRange) + '</span>' +
+    '</div>' +
+    '<div class="region-divider-line" style="background:' + color + '"></div>';
 
   return divider;
 }
@@ -336,7 +344,16 @@ function buildDayCard(day) {
   // Card header — clickable, always visible
   const header = buildCardHeader(day);
   header.addEventListener('click', function () {
+    const wasCollapsed = card.classList.contains('collapsed');
     card.classList.toggle('collapsed');
+    if (wasCollapsed) {
+      // Card is now opening — animate sections
+      const cardBody = card.querySelector('.card-body');
+      if (cardBody) {
+        cardBody.classList.add('card-body-animate');
+        setTimeout(function() { cardBody.classList.remove('card-body-animate'); }, 600);
+      }
+    }
   });
   card.appendChild(header);
 
@@ -833,6 +850,29 @@ function buildNotesContent(day) {
 
   container.appendChild(textarea);
   container.appendChild(statusEl);
+
+  // Check-in / Mark as visited button
+  var checkinKey = 'checkin_day_' + day.dayNumber;
+  var cardEl = document.getElementById('day-' + day.dayNumber);
+  var checkinBtn = document.createElement('button');
+  checkinBtn.className = 'checkin-btn' + (localStorage.getItem(checkinKey) ? ' done' : '');
+  checkinBtn.innerHTML = localStorage.getItem(checkinKey) ? '✓ Been here!' : '☐ Mark as visited';
+  checkinBtn.addEventListener('click', function() {
+    if (localStorage.getItem(checkinKey)) {
+      localStorage.removeItem(checkinKey);
+      checkinBtn.className = 'checkin-btn';
+      checkinBtn.innerHTML = '☐ Mark as visited';
+      if (cardEl) cardEl.classList.remove('checked-in');
+    } else {
+      localStorage.setItem(checkinKey, '1');
+      checkinBtn.className = 'checkin-btn done';
+      checkinBtn.innerHTML = '✓ Been here!';
+      if (cardEl) cardEl.classList.add('checked-in');
+    }
+  });
+  if (localStorage.getItem(checkinKey) && cardEl) cardEl.classList.add('checked-in');
+  container.appendChild(checkinBtn);
+
   return container;
 }
 
@@ -961,6 +1001,32 @@ function buildHotelTabs(options, dayNumber) {
     btn.className = 'hotel-tab-btn' + (i === 0 ? ' active' : '');
     btn.textContent = (i === 2 && hotel.isAirbnb) ? '🏠 Airbnb' : (labels[i] || ('Option ' + (i + 1)));
     btn.setAttribute('data-tab', i);
+
+    // Add meta badges (price, pool, breakfast)
+    const metaDiv = document.createElement('div');
+    metaDiv.className = 'hotel-tab-meta';
+    if (hotel.pricePerNight) {
+      const priceSpan = document.createElement('span');
+      priceSpan.className = 'mini-badge';
+      priceSpan.textContent = hotel.pricePerNight;
+      metaDiv.appendChild(priceSpan);
+    }
+    if (hotel.pool) {
+      const poolSpan = document.createElement('span');
+      poolSpan.className = 'mini-badge';
+      poolSpan.textContent = '🏊';
+      metaDiv.appendChild(poolSpan);
+    }
+    if (hotel.freeBreakfast) {
+      const bfSpan = document.createElement('span');
+      bfSpan.className = 'mini-badge';
+      bfSpan.textContent = '🍳';
+      metaDiv.appendChild(bfSpan);
+    }
+    if (metaDiv.children.length > 0) {
+      btn.appendChild(metaDiv);
+    }
+
     btn.addEventListener('click', function () {
       tabContainer.querySelectorAll('.hotel-tab-btn').forEach(b => b.classList.remove('active'));
       tabContainer.querySelectorAll('.hotel-tab-panel').forEach(p => p.classList.remove('active'));
@@ -1166,20 +1232,19 @@ function buildDinnerContent(foodData) {
 
   // Dinner alternatives (compact cards)
   if (foodData.dinnerAlternatives && foodData.dinnerAlternatives.length > 0 && !isGroceryNight) {
-    var altHeader = document.createElement('div');
-    altHeader.style.cssText = 'font-size:0.75rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.05em;margin:12px 0 6px;padding-left:2px;';
-    altHeader.textContent = 'Alternative Options';
-    list.appendChild(altHeader);
+    var altLabel = document.createElement('div');
+    altLabel.className = 'dinner-alternatives-label';
+    altLabel.textContent = 'Other options';
+    list.appendChild(altLabel);
 
     foodData.dinnerAlternatives.forEach(function (alt) {
       var altCard = document.createElement('div');
-      altCard.className = 'food-card';
-      altCard.style.cssText = 'background:#f9fafb;border:1px solid #e5e7eb;padding:10px 12px;';
+      altCard.className = 'food-card alt-dinner';
 
       var altRow = document.createElement('div');
       altRow.style.cssText = 'display:flex;align-items:center;gap:8px;';
       var altName = document.createElement('div');
-      altName.style.cssText = 'font-weight:700;font-size:0.85rem;flex:1;';
+      altName.className = 'food-name';
       altName.textContent = alt.name;
       altRow.appendChild(altName);
       if (alt.pricePerPerson) {
@@ -1231,7 +1296,13 @@ function buildDinnerContent(foodData) {
 /* ── Dinner Card Builder ── */
 function buildDinnerCard(dinner) {
   const card = document.createElement('div');
-  card.className = 'food-card';
+  card.className = 'food-card featured-dinner';
+
+  // Featured badge
+  const featuredBadge = document.createElement('div');
+  featuredBadge.className = 'food-card-featured-badge';
+  featuredBadge.textContent = '★ Our Pick';
+  card.appendChild(featuredBadge);
 
   const headerRow = document.createElement('div');
   headerRow.className = 'food-card-header';
@@ -1359,10 +1430,6 @@ function buildGroceryCard(store) {
   // Shopping list (new format) or no-cook meals (legacy fallback)
   var shopItems = store.shoppingList || store.noCookMeals;
   if (shopItems && shopItems.length > 0) {
-    const listHeader = document.createElement('div');
-    listHeader.style.cssText = 'font-size:0.78rem;font-weight:700;color:#374151;margin-bottom:4px;';
-    listHeader.textContent = store.shoppingList ? '🛒 Shopping list:' : '🥗 No-cook meal ideas:';
-    card.appendChild(listHeader);
     const ul = document.createElement('ul');
     ul.style.cssText = 'font-size:0.8rem;color:#555;margin:0;padding-left:16px;';
     shopItems.forEach(function (item) {
@@ -1370,7 +1437,21 @@ function buildGroceryCard(store) {
       li.textContent = item;
       ul.appendChild(li);
     });
-    card.appendChild(ul);
+
+    const toggleBtn = document.createElement('button');
+    toggleBtn.className = 'grocery-list-toggle';
+    toggleBtn.innerHTML = '▼ View ' + (store.shoppingList ? 'Shopping List' : 'Meal Ideas') + ' (' + shopItems.length + ' items)';
+    const listBody = document.createElement('div');
+    listBody.className = 'grocery-list-body';
+    listBody.appendChild(ul);
+    toggleBtn.addEventListener('click', function() {
+      listBody.classList.toggle('open');
+      toggleBtn.innerHTML = listBody.classList.contains('open')
+        ? '▲ Hide ' + (store.shoppingList ? 'Shopping List' : 'Meal Ideas')
+        : '▼ View ' + (store.shoppingList ? 'Shopping List' : 'Meal Ideas') + ' (' + shopItems.length + ' items)';
+    });
+    card.appendChild(toggleBtn);
+    card.appendChild(listBody);
   }
 
   const storeUrl = store.mapsLink || store.url;
@@ -1402,20 +1483,19 @@ function buildFoodContent(foodData) {
 
   // Dinner alternatives (compact cards)
   if (foodData.dinnerAlternatives && foodData.dinnerAlternatives.length > 0 && !isGroceryNight) {
-    var altHeader = document.createElement('div');
-    altHeader.style.cssText = 'font-size:0.75rem;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.05em;margin:12px 0 6px;padding-left:2px;';
-    altHeader.textContent = 'Alternative Options';
-    list.appendChild(altHeader);
+    var altLabel = document.createElement('div');
+    altLabel.className = 'dinner-alternatives-label';
+    altLabel.textContent = 'Other options';
+    list.appendChild(altLabel);
 
     foodData.dinnerAlternatives.forEach(function (alt) {
       var altCard = document.createElement('div');
-      altCard.className = 'food-card';
-      altCard.style.cssText = 'background:#f9fafb;border:1px solid #e5e7eb;padding:10px 12px;';
+      altCard.className = 'food-card alt-dinner';
 
       var altRow = document.createElement('div');
       altRow.style.cssText = 'display:flex;align-items:center;gap:8px;';
       var altName = document.createElement('div');
-      altName.style.cssText = 'font-weight:700;font-size:0.85rem;flex:1;';
+      altName.className = 'food-name';
       altName.textContent = alt.name;
       altRow.appendChild(altName);
       if (alt.pricePerPerson) {
@@ -1501,12 +1581,22 @@ function initMap() {
     return [day.lat, day.lng];
   });
 
-  L.polyline(latLngs, {
+  const polyline = L.polyline(latLngs, {
     color: '#1a6b72',
     weight: 3,
     opacity: 0.75,
     dashArray: null
   }).addTo(map);
+
+  // Animate the route drawing
+  const allCoords = polyline.getLatLngs();
+  polyline.setLatLngs([allCoords[0]]);
+  let routeAnimIdx = 1;
+  const animateRoute = setInterval(function() {
+    if (routeAnimIdx >= allCoords.length) { clearInterval(animateRoute); return; }
+    polyline.setLatLngs(allCoords.slice(0, routeAnimIdx + 1));
+    routeAnimIdx++;
+  }, 60);
 
   // Add numbered circle markers
   const bounds = [];
@@ -1527,7 +1617,7 @@ function initMap() {
           'display:flex;align-items:center;justify-content:center;' +
           'border:2px solid rgba(255,255,255,0.85);' +
           'box-shadow:0 2px 6px rgba(0,0,0,0.25);' +
-          'font-family:Inter,sans-serif;' +
+          'font-family:\'DM Sans\',sans-serif;' +
         '">' + day.dayNumber + '</div>',
       iconSize: [28, 28],
       iconAnchor: [14, 14],
@@ -1536,7 +1626,13 @@ function initMap() {
 
     const marker = L.marker([day.lat, day.lng], { icon: markerIcon }).addTo(map);
 
+    const imgUrl = window.IMAGE_DATA && window.IMAGE_DATA[day.dayNumber];
+    let imgHtml = '';
+    if (imgUrl) {
+      imgHtml = '<img src="' + imgUrl + '" class="map-popup-img" onerror="this.style.display=\'none\'">';
+    }
     const popupHtml =
+      imgHtml +
       '<div class="map-popup-day">Day ' + day.dayNumber + '</div>' +
       '<div class="map-popup-city">' + escapeHtml(day.dayTitle || day.overnightCity) + '</div>' +
       '<div class="map-popup-date">' + escapeHtml(day.date) + '</div>' +
@@ -2177,6 +2273,72 @@ function initBackToTop() {
 
   btn.addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+/* ============================================================
+   SCROLL PROGRESS BAR
+   ============================================================ */
+function initScrollProgress() {
+  const bar = document.getElementById('scroll-progress');
+  if (!bar) return;
+  window.addEventListener('scroll', function() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = pct + '%';
+  }, { passive: true });
+}
+
+/* ============================================================
+   JUMP TO TODAY BUTTON
+   ============================================================ */
+function initJumpToday() {
+  const btn = document.getElementById('jump-today');
+  if (!btn) return;
+
+  const tripStart = new Date('2026-05-23');
+  const tripEnd   = new Date('2026-06-10');
+  const today     = new Date();
+  today.setHours(0,0,0,0);
+
+  if (today >= tripStart && today <= tripEnd) {
+    const diffDays = Math.floor((today - tripStart) / 86400000);
+    const dayNum = diffDays + 1;
+    btn.textContent = '📍 Day ' + dayNum + ' Today';
+    btn.classList.add('visible');
+    btn.addEventListener('click', function() {
+      smoothScrollToDay(dayNum);
+    });
+  } else if (today < tripStart) {
+    const daysUntil = Math.ceil((tripStart - today) / 86400000);
+    btn.textContent = '🗓 ' + daysUntil + ' days to go!';
+    btn.classList.add('visible');
+  }
+}
+
+/* ============================================================
+   DARK MODE TOGGLE
+   ============================================================ */
+function initDarkMode() {
+  const btn = document.getElementById('dark-mode-toggle');
+  if (!btn) return;
+  const saved = localStorage.getItem('dark-mode');
+  if (saved === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    btn.textContent = '☀️ Light';
+  }
+  btn.addEventListener('click', function() {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('dark-mode', 'light');
+      btn.textContent = '🌙 Dark';
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('dark-mode', 'dark');
+      btn.textContent = '☀️ Light';
+    }
   });
 }
 
