@@ -13,7 +13,7 @@ window.IMAGE_DATA = {
   4:  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Rock_formations_at_Pinnacles_National_Park.jpg/1280px-Rock_formations_at_Pinnacles_National_Park.jpg",
   5:  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Monterey_Bay_Aquarium_-_DSC07107.jpg/1280px-Monterey_Bay_Aquarium_-_DSC07107.jpg",
   6:  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Bixby_Creek_Bridge%2C_California%2C_USA_-_May_2013.jpg/1280px-Bixby_Creek_Bridge%2C_California%2C_USA_-_May_2013.jpg",
-  7:  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Muir_Woods_Path_Through_Trees_June_2022.jpg/1280px-Muir_Woods_Path_Through_Trees_June_2022.jpg",
+  7:  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Elephant_Seals_at_Piedras_Blancas_-_Rookery.jpg/1280px-Elephant_Seals_at_Piedras_Blancas_-_Rookery.jpg",
   8:  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Tunnel_View%2C_Yosemite_Valley%2C_Yosemite_NP_-_Diliff.jpg/1280px-Tunnel_View%2C_Yosemite_Valley%2C_Yosemite_NP_-_Diliff.jpg",
   9:  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg/1280px-Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg",
   10: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/San_Francisco_from_the_Marin_Headlands_in_March_2019.jpg/1280px-San_Francisco_from_the_Marin_Headlands_in_March_2019.jpg",

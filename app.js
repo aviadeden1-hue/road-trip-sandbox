@@ -675,6 +675,7 @@ function buildHotelContent(day) {
     if (hotelData.optionA) options.push(hotelData.optionA);
     if (hotelData.optionB) options.push(hotelData.optionB);
     if (hotelData.optionC) options.push(hotelData.optionC);
+    if (hotelData.optionD) options.push(hotelData.optionD);
 
     if (options.length > 0) {
       const wrapper = document.createElement('div');

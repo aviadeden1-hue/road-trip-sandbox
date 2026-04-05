@@ -28,6 +28,18 @@ window.ACTIVITY_DATA = {
     ],
     "afternoon": [
       {
+        "name": "Skirball Cultural Center — Noah's Ark Exhibit",
+        "type": "indoor/cultural",
+        "price": "~$18 adults, $14 kids 2–12; Noah's Ark free with admission",
+        "description": "If you land in the morning and have energy, stop here on the way from LAX — Skirball is right off the 405 at Sepulveda Pass, 15 min from the airport. A massive interactive Noah's Ark built from recycled materials — kids climb through a full-size wooden ark, load stuffed animals two-by-two, and explore hands-on exhibits. The outdoor play area is a highlight for ages 3–10. Opens at 10 AM, closed Mondays. A great way to stretch legs after the flight before heading to Santa Monica.",
+        "duration": "1–1.5 hours",
+        "link": "https://www.skirball.org/noahs-ark",
+        "lat": 34.0805,
+        "lng": -118.4793,
+        "kidFriendly": true,
+        "npsCovered": false
+      },
+      {
         "name": "Santa Monica Pier & Pacific Park",
         "type": "outdoor/amusement",
         "price": "Free to walk pier; rides $8–$20 each or unlimited wristband",
@@ -71,7 +83,7 @@ window.ACTIVITY_DATA = {
         "price": "Free",
         "description": "End the day steps from the Pier at the original Muscle Beach (not the Venice weight-lifting pen). Circus-style acrobatics have been performed here since the 1930s. On weekend afternoons and evenings, gymnasts and acrobats still perform on the rings and bars. Completely free, genuinely thrilling for kids, and a perfect sunset activity. Right next to Third Street Promenade — no extra walking.",
         "duration": "1 hour",
-        "link": "[LINK: search \"original Muscle Beach Santa Monica Pier acrobatics\"]",
+        "link": "https://www.google.com/maps/place/Original+Muscle+Beach/@34.0088,-118.4978,17z",
         "lat": 34.0089,
         "lng": -118.4973,
         "kidFriendly": true,
@@ -82,7 +94,7 @@ window.ACTIVITY_DATA = {
     "hiddenGem": {
       "name": "Camera Obscura in Palisades Park",
       "description": "Inside a small building at the edge of Palisades Park (the clifftop bluff above the beach), this 19th-century optical device projects a live, moving image of the surrounding streets and ocean onto a round table in a darkened room. Free, open to the public, and genuinely fascinating for curious kids. Most tourists walk right past it.",
-      "link": "[LINK: search \"Camera Obscura Palisades Park Santa Monica\"]"
+      "link": "https://www.google.com/maps/place/Camera+Obscura/@34.0132,-118.5002,17z"
     },
     "rainyDay": null,
     "priorities": {
@@ -99,18 +111,6 @@ window.ACTIVITY_DATA = {
   },
   "2": {
     "morning": [
-      {
-        "name": "Skirball Cultural Center — Noah's Ark Exhibit",
-        "type": "indoor/cultural",
-        "price": "~$18 adults, $14 kids 2–12; Noah's Ark free with admission",
-        "description": "A massive interactive Noah's Ark experience built from recycled materials — kids climb through a full-size wooden ark, load stuffed animals two-by-two, and explore hands-on exhibits about nature and community. The outdoor Noah's Ark play area is a highlight for ages 3–10. Right in the Sepulveda Pass, 5 min from the Getty. Opens at 10 AM (closed Mon). Great pairing: Skirball first (10–11:30 AM), then Getty (noon–2 PM).",
-        "duration": "1–1.5 hours",
-        "link": "https://www.skirball.org/noahs-ark",
-        "lat": 34.0805,
-        "lng": -118.4793,
-        "kidFriendly": true,
-        "npsCovered": false
-      },
       {
         "name": "The Getty Center",
         "type": "indoor/cultural",
@@ -254,7 +254,7 @@ window.ACTIVITY_DATA = {
     "hiddenGem": {
       "name": "Shipwreck Playground at Leadbetter Beach",
       "description": "Most tourists head to East Beach, but the playground at Leadbetter Beach near the harbor is extraordinary. Features climbing structures shaped like whale tails and a conch shell lighthouse, a medieval tower, rope climbs, and a small performance amphitheater. Completely free, very close to the harbor, and far less crowded than East Beach.",
-      "link": "[LINK: search \"Shipwreck Playground Leadbetter Beach Santa Barbara\"]"
+      "link": "https://www.google.com/maps/place/Leadbetter+Beach/@34.4038,-119.7091,17z"
     },
     "rainyDay": null,
     "priorities": {
@@ -368,7 +368,7 @@ window.ACTIVITY_DATA = {
     "hiddenGem": {
       "name": "Dennis the Menace Playground — Designed by Hank Ketcham",
       "description": "A massive playground in El Estero Park designed by Dennis the Menace creator Hank Ketcham. Giant climbing structures, a real Southern Pacific locomotive to climb on, a hedge maze, and a roller slide. One of the best playgrounds in California. Free. A 5-minute drive from the Aquarium.",
-      "link": "[LINK: search \"Dennis the Menace Playground Monterey CA\"]"
+      "link": "https://www.google.com/maps/place/Dennis+the+Menace+Park/@36.5938,-121.8891,17z"
     },
     "rainyDay": null,
     "priorities": {
@@ -815,13 +815,13 @@ window.ACTIVITY_DATA = {
         "name": "Twin Peaks Boulevard — Panoramic Overlook",
         "description": "Drive up Twin Peaks for a 360-degree panoramic view of San Francisco, the bay, and on clear days, the Marin headlands. Best at sunset. Short walk from parking to the summit viewpoint.",
         "duration": "30-45 min",
-        "link": "[LINK: search \"Twin Peaks Boulevard San Francisco scenic overlook\"]"
+        "link": "https://www.google.com/maps/place/Twin+Peaks/@37.7527,-122.4477,15z"
       }
     ],
     "hiddenGem": {
       "name": "Musee Mecanique — Free Antique Arcade",
       "description": "Near Pier 45 at Fisherman's Wharf. World's largest collection of antique coin-operated arcade machines — some from the 1890s. Entry is free; machines cost 25 cents to $1. Kids love the mechanical fortune tellers and 100-year-old music machines.",
-      "link": "[LINK: search \"Musee Mecanique San Francisco Fishermans Wharf antique arcade\"]"
+      "link": "https://www.museemecaniquesf.com"
     },
     "rainyDay": null,
     "priorities": {
@@ -882,7 +882,7 @@ window.ACTIVITY_DATA = {
         "price": "Free",
         "description": "Windsor's beautiful Town Green hosts a certified Farmers Market on Sunday mornings (April through December) — great for picking up picnic supplies, local produce, and snacks. On Thursday evenings in summer (starting June), free 'Summer Nights on the Green' concerts bring the whole community out with food vendors and live music. The green itself has open lawn for kids to run.",
         "duration": "1–2 hours",
-        "link": "[LINK: search \"Windsor Town Green Sonoma County farmers market events\"]",
+        "link": "https://www.google.com/maps/place/Windsor+Town+Green/@38.5474,-122.8158,17z",
         "lat": 38.5474,
         "lng": -122.8158,
         "kidFriendly": true,
@@ -894,7 +894,7 @@ window.ACTIVITY_DATA = {
         "name": "Dry Creek Valley Road — Wine Country Scenic Loop",
         "description": "A beautiful pastoral drive through one of Sonoma County's most scenic wine valleys. The valley floor is lined with vineyards, old oaks, and small family wineries. Drive from Healdsburg up through the valley past Bella Vineyards and up to Lake Sonoma. The road is quiet and picturesque.",
         "duration": "45 min–1 hour",
-        "link": "[LINK: search \"Dry Creek Valley Road Healdsburg scenic drive\"]"
+        "link": "https://www.google.com/maps/dir/Healdsburg,+CA/Lake+Sonoma,+CA/@38.6549,-122.9714,12z"
       }
     ],
     "hiddenGem": {
@@ -922,7 +922,7 @@ window.ACTIVITY_DATA = {
         "price": "Free to browse",
         "description": "Healdsburg's beautiful central plaza is one of the most pleasant town squares in California. Great restaurants, tasting rooms, and shops surround the square. A perfect morning or afternoon outing from Windsor. Saturday farmers market May through November.",
         "duration": "1-2 hours",
-        "link": "[LINK: search \"Healdsburg Plaza\"]",
+        "link": "https://www.google.com/maps/place/Healdsburg+Plaza/@38.6111,-122.8697,17z",
         "lat": 38.6111,
         "lng": -122.8697,
         "kidFriendly": true,
@@ -934,7 +934,7 @@ window.ACTIVITY_DATA = {
         "price": "Free (small day use fee at Johnson's Beach)",
         "description": "The quirky, laid-back town of Guerneville on the Russian River is ~30 min from Windsor. Johnson's Beach has calm river swimming with a sandy bank, kayak and paddleboard rentals. The town has great tacos, ice cream, and a friendly vibe. Perfect summer afternoon with kids.",
         "duration": "2 hours",
-        "link": "[LINK: search \"Johnson's Beach Guerneville Russian River swimming\"]",
+        "link": "https://www.google.com/maps/place/Johnson%27s+Beach/@38.5024,-123.0021,17z",
         "lat": 38.5024,
         "lng": -122.9994,
         "kidFriendly": true,
@@ -958,13 +958,13 @@ window.ACTIVITY_DATA = {
         "name": "Westside Road — Russian River Wine Country",
         "description": "A narrow, winding road along the western side of the Russian River from Healdsburg to Guerneville, passing small artisan wineries, redwood groves, and the river.",
         "duration": "45 min",
-        "link": "[LINK: search \"Westside Road Russian River Healdsburg scenic drive\"]"
+        "link": "https://www.google.com/maps/dir/Healdsburg,+CA/Guerneville,+CA/@38.5534,-123.0214,12z"
       }
     ],
     "hiddenGem": {
       "name": "Preston Farm & Winery — Sheep, Cats & Picnic",
       "description": "Preston Farm in Dry Creek Valley is a working farm with sheep, chickens, cats, and gardens, with an honor-system farm stand selling homemade breads, olive oil, and jams. Kids can wander the gardens while adults taste wine. Bring a picnic.",
-      "link": "[LINK: search \"Preston Farm Winery Dry Creek Valley Healdsburg\"]"
+      "link": "https://www.prestonvineyards.com"
     },
     "rainyDay": null,
     "priorities": {
@@ -1000,7 +1000,7 @@ window.ACTIVITY_DATA = {
         "price": "$10 per car",
         "description": "A living redwood tree with a tunnel carved through the base large enough to drive a standard car through. Kitschy? Yes. Do kids love it? Absolutely. Quick stop on the Avenue of the Giants detour during the drive north to Orick.",
         "duration": "30 min",
-        "link": "[LINK: search \"Shrine Drive-Thru Tree Myers Flat Avenue of the Giants\"]",
+        "link": "https://www.google.com/maps/place/Shrine+Drive-Thru+Tree/@40.2698,-123.8226,17z",
         "lat": 40.223,
         "lng": -123.657,
         "kidFriendly": true,
@@ -1018,7 +1018,7 @@ window.ACTIVITY_DATA = {
     "hiddenGem": {
       "name": "Immortal Tree — Claimed to Have Survived Everything",
       "description": "A redwood on the Avenue with a hand-painted sign listing everything it has survived: the 1964 flood, lightning strikes, logging attempts, fires. It's 950+ years old and 243 feet tall. The sign is wonderfully earnest and old-fashioned. Free, roadside, and a great talking point for kids.",
-      "link": "[LINK: search \"Immortal Tree Avenue of the Giants Humboldt\"]"
+      "link": "https://www.google.com/maps/place/The+Immortal+Tree/@40.3473,-123.9901,17z"
     },
     "rainyDay": null,
     "priorities": {
@@ -1083,7 +1083,7 @@ window.ACTIVITY_DATA = {
     ],
     "hiddenGem": {
       "name": "Gold Bluffs Beach — Elk on the Beach",
-      "description": "One of the most surreal landscapes in California: a remote beach backed by 100-foot sand bluffs, with Roosevelt elk wandering the shoreline and redwood forest just behind the dunes. Reach it via Davison Road (unpaved, no RVs). The 4-year-old will tell this story for years.",
+      "description": "One of the most surreal landscapes in California: a remote beach backed by 100-foot sand bluffs, with Roosevelt elk wandering the shoreline and redwood forest just behind the dunes. Reach it via Davison Road (unpaved, no RVs). The 5-year-old will tell this story for years.",
       "link": "https://www.nps.gov/redw/planyourvisit/gold-bluffs-beach-campground.htm"
     },
     "rainyDay": null,
@@ -1136,7 +1136,7 @@ window.ACTIVITY_DATA = {
         "price": "$3 adults, $1 kids (when accessible)",
         "description": "A historic 1856 lighthouse on a small island just off Crescent City's harbor — accessible only at low tide, when you can walk across the rocks. Check the tide chart before going. If accessible, a short tour goes inside the lighthouse. Kids love the adventure of walking out on the rocks. If the tide is in, the view from the harbor is still great.",
         "duration": "45 min",
-        "link": "[LINK: search \"Battery Point Lighthouse Crescent City hours tides\"]",
+        "link": "https://www.google.com/maps/place/Battery+Point+Lighthouse/@41.7461,-124.2019,17z",
         "lat": 41.7434,
         "lng": -124.2037,
         "kidFriendly": true,
@@ -1148,7 +1148,7 @@ window.ACTIVITY_DATA = {
         "name": "Howland Hill Road — Secret Old-Growth Drive",
         "description": "An unpaved narrow road through Jedediah Smith Redwoods that passes through trees you almost never share with other tourists. Trees crowd both sides of the dirt road. Drive slowly — SUVs handle it fine. Access near Crescent City, ends near Stout Grove.",
         "duration": "1 hour",
-        "link": "[LINK: search \"Howland Hill Road Jedediah Smith Redwoods unpaved\"]"
+        "link": "https://www.google.com/maps/place/Howland+Hill+Road/@41.7968,-124.0867,14z"
       }
     ],
     "hiddenGem": {
@@ -1174,7 +1174,7 @@ window.ACTIVITY_DATA = {
         "name": "Oregon Caves National Monument — Cave Tour",
         "type": "NPS / tour",
         "price": "$15 adults, $10 kids 4–15, free under 4 (America the Beautiful Pass covers monument entry; cave tour fee applies separately)",
-        "description": "A 90-minute guided tour of the only marble caves in the Pacific Northwest. Stalactites, stalagmites, flowstone formations, and a subterranean river. Cool temperature (44°F inside — bring a light layer for kids). The tour involves 500+ stairs over 0.6 miles and fits 16 people. Minimum age is 42 inches tall (or 36 inches if carried). Great for ages 6+; the 4-year-old may need to be carried on stairs.",
+        "description": "A 90-minute guided tour of the only marble caves in the Pacific Northwest. Stalactites, stalagmites, flowstone formations, and a subterranean river. Cool temperature (44°F inside — bring a light layer for kids). The tour involves 500+ stairs over 0.6 miles and fits 16 people. Minimum age is 42 inches tall (or 36 inches if carried). Great for ages 6+; the 5-year-old may need to be carried on stairs.",
         "duration": "90 min tour + 30 min drive from Cave Junction to park",
         "trailLength": "0.6 miles (inside cave)",
         "difficulty": "Moderate — 500 stairs",
@@ -1193,7 +1193,7 @@ window.ACTIVITY_DATA = {
         "price": "Free (donations welcome)",
         "description": "In nearby Central Point (just north of Medford), this free museum has one of the best mineralogy and fossil collections in the Pacific Northwest. Huge geodes, meteorites, thunder eggs (Oregon's state rock), and dinosaur-era fossils. Completely free, very well-organized, and kids love the rocks. A great 45-minute stop.",
         "duration": "45 min",
-        "link": "[LINK: search \"Crater Rock Museum Central Point Oregon\"]",
+        "link": "https://www.google.com/maps/place/Crater+Rock+Museum/@42.3734,-122.9163,17z",
         "lat": 42.3688,
         "lng": -122.9185,
         "kidFriendly": true,
@@ -1205,7 +1205,7 @@ window.ACTIVITY_DATA = {
         "price": "Free",
         "description": "A 20-mile paved multi-use path through the Rogue Valley along Bear Creek. Start at one of the Medford parks (Hawthorne Park or South Stage Trailhead) for a flat, easy, low-pressure afternoon walk or bike ride after a big drive day. Rentals available nearby.",
         "duration": "1 hour",
-        "link": "[LINK: search \"Bear Creek Greenway Medford Oregon trailhead\"]",
+        "link": "https://www.google.com/maps/place/Bear+Creek+Greenway/@42.3265,-122.8748,13z",
         "lat": 42.3265,
         "lng": -122.8756,
         "kidFriendly": true,
@@ -1223,7 +1223,7 @@ window.ACTIVITY_DATA = {
     "hiddenGem": {
       "name": "Beall Lane Farms & Fruit Stands — Fresh Oregon Cherries",
       "description": "The Medford/Central Point area is Oregon's cherry capital, and by early June the orchards along Beall Lane and Table Rock Road are selling fresh-picked cherries at roadside stands. Stop and buy a flat — they're extraordinary. Kids eating cherries in the car is a perfect Oregon moment.",
-      "link": "[LINK: search \"Medford Oregon cherry orchards farm stand June\"]"
+      "link": "https://www.google.com/maps/search/cherry+orchard+farm+stand+Medford+Oregon"
     },
     "rainyDay": null,
     "priorities": {
@@ -1243,10 +1243,10 @@ window.ACTIVITY_DATA = {
         "name": "Watchman Peak Trail",
         "type": "hike",
         "price": "Free — America the Beautiful Pass covers park entry ($35/vehicle without pass)",
-        "description": "The best hike at Crater Lake for panoramic views. A 1.6-mile round trip from Watchman Overlook with 420 ft of elevation gain. The summit has a historic fire lookout with a 360° view: the entire lake, Wizard Island, the Cascade Range, and Mount McLoughlin. Older kids (6+) can do this easily. The 4-year-old will likely need to be carried on steeper sections.",
+        "description": "The best hike at Crater Lake for panoramic views. A 1.6-mile round trip from Watchman Overlook with 420 ft of elevation gain. The summit has a historic fire lookout with a 360° view: the entire lake, Wizard Island, the Cascade Range, and Mount McLoughlin. Older kids (6+) can do this easily. The 5-year-old will likely need to be carried on steeper sections.",
         "duration": "1.5 hours",
         "trailLength": "1.6 miles round trip",
-        "difficulty": "Moderate — steady uphill, 420 ft gain. Manageable for ages 6+; 4-year-old may need carrying on final push.",
+        "difficulty": "Moderate — steady uphill, 420 ft gain. Manageable for ages 6+; 5-year-old may need carrying on final push.",
         "link": "https://www.nps.gov/crla/planyourvisit/watchman-peak.htm",
         "lat": 42.9411,
         "lng": -122.135,
