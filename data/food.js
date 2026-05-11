@@ -316,7 +316,7 @@ window.FOOD_DATA = {
     ],
     "lunch": {
       "type": "packed",
-      "note": "Pack lunch from the Cambria hotel or grab a quick bite in town before the Big Sur drive. Eat at a scenic pullout overlooking the Pacific — best picnic on CA-1. Very few food stops between Carmel and Cambria on the southbound drive."
+      "note": "Pack lunch from Monterey or grab a quick bite before heading south on CA-1. Eat at a scenic pullout overlooking the Pacific — best picnic on CA-1. Very few food stops between Carmel and Cambria on the southbound drive."
     },
     "groceryStore": null
   },

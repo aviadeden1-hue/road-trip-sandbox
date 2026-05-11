@@ -91,11 +91,11 @@ window.ROUTE_DATA = [
     "region": "Big Sur & Monterey",
     "lat": 36.6002,
     "lng": -121.8947,
-    "driveFrom": "Yosemite Valley",
+    "driveFrom": "Mariposa",
     "driveHours": 4,
-    "driveMapsUrl": "https://www.google.com/maps/dir/Yosemite+Valley,+CA/Monterey,+CA",
+    "driveMapsUrl": "https://www.google.com/maps/dir/Mariposa,+CA/Monterey,+CA",
     "dayType": "drive",
-    "note": "Morning in Yosemite — Glacier Point road if open (stunning panorama of Half Dome, the valley, and the High Sierra — possibly the best viewpoint in the national park system). Depart ~1–2 PM via CA-140 west back through the Merced River canyon, then US-101 north to Monterey (~4 hrs). Back at the coast for the night! Tomorrow: the Aquarium and the Big Sur drive south to Cambria."
+    "note": "Morning in Yosemite — Glacier Point road if open (stunning panorama of Half Dome, the valley, and the High Sierra — possibly the best viewpoint in the national park system). Depart ~1–2 PM via CA-140 west back through the Merced River canyon, then US-101 north to Monterey (~4 hrs). Back at the coast for the night! Tomorrow: morning in Monterey and the Big Sur drive south to Cambria."
   },
   {
     "dayNumber": 8,

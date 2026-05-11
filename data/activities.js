@@ -507,14 +507,14 @@ window.ACTIVITY_DATA = {
         "name": "Glacier Point (if road is open)",
         "type": "outdoor/viewpoint",
         "price": "Free — America the Beautiful Pass",
-        "description": "One of the most spectacular viewpoints in the entire national park system. A 3,214-foot drop straight down to the valley floor with panoramic views of Half Dome (at eye level!), Yosemite Falls, Vernal and Nevada Falls, and the High Sierra. The road typically opens in late May — check nps.gov/yose for current status. Drive from Mariposa is ~1.5 hrs via CA-41.",
+        "description": "One of the most spectacular viewpoints in the entire national park system. A 3,214-foot drop straight down to the valley floor with panoramic views of Half Dome (at eye level!), Yosemite Falls, Vernal and Nevada Falls, and the High Sierra. Drive from Mariposa is ~2–2.5 hours via CA-41 (through Wawona). WARNING: Glacier Point Road typically opens late May to early June — May 29 is borderline and there is a real chance the road is still closed from winter snow. Check nps.gov/yose for current status before committing to this plan.",
         "duration": "1–1.5 hours at viewpoint",
         "link": "https://www.nps.gov/yose/planyourvisit/glacierpoint.htm",
         "lat": 37.7307,
         "lng": -119.5726,
         "kidFriendly": true,
         "npsCovered": true,
-        "bookingNote": "Glacier Point Road typically opens in late May but is snow-dependent. Check nps.gov/yose/planyourvisit/conditions.htm. If closed, spend the morning revisiting valley highlights."
+        "bookingNote": "CRITICAL: Glacier Point Road is snow-dependent and opens sometime between late May and early June. Check nps.gov/yose/planyourvisit/conditions.htm 1-2 days before. If closed: spend the morning on Valley floor hikes (Mirror Lake loop 5 mi, or Happy Isles to Vernal Fall footbridge 1.6 mi round-trip easy), then depart for Monterey by noon."
       }
     ],
     "afternoon": [],
