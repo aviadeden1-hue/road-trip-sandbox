@@ -165,102 +165,11 @@ window.HOTEL_DATA = {
   },
   "5": {
     "optionA": {
-      "name": "Pacific Inn Monterey",
-      "stars": 3,
-      "bookingUrl": "https://www.booking.com/hotel/us/best-western-ramona-inn.html?checkin=2026-05-27&checkout=2026-05-28&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$191",
-      "priceNote": "Booking.com verified for May 27 2026 (2 adults + 3 kids). Rated 8.5/10.",
-      "roomConfig": "Family rooms with 2 Queen beds (sleeps 5). Free parking included.",
-      "freeBreakfast": true,
-      "separateRoom": false,
-      "pool": false,
-      "reason": "Well-rated (8.5/10) budget hotel in Monterey with free breakfast and free parking. Near Cannery Row and Monterey Bay Aquarium. Best value-for-rating option in Monterey for a family of 5."
-    },
-    "optionB": {
-      "name": "Padre Oaks — Monterey",
-      "stars": 3,
-      "bookingUrl": "https://www.booking.com/hotel/us/padre-oaks.html?checkin=2026-05-27&checkout=2026-05-28&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$229",
-      "priceNote": "Booking.com verified for May 27 2026 (2 adults + 3 kids). Rated 8.5/10.",
-      "roomConfig": "Spacious rooms with 2 Queen beds or King + sofa bed. Family-friendly layout (sleeps 5). Free parking.",
-      "freeBreakfast": false,
-      "separateRoom": false,
-      "pool": false,
-      "reason": "Highly rated (8.5/10) Monterey hotel. A step up from the Pacific Inn at a modest premium. Close to Cannery Row, Aquarium, and 17-Mile Drive."
-    },
-    "optionC": {
-      "name": "Coastal Cottage Two Blocks from Cannery Row",
-      "isAirbnb": true,
-      "pricePerNight": "$265",
-      "roomConfig": "Entire cottage · 2 bed · sleeps 5",
-      "bookingUrl": "https://www.airbnb.com/s/Monterey--CA/homes?checkin=2026-05-27&checkout=2026-05-28&adults=2&children=3&min_bedrooms=2",
-      "reason": "A classic Monterey fisherman's cottage blocks from the Aquarium — all the character of Cannery Row without the hotel-corridor feel. Kids love having a real home base after the tide pools.",
-      "amenities": [
-        "Full kitchen",
-        "Fireplace",
-        "Washer/dryer",
-        "Parking",
-        "Outdoor seating"
-      ]
-    }
-  },
-  "6": {
-    "optionA": {
-      "name": "Cambria Palms Motel",
-      "stars": 3,
-      "bookingUrl": "https://www.booking.com/hotel/us/cambria-palms-motel.html?checkin=2026-05-28&checkout=2026-05-29&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$180",
-      "priceNote": "Estimated for May 26 2026 (2 adults + 3 kids). Verify on Booking.com.",
-      "roomConfig": "Family room with 2 Queen beds. Walking distance to Moonstone Beach and village shops.",
-      "freeBreakfast": false,
-      "separateRoom": false,
-      "pool": false,
-      "reason": "Clean, affordable motel steps from Moonstone Beach. Cambria is a small town — most lodging is charming motels and inns. Great location for an evening boardwalk walk."
-    },
-    "optionB": {
-      "name": "Cavalier Oceanfront Resort",
-      "stars": 3,
-      "bookingUrl": "https://www.booking.com/hotel/us/cavalier-oceanfront-resort.html?checkin=2026-05-28&checkout=2026-05-29&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$250",
-      "priceNote": "Estimated for May 26 2026 (2 adults + 3 kids). Verify on Booking.com.",
-      "roomConfig": "Oceanfront rooms with fireplaces. Family rooms with 2 Queen beds available.",
-      "freeBreakfast": false,
-      "separateRoom": false,
-      "pool": true,
-      "reason": "Oceanfront resort in San Simeon, right between Hearst Castle and the Elephant Seal Rookery. Cliffside location with ocean views from rooms. Higher price but unbeatable location."
-    },
-    "optionC": {
-      "name": "Cambria Pines Lodge",
-      "stars": 3,
-      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Cambria+Pines+Lodge+Cambria+CA&checkin=2026-05-28&checkout=2026-05-29&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$240",
-      "priceNote": "Estimated for May 28 2026. Verify at Booking.com.",
-      "roomConfig": "2-Queen rooms available. Located at 2905 Burton Dr, Cambria. Set in 25 acres of Monterey pines.",
-      "freeBreakfast": true,
-      "separateRoom": false,
-      "pool": true,
-      "reason": "Charming lodge set in 25 acres of Monterey pines with heated pool, hot tub, and gardens. Free breakfast buffet. Kids can explore the grounds. A more resort-like experience than downtown Cambria motels."
-    },
-    "optionD": {
-      "name": "Moonstone Landing — On the Boardwalk",
-      "stars": 3,
-      "bookingUrl": "https://www.booking.com/hotel/us/moonstone-landing.html?checkin=2026-05-28&checkout=2026-05-29&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$220",
-      "priceNote": "Estimated for May 28 2026. Verify at Booking.com.",
-      "roomConfig": "Family rooms with 2 Queen beds. Located at 6240 Moonstone Beach Dr — right on the Moonstone Beach Boardwalk.",
-      "freeBreakfast": false,
-      "separateRoom": false,
-      "pool": false,
-      "reason": "The best boardwalk location in Cambria — literally on Moonstone Beach Drive steps from the 1.5-mile coastal boardwalk. Walk out the door and onto the blufftop path above the rocky tidepools. Rooms have fireplaces and ocean views. Wake up, walk the boardwalk before breakfast, watch sea otters in the kelp. The most atmospheric place to sleep in Cambria."
-    }
-  },
-  "7": {
-    "optionA": {
       "name": "Mariposa Lodge Motel",
       "stars": 3,
-      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Mariposa%2C+CA&checkin=2026-05-29&checkout=2026-05-30&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Mariposa%2C+CA&checkin=2026-05-27&checkout=2026-05-28&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
       "pricePerNight": "$150–$200",
-      "priceNote": "Estimated for May 29 2026. Mariposa is the gateway to Yosemite — book early, limited lodging.",
+      "priceNote": "Estimated for May 27 2026. Mariposa is the gateway to Yosemite — book early, limited lodging.",
       "roomConfig": "2 Queen beds, family rooms available. Walking distance to downtown Mariposa.",
       "freeBreakfast": true,
       "separateRoom": false,
@@ -272,7 +181,7 @@ window.HOTEL_DATA = {
       "stars": 2,
       "bookingUrl": "https://www.yosemitebug.com",
       "pricePerNight": "$120–$180",
-      "priceNote": "Estimated for May 29 2026. Multiple room types from dorm to private cabins.",
+      "priceNote": "Estimated for May 27 2026. Multiple room types from dorm to private cabins.",
       "roomConfig": "Private cabins and rooms available for families. Shared hot tub, café on site.",
       "freeBreakfast": false,
       "separateRoom": false,
@@ -284,7 +193,7 @@ window.HOTEL_DATA = {
       "isAirbnb": true,
       "pricePerNight": "$200–$280",
       "roomConfig": "Entire cabin · 2 bed · sleeps 5",
-      "bookingUrl": "https://www.airbnb.com/s/Mariposa--CA/homes?checkin=2026-05-29&checkout=2026-05-30&adults=2&children=3&min_bedrooms=2",
+      "bookingUrl": "https://www.airbnb.com/s/Mariposa--CA/homes?checkin=2026-05-27&checkout=2026-05-28&adults=2&children=3&min_bedrooms=2",
       "reason": "A private cabin in the Sierra foothills outside Mariposa — pine trees, stars, quiet. The authentic Yosemite experience starts the moment you arrive. Book very early for May dates.",
       "amenities": [
         "Full kitchen",
@@ -295,13 +204,13 @@ window.HOTEL_DATA = {
       ]
     }
   },
-  "8": {
+  "6": {
     "optionA": {
       "name": "Mariposa Lodge Motel (2nd night)",
       "stars": 3,
-      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Mariposa%2C+CA&checkin=2026-05-30&checkout=2026-05-31&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Mariposa%2C+CA&checkin=2026-05-28&checkout=2026-05-29&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
       "pricePerNight": "$150–$200",
-      "priceNote": "Estimated for May 30 2026. Stay in place for night 2 — no repacking after a big Yosemite day.",
+      "priceNote": "Estimated for May 28 2026. Stay in place for night 2 — no repacking after a big Yosemite day.",
       "roomConfig": "2 Queen beds, family rooms available. Walking distance to downtown Mariposa.",
       "freeBreakfast": true,
       "separateRoom": false,
@@ -313,7 +222,7 @@ window.HOTEL_DATA = {
       "stars": 2,
       "bookingUrl": "https://www.yosemitebug.com",
       "pricePerNight": "$120–$180",
-      "priceNote": "Estimated for May 30 2026.",
+      "priceNote": "Estimated for May 28 2026.",
       "roomConfig": "Private cabins and rooms. Hot tub under the stars after a big Yosemite day.",
       "freeBreakfast": false,
       "separateRoom": false,
@@ -325,7 +234,7 @@ window.HOTEL_DATA = {
       "isAirbnb": true,
       "pricePerNight": "$200–$280",
       "roomConfig": "Entire cabin · 2 bed · sleeps 5",
-      "bookingUrl": "https://www.airbnb.com/s/Mariposa--CA/homes?checkin=2026-05-30&checkout=2026-05-31&adults=2&children=3&min_bedrooms=2",
+      "bookingUrl": "https://www.airbnb.com/s/Mariposa--CA/homes?checkin=2026-05-28&checkout=2026-05-29&adults=2&children=3&min_bedrooms=2",
       "reason": "Stay in place for night 2 at the cabin. Kids collapse into their own beds after the Yosemite day.",
       "amenities": [
         "Full kitchen",
@@ -336,44 +245,135 @@ window.HOTEL_DATA = {
       ]
     }
   },
-  "9": {
+  "7": {
     "optionA": {
-      "name": "Historic Sonora Inn",
-      "stars": 2,
-      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Sonora%2C+CA&checkin=2026-05-31&checkout=2026-06-01&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
-      "pricePerNight": "$130–$170",
-      "priceNote": "Estimated for May 31 2026. Sonora has limited lodging — book early.",
-      "roomConfig": "2 Queen beds rooms available for family of 5.",
+      "name": "Pacific Inn Monterey",
+      "stars": 3,
+      "bookingUrl": "https://www.booking.com/hotel/us/best-western-ramona-inn.html?checkin=2026-05-29&checkout=2026-05-30&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$191",
+      "priceNote": "Booking.com verified for May 29 2026 (2 adults + 3 kids). Rated 8.5/10.",
+      "roomConfig": "Family rooms with 2 Queen beds (sleeps 5). Free parking included.",
       "freeBreakfast": true,
       "separateRoom": false,
-      "pool": true,
-      "reason": "Budget-friendly option in downtown Sonora with pool and free breakfast. Walking distance to Washington Street's historic restaurants and shops."
+      "pool": false,
+      "reason": "Well-rated (8.5/10) budget hotel in Monterey with free breakfast and free parking. Near Cannery Row and Monterey Bay Aquarium. Best value-for-rating option in Monterey for a family returning from Yosemite."
     },
     "optionB": {
-      "name": "Gunn House Hotel — Historic 1850s Adobe",
+      "name": "Padre Oaks — Monterey",
       "stars": 3,
-      "bookingUrl": "https://www.gunnhousehotel.com",
-      "pricePerNight": "$170–$220",
-      "priceNote": "Estimated for May 31 2026. Historic property — call ahead to confirm family room availability.",
-      "roomConfig": "Historic rooms vary in size. Request connecting rooms or largest configuration for family of 5. Pool and gardens on site.",
+      "bookingUrl": "https://www.booking.com/hotel/us/padre-oaks.html?checkin=2026-05-29&checkout=2026-05-30&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$229",
+      "priceNote": "Booking.com verified for May 29 2026 (2 adults + 3 kids). Rated 8.5/10.",
+      "roomConfig": "Spacious rooms with 2 Queen beds or King + sofa bed. Family-friendly layout (sleeps 5). Free parking.",
+      "freeBreakfast": false,
+      "separateRoom": false,
+      "pool": false,
+      "reason": "Highly rated (8.5/10) Monterey hotel. A step up from the Pacific Inn at a modest premium. Close to Cannery Row, Aquarium, and 17-Mile Drive. Ideal home base returning from Yosemite."
+    },
+    "optionC": {
+      "name": "Coastal Cottage Two Blocks from Cannery Row",
+      "isAirbnb": true,
+      "pricePerNight": "$265",
+      "roomConfig": "Entire cottage · 2 bed · sleeps 5",
+      "bookingUrl": "https://www.airbnb.com/s/Monterey--CA/homes?checkin=2026-05-29&checkout=2026-05-30&adults=2&children=3&min_bedrooms=2",
+      "reason": "A classic Monterey fisherman's cottage blocks from the Aquarium — all the character of Cannery Row without the hotel-corridor feel. Perfect return-to-the-coast stay after two Yosemite days.",
+      "amenities": [
+        "Full kitchen",
+        "Fireplace",
+        "Washer/dryer",
+        "Parking",
+        "Outdoor seating"
+      ]
+    }
+  },
+  "8": {
+    "optionA": {
+      "name": "Cambria Palms Motel",
+      "stars": 3,
+      "bookingUrl": "https://www.booking.com/hotel/us/cambria-palms-motel.html?checkin=2026-05-30&checkout=2026-05-31&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$180",
+      "priceNote": "Estimated for May 30 2026 (2 adults + 3 kids). Verify on Booking.com.",
+      "roomConfig": "Family room with 2 Queen beds. Walking distance to Moonstone Beach and village shops.",
+      "freeBreakfast": false,
+      "separateRoom": false,
+      "pool": false,
+      "reason": "Clean, affordable motel steps from Moonstone Beach. Cambria is a small town — most lodging is charming motels and inns. Great location for an evening boardwalk walk."
+    },
+    "optionB": {
+      "name": "Cavalier Oceanfront Resort",
+      "stars": 3,
+      "bookingUrl": "https://www.booking.com/hotel/us/cavalier-oceanfront-resort.html?checkin=2026-05-30&checkout=2026-05-31&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$250",
+      "priceNote": "Estimated for May 30 2026 (2 adults + 3 kids). Verify on Booking.com.",
+      "roomConfig": "Oceanfront rooms with fireplaces. Family rooms with 2 Queen beds available.",
       "freeBreakfast": false,
       "separateRoom": false,
       "pool": true,
-      "reason": "A Gold Rush-era adobe hotel from 1850, lovingly restored. The oldest hotel in Sonora, with period furnishings and a courtyard pool. Sleeping in a 175-year-old Gold Rush building is an experience itself."
+      "reason": "Oceanfront resort in San Simeon, right between Hearst Castle and the Elephant Seal Rookery. Cliffside location with ocean views from rooms. Higher price but unbeatable location."
     },
     "optionC": {
-      "name": "Gold Country Cabin — Sonora/Columbia Area",
+      "name": "Cambria Pines Lodge",
+      "stars": 3,
+      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Cambria+Pines+Lodge+Cambria+CA&checkin=2026-05-30&checkout=2026-05-31&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$240",
+      "priceNote": "Estimated for May 30 2026. Verify at Booking.com.",
+      "roomConfig": "2-Queen rooms available. Located at 2905 Burton Dr, Cambria. Set in 25 acres of Monterey pines.",
+      "freeBreakfast": true,
+      "separateRoom": false,
+      "pool": true,
+      "reason": "Charming lodge set in 25 acres of Monterey pines with heated pool, hot tub, and gardens. Free breakfast buffet. Kids can explore the grounds. A more resort-like experience than downtown Cambria motels."
+    },
+    "optionD": {
+      "name": "Moonstone Landing — On the Boardwalk",
+      "stars": 3,
+      "bookingUrl": "https://www.booking.com/hotel/us/moonstone-landing.html?checkin=2026-05-30&checkout=2026-05-31&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$220",
+      "priceNote": "Estimated for May 30 2026. Verify at Booking.com.",
+      "roomConfig": "Family rooms with 2 Queen beds. Located at 6240 Moonstone Beach Dr — right on the Moonstone Beach Boardwalk.",
+      "freeBreakfast": false,
+      "separateRoom": false,
+      "pool": false,
+      "reason": "The best boardwalk location in Cambria — literally on Moonstone Beach Drive steps from the 1.5-mile coastal boardwalk. Walk out the door and onto the blufftop path above the rocky tidepools. Rooms have fireplaces and ocean views. Wake up, walk the boardwalk before breakfast, watch sea otters in the kelp. The most atmospheric place to sleep in Cambria."
+    }
+  },
+  "9": {
+    "optionA": {
+      "name": "Hampton Inn & Suites Salinas",
+      "stars": 3,
+      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Hampton+Inn+Salinas+CA&checkin=2026-05-31&checkout=2026-06-01&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$150–$180",
+      "priceNote": "Estimated for May 31 2026 (2 adults + 3 kids). Verify on Booking.com.",
+      "roomConfig": "2 Queen bed rooms available (sleeps 5). Free parking. Pool.",
+      "freeBreakfast": true,
+      "separateRoom": false,
+      "pool": true,
+      "reason": "Reliable chain hotel in Salinas — just 1.5 hours from SF. Free breakfast means you can get an early start to the city. Pool for the kids after a long drive day. Salinas is an easy overnight with no pretense."
+    },
+    "optionB": {
+      "name": "Hyatt Place Salinas",
+      "stars": 3,
+      "bookingUrl": "https://www.booking.com/searchresults.html?ss=Hyatt+Place+Salinas+CA&checkin=2026-05-31&checkout=2026-06-01&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "pricePerNight": "$160–$200",
+      "priceNote": "Estimated for May 31 2026. Verify on Booking.com.",
+      "roomConfig": "King rooms with sofa bed or 2-Queen rooms (sleeps 5). Modern rooms.",
+      "freeBreakfast": true,
+      "separateRoom": false,
+      "pool": false,
+      "reason": "Modern Hyatt property with free breakfast. A step up from Hampton Inn — larger rooms and a better sleep experience. Close to US-101 for an easy early start toward SF."
+    },
+    "optionC": {
+      "name": "Salinas Valley Farmhouse — Near Steinbeck Country",
       "isAirbnb": true,
-      "pricePerNight": "$175–$250",
-      "roomConfig": "Entire cabin · 2 bed · sleeps 5",
-      "bookingUrl": "https://www.airbnb.com/s/Sonora--CA/homes?checkin=2026-05-31&checkout=2026-06-01&adults=2&children=3&min_bedrooms=2",
-      "reason": "A cabin in the Gold Country foothills near Columbia State Historic Park. Oak woodlands, rolling hills, a front porch. The Sierra foothill landscape is gorgeous and utterly different from the coast.",
+      "pricePerNight": "$150–$220",
+      "roomConfig": "Entire house · 2 bed · sleeps 5",
+      "bookingUrl": "https://www.airbnb.com/s/Salinas--CA/homes?checkin=2026-05-31&checkout=2026-06-01&adults=2&children=3&min_bedrooms=2",
+      "reason": "Wake up in the actual Salinas Valley that John Steinbeck wrote about — flat, green, and surrounded by golden hills. A farmhouse stay is more memorable than a chain hotel for this one-night stop.",
       "amenities": [
         "Full kitchen",
         "2 bedrooms",
-        "Porch/deck",
-        "Oak woodland setting",
-        "Near Columbia SHP"
+        "Outdoor space",
+        "Parking",
+        "Quiet neighborhood"
       ]
     }
   },
@@ -381,9 +381,9 @@ window.HOTEL_DATA = {
     "optionA": {
       "name": "Hilton San Francisco Financial District",
       "stars": 4,
-      "bookingUrl": "https://www.booking.com/hotel/us/hilton-san-francisco-financial-district.html?checkin=2026-05-31&checkout=2026-06-01&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "bookingUrl": "https://www.booking.com/hotel/us/hilton-san-francisco-financial-district.html?checkin=2026-06-01&checkout=2026-06-02&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
       "pricePerNight": "$223",
-      "priceNote": "Booking.com verified for May 31 2026 (2 adults + 3 kids)",
+      "priceNote": "Booking.com verified for Jun 1 2026 (2 adults + 3 kids)",
       "roomConfig": "Rooms with 2 Double beds or King + sofa bed (sleeps 5). Close to Embarcadero, Chinatown, and cable cars.",
       "freeBreakfast": false,
       "separateRoom": false,
@@ -393,9 +393,9 @@ window.HOTEL_DATA = {
     "optionB": {
       "name": "BEI San Francisco, Trademark Collection by Wyndham",
       "stars": 4,
-      "bookingUrl": "https://www.booking.com/hotel/us/bei-san-francisco-trademark-collection-by-wyndham.html?checkin=2026-05-31&checkout=2026-06-01&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
+      "bookingUrl": "https://www.booking.com/hotel/us/bei-san-francisco-trademark-collection-by-wyndham.html?checkin=2026-06-01&checkout=2026-06-02&group_adults=2&group_children=3&no_rooms=1&age=10&age=8&age=5",
       "pricePerNight": "$275",
-      "priceNote": "Booking.com verified for May 31 2026 (2 adults + 3 kids)",
+      "priceNote": "Booking.com verified for Jun 1 2026 (2 adults + 3 kids)",
       "roomConfig": "Boutique rooms; request connecting rooms or suite with sofa bed for family of 5.",
       "freeBreakfast": false,
       "separateRoom": false,
@@ -407,7 +407,7 @@ window.HOTEL_DATA = {
       "isAirbnb": true,
       "pricePerNight": "$335",
       "roomConfig": "Entire flat · 3 bed · sleeps 5",
-      "bookingUrl": "https://www.airbnb.com/s/San-Francisco--CA/homes?checkin=2026-05-31&checkout=2026-06-01&adults=2&children=3&min_bedrooms=2",
+      "bookingUrl": "https://www.airbnb.com/s/San-Francisco--CA/homes?checkin=2026-06-01&checkout=2026-06-02&adults=2&children=3&min_bedrooms=2",
       "reason": "A real San Francisco painted lady — bay windows, decorative Victorian woodwork, hardwood floors. This is what SF looks like when locals actually live here.",
       "amenities": [
         "Full kitchen",

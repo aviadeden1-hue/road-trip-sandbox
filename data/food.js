@@ -154,93 +154,6 @@ window.FOOD_DATA = {
   "5": {
     "dinnerType": "restaurant",
     "dinner": {
-      "name": "Rosine's Restaurant",
-      "cuisine": "American comfort food — huge portions, pastas, steaks, seafood",
-      "address": "434 Alvarado St, Monterey, CA 93940",
-      "websiteLink": "https://www.rosinesmonterey.com",
-      "mapsLink": "https://www.google.com/maps/search/Rosine's+Restaurant+434+Alvarado+St+Monterey+CA",
-      "signatureDish": "Massive pasta dishes, slow-cooked pot roast, fresh seafood, famous desserts — portions are legendary",
-      "pricePerPerson": "$18-30",
-      "familyPrice": "$90-150 for family of 5",
-      "whyChosen": "Family-owned since 1980, now third generation. Famous for absurdly generous portions — you will have leftovers. Kids' menu available. Right on Alvarado St in Old Monterey, walking distance from hotels. Casual, genuinely welcoming to families. The perfect comfort-food dinner after a big Aquarium day.",
-      "reservationNeeded": false,
-      "reserveNote": "Walk-in friendly. Open daily 8am-9pm."
-    },
-    "dinnerAlternatives": [
-      {
-        "name": "Fishwife",
-        "cuisine": "Seafood with Caribbean accent — fresh fish, pastas, kids' menu",
-        "address": "1996½ Sunset Dr, Pacific Grove, CA 93950",
-        "mapsLink": "https://www.google.com/maps/search/Fishwife+Sunset+Dr+Pacific+Grove+CA",
-        "pricePerPerson": "$18-30",
-        "familyPrice": "$90-150 for family of 5",
-        "whyChosen": "Award-winning since 1986. Dedicated kids' menu. Casual, genuinely family-friendly. Fresh local seafood after an Aquarium day is thematically perfect. 10 min from Monterey in charming Pacific Grove."
-      },
-      {
-        "name": "Sea Harvest Restaurant & Fish Market",
-        "cuisine": "Casual seafood — chowder, fish & chips, grilled catch",
-        "address": "100 The Crossroads Blvd, Carmel, CA 93923",
-        "mapsLink": "https://www.google.com/maps/search/Sea+Harvest+Restaurant+Carmel+CA",
-        "pricePerPerson": "$15-25",
-        "familyPrice": "$75-125 for family of 5",
-        "whyChosen": "Operating since 1983. Counter-service fish market with incredibly fresh seafood. Extremely casual, great fish and chips that kids love. Perfect if coming from a Carmel afternoon."
-      }
-    ],
-    "lunch": {
-      "name": "Clam Chowder Bread Bowl on the Wharf",
-      "cuisine": "Classic Monterey seafood street food",
-      "address": "Old Fisherman's Wharf, Monterey, CA 93940",
-      "mapsLink": "https://www.google.com/maps/search/Old+Fisherman%27s+Wharf+Monterey+CA",
-      "whyChosen": "The quintessential Monterey experience — clam chowder in a sourdough bread bowl, eaten walking along the wharf with sea lions barking below.",
-      "costNote": "~$12-18/person. Multiple vendors to choose from.",
-      "reservationNeeded": false
-    },
-    "groceryStore": null
-  },
-  "6": {
-    "dinnerType": "restaurant",
-    "dinner": {
-      "name": "Linn's Restaurant",
-      "cuisine": "American comfort — famous olallieberry pie",
-      "address": "2277 Main St, Cambria, CA 93428",
-      "websiteLink": "https://www.linnsfruitbin.com",
-      "mapsLink": "https://www.google.com/maps/search/Linn's+Restaurant+Cambria+CA",
-      "signatureDish": "Chicken pot pie, tri-tip, and the legendary olallieberry pie (a Central Coast original)",
-      "pricePerPerson": "$20-35",
-      "familyPrice": "$100-175 for family of 5",
-      "whyChosen": "A Cambria institution since 1989. The olallieberry pie is legendary — the berry only grows on the Central Coast. Comfort food in a cozy setting. Very family-friendly.",
-      "reservationNeeded": false,
-      "reserveNote": "Walk-in friendly, but busy summer weekends. Arrive before 6 PM."
-    },
-    "dinnerAlternatives": [
-      {
-        "name": "Moonstone Beach Bar & Grill",
-        "cuisine": "Seafood / American with ocean views",
-        "address": "6550 Moonstone Beach Dr, Cambria, CA 93428",
-        "mapsLink": "https://www.google.com/maps/search/Moonstone+Beach+Bar+Grill+Cambria+CA",
-        "pricePerPerson": "$25-40",
-        "familyPrice": "$125-200 for family of 5",
-        "whyChosen": "Right on Moonstone Beach with gorgeous coastal views. Every kids' order comes with a free scoop of ice cream. Walk-in only, no reservations. Beautiful sunset dinner setting."
-      },
-      {
-        "name": "Main Street Grill",
-        "cuisine": "Burgers, BBQ, tacos, comfort food",
-        "address": "603 Main St, Cambria, CA 93428",
-        "mapsLink": "https://www.google.com/maps/search/Main+Street+Grill+Cambria+CA",
-        "pricePerPerson": "$15-25",
-        "familyPrice": "$75-125 for family of 5",
-        "whyChosen": "Casual downtown Cambria spot. Burgers, fries, onion rings — straightforward food that tired kids will actually eat after a long Big Sur drive day. Local craft beers for parents."
-      }
-    ],
-    "lunch": {
-      "type": "packed",
-      "note": "Pack lunch from Monterey before the Big Sur drive. There are very few food stops along the CA-1 through Big Sur. Eat at a scenic pullout overlooking the Pacific — best picnic on the trip so far."
-    },
-    "groceryStore": null
-  },
-  "7": {
-    "dinnerType": "restaurant",
-    "dinner": {
       "name": "Charles Street Dinner House — Mariposa",
       "cuisine": "American steakhouse — Gold Country comfort food",
       "address": "5043 CA-140, Mariposa, CA 95338",
@@ -249,9 +162,9 @@ window.FOOD_DATA = {
       "signatureDish": "Prime rib, steaks, pasta, fresh fish — classic American dinner house in a Gold Rush-era building",
       "pricePerPerson": "$25-45",
       "familyPrice": "$125-225 for family of 5",
-      "whyChosen": "A Mariposa institution — the classic pre-Yosemite dinner. Hearty portions of comfort food in a historic building. Kids menu available. Perfect fuel for tomorrow's big day in Yosemite Valley.",
+      "whyChosen": "A Mariposa institution — the classic pre-Yosemite dinner. Hearty portions of comfort food in a historic building. Kids menu available. Perfect fuel for two big Yosemite days starting tomorrow.",
       "reservationNeeded": true,
-      "reserveNote": "Reservations recommended for summer weekends. Open Tue-Sat 5-9pm."
+      "reserveNote": "Reservations recommended for summer evenings. Open Tue-Sat 5-9pm."
     },
     "dinnerAlternatives": [
       {
@@ -261,7 +174,7 @@ window.FOOD_DATA = {
         "mapsLink": "https://www.google.com/maps/search/1850+Restaurant+Brewing+Mariposa+CA",
         "pricePerPerson": "$18-30",
         "familyPrice": "$90-150 for family of 5",
-        "whyChosen": "More casual than Charles Street. Burgers and pizza are easy wins with kids. House-brewed beers for parents. Named after the year Mariposa was founded. Open Wed-Sun."
+        "whyChosen": "More casual than Charles Street. Burgers and pizza are easy wins with kids after a long drive. House-brewed beers for parents. Open Wed-Sun."
       },
       {
         "name": "Happy Burger Diner",
@@ -270,16 +183,16 @@ window.FOOD_DATA = {
         "mapsLink": "https://www.google.com/maps/search/Happy+Burger+Diner+Mariposa+CA",
         "pricePerPerson": "$10-18",
         "familyPrice": "$50-90 for family of 5",
-        "whyChosen": "Budget-friendly classic diner right on the main strip. Burgers, milkshakes, and fries — exactly what tired kids want after a 5-hour drive. No frills, just good diner food."
+        "whyChosen": "Budget-friendly classic diner right on the main strip. Burgers, milkshakes, and fries — exactly what tired kids want after a 4-hour drive. No frills, just good diner food."
       }
     ],
     "lunch": {
       "type": "packed",
-      "note": "Grab a quick bite in Cambria or pack lunch before the long drive. Stop at Paso Robles candy shop for sweets, and at Casa de Fruta for fruit and snacks. Limited food options on CA-152 over Pacheco Pass."
+      "note": "Grab breakfast at the hotel and pack snacks for the drive. Stop at Casa de Fruta on CA-152 for fruit and candy. There are limited food options between the coast and Mariposa on this route."
     },
     "groceryStore": null
   },
-  "8": {
+  "6": {
     "dinnerType": "restaurant",
     "dinner": {
       "name": "1850 Restaurant & Brewing Co. — Mariposa",
@@ -320,59 +233,135 @@ window.FOOD_DATA = {
     },
     "groceryStore": null
   },
-  "9": {
+  "7": {
     "dinnerType": "restaurant",
     "dinner": {
-      "name": "Diamondback Grill — Sonora",
-      "cuisine": "American grill — burgers, steaks, pasta, BBQ",
-      "address": "93 S Washington St, Sonora, CA 95370",
-      "websiteLink": "https://www.thediamondbackgrill.com",
-      "mapsLink": "https://www.google.com/maps/search/Diamondback+Grill+Sonora+CA",
-      "signatureDish": "Angus beef burgers, BBQ ribs, Gold Country mac & cheese, hand-cut fries",
-      "pricePerPerson": "$18-35",
-      "familyPrice": "$90-175 for family of 5",
-      "whyChosen": "A Sonora favorite on Washington Street in the historic district. Upscale comfort food in a casual Gold Rush-era building. Great burgers and ribs. Kids menu. Walking distance from most Sonora hotels.",
+      "name": "Fishwife — Pacific Grove",
+      "cuisine": "Seafood with Caribbean accent — fresh fish, pastas, kids' menu",
+      "address": "1996½ Sunset Dr, Pacific Grove, CA 93950",
+      "websiteLink": "https://www.fishwife.com",
+      "mapsLink": "https://www.google.com/maps/search/Fishwife+Sunset+Dr+Pacific+Grove+CA",
+      "signatureDish": "Caribbean-accented fresh seafood, award-winning fish tacos, pasta, dedicated kids' menu",
+      "pricePerPerson": "$18-30",
+      "familyPrice": "$90-150 for family of 5",
+      "whyChosen": "Award-winning since 1986. Back on the Monterey coast after two big Yosemite days — celebrate with fresh local seafood. Kids' menu available. 10 min from Monterey in charming Pacific Grove. A gentler, more relaxed dinner after two intense days.",
       "reservationNeeded": false,
-      "reserveNote": "Walk-in friendly. Sunday closes at 8pm — arrive by 6:30-7pm."
+      "reserveNote": "Walk-in friendly. Open daily for lunch and dinner."
     },
     "dinnerAlternatives": [
       {
-        "name": "Emberz Wood-Fired Foodz",
-        "cuisine": "Wood-fired pizza, pasta, grilled meats",
-        "address": "177 S Washington St, Sonora, CA 95370",
-        "mapsLink": "https://www.google.com/maps/search/Emberz+Wood+Fired+Sonora+CA",
+        "name": "Rosine's Restaurant",
+        "cuisine": "American comfort food — huge portions, pastas, steaks, seafood",
+        "address": "434 Alvarado St, Monterey, CA 93940",
+        "mapsLink": "https://www.google.com/maps/search/Rosine's+Restaurant+434+Alvarado+St+Monterey+CA",
         "pricePerPerson": "$18-30",
         "familyPrice": "$90-150 for family of 5",
-        "whyChosen": "Wood-fired pizza is always a hit with kids. Kids' menu available. Fun, casual atmosphere. Same historic downtown Sonora strip as Diamondback."
+        "whyChosen": "Family-owned since 1980. Famous for absurdly generous portions — you will have leftovers. Kids' menu. Right on Alvarado St in Old Monterey. The perfect comfort-food reward after two Yosemite days."
       },
       {
-        "name": "Legends Books, Antiques & Soda Fountain",
-        "cuisine": "Soda fountain / light fare — burgers, sandwiches, ice cream sodas",
-        "address": "131 S Washington St, Sonora, CA 95370",
-        "mapsLink": "https://www.google.com/maps/search/Legends+Soda+Fountain+Sonora+CA",
-        "pricePerPerson": "$10-15",
-        "familyPrice": "$50-75 for family of 5",
-        "whyChosen": "A genuine Gold Rush-era soda fountain. Kids will love the ice cream floats and old-timey atmosphere. Light fare — perfect if you had a big packed lunch at Glacier Point."
+        "name": "Monterey Fish House",
+        "cuisine": "Fresh local seafood — grilled, pan-seared, catch of the day",
+        "address": "2114 Del Monte Ave, Monterey, CA 93940",
+        "mapsLink": "https://www.google.com/maps/search/Monterey+Fish+House+Monterey+CA",
+        "pricePerPerson": "$20-35",
+        "familyPrice": "$100-175 for family of 5",
+        "whyChosen": "A Monterey classic serving fresh local fish. Casual, neighborhood spot away from the tourist strip. Great for families back on the coast after the mountains."
       }
     ],
     "lunch": {
       "type": "packed",
-      "note": "Pack lunch for a morning at Glacier Point / Yosemite. Eat overlooking the valley from 3,200 feet up — one of the most spectacular picnic spots in the world."
+      "note": "Pack lunch for the Glacier Point viewpoint. Eating with Half Dome at eye level is one of the most spectacular picnic spots on the entire trip."
     },
     "groceryStore": null
+  },
+  "8": {
+    "dinnerType": "restaurant",
+    "dinner": {
+      "name": "Linn's Restaurant",
+      "cuisine": "American comfort — famous olallieberry pie",
+      "address": "2277 Main St, Cambria, CA 93428",
+      "websiteLink": "https://www.linnsfruitbin.com",
+      "mapsLink": "https://www.google.com/maps/search/Linn's+Restaurant+Cambria+CA",
+      "signatureDish": "Chicken pot pie, tri-tip, and the legendary olallieberry pie (a Central Coast original)",
+      "pricePerPerson": "$20-35",
+      "familyPrice": "$100-175 for family of 5",
+      "whyChosen": "A Cambria institution since 1989. The olallieberry pie is legendary — the berry only grows on the Central Coast. Comfort food in a cozy setting after a big Aquarium and Big Sur drive day. Very family-friendly.",
+      "reservationNeeded": false,
+      "reserveNote": "Walk-in friendly, but busy summer weekends. Arrive before 6 PM."
+    },
+    "dinnerAlternatives": [
+      {
+        "name": "Moonstone Beach Bar & Grill",
+        "cuisine": "Seafood / American with ocean views",
+        "address": "6550 Moonstone Beach Dr, Cambria, CA 93428",
+        "mapsLink": "https://www.google.com/maps/search/Moonstone+Beach+Bar+Grill+Cambria+CA",
+        "pricePerPerson": "$25-40",
+        "familyPrice": "$125-200 for family of 5",
+        "whyChosen": "Right on Moonstone Beach with gorgeous coastal views. Every kids' order comes with a free scoop of ice cream. Walk-in only, no reservations. Beautiful sunset dinner setting."
+      },
+      {
+        "name": "Main Street Grill",
+        "cuisine": "Burgers, BBQ, tacos, comfort food",
+        "address": "603 Main St, Cambria, CA 93428",
+        "mapsLink": "https://www.google.com/maps/search/Main+Street+Grill+Cambria+CA",
+        "pricePerPerson": "$15-25",
+        "familyPrice": "$75-125 for family of 5",
+        "whyChosen": "Casual downtown Cambria spot. Burgers, fries, onion rings — straightforward food that tired kids will actually eat after a long drive and full Aquarium day."
+      }
+    ],
+    "lunch": {
+      "name": "Clam Chowder Bread Bowl on the Wharf",
+      "cuisine": "Classic Monterey seafood street food",
+      "address": "Old Fisherman's Wharf, Monterey, CA 93940",
+      "mapsLink": "https://www.google.com/maps/search/Old+Fisherman%27s+Wharf+Monterey+CA",
+      "whyChosen": "The quintessential Monterey experience — clam chowder in a sourdough bread bowl, eaten walking along the wharf with sea lions barking below. Between the Aquarium and the Big Sur drive.",
+      "costNote": "~$12-18/person. Multiple vendors to choose from.",
+      "reservationNeeded": false
+    },
+    "groceryStore": null
+  },
+  "9": {
+    "dinnerType": "grocery",
+    "dinner": null,
+    "lunch": {
+      "type": "packed",
+      "note": "Grab a quick bite in Cambria or Paso Robles on the way north. Limited food stops if doing the Pinnacles detour via CA-25. Pack sandwiches and snacks from the Cambria hotel breakfast or a gas station."
+    },
+    "groceryStore": {
+      "name": "Walmart Supercenter — Salinas",
+      "address": "1800 N Main St, Salinas, CA 93906",
+      "mapsLink": "https://www.google.com/maps/search/Walmart+1800+N+Main+St+Salinas+CA",
+      "distance": "Right in Salinas on the way to/from US-101. Easy stop before or after check-in.",
+      "shoppingList": [
+        "Rotisserie chicken ($6)",
+        "Bagged Caesar salad kit ($4)",
+        "French bread ($3)",
+        "Fresh strawberries + grapes ($8)",
+        "String cheese 12-pack ($5)",
+        "Juice boxes variety pack ($5)",
+        "Bottled water 24-pack ($4)",
+        "Breakfast items for tomorrow: cereal, milk, bananas ($10)",
+        "Snacks for the SF drive ($5)"
+      ]
+    }
   },
   "10": {
     "dinnerType": "grocery",
     "dinner": null,
     "lunch": {
-      "type": "packed",
-      "note": "Grab breakfast in Sonora before driving to Columbia SHP. Quick lunch at Columbia's restaurants or pack sandwiches. You'll be driving to SF in the afternoon."
+      "name": "Ferry Building Marketplace",
+      "cuisine": "SF's premier food hall — oysters, sourdough, artisan vendors",
+      "address": "One Ferry Building, San Francisco, CA 94111",
+      "mapsLink": "https://www.google.com/maps/search/Ferry+Building+Marketplace+San+Francisco",
+      "whyChosen": "The beating heart of San Francisco food culture — arrive by mid-morning from Salinas and head straight here. Hog Island Oyster Co. for oysters on the bay, Acme Bread for sourdough, Blue Bottle Coffee, Gott's Roadside for kids' burgers. A quintessential SF welcome.",
+      "costNote": "Budget $15-25/person. Mix and match vendors.",
+      "reservationNeeded": false
     },
     "groceryStore": {
       "name": "Walmart Supercenter — Daly City",
       "address": "133 Serramonte Center, Daly City, CA 94015",
       "mapsLink": "https://www.google.com/maps/search/Walmart+133+Serramonte+Center+Daly+City+CA",
-      "distance": "About 15 min south of downtown SF. Stop on the way in from the south via I-280.",
+      "distance": "About 15 min south of downtown SF. Stop on the way in from US-101.",
       "shoppingList": [
         "Take-and-bake pepperoni pizza ($8)",
         "Bagged garden salad kit ($4)",
