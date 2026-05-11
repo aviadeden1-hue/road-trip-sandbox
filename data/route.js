@@ -58,7 +58,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 5,
     "date": "Wednesday, May 27, 2026",
-    "dayTitle": "Drive to Mariposa",
+    "dayTitle": "Monterey Aquarium & Drive to Mariposa",
     "overnightCity": "Mariposa, CA",
     "region": "Yosemite & Gold Country",
     "lat": 37.4849,
@@ -67,7 +67,7 @@ window.ROUTE_DATA = [
     "driveHours": 4,
     "driveMapsUrl": "https://www.google.com/maps/dir/Monterey,+CA/Casa+de+Fruta,+Pacheco+Pass+Hwy,+Hollister,+CA/Mariposa,+CA",
     "dayType": "drive",
-    "note": "Leave Monterey after a quick morning stop (Dennis the Menace Playground is a great energy-burner before the drive). Head inland: US-101 to CA-152 east over Pacheco Pass — rolling golden hills, hawks, and San Luis Reservoir views. Stop at Casa de Fruta on CA-152 — a quirky roadside attraction with fruit stands, carousel, peacocks, and mini train. Continue via CA-99 south to Mariposa (~3.5–4 hrs total). Arrive in time for a relaxed dinner. Tomorrow and Friday: Yosemite on a Thursday-Friday — lighter crowds than the weekend rush!"
+    "note": "Morning at the Monterey Bay Aquarium (pre-booked tickets — plan 3–4 hours). Sea otters, the million-gallon Open Sea tank, kelp forest, and touch pools. Walk Cannery Row after. Depart for Mariposa in the late afternoon via US-101 to CA-152 (Pacheco Pass) — golden hills, San Luis Reservoir views, and Casa de Fruta on the pass if time allows. Otherwise skip Casa and drive straight to Mariposa. Arrive by evening (~3.5–4 hrs from Monterey). Tomorrow: Yosemite on a Thursday — weekday crowds!"
   },
   {
     "dayNumber": 6,
@@ -100,7 +100,7 @@ window.ROUTE_DATA = [
   {
     "dayNumber": 8,
     "date": "Saturday, May 30, 2026",
-    "dayTitle": "Monterey Aquarium & Big Sur",
+    "dayTitle": "Big Sur & Cambria",
     "overnightCity": "Cambria, CA",
     "region": "Central Coast",
     "lat": 35.5641,
@@ -109,7 +109,7 @@ window.ROUTE_DATA = [
     "driveHours": 3.5,
     "driveMapsUrl": "https://www.google.com/maps/dir/Monterey,+CA/Bixby+Bridge,+CA/McWay+Falls,+Big+Sur,+CA/Cambria,+CA",
     "dayType": "drive",
-    "note": "Morning at the Monterey Bay Aquarium — one of the world's greatest (book timed tickets, plan 3–4 hours). The sea otters, million-gallon Open Sea tank, and kelp forest are highlights. After a lunch on the Wharf, drive south on CA-1 through Big Sur — Bixby Bridge, McWay Falls (80-ft waterfall onto a beach), Julia Pfeiffer Burns SP. Weekend traffic on CA-1 is normal — depart by 2 PM at the latest. Evening in charming Cambria."
+    "note": "Back in Monterey after Yosemite! Morning: 17-Mile Drive through Pebble Beach (Lone Cypress!) or Dennis the Menace Playground. Then drive south on CA-1 through Big Sur — Bixby Bridge, McWay Falls (80-ft waterfall onto a beach), Julia Pfeiffer Burns SP. Depart by noon for a relaxed Big Sur drive. Continue south to Cambria/San Simeon. Optional Hearst Castle if timing works. Evening in charming Cambria."
   },
   {
     "dayNumber": 9,

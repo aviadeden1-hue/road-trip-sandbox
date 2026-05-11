@@ -324,25 +324,41 @@ window.ACTIVITY_DATA = {
     }
   },
   "5": {
-    "activities": [
+    "morning": [
       {
-        "name": "Dennis the Menace Playground — Quick Morning Stop",
-        "type": "outdoor/playground",
-        "price": "Free",
-        "description": "A quick morning stop before the long drive: the massive playground in El Estero Park designed by Hank Ketcham. Giant climbing structures, a real Southern Pacific locomotive, hedge maze, and roller slide. Let the kids burn energy before 4 hours in the car. 5-min drive from most Monterey hotels.",
-        "duration": "45 min–1 hour",
-        "link": "https://www.google.com/maps/place/Dennis+the+Menace+Park/@36.5938,-121.8891,17z",
-        "lat": 36.5938,
-        "lng": -121.8891,
+        "name": "Monterey Bay Aquarium",
+        "type": "indoor / museum",
+        "price": "$59.95 adults, $39.95 kids 5-12, $44.95 kids 3-4 (pre-booked tickets)",
+        "description": "One of the world's greatest aquariums — tickets already booked! The Open Sea exhibit has a million-gallon tank with hammerhead sharks, ocean sunfish, and sea turtles. The kelp forest is mesmerizing. Touch pools let kids handle sea stars and sea urchins. The sea otter exhibit is the highlight — rescued otters playing feet from the glass. Plan 3-4 hours. This is a top-3 activity on the entire trip.",
+        "duration": "3-4 hours",
+        "link": "https://www.montereybayaquarium.org",
+        "lat": 36.6186,
+        "lng": -121.9018,
         "kidFriendly": true,
-        "npsCovered": false
+        "npsCovered": false,
+        "advanceBookingRequired": true,
+        "bookingNote": "Tickets pre-booked — confirm your timed entry time and arrive 10 min early."
       },
       {
-        "name": "Casa de Fruta — Roadside Attraction on CA-152",
+        "name": "Cannery Row & Old Fisherman's Wharf",
+        "type": "walking / sightseeing",
+        "price": "Free to walk; food extra",
+        "description": "Walk the historic waterfront after the Aquarium. Grab a clam chowder bread bowl on the Wharf — sea lions bark below, boats bob in the harbor. The quintessential Monterey afternoon before the drive east.",
+        "duration": "1 hour",
+        "link": "https://www.canneryrow.com",
+        "lat": 36.6121,
+        "lng": -121.8994,
+        "kidFriendly": true,
+        "npsCovered": false
+      }
+    ],
+    "afternoon": [
+      {
+        "name": "Casa de Fruta — Roadside Attraction on CA-152 (if time allows)",
         "type": "roadside attraction",
         "price": "Free entry; rides/activities $3-8 each",
-        "description": "A sprawling roadside attraction on Pacheco Pass with fruit stands, a carousel, peacocks roaming free, a mini train ride, and a candy shop. It's been here since the 1940s and feels like stepping back in time. The perfect mid-drive leg-stretch on the way to Mariposa. Kids love the peacocks and train.",
-        "duration": "45 min – 1 hour",
+        "description": "A sprawling roadside attraction on Pacheco Pass with fruit stands, a carousel, peacocks roaming free, a mini train ride, and a candy shop. A fun leg-stretch on the drive to Mariposa — but skip it if you're leaving Monterey late (after 3 PM) to arrive Mariposa at a reasonable hour.",
+        "duration": "45 min",
         "link": "https://www.casadefruta.com",
         "lat": 36.8592,
         "lng": -121.4028,
@@ -350,27 +366,29 @@ window.ACTIVITY_DATA = {
         "npsCovered": false
       }
     ],
+    "evening": [],
     "scenicDrives": [
       {
         "name": "CA-152 Pacheco Pass",
-        "description": "The drive east over Pacheco Pass rises through golden California hills with sweeping views of San Luis Reservoir. Hawks circle overhead as the landscape transitions from coastal green to Sierra gold. A beautiful 1-hour prelude to the mountains.",
-        "duration": "1.5 hours from Monterey to Mariposa via CA-99",
+        "description": "The drive east from Monterey over Pacheco Pass rises through golden California hills. San Luis Reservoir shimmers below. The landscape transitions from coastal green to Sierra gold as you head toward the mountains.",
+        "duration": "3.5–4 hours Monterey to Mariposa",
         "link": "https://www.google.com/maps/dir/Monterey,+CA/Mariposa,+CA"
       }
     ],
     "hiddenGem": {
       "name": "San Luis Reservoir Overlook",
-      "description": "Pull over at the Los Banos Creek Overlook on CA-152 for a view of the turquoise reservoir against golden hills. Often empty of tourists. The contrast of blue water and sun-scorched California hills is stunning.",
+      "description": "Pull over at the Los Banos Creek Overlook on CA-152 for a view of the turquoise reservoir against golden hills. Often empty of tourists. A quick 5-minute stop.",
       "link": "https://www.google.com/maps/search/San+Luis+Reservoir+State+Recreation+Area"
     },
     "rainyDay": null,
     "priorities": {
       "mustDo": [
-        "Casa de Fruta — perfect mid-drive stop, peacocks and mini train delight kids",
-        "Get an early start from Monterey to arrive Mariposa before dinner"
+        "Monterey Bay Aquarium — tickets are booked, plan 3-4 hours",
+        "Clam chowder on the Wharf after — the quintessential Monterey experience",
+        "Leave Monterey by 3 PM latest to reach Mariposa before dinner"
       ],
       "skipIfShort": [
-        "Dennis the Menace Playground — skip if running behind schedule"
+        "Casa de Fruta — skip if leaving Monterey after 3 PM, arrival in Mariposa is the priority"
       ]
     }
   },
@@ -528,28 +546,26 @@ window.ACTIVITY_DATA = {
   "8": {
     "morning": [
       {
-        "name": "Monterey Bay Aquarium",
-        "type": "indoor / museum",
-        "price": "$59.95 adults, $39.95 kids 5-12, $44.95 kids 3-4 (book timed tickets!)",
-        "description": "One of the world's greatest aquariums. The Open Sea exhibit has a million-gallon tank with hammerhead sharks, ocean sunfish, and sea turtles. The kelp forest is mesmerizing. Touch pools let kids handle sea stars and sea urchins. The sea otter exhibit is the highlight — rescued otters playing feet from the glass. Plan 3-4 hours minimum. This is a top-3 activity on the entire trip.",
-        "duration": "3-4 hours",
-        "link": "https://www.montereybayaquarium.org",
-        "lat": 36.6186,
-        "lng": -121.9018,
+        "name": "17-Mile Drive — Pebble Beach",
+        "type": "scenic drive",
+        "price": "$11.75/car",
+        "description": "A leisurely morning loop through Pebble Beach before the Big Sur drive. The Lone Cypress (one of the most photographed trees in the world), Bird Rock sea lions, and Stillwater Cove are highlights. Kids enjoy spotting the seals and the dramatic coastline. About 1.5 hours with stops.",
+        "duration": "1.5 hours",
+        "link": "https://www.pebblebeach.com/17-mile-drive/",
+        "lat": 36.5692,
+        "lng": -121.9611,
         "kidFriendly": true,
-        "npsCovered": false,
-        "advanceBookingRequired": true,
-        "bookingNote": "Buy timed tickets at montereybayaquarium.org — sells out in summer. Book 2-4 weeks ahead."
+        "npsCovered": false
       },
       {
-        "name": "Cannery Row & Old Fisherman's Wharf",
+        "name": "Carmel-by-the-Sea",
         "type": "walking / sightseeing",
-        "price": "Free to walk; food extra",
-        "description": "Walk the historic waterfront that inspired John Steinbeck's novel. Lined with shops, restaurants, and galleries. Old Fisherman's Wharf has chowder vendors, salt water taffy, and sea lion viewing. A natural extension of the Aquarium visit — grab a clam chowder bread bowl for lunch before the Big Sur drive.",
-        "duration": "1 hour",
-        "link": "https://www.canneryrow.com",
-        "lat": 36.6121,
-        "lng": -121.8994,
+        "price": "Free",
+        "description": "A fairytale village 5 miles south of Monterey — storybook cottages, no street addresses, art galleries, and a stunning white-sand beach. Walk the compact downtown and end at Carmel Beach before heading south on CA-1. If skipping 17-Mile Drive, this is the morning option.",
+        "duration": "1–1.5 hours",
+        "link": "https://www.carmelcalifornia.com",
+        "lat": 36.5554,
+        "lng": -121.9233,
         "kidFriendly": true,
         "npsCovered": false
       }
@@ -559,7 +575,7 @@ window.ACTIVITY_DATA = {
         "name": "Big Sur Coastal Drive — CA-1 South",
         "type": "scenic drive",
         "price": "Free (gas only)",
-        "description": "One of the most spectacular coastal drives on Earth. The 90 miles from Monterey south to Cambria hugs sheer cliffs above the Pacific. Major stops: Bixby Bridge (iconic arched bridge, photo stop), McWay Falls (80-ft waterfall onto a pristine beach — 0.3 mi easy walk), and Julia Pfeiffer Burns SP. Go slow, stop at every pullout. Depart by 2 PM to arrive Cambria by evening.",
+        "description": "One of the most spectacular coastal drives on Earth. The 90 miles from Monterey south to Cambria hugs sheer cliffs above the Pacific. Major stops: Bixby Bridge (iconic arched bridge, photo stop), McWay Falls (80-ft waterfall onto a pristine beach — 0.3 mi easy walk), and Julia Pfeiffer Burns SP. Go slow, stop at every pullout. Depart by noon for a relaxed Big Sur drive with time for stops.",
         "duration": "2.5-3 hours with stops",
         "link": "https://www.google.com/maps/dir/Monterey,+CA/Bixby+Bridge,+CA/McWay+Falls,+Big+Sur,+CA/Cambria,+CA",
         "lat": 36.3714,
@@ -571,7 +587,7 @@ window.ACTIVITY_DATA = {
         "name": "Hearst Castle",
         "type": "indoor/cultural",
         "price": "$25 adults, $12 kids 5-12, free under 5",
-        "description": "William Randolph Hearst's legendary hilltop estate overlooking the Pacific. The Grand Rooms Tour takes about 45 min and covers the main house, Neptune Pool, and Roman Pool. Opulent doesn't begin to describe it — 165 rooms, 127 acres, and zebras still roam the grounds. Book timed tickets in advance.",
+        "description": "William Randolph Hearst's legendary hilltop estate overlooking the Pacific. The Grand Rooms Tour covers the main house, Neptune Pool, and Roman Pool. 165 rooms, 127 acres, and zebras still roam the grounds. Book timed tickets in advance.",
         "duration": "2-2.5 hours (including bus ride)",
         "link": "https://hearstcastle.org",
         "lat": 35.6852,
@@ -612,13 +628,13 @@ window.ACTIVITY_DATA = {
     "rainyDay": null,
     "priorities": {
       "mustDo": [
-        "Monterey Bay Aquarium — one of the best aquariums in the world, give it 3-4 hours",
         "Big Sur coastal drive — Bixby Bridge and McWay Falls are unmissable",
-        "Depart Monterey by 2 PM to complete Big Sur and reach Cambria by evening"
+        "Pick one morning option: 17-Mile Drive OR Carmel-by-the-Sea",
+        "Depart south by noon for a relaxed Big Sur drive"
       ],
       "skipIfShort": [
-        "Hearst Castle — only if timing allows after Aquarium + Big Sur",
-        "Cambria Moonstone Beach — lovely but just a walk, do it if energy allows"
+        "Hearst Castle — only if arriving San Simeon before 3 PM",
+        "17-Mile Drive — costs $12, skip if you want maximum Big Sur time"
       ]
     }
   },

@@ -187,8 +187,13 @@ window.FOOD_DATA = {
       }
     ],
     "lunch": {
-      "type": "packed",
-      "note": "Grab breakfast at the hotel and pack snacks for the drive. Stop at Casa de Fruta on CA-152 for fruit and candy. There are limited food options between the coast and Mariposa on this route."
+      "name": "Clam Chowder Bread Bowl on the Wharf",
+      "cuisine": "Classic Monterey seafood street food",
+      "address": "Old Fisherman's Wharf, Monterey, CA 93940",
+      "mapsLink": "https://www.google.com/maps/search/Old+Fisherman%27s+Wharf+Monterey+CA",
+      "whyChosen": "After the Aquarium, walk over to the Wharf for clam chowder in a sourdough bread bowl — the quintessential Monterey lunch. Sea lions bark below, boats bob in the harbor. Then head for the car and the drive east.",
+      "costNote": "~$12-18/person. Multiple vendors to choose from.",
+      "reservationNeeded": false
     },
     "groceryStore": null
   },
@@ -285,7 +290,7 @@ window.FOOD_DATA = {
       "signatureDish": "Chicken pot pie, tri-tip, and the legendary olallieberry pie (a Central Coast original)",
       "pricePerPerson": "$20-35",
       "familyPrice": "$100-175 for family of 5",
-      "whyChosen": "A Cambria institution since 1989. The olallieberry pie is legendary — the berry only grows on the Central Coast. Comfort food in a cozy setting after a big Aquarium and Big Sur drive day. Very family-friendly.",
+      "whyChosen": "A Cambria institution since 1989. The olallieberry pie is legendary — the berry only grows on the Central Coast. Comfort food in a cozy setting after the Big Sur drive. Very family-friendly.",
       "reservationNeeded": false,
       "reserveNote": "Walk-in friendly, but busy summer weekends. Arrive before 6 PM."
     },
@@ -310,13 +315,8 @@ window.FOOD_DATA = {
       }
     ],
     "lunch": {
-      "name": "Clam Chowder Bread Bowl on the Wharf",
-      "cuisine": "Classic Monterey seafood street food",
-      "address": "Old Fisherman's Wharf, Monterey, CA 93940",
-      "mapsLink": "https://www.google.com/maps/search/Old+Fisherman%27s+Wharf+Monterey+CA",
-      "whyChosen": "The quintessential Monterey experience — clam chowder in a sourdough bread bowl, eaten walking along the wharf with sea lions barking below. Between the Aquarium and the Big Sur drive.",
-      "costNote": "~$12-18/person. Multiple vendors to choose from.",
-      "reservationNeeded": false
+      "type": "packed",
+      "note": "Pack lunch from the Cambria hotel or grab a quick bite in town before the Big Sur drive. Eat at a scenic pullout overlooking the Pacific — best picnic on CA-1. Very few food stops between Carmel and Cambria on the southbound drive."
     },
     "groceryStore": null
   },
