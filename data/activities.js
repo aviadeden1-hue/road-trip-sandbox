@@ -706,44 +706,107 @@ window.ACTIVITY_DATA = {
     }
   },
   "10": {
-    "activities": [
+    "morning": [
       {
-        "name": "Carmel-by-the-Sea — Optional Morning Stop",
-        "type": "walking / sightseeing",
+        "name": "Chinatown — Dragon Gate, Fortune Cookies & Dim Sum",
+        "type": "outdoor/food/cultural",
+        "price": "Free to explore; dim sum ~$12-20/person",
+        "description": "San Francisco's Chinatown is the oldest in North America and one of the most densely packed neighborhoods in the US. Enter through the Dragon Gate on Grant Ave and walk the bustling street — herbalist shops, produce markets, roasted duck hanging in windows. Stop at the Golden Gate Fortune Cookie Factory (Ross Alley) where you can watch fortune cookies being folded by hand for $1. Grab dim sum at City View Restaurant or Great Eastern for lunch. Kids love the chaotic energy and the fortune cookies.",
+        "duration": "1.5–2 hours",
+        "link": "https://www.sanfranciscochinatown.com",
+        "lat": 37.7941,
+        "lng": -122.4078,
+        "kidFriendly": true,
+        "npsCovered": false
+      },
+      {
+        "name": "North Beach & Washington Square Park",
+        "type": "outdoor/walking",
         "price": "Free",
-        "description": "If taking the scenic CA-1 route from Salinas/Monterey to SF, a quick stop in Carmel-by-the-Sea is worth it. Fairytale village with storybook cottages and a stunning white-sand beach. Walk the compact downtown (8 blocks) and peek at Carmel Beach before continuing north. Adds 30-45 min to the drive.",
-        "duration": "45 min–1 hour",
-        "link": "https://www.carmelcalifornia.com",
-        "lat": 36.5554,
-        "lng": -121.9233,
+        "description": "SF's Italian neighborhood, right next to Chinatown — a 5-minute walk. Columbus Avenue is lined with old-school Italian delis, cafes (Caffe Trieste has been here since 1956), and bakeries. Washington Square Park has a great lawn where the kids can run while you grab a coffee. City Lights Bookstore (historic Beat Generation landmark) is worth a 15-min browse even with kids.",
+        "duration": "1–1.5 hours",
+        "link": "https://www.google.com/maps/place/Washington+Square+Park,+San+Francisco",
+        "lat": 37.8003,
+        "lng": -122.4107,
         "kidFriendly": true,
         "npsCovered": false
       }
     ],
-    "afternoon": [],
-    "evening": [],
+    "afternoon": [
+      {
+        "name": "Coit Tower — Art Deco Murals & Panoramic Views",
+        "type": "indoor-outdoor/cultural",
+        "price": "Free to walk up; tower elevator $15 adults, $10 kids 5-17, free under 5",
+        "description": "A 5-minute walk uphill from Washington Square Park, Coit Tower is a 210-foot art deco column on top of Telegraph Hill. The ground floor murals (painted in 1934 by New Deal artists) are stunning and free to view inside. The elevator to the top gives 360° views of the bay, Alcatraz, Golden Gate, and the city. Wild parrots of Telegraph Hill often perch on the building and squawk at visitors — kids are delighted.",
+        "duration": "45 min–1 hour",
+        "link": "https://sfrecpark.org/destination/telegraph-hill-pioneer-park/coit-tower/",
+        "lat": 37.8024,
+        "lng": -122.4058,
+        "kidFriendly": true,
+        "npsCovered": false
+      },
+      {
+        "name": "Alamo Square — Painted Ladies & Postcard Row",
+        "type": "outdoor/free",
+        "price": "Free",
+        "description": "The six Victorian 'Painted Ladies' facing Alamo Square are the most photographed houses in San Francisco — that postcard image everyone knows. The park itself is a wide, grassy hilltop great for kids to run around. On a clear day you can see the downtown skyline behind the colorful Victorians. 15-min drive or Muni from North Beach.",
+        "duration": "30–45 min",
+        "link": "https://www.google.com/maps/place/Alamo+Square+Park,+San+Francisco",
+        "lat": 37.7762,
+        "lng": -122.4345,
+        "kidFriendly": true,
+        "npsCovered": false
+      },
+      {
+        "name": "Mission Dolores — SF's Oldest Building (1776)",
+        "type": "indoor/cultural/historic",
+        "price": "$7 adults, $5 kids 5-17, free under 5",
+        "description": "Mission San Francisco de Asís (Mission Dolores) was founded in 1776 and is the oldest intact building in San Francisco. A quick 30-min visit covers the original adobe chapel (still standing from the 1790s), cemetery with Gold Rush-era graves, and small museum. Right next to Dolores Park — great to combine with a park visit.",
+        "duration": "30–45 min",
+        "link": "https://www.missiondolores.org",
+        "lat": 37.7650,
+        "lng": -122.4267,
+        "kidFriendly": true,
+        "npsCovered": false
+      }
+    ],
+    "evening": [
+      {
+        "name": "Dolores Park — Mission District Sunset",
+        "type": "outdoor/free",
+        "price": "Free",
+        "description": "San Francisco's most beloved park, on a wide sunny hillside in the Mission District. Great views of downtown, the bay, and on clear days the East Bay hills. Families spread out on the grass, kids use the playgrounds, and the vibe is relaxed and festive. A perfect evening wind-down after the long road trip stretch. The Mission District streets around the park have great taquerias and ice cream shops for dinner.",
+        "duration": "1–2 hours",
+        "link": "https://www.google.com/maps/place/Mission+Dolores+Park,+San+Francisco",
+        "lat": 37.7596,
+        "lng": -122.4269,
+        "kidFriendly": true,
+        "npsCovered": false
+      }
+    ],
     "scenicDrives": [
       {
-        "name": "CA-1 Coastal Route — Carmel to Half Moon Bay to SF",
+        "name": "CA-1 Coastal Route — Carmel to Half Moon Bay (optional)",
         "description": "Instead of US-101, take CA-1 north from Salinas/Carmel through Half Moon Bay and Pacifica to SF. Adds ~1 hour but passes stunning coastal bluffs, beaches, and farms. Worth it if you have a relaxed morning start.",
         "duration": "2.5 hours with stops",
         "link": "https://www.google.com/maps/dir/Salinas,+CA/San+Francisco,+CA"
       }
     ],
     "hiddenGem": {
-      "name": "Steinbeck's Salinas — Quick Literary Detour",
-      "description": "Salinas is John Steinbeck's birthplace. His childhood home is at 132 Central Ave. The National Steinbeck Center is the world's only museum dedicated to a single American author. Quick stops for the curious traveler.",
-      "link": "https://www.steinbeck.org"
+      "name": "Golden Gate Fortune Cookie Factory — Ross Alley, Chinatown",
+      "description": "A tiny alley factory in Chinatown where fortune cookies are still folded by hand on small iron grills — the same way they've been made since 1962. Watch the process up close, buy a bag of warm cookies for $1. The place fits maybe 10 people at a time. One of SF's most charming hidden spots.",
+      "link": "https://www.google.com/maps/place/Golden+Gate+Fortune+Cookie+Factory/@37.7953,-122.4068,17z"
     },
     "rainyDay": null,
     "priorities": {
       "mustDo": [
-        "Just get to SF — the 1.5-hour drive is short and the city awaits",
-        "Arrive SF by mid-morning for maximum city time"
+        "Chinatown + Fortune Cookie Factory — immersive, uniquely SF, kids love it",
+        "Coit Tower murals (free inside) and views — pairs perfectly with North Beach walk",
+        "Dolores Park at sunset — the best low-key park in SF, great dinner neighborhood"
       ],
       "skipIfShort": [
-        "Carmel stop — only if taking the scenic CA-1 coastal route",
-        "Steinbeck Center — fascinating but skip if you want maximum SF time"
+        "Alamo Square — great photo but a 15-min drive from North Beach; skip if tired",
+        "Mission Dolores — only if specifically interested in history, otherwise Dolores Park alone is enough"
       ]
     }
   },

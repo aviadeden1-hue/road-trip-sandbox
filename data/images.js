@@ -16,7 +16,7 @@ window.IMAGE_DATA = {
   7:  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg/1280px-Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg",
   8:  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Bixby_Creek_Bridge%2C_California%2C_USA_-_May_2013.jpg/1280px-Bixby_Creek_Bridge%2C_California%2C_USA_-_May_2013.jpg",
   9:  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Seals_at_Piedras_Blancas_elephant_seal_rookery_2013_03.jpg/1280px-Seals_at_Piedras_Blancas_elephant_seal_rookery_2013_03.jpg",
-  10: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/San_Francisco_from_the_Marin_Headlands_in_March_2019.jpg/1280px-San_Francisco_from_the_Marin_Headlands_in_March_2019.jpg",
+  10: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/San_Francisco_from_Twin_Peaks_September_2013_panorama_5_edit.jpg/1280px-San_Francisco_from_Twin_Peaks_September_2013_panorama_5_edit.jpg",
   11: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg",
   12: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sonoma_Valley.jpg/1280px-Sonoma_Valley.jpg",
   13: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Sonoma_wine_country.jpg/1280px-Sonoma_wine_country.jpg",
